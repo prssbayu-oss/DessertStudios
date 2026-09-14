@@ -170,7 +170,7 @@
 		const moduleRE = /(import.*?)('|")(.*?)('|")/g;
 
 		// convert https://threejs.org/build/three.module.js -> https://cdn.jsdelivr.net/npm/three@<version>
-		// convert https://threejs.org/examples/jsm/.?? -> https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/.??
+		// convert https://threejs.org/examples/jsm/.?? -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/.??
 
 		if ( ! version ) {
 
@@ -194,9 +194,7 @@
 
 				if ( href.includes( '/build/three.module.js' ) ) {
 
-					return `https://cdn.jsdelivr.net/npm/three@${version}`;
-
-				} else if ( href.includes( '/examples/jsm/' ) ) {
+					return `https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/' ) ) {
 
 					const url = new URL( href );
 					return `https://cdn.jsdelivr.net/npm/three@${version}${url.pathname}${url.search}${url.hash}`;
