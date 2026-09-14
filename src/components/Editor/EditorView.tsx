@@ -910,7 +910,7 @@ export const EditorView: React.FC = () => {
                   <button
                     id="export-gltf-btn"
                     onClick={() => {
-                      if (sceneRef.current) exportSceneToGLTF(sceneRef.current, 'threejs-scene.gltf');
+                      if (sceneRef.current) exportSceneToGLTF(sceneRef.current, 'dessert-scene.gltf');
                       setExportDropdownOpen(false);
                     }}
                     className="w-full text-left px-3 py-2 text-slate-200 hover:bg-indigo-600 hover:text-white transition-colors"

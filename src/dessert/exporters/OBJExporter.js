@@ -17,7 +17,7 @@ import {
  * const data = exporter.parse( scene );
  * ```
  *
- * @three_import import { OBJExporter } from 'three/addons/exporters/OBJExporter.js';
+ * @dessert_import import { OBJExporter } from '../exporters/OBJExporter.js';
  */
 class OBJExporter {
 

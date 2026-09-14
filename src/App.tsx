@@ -15,7 +15,7 @@ export default function App() {
   const [currentMode, setCurrentMode] = useState<AppMode>('editor');
 
   return (
-    <div id="threejs-app-root" className="min-h-screen bg-slate-950 text-slate-100 flex flex-col select-none">
+    <div id="dessert-app-root" className="min-h-screen bg-slate-950 text-slate-100 flex flex-col select-none">
       {/* Top Main Navigation */}
       <Navbar currentMode={currentMode} onSelectMode={setCurrentMode} />
 

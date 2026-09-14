@@ -39,7 +39,7 @@ export const DocsView: React.FC<DocsViewProps> = () => {
         <div className="p-4 border-b border-slate-800 space-y-3">
           <div className="flex items-center gap-2">
             <BookOpen className="w-5 h-5 text-indigo-400" />
-            <h2 className="text-sm font-semibold text-slate-100">Three.js API Reference</h2>
+            <h2 className="text-sm font-semibold text-slate-100">DESSERT API Reference</h2>
           </div>
 
           <div className="relative">
@@ -98,7 +98,7 @@ export const DocsView: React.FC<DocsViewProps> = () => {
 
           {filteredDocs.length === 0 && (
             <div className="text-center py-8 text-xs text-slate-500">
-              No matching Three.js API records found.
+              No matching DESSERT API records found.
             </div>
           )}
         </div>

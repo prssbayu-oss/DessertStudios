@@ -75,7 +75,7 @@ app.use((req, res, next) => {
 <html>
 <head>
   <meta charset="utf-8">
-  <title>three.js - ${pathname}</title>
+  <title>DESSERT - ${pathname}</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; padding: 24px; }
     h1 { font-size: 18px; font-weight: 600; color: #f8fafc; border-bottom: 1px solid #334155; padding-bottom: 12px; }
@@ -117,7 +117,7 @@ app.use((req, res) => {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`========================================`);
-  console.log(` Three.js r186 Cloned Suite Server`);
+  console.log(` DESSERT 3D Engine & Studio Server`);
   console.log(` Running at http://0.0.0.0:${PORT}/`);
   console.log(`   - Suite Hub:    http://0.0.0.0:${PORT}/`);
   console.log(`   - 3D Editor:    http://0.0.0.0:${PORT}/editor/`);

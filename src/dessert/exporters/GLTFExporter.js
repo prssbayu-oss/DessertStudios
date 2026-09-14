@@ -99,7 +99,7 @@ const KHR_mesh_quantization_ExtraAttrTypes = {
  * const data = await exporter.parseAsync( scene, options );
  * ```
  *
- * @three_import import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
+ * @dessert_import import { GLTFExporter } from '../exporters/GLTFExporter.js';
  */
 class GLTFExporter {
 
@@ -1902,7 +1902,7 @@ class GLTFWriter {
 		const primitives = [];
 		const targets = [];
 
-		// Conversion between attributes names in threejs and gltf spec
+		// Conversion between attributes names in dessert and gltf spec
 		const nameConversion = {
 			uv: 'TEXCOORD_0',
 			uv1: 'TEXCOORD_1',
@@ -2016,7 +2016,7 @@ class GLTFWriter {
 				for ( const attributeName in geometry.morphAttributes ) {
 
 					// glTF 2.0 morph supports only POSITION/NORMAL/TANGENT.
-					// Three.js doesn't support TANGENT yet.
+					// DESSERT doesn't support TANGENT yet.
 
 					if ( attributeName !== 'position' && attributeName !== 'normal' ) {
 
@@ -2034,7 +2034,7 @@ class GLTFWriter {
 					const attribute = geometry.morphAttributes[ attributeName ][ i ];
 					const gltfAttributeName = attributeName.toUpperCase();
 
-					// Three.js morph attribute has absolute values while the one of glTF has relative values.
+					// DESSERT morph attribute has absolute values while the one of glTF has relative values.
 					//
 					// glTF 2.0 Specification:
 					// https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#morph-targets
@@ -2512,7 +2512,7 @@ class GLTFWriter {
 
 		}
 
-		// We don't export empty strings name because it represents no-name in Three.js.
+		// We don't export empty strings name because it represents no-name in DESSERT.
 		if ( object.name !== '' ) nodeDef.name = String( object.name );
 
 		this.serializeUserData( object, nodeDef );

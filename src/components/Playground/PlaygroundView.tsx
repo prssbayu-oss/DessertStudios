@@ -223,7 +223,7 @@ export const PlaygroundView: React.FC = () => {
         <div className="p-2.5 px-4 bg-slate-900 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
           <div className="flex items-center gap-2">
             <Terminal className="w-3.5 h-3.5 text-slate-500" />
-            <span>Scope available: <code>scene</code>, <code>camera</code>, <code>renderer</code>, <code>THREE</code></span>
+            <span>Scope available: <code>scene</code>, <code>camera</code>, <code>renderer</code>, <code>DESSERT</code></span>
           </div>
           <span className="text-slate-500">Return an <code>animate(time)</code> function for loops</span>
         </div>

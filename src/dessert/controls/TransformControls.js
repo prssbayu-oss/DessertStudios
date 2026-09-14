@@ -72,7 +72,7 @@ const _objectChangeEvent = { type: 'objectChange' };
  * `TransformControls` expects that its attached 3D object is part of the scene graph.
  *
  * @augments Controls
- * @three_import import { TransformControls } from 'three/addons/controls/TransformControls.js';
+ * @dessert_import import { TransformControls } from '../controls/TransformControls.js';
  */
 class TransformControls extends Controls {
 

@@ -3,7 +3,7 @@ const IGNORED_FILES = [
 	/^StackTrace\.js$/,
 	/^TSLCore\.js$/,
 	/^.*Node\.js$/,
-	/^three\.webgpu.*\.js$/
+	/^dessert\.webgpu.*\.js$/
 ];
 
 /**
