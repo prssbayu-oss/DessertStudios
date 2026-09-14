@@ -2,6 +2,42 @@ import { DocItem } from '../types';
 
 export const DOCS_DATA: DocItem[] = [
   {
+    id: 'CDN-Installation',
+    title: 'jsDelivr CDN Setup',
+    category: 'Core',
+    summary: 'Import DESSERT 3D Engine and its addons directly into any modern browser via jsDelivr CDN without installing npm dependencies.',
+    codeSnippet: `<script type="importmap">
+{
+  "imports": {
+    "dessert": "https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/src/dessert/Dessert.js",
+    "dessert/webgpu": "https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/src/dessert/Dessert.webgpu.js",
+    "dessert/dsl": "https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/src/dessert/Dessert.dsl.js",
+    "dessert/addons/": "https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+  import * as DESSERT from 'dessert';
+  import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+
+  const scene = new DESSERT.Scene();
+  const camera = new DESSERT.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new DESSERT.WebGLRenderer({ antialias: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.body.appendChild(renderer.domElement);
+</script>`,
+    parameters: [
+      { name: 'dessert', type: 'ES Module', desc: 'Core WebGL & 3D Math runtime engine.' },
+      { name: 'dessert/webgpu', type: 'ES Module', desc: 'Next-generation WebGPU renderer with native node compute support.' },
+      { name: 'dessert/dsl', type: 'ES Module', desc: 'Dessert Shading Language for visual and programmatic node shaders.' },
+      { name: 'dessert/addons/', type: 'Path Prefix', desc: 'Direct access to loaders (GLTFLoader, OBJLoader), controls (OrbitControls), postprocessing, etc.' },
+    ],
+    methods: [
+      { name: 'Import Map Mapping', returns: 'Browser Native', desc: 'Uses native W3C import maps supported in all modern browsers (Chrome, Edge, Safari, Firefox).' },
+    ],
+  },
+  {
     id: 'Scene',
     title: 'DESSERT.Scene',
     category: 'Core',
