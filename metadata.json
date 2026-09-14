@@ -1,0 +1,6 @@
+{
+  "name": "DESSERT 3D Studio",
+  "description": "Full-control standalone 3D engine cloned and rebranded as DESSERT with zero external dependencies, complete math, core, renderers, materials, and scene editor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
