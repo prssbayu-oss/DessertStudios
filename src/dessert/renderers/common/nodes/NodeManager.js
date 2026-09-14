@@ -4,7 +4,7 @@ import NodeBuilderState from './NodeBuilderState.js';
 import NodeMaterial from '../../../materials/nodes/NodeMaterial.js';
 import { cubeMapNode } from '../../../nodes/utils/CubeMapNode.js';
 import { NodeFrame, NodeUpdateType, StackTrace } from '../../../nodes/Nodes.js';
-import { renderGroup, cubeTexture, texture, fog, rangeFogFactor, densityFogFactor, reference, pmremTexture, screenUV, uniform } from '../../../nodes/TSL.js';
+import { renderGroup, cubeTexture, texture, fog, rangeFogFactor, densityFogFactor, reference, pmremTexture, screenUV, uniform } from '../../../nodes/DSL.js';
 import { builtin } from '../../../nodes/accessors/BuiltinNode.js';
 
 import { CubeUVReflectionMapping, EquirectangularReflectionMapping, EquirectangularRefractionMapping } from '../../../constants.js';
@@ -241,7 +241,7 @@ class NodeManager extends DataMap {
 
 						}
 
-						error( 'TSL: ' + e );
+						error( 'DSL: ' + e );
 
 					}
 
@@ -286,7 +286,7 @@ class NodeManager extends DataMap {
 
 						}
 
-						error( 'TSL: ' + e, stackTrace );
+						error( 'DSL: ' + e, stackTrace );
 
 					}
 

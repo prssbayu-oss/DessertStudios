@@ -1,30 +1,30 @@
 import { attribute } from '../core/AttributeNode.js';
 import { cameraWorldMatrix } from './Camera.js';
 import { modelViewMatrix } from './ModelNode.js';
-import { Fn, vec4 } from '../tsl/TSLBase.js';
+import { Fn, vec4 } from '../dsl/DSLBase.js';
 import { tangentViewFrame } from './TangentUtils.js';
 import { negateOnBackSide } from '../display/FrontFacingNode.js';
 
 /**
- * TSL object that represents the tangent attribute of the current rendered object.
+ * DSL object that represents the tangent attribute of the current rendered object.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec4>}
  */
 export const tangentGeometry = /*@__PURE__*/ attribute( 'tangent', 'vec4' );
 
 /**
- * TSL object that represents the vertex tangent in local space of the current rendered object.
+ * DSL object that represents the vertex tangent in local space of the current rendered object.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const tangentLocal = /*@__PURE__*/ tangentGeometry.xyz.toVar( 'tangentLocal' );
 
 /**
- * TSL object that represents the vertex tangent in view space of the current rendered object.
+ * DSL object that represents the vertex tangent in view space of the current rendered object.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const tangentView = /*@__PURE__*/ ( Fn( ( builder ) => {
@@ -52,9 +52,9 @@ export const tangentView = /*@__PURE__*/ ( Fn( ( builder ) => {
 }, 'vec3' ).once( [ 'NORMAL', 'VERTEX' ] ) )().toVar( 'tangentView' );
 
 /**
- * TSL object that represents the vertex tangent in world space of the current rendered object.
+ * DSL object that represents the vertex tangent in world space of the current rendered object.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const tangentWorld = /*@__PURE__*/ tangentView.transformDirection( cameraWorldMatrix ).toVarying( 'v_tangentWorld' ).normalize().toVar( 'tangentWorld' );

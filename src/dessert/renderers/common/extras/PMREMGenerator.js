@@ -4,7 +4,7 @@ import { equirectUV } from '../../../nodes/utils/EquirectUV.js';
 import { uniform } from '../../../nodes/core/UniformNode.js';
 import { texture } from '../../../nodes/accessors/TextureNode.js';
 import { cubeTexture } from '../../../nodes/accessors/CubeTextureNode.js';
-import { float, int, uint } from '../../../nodes/tsl/TSLBase.js';
+import { float, int, uint } from '../../../nodes/dsl/DSLBase.js';
 import { attribute } from '../../../nodes/core/AttributeNode.js';
 
 import { OrthographicCamera } from '../../../cameras/OrthographicCamera.js';

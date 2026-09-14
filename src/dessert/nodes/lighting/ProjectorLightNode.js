@@ -1,6 +1,6 @@
 import SpotLightNode from './SpotLightNode.js';
 
-import { float, Fn, If, vec2 } from '../tsl/TSLCore.js';
+import { float, Fn, If, vec2 } from '../dsl/DSLCore.js';
 import { length, min, max, saturate, acos } from '../math/MathNode.js';
 import { div, sub } from '../math/OperatorNode.js';
 import { lightShadowMatrix } from '../accessors/Lights.js';

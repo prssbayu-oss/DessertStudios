@@ -1,6 +1,6 @@
 import UniformNode from '../core/UniformNode.js';
 import { NodeUpdateType } from '../core/constants.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 
 /**
  * A special type of uniform node that computes the
@@ -93,9 +93,9 @@ class MaxMipLevelNode extends UniformNode {
 export default MaxMipLevelNode;
 
 /**
- * TSL function for creating a max mip level node.
+ * DSL function for creating a max mip level node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {TextureNode} textureNode - The texture node to compute the max mip level for.
  * @returns {MaxMipLevelNode}

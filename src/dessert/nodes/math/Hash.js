@@ -1,9 +1,9 @@
-import { Fn } from '../tsl/TSLBase.js';
+import { Fn } from '../dsl/DSLBase.js';
 
 /**
  * Generates a hash value in the range `[0, 1]` from the given seed.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} seed - The seed.
  * @return {Node<float>} The hash value.

@@ -1,6 +1,6 @@
 import { clearcoat, clearcoatRoughness, diffuseRoughness, sheen, sheenRoughness, iridescence, iridescenceIOR, iridescenceThickness, specularColor, specularColorBlended, specularF90, diffuseColor, metalness, roughness, anisotropy, alphaT, anisotropyT, anisotropyB, ior, transmission, thickness, attenuationDistance, attenuationColor, dispersion, retroreflectivity } from '../../nodes/core/PropertyNode.js';
 import { materialClearcoat, materialClearcoatRoughness, materialClearcoatNormal, materialDiffuseRoughness, materialSheen, materialSheenRoughness, materialIridescence, materialIridescenceIOR, materialIridescenceThickness, materialSpecularIntensity, materialSpecularColor, materialAnisotropy, materialIOR, materialTransmission, materialThickness, materialAttenuationDistance, materialAttenuationColor, materialDispersion, materialRetroreflectivity } from '../../nodes/accessors/MaterialNode.js';
-import { float, vec2, vec3, If } from '../../nodes/tsl/TSLBase.js';
+import { float, vec2, vec3, If } from '../../nodes/dsl/DSLBase.js';
 import getRoughness from '../../nodes/functions/material/getRoughness.js';
 import { TBNViewMatrix } from '../../nodes/accessors/AccessorsUtils.js';
 import PhysicalLightingModel from '../../nodes/functions/PhysicalLightingModel.js';

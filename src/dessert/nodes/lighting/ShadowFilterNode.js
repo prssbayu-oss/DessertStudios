@@ -1,4 +1,4 @@
-import { float, vec2, If, Fn } from '../tsl/TSLBase.js';
+import { float, vec2, If, Fn } from '../dsl/DSLBase.js';
 import { reference } from '../accessors/ReferenceNode.js';
 import { texture } from '../accessors/TextureNode.js';
 import { step, max, clamp } from '../math/MathNode.js';

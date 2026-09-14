@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { nodeImmutable } from '../tsl/TSLBase.js';
+import { nodeImmutable } from '../dsl/DSLBase.js';
 
 /**
  * A node for representing the uv coordinates of points.
@@ -47,9 +47,9 @@ class PointUVNode extends Node {
 export default PointUVNode;
 
 /**
- * TSL object that represents the uv coordinates of points.
+ * DSL object that represents the uv coordinates of points.
  *
- * @tsl
+ * @dsl
  * @type {PointUVNode}
  */
 export const pointUV = /*@__PURE__*/ nodeImmutable( PointUVNode );

@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { addMethodChaining, nodeObject } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject } from '../dsl/DSLCore.js';
 import { log } from '../../utils.js';
 
 class DebugNode extends TempNode {
@@ -48,7 +48,7 @@ class DebugNode extends TempNode {
 
 		} else {
 
-			const title = '--- TSL debug - ' + builder.shaderStage + ' shader ---';
+			const title = '--- DSL debug - ' + builder.shaderStage + ' shader ---';
 			const border = '-'.repeat( title.length );
 
 			let code = '';
@@ -70,9 +70,9 @@ class DebugNode extends TempNode {
 export default DebugNode;
 
 /**
- * TSL function for creating a debug node.
+ * DSL function for creating a debug node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node to debug.
  * @param {?Function} [callback=null] - Optional callback function to handle the debug output.

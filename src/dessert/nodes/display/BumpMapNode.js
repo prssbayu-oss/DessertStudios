@@ -3,7 +3,7 @@ import { uv } from '../accessors/UV.js';
 import { normalView } from '../accessors/Normal.js';
 import { positionView } from '../accessors/Position.js';
 import { faceDirection } from './FrontFacingNode.js';
-import { Fn, nodeProxy, float, vec2 } from '../tsl/TSLBase.js';
+import { Fn, nodeProxy, float, vec2 } from '../dsl/DSLBase.js';
 
 // Bump Mapping Unparametrized Surfaces on the GPU by Morten S. Mikkelsen
 // https://mmikk.github.io/papers3d/mm_sfgrad_bump.pdf
@@ -111,9 +111,9 @@ class BumpMapNode extends TempNode {
 export default BumpMapNode;
 
 /**
- * TSL function for creating a bump map node.
+ * DSL function for creating a bump map node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} textureNode - Represents the bump map data.
  * @param {?Node<float>} [scaleNode=null] - Controls the intensity of the bump effect.

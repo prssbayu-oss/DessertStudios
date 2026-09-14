@@ -133,7 +133,7 @@ const createEvent = ( type, callback ) => new EventNode( type, callback ).toStac
 /**
  * Creates an event that triggers a function every time an object (Mesh|Sprite) is rendered.
  *
- * The event will be bound to the declared TSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
+ * The event will be bound to the declared DSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
  *
  * @param {Function} callback - The callback function.
  * @returns {EventNode}
@@ -143,7 +143,7 @@ export const OnObjectUpdate = ( callback ) => createEvent( EventNode.OBJECT, cal
 /**
  * Creates an event that triggers a function when the first object that uses the material is rendered.
  *
- * The event will be bound to the declared TSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
+ * The event will be bound to the declared DSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
  *
  * @param {Function} callback - The callback function.
  * @returns {EventNode}
@@ -153,7 +153,7 @@ export const OnMaterialUpdate = ( callback ) => createEvent( EventNode.MATERIAL,
 /**
  * Creates an event that triggers a function every frame.
  *
- * The event will be bound to the declared TSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
+ * The event will be bound to the declared DSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
  *
  * @param {Function} callback - The callback function.
  * @returns {EventNode}
@@ -163,7 +163,7 @@ export const OnFrameUpdate = ( callback ) => createEvent( EventNode.FRAME, callb
 /**
  * Creates an event that triggers a function every time an object (Mesh|Sprite) has been rendered.
  *
- * The event will be bound to the declared TSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
+ * The event will be bound to the declared DSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
  *
  * @param {Function} callback - The callback function.
  * @returns {EventNode}
@@ -173,7 +173,7 @@ export const OnAfterObjectUpdate = ( callback ) => createEvent( EventNode.AFTER_
 /**
  * Creates an event that triggers a function before an object (Mesh|Sprite) is updated.
  *
- * The event will be bound to the declared TSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
+ * The event will be bound to the declared DSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
  *
  * @param {Function} callback - The callback function.
  * @returns {EventNode}
@@ -183,7 +183,7 @@ export const OnBeforeObjectUpdate = ( callback ) => createEvent( EventNode.BEFOR
 /**
  * Creates an event that triggers a function before the material is updated.
  *
- * The event will be bound to the declared TSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
+ * The event will be bound to the declared DSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
  *
  * @param {Function} callback - The callback function.
  * @returns {EventNode}
@@ -193,7 +193,7 @@ export const OnBeforeMaterialUpdate = ( callback ) => createEvent( EventNode.BEF
 /**
  * Creates an event that triggers a function before every frame.
  *
- * The event will be bound to the declared TSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
+ * The event will be bound to the declared DSL function `Fn()`; it must be declared within a `Fn()` or the JS function call must be inherited from one.
  *
  * @param {Function} callback - The callback function.
  * @returns {EventNode}

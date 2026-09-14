@@ -4,7 +4,7 @@ import { textureSize } from './TextureSizeNode.js';
 import { colorSpaceToWorking } from '../display/ColorSpaceNode.js';
 import { expression } from '../code/ExpressionNode.js';
 import { maxMipLevel } from '../utils/MaxMipLevelNode.js';
-import { nodeProxy, vec3, nodeObject, int, Fn } from '../tsl/TSLBase.js';
+import { nodeProxy, vec3, nodeObject, int, Fn } from '../dsl/DSLBase.js';
 import { step } from '../math/MathNode.js';
 import { NodeUpdateType } from '../core/constants.js';
 import { getTextureType } from '../core/NodeUtils.js';
@@ -359,7 +359,7 @@ class TextureNode extends UniformNode {
 
 		if ( ! texture || texture.isTexture !== true ) {
 
-			throw new NodeError( 'DESSERT.TSL: `texture( value )` function expects a valid instance of DESSERT.Texture().', this.stackTrace );
+			throw new NodeError( 'DESSERT.DSL: `texture( value )` function expects a valid instance of DESSERT.Texture().', this.stackTrace );
 
 		}
 
@@ -428,7 +428,7 @@ class TextureNode extends UniformNode {
 
 					compareNode = this.compareNode;
 
-					warnOnce( 'TSL: Only "LessCompare", "LessEqualCompare", "GreaterCompare" and "GreaterEqualCompare" are supported for depth texture comparison fallback.' );
+					warnOnce( 'DSL: Only "LessCompare", "LessEqualCompare", "GreaterCompare" and "GreaterEqualCompare" are supported for depth texture comparison fallback.' );
 
 				}
 
@@ -685,7 +685,7 @@ class TextureNode extends UniformNode {
 
 	}
 
-	// @TODO: Move to TSL
+	// @TODO: Move to DSL
 
 	/**
 	 * Samples the texture with the given uv node.
@@ -704,7 +704,7 @@ class TextureNode extends UniformNode {
 	}
 
 	/**
-	 * TSL function for creating a texture node that fetches/loads texels without interpolation.
+	 * DSL function for creating a texture node that fetches/loads texels without interpolation.
 	 *
 	 * @param {Node<uvec2>} uvNode - The uv node.
 	 * @returns {TextureNode} A texture node representing the texture load.
@@ -731,7 +731,7 @@ class TextureNode extends UniformNode {
 
 		if ( textureNode.generateMipmaps === false && ( map && map.generateMipmaps === false || map.minFilter === NearestFilter || map.magFilter === NearestFilter ) ) {
 
-			warn( 'TSL: texture().blur() requires mipmaps and sampling. Use .generateMipmaps=true and .minFilter/.magFilter=DESSERT.LinearFilter in the Texture.' );
+			warn( 'DSL: texture().blur() requires mipmaps and sampling. Use .generateMipmaps=true and .minFilter/.magFilter=DESSERT.LinearFilter in the Texture.' );
 
 			textureNode.biasNode = null;
 
@@ -964,9 +964,9 @@ class TextureNode extends UniformNode {
 export default TextureNode;
 
 /**
- * TSL function for creating a texture node.
+ * DSL function for creating a texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Texture} value - The texture.
  * @param {?Node<vec2|vec3>} [uvNode=null] - The uv node.
@@ -977,9 +977,9 @@ export default TextureNode;
 const textureBase = /*@__PURE__*/ nodeProxy( TextureNode ).setParameterLength( 1, 4 ).setName( 'texture' );
 
 /**
- * TSL function for creating a texture node or sample a texture node already existing.
+ * DSL function for creating a texture node or sample a texture node already existing.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?(Texture|TextureNode)} [value=EmptyTexture] - The texture.
  * @param {?Node<vec2|vec3>} [uvNode=null] - The uv node.
@@ -1011,9 +1011,9 @@ export const texture = ( value = EmptyTexture, uvNode = null, levelNode = null, 
 };
 
 /**
- * TSL function for creating a uniform texture node.
+ * DSL function for creating a uniform texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Texture} value - The texture.
  * @returns {TextureNode}
@@ -1021,9 +1021,9 @@ export const texture = ( value = EmptyTexture, uvNode = null, levelNode = null, 
 export const uniformTexture = ( value = EmptyTexture ) => texture( value );
 
 /**
- * TSL function for creating a texture node that fetches/loads texels without interpolation.
+ * DSL function for creating a texture node that fetches/loads texels without interpolation.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?(Texture|TextureNode)} [value=EmptyTexture] - The texture.
  * @param {?Node<vec2|vec3>} [uvNode=null] - The uv node.
@@ -1038,7 +1038,7 @@ export const textureLevel = ( value, uv, level ) => texture( value, uv ).level( 
 /**
  * Converts a texture or texture node to a sampler.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {TextureNode|Texture} value - The texture or texture node to convert.
  * @returns {Node}
@@ -1048,7 +1048,7 @@ export const sampler = ( value ) => ( value.isNode === true ? value : texture( v
 /**
  * Converts a texture or texture node to a sampler comparison.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {TextureNode|Texture} value - The texture or texture node to convert.
  * @returns {Node}

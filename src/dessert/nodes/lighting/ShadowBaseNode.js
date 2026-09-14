@@ -3,7 +3,7 @@ import NodeMaterial from '../../materials/nodes/NodeMaterial.js';
 import ChainMap from '../../renderers/common/ChainMap.js';
 import { getDataFromObject } from '../core/NodeUtils.js';
 import { NodeUpdateType } from '../core/constants.js';
-import { property, vec4 } from '../tsl/TSLBase.js';
+import { property, vec4 } from '../dsl/DSLBase.js';
 import { positionWorld } from '../accessors/Position.js';
 import { NoBlending, VSMShadowMap } from '../../constants.js';
 
@@ -213,7 +213,7 @@ class ShadowBaseNode extends Node {
 	}
 
 	/**
-	 * Setups the shadow position node which is by default the predefined TSL node object `shadowPositionWorld`.
+	 * Setups the shadow position node which is by default the predefined DSL node object `shadowPositionWorld`.
 	 *
 	 * @param {NodeBuilder} object - A configuration object that must at least hold a material reference.
 	 */
@@ -228,9 +228,9 @@ class ShadowBaseNode extends Node {
 }
 
 /**
- * TSL object that represents the vertex position in world space during the shadow pass.
+ * DSL object that represents the vertex position in world space during the shadow pass.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const shadowPositionWorld = /*@__PURE__*/ property( 'vec3', 'shadowPositionWorld' );

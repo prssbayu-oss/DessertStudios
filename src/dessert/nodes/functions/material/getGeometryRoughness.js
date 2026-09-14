@@ -1,5 +1,5 @@
 import { normalViewGeometry } from '../../accessors/Normal.js';
-import { float, Fn } from '../../tsl/TSLBase.js';
+import { float, Fn } from '../../dsl/DSLBase.js';
 
 const getGeometryRoughness = /*@__PURE__*/ Fn( ( builder ) => {
 

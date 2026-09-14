@@ -2,7 +2,7 @@ import { BufferGeometry } from '../../core/BufferGeometry.js';
 import { Float32BufferAttribute } from '../../core/BufferAttribute.js';
 import { Mesh } from '../../objects/Mesh.js';
 import { OrthographicCamera } from '../../cameras/OrthographicCamera.js';
-import { vec4, array } from '../../nodes/tsl/TSLBase.js';
+import { vec4, array } from '../../nodes/dsl/DSLBase.js';
 import { vertexIndex } from '../../nodes/core/IndexNode.js';
 import { warnOnce } from '../../utils.js';
 

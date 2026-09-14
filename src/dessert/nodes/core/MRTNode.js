@@ -1,5 +1,5 @@
 import OutputStructNode from './OutputStructNode.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 import { MaterialBlending, NoBlending } from '../../constants.js';
 import BlendMode from '../../renderers/common/BlendMode.js';
 import Color4 from '../../renderers/common/Color4.js';
@@ -233,9 +233,9 @@ class MRTNode extends OutputStructNode {
 export default MRTNode;
 
 /**
- * TSL function for creating a MRT node.
+ * DSL function for creating a MRT node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Object<string, Node>} outputNodes - The MRT outputs.
  * @returns {MRTNode}

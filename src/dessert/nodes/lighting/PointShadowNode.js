@@ -1,6 +1,6 @@
 import ShadowNode from './ShadowNode.js';
 import { uniform } from '../core/UniformNode.js';
-import { float, vec3, If, Fn } from '../tsl/TSLBase.js';
+import { float, vec3, If, Fn } from '../dsl/DSLBase.js';
 import { reference } from '../accessors/ReferenceNode.js';
 import { cubeTexture } from '../accessors/CubeTextureNode.js';
 import { renderGroup } from '../core/UniformGroupNode.js';
@@ -319,9 +319,9 @@ class PointShadowNode extends ShadowNode {
 export default PointShadowNode;
 
 /**
- * TSL function for creating an instance of `PointShadowNode`.
+ * DSL function for creating an instance of `PointShadowNode`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {PointLight} light - The shadow casting point light.
  * @param {?PointLightShadow} [shadow=null] - An optional point light shadow.

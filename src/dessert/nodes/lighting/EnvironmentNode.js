@@ -4,7 +4,7 @@ import { roughness, clearcoatRoughness, retroreflectivity } from '../core/Proper
 import { cameraWorldMatrix } from '../accessors/Camera.js';
 import { normalView, clearcoatNormalView, normalWorld } from '../accessors/Normal.js';
 import { positionViewDirection } from '../accessors/Position.js';
-import { float, pow4 } from '../tsl/TSLBase.js';
+import { float, pow4 } from '../dsl/DSLBase.js';
 import { bentNormalView } from '../accessors/AccessorsUtils.js';
 import { pmremTexture } from '../pmrem/PMREMNode.js';
 import { materialEnvIntensity } from '../accessors/MaterialProperties.js';

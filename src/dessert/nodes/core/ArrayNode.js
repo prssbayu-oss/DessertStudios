@@ -1,5 +1,5 @@
 import TempNode from './TempNode.js';
-import { addMethodChaining, nodeObject } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject } from '../dsl/DSLCore.js';
 
 /**
  * ArrayNode represents a collection of nodes, typically created using the {@link array} function.
@@ -139,9 +139,9 @@ class ArrayNode extends TempNode {
 export default ArrayNode;
 
 /**
- * TSL function for creating an array node.
+ * DSL function for creating an array node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string|Array<Node>} nodeTypeOrValues - A string representing the element type (e.g., 'vec3')
  * or an array containing the default values (e.g., [ vec3() ]).

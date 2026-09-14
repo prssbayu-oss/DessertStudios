@@ -1,7 +1,7 @@
 import { uniform } from '../core/UniformNode.js';
 import { renderGroup, sharedUniformGroup } from '../core/UniformGroupNode.js';
 import { Vector3 } from '../../math/Vector3.js';
-import { Fn, vec4 } from '../tsl/TSLBase.js';
+import { Fn, vec4 } from '../dsl/DSLBase.js';
 import { uniformArray } from './UniformArrayNode.js';
 import { builtin } from './BuiltinNode.js';
 import { screenSize } from '../display/ScreenNode.js';
@@ -30,33 +30,33 @@ let _cameraViewportBase = null;
 let _cameraViewportArray = null;
 
 /**
- * TSL object that represents the current `index` value of the camera if used ArrayCamera.
+ * DSL object that represents the current `index` value of the camera if used ArrayCamera.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<uint>}
  */
 export const cameraIndex = /*@__PURE__*/ uniform( 0, 'uint' ).setName( 'u_cameraIndex' ).setGroup( sharedUniformGroup( 'cameraIndex' ) ).toVarying( 'v_cameraIndex' );
 
 /**
- * TSL object that represents the `near` value of the camera used for the current render.
+ * DSL object that represents the `near` value of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<float>}
  */
 export const cameraNear = /*@__PURE__*/ uniform( 'float' ).setName( 'cameraNear' ).setGroup( renderGroup ).onRenderUpdate( ( { camera } ) => camera.near );
 
 /**
- * TSL object that represents the `far` value of the camera used for the current render.
+ * DSL object that represents the `far` value of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<float>}
  */
 export const cameraFar = /*@__PURE__*/ uniform( 'float' ).setName( 'cameraFar' ).setGroup( renderGroup ).onRenderUpdate( ( { camera } ) => camera.far );
 
 /**
- * TSL object that represents the projection matrix of the camera used for the current render.
+ * DSL object that represents the projection matrix of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<mat4>}
  */
 export const cameraProjectionMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
@@ -102,9 +102,9 @@ export const cameraProjectionMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 } ).once() )();
 
 /**
- * TSL object that represents the inverse projection matrix of the camera used for the current render.
+ * DSL object that represents the inverse projection matrix of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<mat4>}
  */
 export const cameraProjectionMatrixInverse = /*@__PURE__*/ ( Fn( ( { camera } ) => {
@@ -150,9 +150,9 @@ export const cameraProjectionMatrixInverse = /*@__PURE__*/ ( Fn( ( { camera } ) 
 } ).once() )();
 
 /**
- * TSL object that represents the view matrix of the camera used for the current render.
+ * DSL object that represents the view matrix of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<mat4>}
  */
 export const cameraViewMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
@@ -198,9 +198,9 @@ export const cameraViewMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 } ).once() )();
 
 /**
- * TSL object that represents the world matrix of the camera used for the current render.
+ * DSL object that represents the world matrix of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<mat4>}
  */
 export const cameraWorldMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
@@ -246,9 +246,9 @@ export const cameraWorldMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 } ).once() )();
 
 /**
- * TSL object that represents the normal matrix of the camera used for the current render.
+ * DSL object that represents the normal matrix of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<mat3>}
  */
 export const cameraNormalMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
@@ -294,9 +294,9 @@ export const cameraNormalMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 } ).once() )();
 
 /**
- * TSL object that represents the position in world space of the camera used for the current render.
+ * DSL object that represents the position in world space of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<vec3>}
  */
 export const cameraPosition = /*@__PURE__*/ ( Fn( ( { camera } ) => {
@@ -354,9 +354,9 @@ export const cameraPosition = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 
 
 /**
- * TSL object that represents the viewport of the camera used for the current render.
+ * DSL object that represents the viewport of the camera used for the current render.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<vec4>}
  */
 export const cameraViewport = /*@__PURE__*/ ( Fn( ( { camera } ) => {

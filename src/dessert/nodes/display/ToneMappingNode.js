@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { addMethodChaining, nodeObject, vec4 } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject, vec4 } from '../dsl/DSLCore.js';
 import { rendererReference } from '../accessors/RendererReferenceNode.js';
 
 import { NoToneMapping } from '../../constants.js';
@@ -125,9 +125,9 @@ class ToneMappingNode extends TempNode {
 export default ToneMappingNode;
 
 /**
- * TSL function for creating a tone mapping node.
+ * DSL function for creating a tone mapping node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {number} mapping - The tone mapping type.
  * @param {Node<float> | number} exposure - The tone mapping exposure.
@@ -137,9 +137,9 @@ export default ToneMappingNode;
 export const toneMapping = ( mapping, exposure, color ) => new ToneMappingNode( mapping, nodeObject( exposure ), nodeObject( color ) );
 
 /**
- * TSL object that represents the global tone mapping exposure of the renderer.
+ * DSL object that represents the global tone mapping exposure of the renderer.
  *
- * @tsl
+ * @dsl
  * @type {RendererReferenceNode<vec3>}
  */
 export const toneMappingExposure = /*@__PURE__*/ rendererReference( 'toneMappingExposure', 'float' );

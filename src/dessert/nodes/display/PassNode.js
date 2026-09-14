@@ -1,7 +1,7 @@
 import TempNode from '../core/TempNode.js';
 import { default as TextureNode/*, texture*/ } from '../accessors/TextureNode.js';
 import { NodeUpdateType } from '../core/constants.js';
-import { context } from '../tsl/TSLBase.js';
+import { context } from '../dsl/DSLBase.js';
 import { uniform } from '../core/UniformNode.js';
 import { viewZToOrthographicDepth, perspectiveDepthToViewZ } from './ViewportDepthNode.js';
 
@@ -1073,9 +1073,9 @@ class PassNode extends TempNode {
 export default PassNode;
 
 /**
- * TSL function for creating a pass node.
+ * DSL function for creating a pass node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Scene} scene - A reference to the scene.
  * @param {Camera} camera - A reference to the camera.
@@ -1085,9 +1085,9 @@ export default PassNode;
 export const pass = ( scene, camera, options ) => new PassNode( PassNode.COLOR, scene, camera, options );
 
 /**
- * TSL function for creating a pass texture node.
+ * DSL function for creating a pass texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {PassNode} pass - The pass node.
  * @param {Texture} texture - The output texture.
@@ -1096,9 +1096,9 @@ export const pass = ( scene, camera, options ) => new PassNode( PassNode.COLOR, 
 export const passTexture = ( pass, texture ) => new PassTextureNode( pass, texture );
 
 /**
- * TSL function for creating a depth pass node.
+ * DSL function for creating a depth pass node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Scene} scene - A reference to the scene.
  * @param {Camera} camera - A reference to the camera.

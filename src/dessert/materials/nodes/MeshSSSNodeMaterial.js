@@ -2,7 +2,7 @@ import MeshPhysicalNodeMaterial from './MeshPhysicalNodeMaterial.js';
 import PhysicalLightingModel from '../../nodes/functions/PhysicalLightingModel.js';
 import { normalView } from '../../nodes/accessors/Normal.js';
 import { positionViewDirection } from '../../nodes/accessors/Position.js';
-import { float, vec3 } from '../../nodes/tsl/TSLBase.js';
+import { float, vec3 } from '../../nodes/dsl/DSLBase.js';
 
 /**
  * Represents the lighting model for {@link MeshSSSNodeMaterial}.

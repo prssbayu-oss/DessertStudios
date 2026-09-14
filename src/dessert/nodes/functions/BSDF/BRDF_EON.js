@@ -1,6 +1,6 @@
 import { normalView as NormalView } from '../../accessors/Normal.js';
 import { positionViewDirection } from '../../accessors/Position.js';
-import { Fn } from '../../tsl/TSLBase.js';
+import { Fn } from '../../dsl/DSLBase.js';
 
 const EON_EPSILON = 1e-7;
 const FON_A_COEFFICIENT = 0.5 - 2 / ( 3 * Math.PI );

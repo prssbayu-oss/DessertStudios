@@ -1,7 +1,7 @@
 import TempNode from '../core/TempNode.js';
 import { modelViewMatrix } from './ModelNode.js';
 import { positionLocal, positionPrevious } from './Position.js';
-import { nodeImmutable } from '../tsl/TSLBase.js';
+import { nodeImmutable } from '../dsl/DSLBase.js';
 import { NodeUpdateType } from '../core/constants.js';
 import { Matrix4 } from '../../math/Matrix4.js';
 import { uniform } from '../core/UniformNode.js';
@@ -216,9 +216,9 @@ function getPreviousMatrix( object, index = 0 ) {
 export default VelocityNode;
 
 /**
- * TSL object that represents the velocity of a render pass.
+ * DSL object that represents the velocity of a render pass.
  *
- * @tsl
+ * @dsl
  * @type {VelocityNode}
  */
 export const velocity = /*@__PURE__*/ nodeImmutable( VelocityNode );

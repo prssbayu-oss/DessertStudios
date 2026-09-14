@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { nodeImmutable, float, Fn } from '../tsl/TSLBase.js';
+import { nodeImmutable, float, Fn } from '../dsl/DSLBase.js';
 import { warnOnce } from '../../utils.js';
 
 import { BackSide, DoubleSide } from '../../constants.js';
@@ -58,18 +58,18 @@ class FrontFacingNode extends Node {
 export default FrontFacingNode;
 
 /**
- * TSL object that represents whether a primitive is front or back facing
+ * DSL object that represents whether a primitive is front or back facing
  *
- * @tsl
+ * @dsl
  * @type {FrontFacingNode<bool>}
  */
 export const frontFacing = /*@__PURE__*/ nodeImmutable( FrontFacingNode );
 
 /**
- * TSL object that represents the front facing status as a number instead of a bool.
+ * DSL object that represents the front facing status as a number instead of a bool.
  * `1` means front facing, `-1` means back facing.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const faceDirection = /*@__PURE__*/ float( frontFacing ).mul( 2.0 ).sub( 1.0 );
@@ -83,7 +83,7 @@ export const faceDirection = /*@__PURE__*/ float( frontFacing ).mul( 2.0 ).sub( 
  *   (negated only for back-facing fragments).
  * - If the material's side is `FrontSide` (default), the vector remains unchanged.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} vector - The vector to process.
  * @returns {Node<vec3>} The processed vector.
@@ -115,7 +115,7 @@ export const negateOnBackSide = /*@__PURE__*/ Fn( ( [ vector ], { material } ) =
  *   (negated only for back-facing fragments).
  * - If the material's side is `FrontSide` (default), the vector remains unchanged.
  *
- * @tsl
+ * @dsl
  * @function
  * @deprecated since r185. Use {@link negateOnBackSide} instead.
  * @param {Node<vec3>} vector - The vector to convert.
@@ -123,7 +123,7 @@ export const negateOnBackSide = /*@__PURE__*/ Fn( ( [ vector ], { material } ) =
  */
 export const directionToFaceDirection = ( vector ) => {
 
-	warnOnce( 'TSL: "directionToFaceDirection()" has been renamed to "negateOnBackSide()".' ); // @deprecated r185
+	warnOnce( 'DSL: "directionToFaceDirection()" has been renamed to "negateOnBackSide()".' ); // @deprecated r185
 
 	return negateOnBackSide( vector );
 

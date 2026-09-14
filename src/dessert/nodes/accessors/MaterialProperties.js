@@ -4,18 +4,18 @@ import { uniform } from '../core/UniformNode.js';
 const _m1 = /*@__PURE__*/ new Matrix4();
 
 /**
- * TSL object that represents the refraction ratio of the material used for rendering the current object.
+ * DSL object that represents the refraction ratio of the material used for rendering the current object.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<float>}
  */
 export const materialRefractionRatio = /*@__PURE__*/ uniform( 0 ).onReference( ( { material } ) => material ).onObjectUpdate( ( { material } ) => material.refractionRatio );
 
 /**
- * TSL object that represents the intensity of environment maps of PBR materials.
+ * DSL object that represents the intensity of environment maps of PBR materials.
  * When `material.envMap` is set, the value is `material.envMapIntensity` otherwise `scene.environmentIntensity`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialEnvIntensity = /*@__PURE__*/ uniform( 1 ).onReference( ( { material } ) => material ).onObjectUpdate( function ( { material, scene } ) {
@@ -25,11 +25,11 @@ export const materialEnvIntensity = /*@__PURE__*/ uniform( 1 ).onReference( ( { 
 } );
 
 /**
- * TSL object that represents the rotation of environment maps.
+ * DSL object that represents the rotation of environment maps.
  * When `material.envMap` is set, the value is `material.envMapRotation`.
  * `scene.environmentRotation` controls the rotation of `scene.environment` or `scene.environmentNode` instead.
  *
- * @tsl
+ * @dsl
  * @type {Node<mat4>}
  */
 export const materialEnvRotation = /*@__PURE__*/ uniform( new Matrix4() ).onReference( function ( frame ) {

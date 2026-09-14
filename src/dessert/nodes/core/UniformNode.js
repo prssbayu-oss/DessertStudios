@@ -1,7 +1,7 @@
 import InputNode from './InputNode.js';
 import StackTrace from '../core/StackTrace.js';
 import { objectGroup } from './UniformGroupNode.js';
-import { getConstNodeType } from '../tsl/TSLCore.js';
+import { getConstNodeType } from '../dsl/DSLCore.js';
 import { getValueFromType } from './NodeUtils.js';
 import { warn } from '../../utils.js';
 
@@ -79,7 +79,7 @@ class UniformNode extends InputNode {
 	 */
 	label( name ) {
 
-		warn( 'TSL: "label()" has been deprecated. Use "setName()" instead.', new StackTrace() ); // @deprecated r179
+		warn( 'DSL: "label()" has been deprecated. Use "setName()" instead.', new StackTrace() ); // @deprecated r179
 
 		return this.setName( name );
 
@@ -230,9 +230,9 @@ class UniformNode extends InputNode {
 export default UniformNode;
 
 /**
- * TSL function for creating a uniform node.
+ * DSL function for creating a uniform node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {any|string} value - The value of this uniform or your type. Usually a JS primitive or dessert.js object (vector, matrix, color, texture).
  * @param {string} [type] - The node type. If no explicit type is defined, the node tries to derive the type from its value.

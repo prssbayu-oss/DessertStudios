@@ -1,5 +1,5 @@
 import TextureNode from './TextureNode.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 import { NodeAccess } from '../core/constants.js';
 
 /**
@@ -285,9 +285,9 @@ class StorageTextureNode extends TextureNode {
 export default StorageTextureNode;
 
 /**
- * TSL function for creating a storage texture node.
+ * DSL function for creating a storage texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {StorageTexture} value - The storage texture.
  * @param {?Node<vec2|vec3>} uvNode - The uv node.
@@ -298,12 +298,12 @@ export const storageTexture = /*@__PURE__*/ nodeProxy( StorageTextureNode ).setP
 
 
 /**
- * TSL function for storing a value in a storage texture.
+ * DSL function for storing a value in a storage texture.
  *
  * Unlike {@link storageTexture}, this function also accepts an existing storage
  * texture node and is intended for performing the store operation itself.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {StorageTexture|StorageTextureNode} value - The storage texture or storage texture node.
  * @param {Node<vec2|vec3>} uvNode - The uv node.

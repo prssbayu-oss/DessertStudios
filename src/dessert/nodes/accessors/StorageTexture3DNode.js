@@ -1,4 +1,4 @@
-import { nodeProxy, vec3 } from '../tsl/TSLBase.js';
+import { nodeProxy, vec3 } from '../dsl/DSLBase.js';
 import StorageTextureNode from './StorageTextureNode.js';
 
 /**
@@ -88,9 +88,9 @@ class StorageTexture3DNode extends StorageTextureNode {
 export default StorageTexture3DNode;
 
 /**
- * TSL function for creating a 3D storage texture node.
+ * DSL function for creating a 3D storage texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Storage3DTexture} value - The 3D storage texture.
  * @param {?Node<vec3>} [uvNode=null] - The uv node.

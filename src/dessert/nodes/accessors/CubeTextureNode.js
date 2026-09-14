@@ -1,6 +1,6 @@
 import TextureNode from './TextureNode.js';
 import { reflectVector, refractVector } from './ReflectVector.js';
-import { nodeObject, nodeProxy, vec3 } from '../tsl/TSLBase.js';
+import { nodeObject, nodeProxy, vec3 } from '../dsl/DSLBase.js';
 
 import { CubeReflectionMapping, CubeRefractionMapping, WebGPUCoordinateSystem } from '../../constants.js';
 import { materialEnvRotation } from './MaterialProperties.js';
@@ -158,9 +158,9 @@ class CubeTextureNode extends TextureNode {
 export default CubeTextureNode;
 
 /**
- * TSL function for creating a cube texture node.
+ * DSL function for creating a cube texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {CubeTexture} value - The cube texture.
  * @param {?Node<vec3>} [uvNode=null] - The uv node.
@@ -171,9 +171,9 @@ export default CubeTextureNode;
 export const cubeTextureBase = /*@__PURE__*/ nodeProxy( CubeTextureNode ).setParameterLength( 1, 4 ).setName( 'cubeTexture' );
 
 /**
- * TSL function for creating a cube texture uniform node.
+ * DSL function for creating a cube texture uniform node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?(CubeTexture|CubeTextureNode)} [value=EmptyTexture] - The cube texture.
  * @param {?Node<vec3>} [uvNode=null] - The uv node.
@@ -205,9 +205,9 @@ export const cubeTexture = ( value = EmptyTexture, uvNode = null, levelNode = nu
 };
 
 /**
- * TSL function for creating a uniform cube texture node.
+ * DSL function for creating a uniform cube texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?CubeTexture} [value=EmptyTexture] - The cube texture.
  * @returns {CubeTextureNode}

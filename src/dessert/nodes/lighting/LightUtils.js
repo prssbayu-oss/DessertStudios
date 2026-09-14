@@ -1,7 +1,7 @@
-import { Fn } from '../tsl/TSLBase.js';
+import { Fn } from '../dsl/DSLBase.js';
 
 /**
- * Represents a `discard` shader operation in TSL.
+ * Represents a `discard` shader operation in DSL.
  *
  * @method
  * @param {Object} inputs - The input parameter object.

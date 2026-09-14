@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { nodeProxyIntent, Fn, uint, int, ivec4, uvec4 } from '../tsl/TSLCore.js';
+import { nodeProxyIntent, Fn, uint, int, ivec4, uvec4 } from '../dsl/DSLCore.js';
 import { clamp } from './MathNode.js';
 
 /**
@@ -350,7 +350,7 @@ export default Packed4x8IntegerNode;
  * Computes the dot product of four unsigned 8-bit integer components packed
  * into each input.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} a - The first packed unsigned integer vector.
  * @param {Node<uint>} b - The second packed unsigned integer vector.
@@ -362,7 +362,7 @@ export const dot4U8Packed = /*@__PURE__*/ nodeProxyIntent( Packed4x8IntegerNode,
  * Computes the dot product of four signed 8-bit integer components packed
  * into each input.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} a - The first packed signed integer vector.
  * @param {Node<uint>} b - The second packed signed integer vector.
@@ -373,7 +373,7 @@ export const dot4I8Packed = /*@__PURE__*/ nodeProxyIntent( Packed4x8IntegerNode,
 /**
  * Packs the least significant 8 bits of four signed integers into a `uint`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<ivec4>} value - The signed integer vector to pack.
  * @returns {Node<uint>} The packed value.
@@ -383,7 +383,7 @@ export const pack4xI8 = /*@__PURE__*/ nodeProxyIntent( Packed4x8IntegerNode, Pac
 /**
  * Packs the least significant 8 bits of four unsigned integers into a `uint`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uvec4>} value - The unsigned integer vector to pack.
  * @returns {Node<uint>} The packed value.
@@ -394,7 +394,7 @@ export const pack4xU8 = /*@__PURE__*/ nodeProxyIntent( Packed4x8IntegerNode, Pac
  * Clamps four signed integers to the signed 8-bit range and packs them into a
  * `uint`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<ivec4>} value - The signed integer vector to clamp and pack.
  * @returns {Node<uint>} The packed value.
@@ -405,7 +405,7 @@ export const pack4xI8Clamp = /*@__PURE__*/ nodeProxyIntent( Packed4x8IntegerNode
  * Clamps four unsigned integers to the unsigned 8-bit range and packs them
  * into a `uint`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uvec4>} value - The unsigned integer vector to clamp and pack.
  * @returns {Node<uint>} The packed value.
@@ -415,7 +415,7 @@ export const pack4xU8Clamp = /*@__PURE__*/ nodeProxyIntent( Packed4x8IntegerNode
 /**
  * Unpacks a `uint` into four sign-extended signed 8-bit integer components.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The packed value.
  * @returns {Node<ivec4>} The unpacked signed integer vector.
@@ -425,7 +425,7 @@ export const unpack4xI8 = /*@__PURE__*/ nodeProxyIntent( Packed4x8IntegerNode, P
 /**
  * Unpacks a `uint` into four zero-extended unsigned 8-bit integer components.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The packed value.
  * @returns {Node<uvec4>} The unpacked unsigned integer vector.

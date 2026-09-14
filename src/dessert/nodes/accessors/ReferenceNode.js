@@ -4,7 +4,7 @@ import { uniform } from '../core/UniformNode.js';
 import { texture } from './TextureNode.js';
 import { cubeTexture } from './CubeTextureNode.js';
 import { buffer } from './BufferNode.js';
-import { nodeObject } from '../tsl/TSLBase.js';
+import { nodeObject } from '../dsl/DSLBase.js';
 import { uniformArray } from './UniformArrayNode.js';
 import ReferenceElementNode from './ReferenceElementNode.js';
 import { warn } from '../../utils.js';
@@ -170,7 +170,7 @@ class ReferenceNode extends Node {
 	 */
 	label( name ) {
 
-		warn( 'TSL: "label()" has been deprecated. Use "setName()" instead.' ); // @deprecated r179
+		warn( 'DSL: "label()" has been deprecated. Use "setName()" instead.' ); // @deprecated r179
 
 		return this.setName( name );
 
@@ -330,9 +330,9 @@ class ReferenceNode extends Node {
 export default ReferenceNode;
 
 /**
- * TSL function for creating a reference node.
+ * DSL function for creating a reference node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the property the node refers to.
  * @param {string} type - The uniform type that should be used to represent the property value.
@@ -342,10 +342,10 @@ export default ReferenceNode;
 export const reference = ( name, type, object ) => new ReferenceNode( name, type, object );
 
 /**
- * TSL function for creating a reference node. Use this function if you want need a reference
+ * DSL function for creating a reference node. Use this function if you want need a reference
  * to an array-like property that should be represented as a uniform buffer.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the property the node refers to.
  * @param {string} type - The uniform type that should be used to represent the property value.

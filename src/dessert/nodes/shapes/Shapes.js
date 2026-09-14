@@ -1,11 +1,11 @@
-import { Fn, float, select } from '../tsl/TSLBase.js';
+import { Fn, float, select } from '../dsl/DSLBase.js';
 import { lengthSq, smoothstep } from '../math/MathNode.js';
 import { uv } from '../accessors/UV.js';
 
 /**
  * Generates a circle based on the uv coordinates.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} coord - The uv to generate the circle.
  * @return {Node<float>} The circle shape.

@@ -1,10 +1,10 @@
 import TempNode from '../core/TempNode.js';
-import { addMethodChaining, nodeArray, nodeObject, nodeObjects, float } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeArray, nodeObject, nodeObjects, float } from '../dsl/DSLCore.js';
 import { error } from '../../utils.js';
 
 /**
  * This module represents the call of a {@link FunctionNode}. Developers are usually not confronted
- * with this module since they use the predefined TSL syntax `wgslFn` and `glslFn` which encapsulate
+ * with this module since they use the predefined DSL syntax `wgslFn` and `glslFn` which encapsulate
  * this logic.
  *
  * @augments TempNode
@@ -122,13 +122,13 @@ class FunctionCallNode extends TempNode {
 
 			if ( parameters.length > inputs.length ) {
 
-				error( 'TSL: The number of provided parameters exceeds the expected number of inputs in \'Fn()\'.' );
+				error( 'DSL: The number of provided parameters exceeds the expected number of inputs in \'Fn()\'.' );
 
 				parameters.length = inputs.length;
 
 			} else if ( parameters.length < inputs.length ) {
 
-				error( 'TSL: The number of provided parameters is less than the expected number of inputs in \'Fn()\'.' );
+				error( 'DSL: The number of provided parameters is less than the expected number of inputs in \'Fn()\'.' );
 
 				while ( parameters.length < inputs.length ) {
 
@@ -156,7 +156,7 @@ class FunctionCallNode extends TempNode {
 
 				} else {
 
-					error( `TSL: Input '${ inputNode.name }' not found in \'Fn()\'.` );
+					error( `DSL: Input '${ inputNode.name }' not found in \'Fn()\'.` );
 
 					params.push( generateInput( float( 0 ), inputNode ) );
 

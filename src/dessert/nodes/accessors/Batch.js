@@ -1,7 +1,7 @@
 
 import { normalLocal } from './Normal.js';
 import { positionLocal, positionPrevious } from './Position.js';
-import { vec3, mat3, mat4, int, ivec2, float, Fn } from '../tsl/TSLBase.js';
+import { vec3, mat3, mat4, int, ivec2, float, Fn } from '../dsl/DSLBase.js';
 import { textureLoad } from './TextureNode.js';
 import { textureSize } from './TextureSizeNode.js';
 import { tangentLocal } from './Tangent.js';
@@ -13,7 +13,7 @@ import { DataTexture } from '../../textures/DataTexture.js';
 const _previousBatchingMatrices = /*@__PURE__*/ new WeakMap();
 
 /**
- * TSL function that retrieves the batching color for a given instance ID from a colors texture.
+ * DSL function that retrieves the batching color for a given instance ID from a colors texture.
  *
  * @param {Node<texture>} colorsTexture - The colors texture.
  * @param {Node<int>} id - The instance or batch ID.
@@ -30,7 +30,7 @@ const getBatchingColor = /*@__PURE__*/ Fn( ( [ colorsTexture, id ] ) => {
 } );
 
 /**
- * TSL function that retrieves the indirect index for a given batch ID.
+ * DSL function that retrieves the indirect index for a given batch ID.
  *
  * @param {BatchedMesh} batchMesh - The batched mesh.
  * @param {Node<int>} id - The draw or instance ID.
@@ -71,7 +71,7 @@ function createBatchingMatrixNode( matricesTexture, id ) {
 
 /**
  * Retrieves or initializes the previous frame batching matrix node for motion vectors.
- * Uses a WeakMap to cache previous frame matrices textures and their TSL nodes.
+ * Uses a WeakMap to cache previous frame matrices textures and their DSL nodes.
  *
  * @param {BatchedMesh} batchMesh - The batched mesh.
  * @param {Node<uint>} id - The indirect instance ID.
@@ -101,25 +101,25 @@ function getPreviousNode( batchMesh, id ) {
 }
 
 /**
- * TSL object representing a varying property for the batching color vector.
+ * DSL object representing a varying property for the batching color vector.
  *
  * @type {VaryingNode<vec4>}
  */
 export const batchColor = /*@__PURE__*/ varyingProperty( 'vec4', 'vBatchColor' );
 
 /**
- * TSL object representing a varying property for the batch indirect index (instance ID).
+ * DSL object representing a varying property for the batch indirect index (instance ID).
  *
  * @type {VaryingNode<uint>}
  */
 export const batchIndirectIndex = /*@__PURE__*/ varyingProperty( 'uint', 'vBatchIndirectId' );
 
 /**
- * TSL function representing the vertex shader batching setup.
+ * DSL function representing the vertex shader batching setup.
  * Applies the batch transformation matrix to positionLocal, normalLocal, and tangentLocal.
  * Also assigns the batch color if a color texture is present.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {BatchedMesh} batchMesh - The batched mesh.
  */

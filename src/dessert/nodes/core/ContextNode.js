@@ -1,5 +1,5 @@
 import Node from './Node.js';
-import { addMethodChaining } from '../tsl/TSLCore.js';
+import { addMethodChaining } from '../dsl/DSLCore.js';
 import { warn } from '../../utils.js';
 
 /**
@@ -164,9 +164,9 @@ class ContextNode extends Node {
 export default ContextNode;
 
 /**
- * TSL function for creating a context node.
+ * DSL function for creating a context node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node|Object} [nodeOrValue={}] - The node whose context should be modified or the modified context data.
  * @param {Object} [value={}] - The modified context data.
@@ -188,9 +188,9 @@ export const context = ( nodeOrValue = null, value = {} ) => {
 };
 
 /**
- * TSL function for defining a uniformFlow context value for a given node.
+ * DSL function for defining a uniformFlow context value for a given node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node whose dependencies should all execute within a uniform control-flow path.
  * @returns {ContextNode}
@@ -198,9 +198,9 @@ export const context = ( nodeOrValue = null, value = {} ) => {
 export const uniformFlow = ( node ) => context( node, { uniformFlow: true } );
 
 /**
- * TSL function for defining a name for the context value for a given node.
+ * DSL function for defining a name for the context value for a given node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node whose context should be modified.
  * @param {string} name - The name to set.
@@ -209,9 +209,9 @@ export const uniformFlow = ( node ) => context( node, { uniformFlow: true } );
 export const setName = ( node, name ) => context( node, { nodeName: name } );
 
 /**
- * TSL function for defining a built-in shadow context for a given node.
+ * DSL function for defining a built-in shadow context for a given node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {ShadowNode} shadowNode - The shadow node representing the light's shadow.
  * @param {Light} light - The light associated with the shadow.
@@ -239,9 +239,9 @@ export function builtinShadowContext( shadowNode, light, node = null ) {
 }
 
 /**
- * TSL function for defining a built-in ambient occlusion context for a given node.
+ * DSL function for defining a built-in ambient occlusion context for a given node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} aoNode - The ambient occlusion value node to apply.
  * @param {Node} [node=null] - The node whose context should be modified.
@@ -264,11 +264,11 @@ export function builtinAOContext( aoNode, node = null ) {
 }
 
 /**
- * TSL function for defining a built-in global illumination context for a given node. The AO node
+ * DSL function for defining a built-in global illumination context for a given node. The AO node
  * modulates the indirect lighting of the materials, the GI node is added to their irradiance
  * without being modulated by the AO since it already accounts for occlusion.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} aoNode - The ambient occlusion value node to apply.
  * @param {Node<vec3>} giNode - The indirect diffuse irradiance node to add.
@@ -308,9 +308,9 @@ export function builtinGIContext( aoNode, giNode, node = null ) {
 }
 
 /**
- * TSL function for defining a label context value for a given node.
+ * DSL function for defining a label context value for a given node.
  *
- * @tsl
+ * @dsl
  * @function
  * @deprecated
  * @param {Node} node - The node whose context should be modified.
@@ -319,7 +319,7 @@ export function builtinGIContext( aoNode, giNode, node = null ) {
  */
 export function label( node, name ) {
 
-	warn( 'TSL: "label()" has been deprecated. Use "setName()" instead.' ); // @deprecated r179
+	warn( 'DSL: "label()" has been deprecated. Use "setName()" instead.' ); // @deprecated r179
 
 	return setName( node, name );
 

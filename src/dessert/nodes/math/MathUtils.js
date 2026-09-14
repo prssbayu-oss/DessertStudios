@@ -7,7 +7,7 @@ import { select } from './ConditionalNode.js';
  * The corners are mapped to `0` and the center to `1`.
  * Reference: {@link https://iquilezles.org/articles/functions/}.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} x - The value to remap.
  * @param {Node<float>} k - Allows to control the remapping functions shape by rising the parabola to a power `k`.
@@ -20,7 +20,7 @@ export const parabola = ( x, k ) => pow( mul( 4.0, x.mul( sub( 1.0, x ) ) ), k )
  * Expands the sides and compresses the center, and keeps `0.5` mapped to `0.5`.
  * Reference: {@link https://iquilezles.org/articles/functions/}.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} x - The value to remap.
  * @param {Node<float>} k - `k=1` is the identity curve,`k<1` produces the classic `gain()` shape, and `k>1` produces "s" shaped curves.
@@ -37,7 +37,7 @@ export const gain = ( x, k ) => select(
  * A generalization of the `parabola()`. Keeps the corners mapped to 0 but allows the control of the shape one either side of the curve.
  * Reference: {@link https://iquilezles.org/articles/functions/}.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} x - The value to remap.
  * @param {Node<float>} a - First control parameter.
@@ -50,7 +50,7 @@ export const pcurve = ( x, a, b ) => pow( div( pow( x, a ), add( pow( x, a ), po
  * A phase shifted sinus curve that starts at zero and ends at zero, with bouncing behavior.
  * Reference: {@link https://iquilezles.org/articles/functions/}.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} x - The value to compute the sin for.
  * @param {Node<float>} k - Controls the amount of bounces.

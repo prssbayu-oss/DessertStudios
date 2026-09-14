@@ -1,7 +1,7 @@
 // https://github.com/cabbibo/glsl-tri-noise-3d
 
 import { Loop } from '../utils/LoopNode.js';
-import { float, vec3, Fn } from '../tsl/TSLBase.js';
+import { float, vec3, Fn } from '../dsl/DSLBase.js';
 
 const tri = /*@__PURE__*/ Fn( ( [ x ] ) => {
 
@@ -30,7 +30,7 @@ const tri3 = /*@__PURE__*/ Fn( ( [ p ] ) => {
 /**
  * Generates a noise value from the given position, speed and time parameters.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} position - The position.
  * @param {Node<float>} speed - The speed.

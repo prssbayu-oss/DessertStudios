@@ -2,7 +2,7 @@ import Node from '../core/Node.js';
 import { reference } from './ReferenceNode.js';
 import { materialReference } from './MaterialReferenceNode.js';
 import { normalView } from './Normal.js';
-import { nodeImmutable, float, vec2, vec3, mat2 } from '../tsl/TSLBase.js';
+import { nodeImmutable, float, vec2, vec3, mat2 } from '../dsl/DSLBase.js';
 import { uniform } from '../core/UniformNode.js';
 import { normalMap } from '../display/NormalMapNode.js';
 import { bumpMap } from '../display/BumpMapNode.js';
@@ -15,7 +15,7 @@ const _propertyCache = new Map();
 /**
  * This class should simplify the node access to material properties.
  * It internal uses reference nodes to make sure  changes to material
- * properties are automatically reflected to predefined TSL objects
+ * properties are automatically reflected to predefined DSL objects
  * like e.g. `materialColor`.
  *
  * @augments Node
@@ -485,340 +485,340 @@ MaterialNode.AO = 'ao';
 export default MaterialNode;
 
 /**
- * TSL object that represents alpha test of the current material.
+ * DSL object that represents alpha test of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialAlphaTest = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.ALPHA_TEST );
 
 /**
- * TSL object that represents the diffuse color of the current material.
+ * DSL object that represents the diffuse color of the current material.
  * The value is composed via `color` * `map`.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialColor = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.COLOR );
 
 /**
- * TSL object that represents the shininess of the current material.
+ * DSL object that represents the shininess of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialShininess = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.SHININESS );
 
 /**
- * TSL object that represents the emissive color of the current material.
+ * DSL object that represents the emissive color of the current material.
  * The value is composed via `emissive` * `emissiveIntensity` * `emissiveMap`.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialEmissive = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.EMISSIVE );
 
 /**
- * TSL object that represents the opacity of the current material.
+ * DSL object that represents the opacity of the current material.
  * The value is composed via `opacity` * `alphaMap`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialOpacity = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.OPACITY );
 
 /**
- * TSL object that represents the specular of the current material.
+ * DSL object that represents the specular of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialSpecular = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.SPECULAR );
 
 /**
- * TSL object that represents the specular intensity of the current material.
+ * DSL object that represents the specular intensity of the current material.
  * The value is composed via `specularIntensity` * `specularMap.a`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialSpecularIntensity = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.SPECULAR_INTENSITY );
 
 /**
- * TSL object that represents the specular color of the current material.
+ * DSL object that represents the specular color of the current material.
  * The value is composed via `specularColor` * `specularMap.rgb`.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialSpecularColor = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.SPECULAR_COLOR );
 
 /**
- * TSL object that represents the specular strength of the current material.
+ * DSL object that represents the specular strength of the current material.
  * The value is composed via `specularMap.r`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialSpecularStrength = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.SPECULAR_STRENGTH );
 
 /**
- * TSL object that represents the reflectivity of the current material.
+ * DSL object that represents the reflectivity of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialReflectivity = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.REFLECTIVITY );
 
 /**
- * TSL object that represents the roughness of the current material.
+ * DSL object that represents the roughness of the current material.
  * The value is composed via `roughness` * `roughnessMap.g`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialRoughness = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.ROUGHNESS );
 
 /**
- * TSL object that represents the diffuse roughness of the current material.
+ * DSL object that represents the diffuse roughness of the current material.
  * The value is composed via `diffuseRoughness` * `diffuseRoughnessMap.r`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialDiffuseRoughness = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.DIFFUSE_ROUGHNESS );
 
 /**
- * TSL object that represents the metalness of the current material.
+ * DSL object that represents the metalness of the current material.
  * The value is composed via `metalness` * `metalnessMap.b`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialMetalness = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.METALNESS );
 
 /**
- * TSL object that represents the normal of the current material.
+ * DSL object that represents the normal of the current material.
  * The value will be either `normalMap` * `normalScale`, `bumpMap` * `bumpScale` or `normalView`.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialNormal = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.NORMAL );
 
 /**
- * TSL object that represents the clearcoat of the current material.
+ * DSL object that represents the clearcoat of the current material.
  * The value is composed via `clearcoat` * `clearcoatMap.r`
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialClearcoat = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.CLEARCOAT );
 
 /**
- * TSL object that represents the clearcoat roughness of the current material.
+ * DSL object that represents the clearcoat roughness of the current material.
  * The value is composed via `clearcoatRoughness` * `clearcoatRoughnessMap.r`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialClearcoatRoughness = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.CLEARCOAT_ROUGHNESS );
 
 /**
- * TSL object that represents the clearcoat normal of the current material.
+ * DSL object that represents the clearcoat normal of the current material.
  * The value will be either `clearcoatNormalMap` or `normalView`.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialClearcoatNormal = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.CLEARCOAT_NORMAL );
 
 /**
- * TSL object that represents the rotation of the current sprite material.
+ * DSL object that represents the rotation of the current sprite material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialRotation = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.ROTATION );
 
 /**
- * TSL object that represents the sheen color of the current material.
+ * DSL object that represents the sheen color of the current material.
  * The value is composed via `sheen` * `sheenColor` * `sheenColorMap`.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialSheen = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.SHEEN );
 
 /**
- * TSL object that represents the sheen roughness of the current material.
+ * DSL object that represents the sheen roughness of the current material.
  * The value is composed via `sheenRoughness` * `sheenRoughnessMap.a`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialSheenRoughness = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.SHEEN_ROUGHNESS );
 
 /**
- * TSL object that represents the anisotropy of the current material.
+ * DSL object that represents the anisotropy of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec2>}
  */
 export const materialAnisotropy = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.ANISOTROPY );
 
 /**
- * TSL object that represents the iridescence of the current material.
+ * DSL object that represents the iridescence of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialIridescence = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.IRIDESCENCE );
 
 /**
- * TSL object that represents the iridescence IOR of the current material.
+ * DSL object that represents the iridescence IOR of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialIridescenceIOR = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.IRIDESCENCE_IOR );
 
 /**
- * TSL object that represents the iridescence thickness of the current material.
+ * DSL object that represents the iridescence thickness of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialIridescenceThickness = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.IRIDESCENCE_THICKNESS );
 
 /**
- * TSL object that represents the transmission of the current material.
+ * DSL object that represents the transmission of the current material.
  * The value is composed via `transmission` * `transmissionMap.r`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialTransmission = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.TRANSMISSION );
 
 /**
- * TSL object that represents the thickness of the current material.
+ * DSL object that represents the thickness of the current material.
  * The value is composed via `thickness` * `thicknessMap.g`.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialThickness = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.THICKNESS );
 
 /**
- * TSL object that represents the IOR of the current material.
+ * DSL object that represents the IOR of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialIOR = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.IOR );
 
 /**
- * TSL object that represents the attenuation distance of the current material.
+ * DSL object that represents the attenuation distance of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialAttenuationDistance = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.ATTENUATION_DISTANCE );
 
 /**
- * TSL object that represents the attenuation color of the current material.
+ * DSL object that represents the attenuation color of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialAttenuationColor = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.ATTENUATION_COLOR );
 
 /**
- * TSL object that represents the scale of the current dashed line material.
+ * DSL object that represents the scale of the current dashed line material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialLineScale = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.LINE_SCALE );
 
 /**
- * TSL object that represents the dash size of the current dashed line material.
+ * DSL object that represents the dash size of the current dashed line material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialLineDashSize = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.LINE_DASH_SIZE );
 
 /**
- * TSL object that represents the gap size of the current dashed line material.
+ * DSL object that represents the gap size of the current dashed line material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialLineGapSize = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.LINE_GAP_SIZE );
 
 /**
- * TSL object that represents the line width of the current line material.
+ * DSL object that represents the line width of the current line material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialLineWidth = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.LINE_WIDTH );
 
 /**
- * TSL object that represents the dash offset of the current line material.
+ * DSL object that represents the dash offset of the current line material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialLineDashOffset = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.LINE_DASH_OFFSET );
 
 /**
- * TSL object that represents the point size of the current points material.
+ * DSL object that represents the point size of the current points material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialPointSize = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.POINT_SIZE );
 
 /**
- * TSL object that represents the dispersion of the current material.
+ * DSL object that represents the dispersion of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialDispersion = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.DISPERSION );
 
 /**
- * TSL object that represents the retroreflective strength of the current material.
+ * DSL object that represents the retroreflective strength of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialRetroreflectivity = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.RETROREFLECTIVITY );
 
 /**
- * TSL object that represents the light map of the current material.
+ * DSL object that represents the light map of the current material.
  * The value is composed via `lightMapIntensity` * `lightMap.rgb`.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const materialLightMap = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.LIGHT_MAP );
 
 /**
- * TSL object that represents the ambient occlusion map of the current material.
+ * DSL object that represents the ambient occlusion map of the current material.
  * The value is composed via `aoMap.r` - 1 * `aoMapIntensity` + 1.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const materialAO = /*@__PURE__*/ nodeImmutable( MaterialNode, MaterialNode.AO );
 
 /**
- * TSL object that represents the anisotropy vector of the current material.
+ * DSL object that represents the anisotropy vector of the current material.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec2>}
  */
 export const materialAnisotropyVector = /*@__PURE__*/ uniform( new Vector2() ).onReference( function ( frame ) {

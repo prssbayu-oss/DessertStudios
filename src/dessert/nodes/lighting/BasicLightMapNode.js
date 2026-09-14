@@ -1,5 +1,5 @@
 import LightingNode from './LightingNode.js';
-import { float } from '../tsl/TSLBase.js';
+import { float } from '../dsl/DSLBase.js';
 
 /**
  * A specific version of {@link IrradianceNode} that is only relevant

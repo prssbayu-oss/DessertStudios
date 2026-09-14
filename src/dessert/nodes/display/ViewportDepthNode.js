@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { float, Fn, log, log2, nodeImmutable, nodeProxy } from '../tsl/TSLBase.js';
+import { float, Fn, log, log2, nodeImmutable, nodeProxy } from '../dsl/DSLBase.js';
 import { cameraNear, cameraFar } from '../accessors/Camera.js';
 import { positionView } from '../accessors/Position.js';
 import { viewportDepthTexture } from './ViewportDepthTextureNode.js';
@@ -141,9 +141,9 @@ export default ViewportDepthNode;
 // NOTE: viewZ, the z-coordinate in camera space, is negative for points in front of the camera
 
 /**
- * TSL function for converting a viewZ value to an orthographic depth value.
+ * DSL function for converting a viewZ value to an orthographic depth value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} viewZ - The viewZ node.
  * @param {Node<float>} near - The camera's near value.
@@ -153,9 +153,9 @@ export default ViewportDepthNode;
 export const viewZToOrthographicDepth = ( viewZ, near, far ) => viewZ.add( near ).div( near.sub( far ) );
 
 /**
- * TSL function for converting a viewZ value to a reversed orthographic depth value.
+ * DSL function for converting a viewZ value to a reversed orthographic depth value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} viewZ - The viewZ node.
  * @param {Node<float>} near - The camera's near value.
@@ -165,9 +165,9 @@ export const viewZToOrthographicDepth = ( viewZ, near, far ) => viewZ.add( near 
 export const viewZToReversedOrthographicDepth = ( viewZ, near, far ) => viewZ.add( far ).div( far.sub( near ) );
 
 /**
- * TSL function for converting an orthographic depth value to a viewZ value.
+ * DSL function for converting an orthographic depth value to a viewZ value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} depth - The orthographic depth.
  * @param {Node<float>} near - The camera's near value.
@@ -189,11 +189,11 @@ export const orthographicDepthToViewZ = /*@__PURE__*/ Fn( ( [ depth, near, far ]
 } );
 
 /**
- * TSL function for converting a viewZ value to a perspective depth value.
+ * DSL function for converting a viewZ value to a perspective depth value.
  *
  * Note: {link https://twitter.com/gonnavis/status/1377183786949959682}.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} viewZ - The viewZ node.
  * @param {Node<float>} near - The camera's near value.
@@ -203,9 +203,9 @@ export const orthographicDepthToViewZ = /*@__PURE__*/ Fn( ( [ depth, near, far ]
 export const viewZToPerspectiveDepth = ( viewZ, near, far ) => near.add( viewZ ).mul( far ).div( far.sub( near ).mul( viewZ ) );
 
 /**
- * TSL function for converting a viewZ value to a reversed perspective depth value.
+ * DSL function for converting a viewZ value to a reversed perspective depth value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} viewZ - The viewZ node.
  * @param {Node<float>} near - The camera's near value.
@@ -215,9 +215,9 @@ export const viewZToPerspectiveDepth = ( viewZ, near, far ) => near.add( viewZ )
 export const viewZToReversedPerspectiveDepth = ( viewZ, near, far ) => near.mul( viewZ.add( far ) ).div( viewZ.mul( near.sub( far ) ) );
 
 /**
- * TSL function for converting a perspective depth value to a viewZ value.
+ * DSL function for converting a perspective depth value to a viewZ value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} depth - The perspective depth.
  * @param {Node<float>} near - The camera's near value.
@@ -239,9 +239,9 @@ export const perspectiveDepthToViewZ = /*@__PURE__*/ Fn( ( [ depth, near, far ],
 } );
 
 /**
- * TSL function for converting a viewZ value to a logarithmic depth value.
+ * DSL function for converting a viewZ value to a logarithmic depth value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} viewZ - The viewZ node.
  * @param {Node<float>} near - The camera's near value.
@@ -284,9 +284,9 @@ export const viewZToLogarithmicDepth = ( viewZ, near, far ) => {
 };
 
 /**
- * TSL function for converting a logarithmic depth value to a viewZ value.
+ * DSL function for converting a logarithmic depth value to a viewZ value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} depth - The logarithmic depth.
  * @param {Node<float>} near - The camera's near value.
@@ -304,9 +304,9 @@ export const logarithmicDepthToViewZ = ( depth, near, far ) => {
 };
 
 /**
- * TSL function for defining a value for the current fragment's depth.
+ * DSL function for defining a value for the current fragment's depth.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} value - The depth value to set.
  * @returns {ViewportDepthNode<float>}
@@ -314,17 +314,17 @@ export const logarithmicDepthToViewZ = ( depth, near, far ) => {
 const depthBase = /*@__PURE__*/ nodeProxy( ViewportDepthNode, ViewportDepthNode.DEPTH_BASE );
 
 /**
- * TSL object that represents the depth value for the current fragment.
+ * DSL object that represents the depth value for the current fragment.
  *
- * @tsl
+ * @dsl
  * @type {ViewportDepthNode}
  */
 export const depth = /*@__PURE__*/ nodeImmutable( ViewportDepthNode, ViewportDepthNode.DEPTH );
 
 /**
- * TSL function for converting a perspective depth value to linear depth.
+ * DSL function for converting a perspective depth value to linear depth.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Node<float>} [value=null] - The perspective depth. If `null` is provided, the current fragment's depth is used.
  * @returns {ViewportDepthNode<float>}
@@ -332,9 +332,9 @@ export const depth = /*@__PURE__*/ nodeImmutable( ViewportDepthNode, ViewportDep
 export const linearDepth = /*@__PURE__*/ nodeProxy( ViewportDepthNode, ViewportDepthNode.LINEAR_DEPTH ).setParameterLength( 0, 1 );
 
 /**
- * TSL object that represents the linear (orthographic) depth value of the current fragment
+ * DSL object that represents the linear (orthographic) depth value of the current fragment
  *
- * @tsl
+ * @dsl
  * @type {ViewportDepthNode}
  */
 export const viewportLinearDepth = /*@__PURE__*/ linearDepth( viewportDepthTexture() );

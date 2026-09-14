@@ -3,7 +3,7 @@ import { instanceIndex } from '../core/IndexNode.js';
 import StackTrace from '../core/StackTrace.js';
 import { uniform } from '../core/UniformNode.js';
 import { NodeUpdateType } from '../core/constants.js';
-import { addMethodChaining, nodeObject } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject } from '../dsl/DSLCore.js';
 import { warn, error } from '../../utils.js';
 
 /**
@@ -133,7 +133,7 @@ class ComputeNode extends Node {
 	 */
 	label( name ) {
 
-		warn( 'TSL: "label()" has been deprecated. Use "setName()" instead.', new StackTrace() ); // @deprecated r179
+		warn( 'DSL: "label()" has been deprecated. Use "setName()" instead.', new StackTrace() ); // @deprecated r179
 
 		return this.setName( name );
 
@@ -243,11 +243,11 @@ class ComputeNode extends Node {
 export default ComputeNode;
 
 /**
- * TSL function for creating a compute kernel node.
+ * DSL function for creating a compute kernel node.
  *
- * @tsl
+ * @dsl
  * @function
- * @param {Node} node - The TSL logic for the compute shader.
+ * @param {Node} node - The DSL logic for the compute shader.
  * @param {Array<number>} [workgroupSize=[64]] - The workgroup size.
  * @returns {ComputeNode}
  */
@@ -255,7 +255,7 @@ export const computeKernel = ( node, workgroupSize = [ 64 ] ) => {
 
 	if ( workgroupSize.length === 0 || workgroupSize.length > 3 ) {
 
-		error( 'TSL: compute() workgroupSize must have 1, 2, or 3 elements', new StackTrace() );
+		error( 'DSL: compute() workgroupSize must have 1, 2, or 3 elements', new StackTrace() );
 
 	}
 
@@ -265,7 +265,7 @@ export const computeKernel = ( node, workgroupSize = [ 64 ] ) => {
 
 		if ( typeof val !== 'number' || val <= 0 || ! Number.isInteger( val ) ) {
 
-			error( `TSL: compute() workgroupSize element at index [ ${ i } ] must be a positive integer`, new StackTrace() );
+			error( `DSL: compute() workgroupSize element at index [ ${ i } ] must be a positive integer`, new StackTrace() );
 
 		}
 
@@ -282,11 +282,11 @@ export const computeKernel = ( node, workgroupSize = [ 64 ] ) => {
 };
 
 /**
- * TSL function for creating a compute node.
+ * DSL function for creating a compute node.
  *
- * @tsl
+ * @dsl
  * @function
- * @param {Node} node - The TSL logic for the compute shader.
+ * @param {Node} node - The DSL logic for the compute shader.
  * @param {number|Array<number>} count - The compute count or dispatch size.
  * @param {Array<number>} [workgroupSize=[64]] - The workgroup size.
  * @returns {ComputeNode}

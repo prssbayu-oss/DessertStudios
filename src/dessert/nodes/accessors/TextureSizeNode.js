@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 
 /**
  * A node that represents the dimensions of a texture. The texture size is
@@ -68,9 +68,9 @@ class TextureSizeNode extends Node {
 export default TextureSizeNode;
 
 /**
- * TSL function for creating a texture size node.
+ * DSL function for creating a texture size node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {TextureNode} textureNode - A texture node which size should be retrieved.
  * @param {?Node<int>} [levelNode=null] - A level node which defines the requested mip.

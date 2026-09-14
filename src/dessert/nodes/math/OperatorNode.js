@@ -1,6 +1,6 @@
 import { WebGLCoordinateSystem } from '../../constants.js';
 import TempNode from '../core/TempNode.js';
-import { addMethodChaining, Fn, int, nodeProxyIntent } from '../tsl/TSLCore.js';
+import { addMethodChaining, Fn, int, nodeProxyIntent } from '../dsl/DSLCore.js';
 
 const _vectorOperators = {
 	'==': 'equal',
@@ -433,7 +433,7 @@ export default OperatorNode;
 /**
  * Returns the addition of two or more value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -445,7 +445,7 @@ export const add = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '+' ).setParamet
 /**
  * Returns the subtraction of two or more value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -457,7 +457,7 @@ export const sub = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '-' ).setParamet
 /**
  * Returns the multiplication of two or more value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -469,7 +469,7 @@ export const mul = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '*' ).setParamet
 /**
  * Returns the division of two or more value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -481,7 +481,7 @@ export const div = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '/' ).setParamet
 /**
  * Computes the remainder of dividing the first node by the second one.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -492,7 +492,7 @@ export const mod = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '%' ).setParamet
 /**
  * Checks if two nodes are equal.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -503,7 +503,7 @@ export const equal = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '==' ).setPara
 /**
  * Checks if two nodes are not equal.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -514,7 +514,7 @@ export const notEqual = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '!=' ).setP
 /**
  * Checks if the first node is less than the second.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -525,7 +525,7 @@ export const lessThan = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '<' ).setPa
 /**
  * Checks if the first node is greater than the second.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -536,7 +536,7 @@ export const greaterThan = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '>' ).se
 /**
  * Checks if the first node is less than or equal to the second.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -547,7 +547,7 @@ export const lessThanEqual = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '<=' )
 /**
  * Checks if the first node is greater than or equal to the second.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -558,7 +558,7 @@ export const greaterThanEqual = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '>=
 /**
  * Performs a logical AND operation on multiple nodes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {...Node} nodes - The input nodes to be combined using AND.
  * @returns {OperatorNode}
@@ -568,7 +568,7 @@ export const and = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '&&' ).setParame
 /**
  * Performs a logical OR operation on multiple nodes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {...Node} nodes - The input nodes to be combined using OR.
  * @returns {OperatorNode}
@@ -578,7 +578,7 @@ export const or = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '||' ).setParamet
 /**
  * Performs logical NOT on a node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} value - The value.
  * @returns {OperatorNode}
@@ -588,7 +588,7 @@ export const not = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '!' ).setParamet
 /**
  * Performs logical XOR on two nodes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -599,7 +599,7 @@ export const xor = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '^^' ).setParame
 /**
  * Performs bitwise AND on two nodes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -610,7 +610,7 @@ export const bitAnd = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '&' ).setPara
 /**
  * Performs bitwise NOT on a node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -621,7 +621,7 @@ export const bitNot = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '~' ).setPara
 /**
  * Performs bitwise OR on two nodes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -632,7 +632,7 @@ export const bitOr = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '|' ).setParam
 /**
  * Performs bitwise XOR on two nodes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The first input.
  * @param {Node} b - The second input.
@@ -643,7 +643,7 @@ export const bitXor = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '^' ).setPara
 /**
  * Shifts a node to the left.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The node to shift.
  * @param {Node} b - The value to shift.
@@ -654,7 +654,7 @@ export const shiftLeft = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '<<' ).set
 /**
  * Shifts a node to the right.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The node to shift.
  * @param {Node} b - The value to shift.
@@ -665,7 +665,7 @@ export const shiftRight = /*@__PURE__*/ nodeProxyIntent( OperatorNode, '>>' ).se
 /**
  * Increments a node by 1.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The node to increment.
  * @returns {OperatorNode}
@@ -680,7 +680,7 @@ export const incrementBefore = /*@__PURE__*/ Fn( ( [ a ] ) => {
 /**
  * Decrements a node by 1.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The node to decrement.
  * @returns {OperatorNode}
@@ -695,7 +695,7 @@ export const decrementBefore = /*@__PURE__*/ Fn( ( [ a ] ) => {
 /**
  * Increments a node by 1 and returns the previous value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The node to increment.
  * @returns {OperatorNode}
@@ -711,7 +711,7 @@ export const increment = /*@__PURE__*/ Fn( ( [ a ] ) => {
 /**
  * Decrements a node by 1 and returns the previous value.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} a - The node to decrement.
  * @returns {OperatorNode}

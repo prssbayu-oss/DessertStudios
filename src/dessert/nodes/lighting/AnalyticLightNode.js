@@ -4,7 +4,7 @@ import { uniform } from '../core/UniformNode.js';
 import { Color } from '../../math/Color.js';
 import { renderGroup } from '../core/UniformGroupNode.js';
 import { shadow } from './ShadowNode.js';
-import { nodeObject } from '../tsl/TSLCore.js';
+import { nodeObject } from '../dsl/DSLCore.js';
 import { lightViewPosition } from '../accessors/Lights.js';
 import { positionView } from '../accessors/Position.js';
 

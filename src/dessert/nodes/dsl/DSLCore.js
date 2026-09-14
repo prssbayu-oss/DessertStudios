@@ -15,7 +15,7 @@ let currentStack = null;
 
 const NodeElements = new Map();
 
-// Extend Node Class for TSL using prototype
+// Extend Node Class for DSL using prototype
 
 export function addMethodChaining( name, nodeElement ) {
 
@@ -23,12 +23,12 @@ export function addMethodChaining( name, nodeElement ) {
 
 	if ( NodeElements.has( name ) ) {
 
-		warn( `TSL: Redefinition of method chaining '${ name }'.` );
+		warn( `DSL: Redefinition of method chaining '${ name }'.` );
 		return;
 
 	}
 
-	if ( typeof nodeElement !== 'function' ) throw new Error( `DESSERT.TSL: Node element ${ name } is not a function` );
+	if ( typeof nodeElement !== 'function' ) throw new Error( `DESSERT.DSL: Node element ${ name } is not a function` );
 
 	NodeElements.set( name, nodeElement );
 
@@ -69,7 +69,7 @@ Node.prototype.assign = function ( ...params ) {
 
 		} else {
 
-			error( 'TSL: No stack defined for assign operation. Make sure the assign is inside a Fn().', new StackTrace() );
+			error( 'DSL: No stack defined for assign operation. Make sure the assign is inside a Fn().', new StackTrace() );
 
 		}
 
@@ -97,7 +97,7 @@ Node.prototype.get = function ( value ) {
 
 };
 
-// Cache prototype for TSL
+// Cache prototype for DSL
 
 const proto = {};
 
@@ -375,13 +375,13 @@ const ShaderNodeProxy = function ( NodeClass, scope = null, factor = null, setti
 
 		if ( minParams !== undefined && params.length < minParams ) {
 
-			error( `TSL: "${ tslName }" parameter length is less than minimum required.`, new StackTrace() );
+			error( `DSL: "${ tslName }" parameter length is less than minimum required.`, new StackTrace() );
 
 			return params.concat( new Array( minParams - params.length ).fill( 0 ) );
 
 		} else if ( maxParams !== undefined && params.length > maxParams ) {
 
-			error( `TSL: "${ tslName }" parameter length exceeds limit.`, new StackTrace() );
+			error( `DSL: "${ tslName }" parameter length exceeds limit.`, new StackTrace() );
 
 			return params.slice( 0, maxParams );
 
@@ -896,7 +896,7 @@ const ConvertType = function ( type, cacheMap = null ) {
 
 			if ( param === undefined ) {
 
-				error( `TSL: Invalid parameter for the type "${ type }".`, new StackTrace() );
+				error( `DSL: Invalid parameter for the type "${ type }".`, new StackTrace() );
 
 				return new ConstNode( 0, type );
 
@@ -1023,7 +1023,7 @@ class FnNode extends Node {
 
 				} else {
 
-					error( 'TSL: Invalid layout type.', new StackTrace() );
+					error( 'DSL: Invalid layout type.', new StackTrace() );
 
 				}
 
@@ -1107,7 +1107,7 @@ class FnNode extends Node {
 
 		const type = this.getNodeType( builder );
 
-		error( 'TSL: "Fn()" was declared but not invoked. Try calling it like "Fn()( ...params )".', this.stackTrace );
+		error( 'DSL: "Fn()" was declared but not invoked. Try calling it like "Fn()( ...params )".', this.stackTrace );
 
 		return builder.generateConst( type );
 
@@ -1167,7 +1167,7 @@ export const getCurrentStack = () => currentStack;
  * 	.ElseIf( condition, function )
  * 	.Else( function )
  * ```
- * @tsl
+ * @dsl
  * @function
  * @param {...any} params - The parameters for the conditional node.
  * @returns {StackNode} The conditional node.
@@ -1183,7 +1183,7 @@ export const If = ( ...params ) => currentStack.If( ...params );
  * 	.Case( 2, 3, 4, function )
  * 	.Default( function )
  * ```
- * @tsl
+ * @dsl
  * @function
  * @param {...any} params - The parameters for the conditional node.
  * @returns {StackNode} The conditional node.

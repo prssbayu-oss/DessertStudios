@@ -1,7 +1,7 @@
 import { modelWorldMatrix } from '../accessors/ModelNode.js';
 import { cameraViewMatrix, cameraProjectionMatrix, cameraPosition } from '../accessors/Camera.js';
 import { positionGeometry, positionWorld } from '../accessors/Position.js';
-import { Fn, defined, nodeObject, vec3, vec4 } from '../tsl/TSLBase.js';
+import { Fn, defined, nodeObject, vec3, vec4 } from '../dsl/DSLBase.js';
 
 /**
  * This can be used to achieve a billboarding behavior for flat meshes. That means they are
@@ -11,7 +11,7 @@ import { Fn, defined, nodeObject, vec3, vec4 } from '../tsl/TSLBase.js';
  * material.vertexNode = billboarding();
  * ```
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Object} config - The configuration object.
  * @param {?Node<vec3>} [config.position=null] - Can be used to define the billboard center position directly.

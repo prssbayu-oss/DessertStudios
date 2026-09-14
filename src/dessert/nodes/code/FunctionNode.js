@@ -1,10 +1,10 @@
 import CodeNode from './CodeNode.js';
-import { nodeProxyConstructor } from '../tsl/TSLCore.js';
+import { nodeProxyConstructor } from '../dsl/DSLCore.js';
 
 /**
  * This class represents a native shader function. It can be used to implement
  * certain aspects of a node material with native shader code. There are two predefined
- * TSL functions for easier usage.
+ * DSL functions for easier usage.
  *
  * - `wgslFn`: Creates a WGSL function node.
  * - `glslFn`: Creates a GLSL function node.

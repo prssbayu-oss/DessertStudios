@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 
 /**
  * The node allows to set values for built-in shader variables. That is
@@ -53,9 +53,9 @@ class BuiltinNode extends Node {
 export default BuiltinNode;
 
 /**
- * TSL function for creating a builtin node.
+ * DSL function for creating a builtin node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the built-in shader variable.
  * @returns {BuiltinNode}

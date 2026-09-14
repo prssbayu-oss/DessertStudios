@@ -1,5 +1,5 @@
 
-import { Fn, add, uniform, int, ivec2, mat3, mat4 } from '../tsl/TSLBase.js';
+import { Fn, add, uniform, int, ivec2, mat3, mat4 } from '../dsl/DSLBase.js';
 import { attribute } from '../core/AttributeNode.js';
 import { OnObjectUpdate } from '../utils/EventNode.js';
 import { normalLocal } from './Normal.js';
@@ -163,7 +163,7 @@ function getSkinnedNormalAndTangent( boneMatrices, normal, tangent, bindMatrix, 
 
 /**
  * Retrieves or initializes the previous frame skinned position node for motion vectors.
- * Uses a WeakMap to cache previous frame bone matrix arrays and their TSL buffer nodes.
+ * Uses a WeakMap to cache previous frame bone matrix arrays and their DSL buffer nodes.
  *
  * @param {NodeBuilder} builder - The current node builder.
  * @param {SkinnedMesh} skinnedMesh - The skinned mesh.
@@ -222,10 +222,10 @@ function getPreviousSkinnedPosition( builder, skinnedMesh, bindMatrixNode, bindM
 }
 
 /**
- * TSL function representing the standard skeletal animation vertex shader setup.
+ * DSL function representing the standard skeletal animation vertex shader setup.
  * Transforms positionLocal, normalLocal, and tangentLocal in-place.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {SkinnedMesh} skinnedMesh - The skinned mesh.
  */
@@ -293,9 +293,9 @@ export const skinning = /*@__PURE__*/ Fn( ( [ skinnedMesh ], builder ) => {
 }, 'void' );
 
 /**
- * TSL function that computes skeletal animation for custom compute passes.
+ * DSL function that computes skeletal animation for custom compute passes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {SkinnedMesh} skinnedMesh - The skinned mesh.
  * @param {Node<vec3>} [toPosition=null] - The target position node to assign.

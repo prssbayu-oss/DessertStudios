@@ -1,7 +1,7 @@
 import Node from './Node.js';
 import StackTrace from '../core/StackTrace.js';
 import { select } from '../math/ConditionalNode.js';
-import { ShaderNode, nodeProxy, getCurrentStack, setCurrentStack, nodeObject } from '../tsl/TSLBase.js';
+import { ShaderNode, nodeProxy, getCurrentStack, setCurrentStack, nodeObject } from '../dsl/DSLBase.js';
 import { error } from '../../utils.js';
 
 /**
@@ -126,7 +126,7 @@ class StackNode extends Node {
 
 		if ( node.isNode !== true ) {
 
-			error( 'TSL: Invalid node added to stack.', new StackTrace() );
+			error( 'DSL: Invalid node added to stack.', new StackTrace() );
 			return this;
 
 		}
@@ -181,10 +181,10 @@ class StackNode extends Node {
 	}
 
 	/**
-	 * Represent an `if` statement in TSL.
+	 * Represent an `if` statement in DSL.
 	 *
 	 * @param {Node} boolNode - Represents the condition.
-	 * @param {Function} method - TSL code which is executed if the condition evaluates to `true`.
+	 * @param {Function} method - DSL code which is executed if the condition evaluates to `true`.
 	 * @return {StackNode} A reference to this stack node.
 	 */
 	If( boolNode, method ) {
@@ -197,10 +197,10 @@ class StackNode extends Node {
 	}
 
 	/**
-	 * Represent an `elseif` statement in TSL.
+	 * Represent an `elseif` statement in DSL.
 	 *
 	 * @param {Node} boolNode - Represents the condition.
-	 * @param {Function} method - TSL code which is executed if the condition evaluates to `true`.
+	 * @param {Function} method - DSL code which is executed if the condition evaluates to `true`.
 	 * @return {StackNode} A reference to this stack node.
 	 */
 	ElseIf( boolNode, method ) {
@@ -216,9 +216,9 @@ class StackNode extends Node {
 	}
 
 	/**
-	 * Represent an `else` statement in TSL.
+	 * Represent an `else` statement in DSL.
 	 *
-	 * @param {Function} method - TSL code which is executed in the `else` case.
+	 * @param {Function} method - DSL code which is executed in the `else` case.
 	 * @return {StackNode} A reference to this stack node.
 	 */
 	Else( method ) {
@@ -230,7 +230,7 @@ class StackNode extends Node {
 	}
 
 	/**
-	 * Represents a `switch` statement in TSL.
+	 * Represents a `switch` statement in DSL.
 	 *
 	 * @param {any} expression - Represents the expression.
 	 * @return {StackNode} A reference to this stack node.
@@ -244,7 +244,7 @@ class StackNode extends Node {
 	}
 
 	/**
-	 * Represents a `case` statement in TSL. The TSL version accepts an arbitrary numbers of values.
+	 * Represents a `case` statement in DSL. The DSL version accepts an arbitrary numbers of values.
 	 * The last parameter must be the callback method that should be executed in the `true` case.
 	 *
 	 * @param {...any} params - The values of the `Case()` statement as well as the callback method.
@@ -266,7 +266,7 @@ class StackNode extends Node {
 
 		} else {
 
-			error( 'TSL: Invalid parameter length. Case() requires at least two parameters.', new StackTrace() );
+			error( 'DSL: Invalid parameter length. Case() requires at least two parameters.', new StackTrace() );
 
 		}
 
@@ -309,7 +309,7 @@ class StackNode extends Node {
 	/**
 	 * Represents the default code block of a Switch/Case statement.
 	 *
-	 * @param {Function} method - TSL code which is executed in the `else` case.
+	 * @param {Function} method - DSL code which is executed in the `else` case.
 	 * @return {StackNode} A reference to this stack node.
 	 */
 	Default( method ) {
@@ -437,9 +437,9 @@ class StackNode extends Node {
 export default StackNode;
 
 /**
- * TSL function for creating a stack node.
+ * DSL function for creating a stack node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?StackNode} [parent=null] - The parent stack node.
  * @returns {StackNode}

@@ -1,6 +1,6 @@
 import TempNode from '../core/TempNode.js';
 import { NodeUpdateType } from '../core/constants.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 import { CubeTexture } from '../../textures/CubeTexture.js';
 import { cubeTexture } from '../accessors/CubeTextureNode.js';
 import CubeRenderTarget from '../../renderers/common/CubeRenderTarget.js';
@@ -227,9 +227,9 @@ function mapTextureMapping( texture, mapping ) {
 }
 
 /**
- * TSL function for creating a cube map node.
+ * DSL function for creating a cube map node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} envNode - The node representing the environment map.
  * @returns {CubeMapNode}

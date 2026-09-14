@@ -1010,7 +1010,7 @@ class Node extends EventDispatcher {
 
 				// if no snippet is generated, return a default value
 
-				error( `TSL: Invalid generated code, expected a "${ output }".` );
+				error( `DSL: Invalid generated code, expected a "${ output }".` );
 
 				result = builder.generateConst( output );
 

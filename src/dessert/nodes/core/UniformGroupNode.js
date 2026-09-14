@@ -123,9 +123,9 @@ class UniformGroupNode extends Node {
 export default UniformGroupNode;
 
 /**
- * TSL function for creating a uniform group node with the given name.
+ * DSL function for creating a uniform group node with the given name.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the uniform group node.
  * @returns {UniformGroupNode}
@@ -133,9 +133,9 @@ export default UniformGroupNode;
 export const uniformGroup = ( name, order = 1, updateType = null ) => new UniformGroupNode( name, false, order, updateType );
 
 /**
- * TSL function for creating a shared uniform group node with the given name and order.
+ * DSL function for creating a shared uniform group node with the given name and order.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the uniform group node.
  * @param {number} [order=0] - Influences the internal sorting.
@@ -144,25 +144,25 @@ export const uniformGroup = ( name, order = 1, updateType = null ) => new Unifor
 export const sharedUniformGroup = ( name, order = 0, updateType = null ) => new UniformGroupNode( name, true, order, updateType );
 
 /**
- * TSL object that represents a shared uniform group node which is updated once per frame.
+ * DSL object that represents a shared uniform group node which is updated once per frame.
  *
- * @tsl
+ * @dsl
  * @type {UniformGroupNode}
  */
 export const frameGroup = /*@__PURE__*/ sharedUniformGroup( 'frame', 0, NodeUpdateType.FRAME );
 
 /**
- * TSL object that represents a shared uniform group node which is updated once per render.
+ * DSL object that represents a shared uniform group node which is updated once per render.
  *
- * @tsl
+ * @dsl
  * @type {UniformGroupNode}
  */
 export const renderGroup = /*@__PURE__*/ sharedUniformGroup( 'render', 0, NodeUpdateType.RENDER );
 
 /**
- * TSL object that represents a uniform group node which is updated once per object.
+ * DSL object that represents a uniform group node which is updated once per object.
  *
- * @tsl
+ * @dsl
  * @type {UniformGroupNode}
  */
 export const objectGroup = /*@__PURE__*/ uniformGroup( 'object', 1, NodeUpdateType.OBJECT );

@@ -2,7 +2,7 @@ import TempNode from '../core/TempNode.js';
 import { vectorComponents } from '../core/constants.js';
 
 /**
- * This module is part of the TSL core and usually not used in app level code.
+ * This module is part of the DSL core and usually not used in app level code.
  * `SetNode` represents a set operation which means it is used to implement any
  * `setXYZW()`, `setRGBA()` and `setSTPQ()` method invocations on node objects.
  * For example:

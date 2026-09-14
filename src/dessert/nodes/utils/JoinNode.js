@@ -2,7 +2,7 @@ import TempNode from '../core/TempNode.js';
 import { error } from '../../utils.js';
 
 /**
- * This module is part of the TSL core and usually not used in app level code.
+ * This module is part of the DSL core and usually not used in app level code.
  * It represents a join operation during the shader generation process.
  * For example in can compose/join two single floats into a `vec2` type.
  *
@@ -71,7 +71,7 @@ class JoinNode extends TempNode {
 
 			if ( length >= maxLength ) {
 
-				error( `TSL: Length of parameters exceeds maximum length of function '${ type }()' type.`, this.stackTrace );
+				error( `DSL: Length of parameters exceeds maximum length of function '${ type }()' type.`, this.stackTrace );
 				break;
 
 			}
@@ -82,7 +82,7 @@ class JoinNode extends TempNode {
 
 			if ( length + inputTypeLength > maxLength ) {
 
-				error( `TSL: Length of '${ type }()' data exceeds maximum length of output type.`, this.stackTrace );
+				error( `DSL: Length of '${ type }()' data exceeds maximum length of output type.`, this.stackTrace );
 
 				inputTypeLength = maxLength - length;
 				inputType = builder.getTypeFromLength( inputTypeLength );

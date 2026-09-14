@@ -2,7 +2,7 @@ import TempNode from '../core/TempNode.js';
 
 import { normalView, transformNormalToView } from '../accessors/Normal.js';
 import { TBNViewMatrix } from '../accessors/AccessorsUtils.js';
-import { nodeProxy, vec3 } from '../tsl/TSLBase.js';
+import { nodeProxy, vec3 } from '../dsl/DSLBase.js';
 
 import { TangentSpaceNormalMap, ObjectSpaceNormalMap, NoNormalPacking, NormalRGPacking, NormalGAPacking } from '../../constants.js';
 import { negateOnBackSide } from './FrontFacingNode.js';
@@ -142,9 +142,9 @@ class NormalMapNode extends TempNode {
 export default NormalMapNode;
 
 /**
- * TSL function for creating a normal map node.
+ * DSL function for creating a normal map node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} node - Represents the normal map data.
  * @param {?Node<vec2>} [scaleNode=null] - Controls the intensity of the effect.

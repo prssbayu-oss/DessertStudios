@@ -99,9 +99,9 @@ class VertexColorNode extends AttributeNode {
 export default VertexColorNode;
 
 /**
- * TSL function for creating a reference node.
+ * DSL function for creating a reference node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {number} [index=0] - The attribute index.
  * @returns {VertexColorNode}

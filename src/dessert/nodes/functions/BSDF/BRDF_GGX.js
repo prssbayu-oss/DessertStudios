@@ -6,7 +6,7 @@ import D_GGX_Anisotropic from './D_GGX_Anisotropic.js';
 import { normalView as NormalView } from '../../accessors/Normal.js';
 import { positionViewDirection } from '../../accessors/Position.js';
 import { iridescence, alphaT, anisotropyT, anisotropyB } from '../../core/PropertyNode.js';
-import { Fn, defined } from '../../tsl/TSLBase.js';
+import { Fn, defined } from '../../dsl/DSLBase.js';
 
 // GGX Distribution, Schlick Fresnel, GGX_SmithCorrelated Visibility
 const BRDF_GGX = /*@__PURE__*/ Fn( ( { lightDirection, f0, f90, roughness, f, normalView = NormalView, viewDirection = positionViewDirection, USE_IRIDESCENCE, USE_ANISOTROPY } ) => {

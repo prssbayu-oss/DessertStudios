@@ -1,30 +1,30 @@
 import { UVMapping } from '../../constants.js';
 import { Matrix4 } from '../../math/Matrix4.js';
 import { renderGroup } from '../core/UniformGroupNode.js';
-import { uniform } from '../tsl/TSLBase.js';
+import { uniform } from '../dsl/DSLBase.js';
 
 const _m1 = /*@__PURE__*/ new Matrix4();
 
 /**
- * TSL object that represents the scene's background blurriness.
+ * DSL object that represents the scene's background blurriness.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const backgroundBlurriness = /*@__PURE__*/ uniform( 0 ).setGroup( renderGroup ).onRenderUpdate( ( { scene } ) => scene.backgroundBlurriness );
 
 /**
- * TSL object that represents the scene's background intensity.
+ * DSL object that represents the scene's background intensity.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const backgroundIntensity = /*@__PURE__*/ uniform( 1 ).setGroup( renderGroup ).onRenderUpdate( ( { scene } ) => scene.backgroundIntensity );
 
 /**
- * TSL object that represents the scene's background rotation.
+ * DSL object that represents the scene's background rotation.
  *
- * @tsl
+ * @dsl
  * @type {Node<mat4>}
  */
 export const backgroundRotation = /*@__PURE__*/ uniform( new Matrix4() ).setGroup( renderGroup ).onRenderUpdate( ( { scene } ) => {

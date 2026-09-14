@@ -1,10 +1,10 @@
 import Node from '../core/Node.js';
 import { expression } from '../code/ExpressionNode.js';
-import { nodeArray, Fn, bool } from '../tsl/TSLBase.js';
+import { nodeArray, Fn, bool } from '../dsl/DSLBase.js';
 import { error } from '../../utils.js';
 
 /**
- * This module offers a variety of ways to implement loops in TSL. In it's basic form it's:
+ * This module offers a variety of ways to implement loops in DSL. In it's basic form it's:
  * ```js
  * Loop( count, ( { i } ) => {
  *
@@ -36,7 +36,7 @@ import { error } from '../../utils.js';
  *
  * } );
  * ```
- * The module also provides `Break()` and `Continue()` TSL expressions for loop control.
+ * The module also provides `Break()` and `Continue()` DSL expressions for loop control.
  * @augments Node
  */
 class LoopNode extends Node {
@@ -280,7 +280,7 @@ class LoopNode extends Node {
 
 							} else {
 
-								error( 'TSL: \'Loop( { update: ... } )\' is not a function, string or number.', this.stackTrace );
+								error( 'DSL: \'Loop( { update: ... } )\' is not a function, string or number.', this.stackTrace );
 
 								updateSnippet = 'break /* invalid update */';
 
@@ -336,9 +336,9 @@ class LoopNode extends Node {
 export default LoopNode;
 
 /**
- * TSL function for creating a loop node.
+ * DSL function for creating a loop node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {...(LoopNode~Params|loopBodyCallback)} params - Any number of loop parameters followed by the loop body.
  * @returns {LoopNode}
@@ -346,18 +346,18 @@ export default LoopNode;
 export const Loop = ( ...params ) => new LoopNode( nodeArray( params, 'int' ) ).toStack();
 
 /**
- * TSL function for inserting a `continue` expression into the shader.
+ * DSL function for inserting a `continue` expression into the shader.
  *
- * @tsl
+ * @dsl
  * @function
  * @returns {ExpressionNode}
  */
 export const Continue = () => expression( 'continue' ).toStack();
 
 /**
- * TSL function for inserting a `break` expression into the shader.
+ * DSL function for inserting a `break` expression into the shader.
  *
- * @tsl
+ * @dsl
  * @function
  * @returns {ExpressionNode}
  */

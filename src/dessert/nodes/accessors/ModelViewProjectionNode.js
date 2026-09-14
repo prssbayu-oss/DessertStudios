@@ -1,9 +1,9 @@
-import { Fn } from '../tsl/TSLCore.js';
+import { Fn } from '../dsl/DSLCore.js';
 
 /**
- * TSL object that represents the position in clip space after the model-view-projection transform of the current rendered object.
+ * DSL object that represents the position in clip space after the model-view-projection transform of the current rendered object.
  *
- * @tsl
+ * @dsl
  * @type {VaryingNode<vec4>}
  */
 export const modelViewProjection = /*@__PURE__*/ ( Fn( ( builder ) => {

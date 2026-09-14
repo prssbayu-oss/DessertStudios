@@ -1,9 +1,9 @@
 import { attribute } from '../core/AttributeNode.js';
 
 /**
- * TSL function for creating an uv attribute node with the given index.
+ * DSL function for creating an uv attribute node with the given index.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {number} [index=0] - The uv index.
  * @return {AttributeNode<vec2>} The uv attribute node.

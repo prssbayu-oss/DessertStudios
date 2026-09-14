@@ -56,7 +56,7 @@ class ParameterNode extends PropertyNode {
 
 		} else {
 
-			error( `TSL: Member "${ name }" not found in struct "${ type }".`, new StackTrace() );
+			error( `DSL: Member "${ name }" not found in struct "${ type }".`, new StackTrace() );
 
 			memberType = 'float';
 
@@ -83,9 +83,9 @@ class ParameterNode extends PropertyNode {
 export default ParameterNode;
 
 /**
- * TSL function for creating a parameter node.
+ * DSL function for creating a parameter node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} type - The type of the node.
  * @param {?string} name - The name of the parameter in the shader.

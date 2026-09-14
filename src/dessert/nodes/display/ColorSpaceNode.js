@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { addMethodChaining, mat3, nodeObject, vec4 } from '../tsl/TSLCore.js';
+import { addMethodChaining, mat3, nodeObject, vec4 } from '../dsl/DSLCore.js';
 
 import { SRGBTransfer } from '../../constants.js';
 import { ColorManagement } from '../../math/ColorManagement.js';
@@ -127,9 +127,9 @@ class ColorSpaceNode extends TempNode {
 export default ColorSpaceNode;
 
 /**
- * TSL function for converting a given color node from the current working color space to the given color space.
+ * DSL function for converting a given color node from the current working color space to the given color space.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - Represents the node to convert.
  * @param {string} targetColorSpace - The target color space.
@@ -138,9 +138,9 @@ export default ColorSpaceNode;
 export const workingToColorSpace = ( node, targetColorSpace ) => new ColorSpaceNode( nodeObject( node ), WORKING_COLOR_SPACE, targetColorSpace );
 
 /**
- * TSL function for converting a given color node from the given color space to the current working color space.
+ * DSL function for converting a given color node from the given color space to the current working color space.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - Represents the node to convert.
  * @param {string} sourceColorSpace - The source color space.
@@ -149,9 +149,9 @@ export const workingToColorSpace = ( node, targetColorSpace ) => new ColorSpaceN
 export const colorSpaceToWorking = ( node, sourceColorSpace ) => new ColorSpaceNode( nodeObject( node ), sourceColorSpace, WORKING_COLOR_SPACE );
 
 /**
- * TSL function for converting a given color node from one color space to another one.
+ * DSL function for converting a given color node from one color space to another one.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - Represents the node to convert.
  * @param {string} sourceColorSpace - The source color space.

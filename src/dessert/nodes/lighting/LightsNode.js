@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { property, vec3 } from '../tsl/TSLBase.js';
+import { property, vec3 } from '../dsl/DSLBase.js';
 import { hashArray } from '../core/NodeUtils.js';
 import { warn } from '../../utils.js';
 
@@ -462,10 +462,10 @@ class LightsNode extends Node {
 export default LightsNode;
 
 /**
- * TSL function for creating an instance of `LightsNode` and configuring
+ * DSL function for creating an instance of `LightsNode` and configuring
  * it with the given array of lights.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Array<Light>} lights - An array of lights.
  * @return {LightsNode} The created lights node.

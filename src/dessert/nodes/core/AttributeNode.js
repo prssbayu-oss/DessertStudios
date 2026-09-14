@@ -1,5 +1,5 @@
 import Node from './Node.js';
-import { varying } from '../tsl/TSLBase.js';
+import { varying } from '../dsl/DSLBase.js';
 import { warn } from '../../utils.js';
 
 /**
@@ -157,9 +157,9 @@ class AttributeNode extends Node {
 export default AttributeNode;
 
 /**
- * TSL function for creating an attribute node.
+ * DSL function for creating an attribute node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the attribute.
  * @param {?string} [nodeType=null] - The node type.

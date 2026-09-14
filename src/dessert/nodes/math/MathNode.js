@@ -1,6 +1,6 @@
 import TempNode from '../core/TempNode.js';
 import { sub, mul, div, mod } from './OperatorNode.js';
-import { addMethodChaining, nodeObject, nodeProxyIntent, float, vec2, vec3, vec4, Fn } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject, nodeProxyIntent, float, vec2, vec3, vec4, Fn } from '../dsl/DSLCore.js';
 import { WebGLCoordinateSystem, WebGPUCoordinateSystem } from '../../constants.js';
 import { error } from '../../utils.js';
 
@@ -289,7 +289,7 @@ class MathNode extends TempNode {
 
 				if ( builder.shaderStage !== 'fragment' && ( method === MathNode.DFDX || method === MathNode.DFDY ) ) {
 
-					error( `TSL: '${ method }' is not supported in the ${ builder.shaderStage } stage.`, this.stackTrace );
+					error( `DSL: '${ method }' is not supported in the ${ builder.shaderStage } stage.`, this.stackTrace );
 
 					method = '/*' + method + '*/';
 
@@ -398,7 +398,7 @@ export default MathNode;
 /**
  * A small value used to handle floating-point precision errors.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const EPSILON = /*@__PURE__*/ float( 1e-6 );
@@ -406,7 +406,7 @@ export const EPSILON = /*@__PURE__*/ float( 1e-6 );
 /**
  * Represents infinity.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const INFINITY = /*@__PURE__*/ float( 1e6 );
@@ -414,7 +414,7 @@ export const INFINITY = /*@__PURE__*/ float( 1e6 );
 /**
  * Represents PI.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const PI = /*@__PURE__*/ float( Math.PI );
@@ -422,7 +422,7 @@ export const PI = /*@__PURE__*/ float( Math.PI );
 /**
  * Represents PI * 2. Please use the non-deprecated version `TWO_PI`.
  *
- * @tsl
+ * @dsl
  * @deprecated
  * @type {Node<float>}
  */
@@ -431,7 +431,7 @@ export const PI2 = /*@__PURE__*/ float( Math.PI * 2 ); // @deprecated r181
 /**
  * Represents PI * 2.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const TWO_PI = /*@__PURE__*/ float( Math.PI * 2 );
@@ -439,7 +439,7 @@ export const TWO_PI = /*@__PURE__*/ float( Math.PI * 2 );
 /**
  * Represents PI / 2.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 export const HALF_PI = /*@__PURE__*/ float( Math.PI * 0.5 );
@@ -447,7 +447,7 @@ export const HALF_PI = /*@__PURE__*/ float( Math.PI * 0.5 );
 /**
  * Returns `true` if all components of `x` are `true`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node<bool>}
@@ -457,7 +457,7 @@ export const all = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ALL ).setPa
 /**
  * Returns `true` if any components of `x` are `true`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node<bool>}
@@ -467,7 +467,7 @@ export const any = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ANY ).setPa
 /**
  * Converts a quantity in degrees to radians.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The input in degrees.
  * @returns {Node}
@@ -477,7 +477,7 @@ export const radians = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.RADIANS
 /**
  * Convert a quantity in radians to degrees.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The input in radians.
  * @returns {Node}
@@ -487,7 +487,7 @@ export const degrees = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.DEGREES
 /**
  * Returns the natural exponentiation of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -497,7 +497,7 @@ export const exp = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.EXP ).setPa
 /**
  * Returns 2 raised to the power of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -507,7 +507,7 @@ export const exp2 = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.EXP2 ).set
 /**
  * Returns the natural logarithm of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -517,7 +517,7 @@ export const log = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.LOG ).setPa
 /**
  * Returns the base 2 logarithm of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -527,7 +527,7 @@ export const log2 = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.LOG2 ).set
 /**
  * Returns the square root of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -537,7 +537,7 @@ export const sqrt = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.SQRT ).set
 /**
  * Returns the inverse of the square root of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -547,7 +547,7 @@ export const inverseSqrt = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.INV
 /**
  * Finds the nearest integer less than or equal to the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -557,7 +557,7 @@ export const floor = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.FLOOR ).s
 /**
  * Finds the nearest integer that is greater than or equal to the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -567,7 +567,7 @@ export const ceil = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.CEIL ).set
 /**
  * Calculates the unit vector in the same direction as the original vector.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} x - The input vector.
  * @returns {Node}
@@ -577,7 +577,7 @@ export const normalize = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.NORMA
 /**
  * Computes the fractional part of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -587,7 +587,7 @@ export const fract = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.FRACT ).s
 /**
  * Returns the sine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -597,7 +597,7 @@ export const sin = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.SIN ).setPa
 /**
  * Returns the hyperbolic sine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -607,7 +607,7 @@ export const sinh = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.SINH ).set
 /**
  * Returns the cosine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -617,7 +617,7 @@ export const cos = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.COS ).setPa
 /**
  * Returns the hyperbolic cosine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -627,7 +627,7 @@ export const cosh = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.COSH ).set
 /**
  * Returns the tangent of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -637,7 +637,7 @@ export const tan = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.TAN ).setPa
 /**
  * Returns the hyperbolic tangent of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -647,7 +647,7 @@ export const tanh = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.TANH ).set
 /**
  * Returns the arcsine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -657,7 +657,7 @@ export const asin = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ASIN ).set
 /**
  * Returns the inverse hyperbolic sine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -667,7 +667,7 @@ export const asinh = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ASINH ).s
 /**
  * Returns the arccosine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -677,7 +677,7 @@ export const acos = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ACOS ).set
 /**
  * Returns the inverse hyperbolic cosine of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -688,7 +688,7 @@ export const acosh = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ACOSH ).s
  * Returns the arc-tangent of the parameter.
  * If two parameters are provided, the result is `atan2(y/x)`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} y - The y parameter.
  * @param {?(Node | number)} x - The x parameter.
@@ -699,7 +699,7 @@ export const atan = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ATAN ).set
 /**
  * Returns the inverse hyperbolic tangent of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -709,7 +709,7 @@ export const atanh = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ATANH ).s
 /**
  * Returns the absolute value of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -719,7 +719,7 @@ export const abs = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ABS ).setPa
 /**
  * Extracts the sign of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -729,7 +729,7 @@ export const sign = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.SIGN ).set
 /**
  * Calculates the length of a vector.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} x - The parameter.
  * @returns {Node<float>}
@@ -739,7 +739,7 @@ export const length = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.LENGTH )
 /**
  * Negates the value of the parameter (-x).
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -749,7 +749,7 @@ export const negate = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.NEGATE )
 /**
  * Return `1` minus the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -759,7 +759,7 @@ export const oneMinus = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ONE_MI
 /**
  * Returns the partial derivative of the parameter with respect to x.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -769,7 +769,7 @@ export const dFdx = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.DFDX ).set
 /**
  * Returns the partial derivative of the parameter with respect to y.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -779,7 +779,7 @@ export const dFdy = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.DFDY ).set
 /**
  * Rounds the parameter to the nearest integer.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -789,7 +789,7 @@ export const round = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.ROUND ).s
 /**
  * Returns the reciprocal of the parameter `(1/x)`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -799,7 +799,7 @@ export const reciprocal = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.RECI
 /**
  * Truncates the parameter, removing the fractional part.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -809,7 +809,7 @@ export const trunc = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.TRUNC ).s
 /**
  * Returns the sum of the absolute derivatives in x and y.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @returns {Node}
@@ -819,7 +819,7 @@ export const fwidth = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.FWIDTH )
 /**
  * Returns the transpose of a matrix.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<mat2|mat3|mat4>} x - The parameter.
  * @returns {Node}
@@ -829,7 +829,7 @@ export const transpose = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.TRANS
 /**
  * Returns the determinant of a matrix.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<mat2|mat3|mat4>} x - The parameter.
  * @returns {Node<float>}
@@ -839,7 +839,7 @@ export const determinant = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.DET
 /**
  * Returns the inverse of a matrix.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<mat2|mat3|mat4>} x - The parameter.
  * @returns {Node<mat2|mat3|mat4>}
@@ -851,7 +851,7 @@ export const inverse = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.INVERSE
 /**
  * Returns the least of the given values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {...(Node | number)} values - The values to compare.
  * @returns {Node}
@@ -861,7 +861,7 @@ export const min = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.MIN ).setPa
 /**
  * Returns the greatest of the given values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {...(Node | number)} values - The values to compare.
  * @returns {Node}
@@ -871,7 +871,7 @@ export const max = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.MAX ).setPa
 /**
  * Generate a step function by comparing two values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The y parameter.
  * @param {Node | number} y - The x parameter.
@@ -882,7 +882,7 @@ export const step = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.STEP ).set
 /**
  * Calculates the reflection direction for an incident vector.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3|vec4>} I - The incident vector.
  * @param {Node<vec2|vec3|vec4>} N - The normal vector.
@@ -893,7 +893,7 @@ export const reflect = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.REFLECT
 /**
  * Calculates the distance between two points.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3|vec4>} x - The first point.
  * @param {Node<vec2|vec3|vec4>} y - The second point.
@@ -904,7 +904,7 @@ export const distance = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.DISTAN
 /**
  * Calculates the absolute difference between two values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The first parameter.
  * @param {Node | number} y - The second parameter.
@@ -915,7 +915,7 @@ export const difference = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.DIFF
 /**
  * Calculates the dot product of two vectors.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3|vec4>} x - The first vector.
  * @param {Node<vec2|vec3|vec4>} y - The second vector.
@@ -926,7 +926,7 @@ export const dot = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.DOT ).setPa
 /**
  * Calculates the cross product of two vectors.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3>} x - The first vector.
  * @param {Node<vec2|vec3>} y - The second vector.
@@ -937,7 +937,7 @@ export const cross = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.CROSS ).s
 /**
  * Return the value of the first parameter raised to the power of the second one.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The first parameter.
  * @param {Node | number} y - The second parameter.
@@ -948,7 +948,7 @@ export const pow = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.POW ).setPa
 /**
  * Returns the square of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The first parameter.
  * @returns {Node}
@@ -958,7 +958,7 @@ export const pow2 = ( x ) => mul( x, x );
 /**
  * Returns the cube of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The first parameter.
  * @returns {Node}
@@ -968,7 +968,7 @@ export const pow3 = ( x ) => mul( x, x, x );
 /**
  * Returns the fourth power of the parameter.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The first parameter.
  * @returns {Node}
@@ -978,7 +978,7 @@ export const pow4 = ( x ) => mul( x, x, x, x );
 /**
  * Transforms the direction of a vector by a matrix and then normalizes the result.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3|vec4>} direction - The direction vector.
  * @param {Node<mat2|mat3|mat4>} matrix - The transformation matrix.
@@ -992,7 +992,7 @@ export const transformDirection = /*@__PURE__*/ nodeProxyIntent( MathNode, MathN
  * The upper-left 3x3 of the view matrix is assumed to be orthonormal, so the
  * normal can be transformed directly without involving the normal matrix.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} normal - The normal vector, given in world space.
  * @param {Node<mat3|mat4>} viewMatrix - The view matrix.
@@ -1006,7 +1006,7 @@ export const transformNormalByViewMatrix = ( normal, viewMatrix ) => normalize( 
  * The upper-left 3x3 of the view matrix is assumed to be orthonormal, so post-multiplying
  * by the view matrix is equivalent to pre-multiplying by its inverse.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} normal - The normal vector, given in view space.
  * @param {Node<mat3|mat4>} viewMatrix - The view matrix.
@@ -1017,7 +1017,7 @@ export const transformNormalByInverseViewMatrix = ( normal, viewMatrix ) => norm
 /**
  * Returns the cube root of a number.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} a - The first parameter.
  * @returns {Node}
@@ -1027,7 +1027,7 @@ export const cbrt = ( a ) => mul( sign( a ), pow( abs( a ), 1.0 / 3.0 ) );
 /**
  * Calculate the squared length of a vector.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3|vec4>} a - The vector.
  * @returns {Node<float>}
@@ -1037,7 +1037,7 @@ export const lengthSq = ( a ) => dot( a, a );
 /**
  * Linearly interpolates between two values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} a - The first parameter.
  * @param {Node | number} b - The second parameter.
@@ -1049,7 +1049,7 @@ export const mix = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.MIX ).setPa
 /**
  * Constrains a value to lie between two further values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} value - The value to constrain.
  * @param {Node | number} [low=0] - The lower bound.
@@ -1061,7 +1061,7 @@ export const clamp = ( value, low = 0, high = 1 ) => new MathNode( MathNode.CLAM
 /**
  * Constrains a value between `0` and `1`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} value - The value to constrain.
  * @returns {Node}
@@ -1071,7 +1071,7 @@ export const saturate = ( value ) => clamp( value );
 /**
  * Calculates the refraction direction for an incident vector.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3|vec4>} I - The incident vector.
  * @param {Node<vec2|vec3|vec4>} N - The normal vector.
@@ -1083,7 +1083,7 @@ export const refract = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.REFRACT
 /**
  * Performs a Hermite interpolation between two values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} low - The value of the lower edge of the Hermite function.
  * @param {Node | number} high - The value of the upper edge of the Hermite function.
@@ -1095,7 +1095,7 @@ export const smoothstep = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.SMOO
 /**
  * Returns a vector pointing in the same direction as another.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2|vec3|vec4>} N - The vector to orient.
  * @param {Node<vec2|vec3|vec4>} I - The incident vector.
@@ -1107,7 +1107,7 @@ export const faceForward = /*@__PURE__*/ nodeProxyIntent( MathNode, MathNode.FAC
 /**
  * Returns a random value for the given uv.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} uv - The uv node.
  * @returns {Node<float>}
@@ -1124,7 +1124,7 @@ export const rand = /*@__PURE__*/ Fn( ( [ uv ] ) => {
 /**
  * Alias for `mix()` with a different parameter order.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} t - The interpolation value.
  * @param {Node | number} e1 - The first parameter.
@@ -1136,7 +1136,7 @@ export const mixElement = ( t, e1, e2 ) => mix( e1, e2, t );
 /**
  * Alias for `smoothstep()` with a different parameter order.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The source value for interpolation.
  * @param {Node | number} low - The value of the lower edge of the Hermite function.
@@ -1148,7 +1148,7 @@ export const smoothstepElement = ( x, low, high ) => smoothstep( low, high, x );
 /**
  * Alias for `step()` with a different parameter order.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The source value for interpolation.
  * @param {Node | number} edge - The edge value.

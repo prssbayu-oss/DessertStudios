@@ -182,7 +182,7 @@ class WebGLRenderer {
 			 */
 			checkShaderErrors: true,
 			/**
-			 * Diagnostics configuration for the shader generation. Only relevant for TSL.
+			 * Diagnostics configuration for the shader generation. Only relevant for DSL.
 			 * @type {Object}
 			 * @property {boolean} keywords - Whether declaration names that collide with reserved keywords of the shading language should be renamed or not.
 			 */
@@ -1069,7 +1069,7 @@ class WebGLRenderer {
 
 		/**
 		 * Sets a compatibility node builder for rendering node materials with WebGLRenderer.
-		 * This enables using TSL (Dessert.js Shading Language) node materials to prepare
+		 * This enables using DSL (Dessert.js Shading Language) node materials to prepare
 		 * for migration to WebGPURenderer.
 		 *
 		 * @param {WebGLNodesHandler} nodesHandler - The node builder instance.

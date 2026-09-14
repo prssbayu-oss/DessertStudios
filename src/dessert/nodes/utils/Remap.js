@@ -1,11 +1,11 @@
-import { float, addMethodChaining, Fn, bool, defined } from '../tsl/TSLCore.js';
+import { float, addMethodChaining, Fn, bool, defined } from '../dsl/DSLCore.js';
 
 /**
  * This node allows to remap a node value from one range into another. E.g a value of
  * `0.4` in the range `[ 0.3, 0.5 ]` should be remapped into the normalized range `[ 0, 1 ]`.
  * `remap` takes care of that and converts the original value of `0.4` to `0.5`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node that should be remapped.
  * @param {Node} inLowNode - The source or current lower bound of the range.
@@ -29,7 +29,7 @@ export const remap = /*@__PURE__*/ Fn( ( [ node, inLowNode, inHighNode, outLowNo
  * `0.4` in the range `[ 0.3, 0.5 ]` should be remapped into the normalized range `[ 0, 1 ]`.
  * `remapClamp` takes care of that and converts the original value of `0.4` to `0.5`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node that should be remapped.
  * @param {Node} inLowNode - The source or current lower bound of the range.

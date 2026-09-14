@@ -1,4 +1,4 @@
-import { float, nodeObject, normalize, vec4 } from '../tsl/TSLBase.js';
+import { float, nodeObject, normalize, vec4 } from '../dsl/DSLBase.js';
 import { Color } from '../../math/Color.js';
 import NodeMaterial from '../../materials/nodes/NodeMaterial.js';
 import { cameraProjectionMatrix } from '../../nodes/accessors/Camera.js';
@@ -177,9 +177,9 @@ class ToonOutlinePassNode extends PassNode {
 export default ToonOutlinePassNode;
 
 /**
- * TSL function for creating a toon outline pass node.
+ * DSL function for creating a toon outline pass node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Scene} scene - A reference to the scene.
  * @param {Camera} camera - A reference to the camera.

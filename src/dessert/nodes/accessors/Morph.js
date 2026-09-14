@@ -1,5 +1,5 @@
 
-import { float, Fn, ivec2, int, If, uniform } from '../tsl/TSLBase.js';
+import { float, Fn, ivec2, int, If, uniform } from '../dsl/DSLBase.js';
 import { Loop } from '../utils/LoopNode.js';
 import { OnObjectUpdate } from '../utils/EventNode.js';
 import { textureLoad } from './TextureNode.js';
@@ -18,7 +18,7 @@ const _morphVec4 = /*@__PURE__*/ new Vector4();
 const _morphInfluencesData = /*@__PURE__*/ new WeakMap();
 
 /**
- * TSL function that retrieves and scales the morphed attribute (position or normal) texel value.
+ * DSL function that retrieves and scales the morphed attribute (position or normal) texel value.
  *
  * @param {Object} params - The parameter object.
  * @param {Node<texture>} params.bufferMap - The morph target data array texture.
@@ -175,10 +175,10 @@ function getEntry( geometry ) {
 }
 
 /**
- * TSL function representing the vertex shader morph targets blend setup.
+ * DSL function representing the vertex shader morph targets blend setup.
  * Dynamically computes morph targets weights and updates positionLocal and normalLocal in-place.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Mesh} mesh - The mesh.
  */

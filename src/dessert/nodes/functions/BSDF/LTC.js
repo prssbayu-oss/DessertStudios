@@ -1,4 +1,4 @@
-import { Fn, If, mat3, vec2, vec3 } from '../../tsl/TSLBase.js';
+import { Fn, If, mat3, vec2, vec3 } from '../../dsl/DSLBase.js';
 import { max } from '../../math/MathNode.js';
 
 // Rect Area Light

@@ -1,4 +1,4 @@
-import { abs, cross, float, Fn, normalize, ivec2, sub, vec2, vec3, vec4, fract, dot, cos, sin } from '../tsl/TSLBase.js';
+import { abs, cross, float, Fn, normalize, ivec2, sub, vec2, vec3, vec4, fract, dot, cos, sin } from '../dsl/DSLBase.js';
 import { sqrt } from '../math/MathNode.js';
 import { textureSize } from '../accessors/TextureSizeNode.js';
 import { textureLoad } from '../accessors/TextureNode.js';
@@ -8,7 +8,7 @@ import { WebGPUCoordinateSystem } from '../../constants.js';
  * Computes a position in view space based on a fragment's screen position expressed as uv coordinates, the fragments
  * depth value and the camera's inverse projection matrix.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} screenPosition - The fragment's screen position expressed as uv coordinates.
  * @param {Node<float>} depth - The fragment's depth value.
@@ -40,7 +40,7 @@ export const getViewPosition = /*@__PURE__*/ Fn( ( [ screenPosition, depth, proj
  * Computes a screen position expressed as uv coordinates based on a fragment's position in view space
  * and the camera's projection matrix
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} viewPosition - The fragments position in view space.
  * @param {Node<mat4>} projectionMatrix - The camera's projection matrix.
@@ -57,7 +57,7 @@ export const getScreenPosition = /*@__PURE__*/ Fn( ( [ viewPosition, projectionM
 /**
  * Converts a clip-space position into a screen position expressed as uv coordinates.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec4>} clipPosition - The position in clip space.
  * @return {Node<vec2>} The screen position expressed as uv coordinates.
@@ -79,7 +79,7 @@ export const getScreenPositionFromClip = /*@__PURE__*/ Fn( ( [ clipPosition ] ) 
  * Computes a normal vector based on depth data. Can be used as a fallback when no normal render
  * target is available or if flat surface normals are required.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} uv - The texture coordinate.
  * @param {DepthTexture} depthTexture - The depth texture.
@@ -126,7 +126,7 @@ export const getNormalFromDepth = /*@__PURE__*/ Fn( ( [ uv, depthTexture, projec
  * - {@link https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/}
  * - {@link https://blog.demofox.org/2022/01/01/interleaved-gradient-noise-a-different-kind-of-low-discrepancy-sequence/}
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} position - The input position, usually screen coordinates.
  * @return {Node<float>} The noise value.
@@ -150,7 +150,7 @@ export const interleavedGradientNoise = /*@__PURE__*/ Fn( ( [ position ] ) => {
  * resulting in an efficient low-discrepancy sequence for sampling. The rotation parameter (phi)
  * allows randomizing the pattern per-pixel when combined with IGN.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<int>} sampleIndex - The index of the current sample (0-based).
  * @param {Node<int>} samplesCount - The total number of samples.

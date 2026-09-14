@@ -1,4 +1,4 @@
-import { Fn, mul } from '../../tsl/TSLBase.js';
+import { Fn, mul } from '../../dsl/DSLBase.js';
 
 const getShIrradianceAt = /*@__PURE__*/ Fn( ( [ normal, shCoefficients ] ) => {
 

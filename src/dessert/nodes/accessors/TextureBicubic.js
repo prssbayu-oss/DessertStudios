@@ -1,6 +1,6 @@
 import { add, mul, div } from '../math/OperatorNode.js';
 import { floor, ceil, fract, pow } from '../math/MathNode.js';
-import { Fn, vec2, vec4, int } from '../tsl/TSLBase.js';
+import { Fn, vec2, vec4, int } from '../dsl/DSLBase.js';
 import { maxMipLevel } from '../utils/MaxMipLevelNode.js';
 
 // Mipped Bicubic Texture Filtering by N8
@@ -55,7 +55,7 @@ const bicubic = ( textureNode, texelSize, lod ) => {
 /**
  * Applies mipped bicubic texture filtering to the given texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {TextureNode} textureNode - The texture node that should be filtered.
  * @param {Node<float>} lodNode - Defines the LOD to sample from.
@@ -77,7 +77,7 @@ export const textureBicubicLevel = /*@__PURE__*/ Fn( ( [ textureNode, lodNode ] 
 /**
  * Applies mipped bicubic texture filtering to the given texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {TextureNode} textureNode - The texture node that should be filtered.
  * @param {Node<float>} [strength] - Defines the strength of the bicubic filtering.

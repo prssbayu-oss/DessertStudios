@@ -1,30 +1,30 @@
 import { attribute } from '../core/AttributeNode.js';
 import { cameraViewMatrix } from './Camera.js';
 import { modelNormalMatrix, modelWorldMatrix } from './ModelNode.js';
-import { mat3, vec3, Fn, addMethodChaining } from '../tsl/TSLBase.js';
+import { mat3, vec3, Fn, addMethodChaining } from '../dsl/DSLBase.js';
 import { positionView } from './Position.js';
 import { negateOnBackSide } from '../display/FrontFacingNode.js';
 import { warn } from '../../utils.js';
 
 /**
- * TSL object that represents the normal attribute of the current rendered object in local space.
+ * DSL object that represents the normal attribute of the current rendered object in local space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const normalGeometry = /*@__PURE__*/ attribute( 'normal', 'vec3' );
 
 /**
- * TSL object that represents the vertex normal of the current rendered object in local space.
+ * DSL object that represents the vertex normal of the current rendered object in local space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const normalLocal = /*@__PURE__*/ ( Fn( ( builder ) => {
 
 	if ( builder.geometry.hasAttribute( 'normal' ) === false ) {
 
-		warn( 'TSL: Vertex attribute "normal" not found on geometry.' );
+		warn( 'DSL: Vertex attribute "normal" not found on geometry.' );
 
 		return vec3( 0, 1, 0 );
 
@@ -35,17 +35,17 @@ export const normalLocal = /*@__PURE__*/ ( Fn( ( builder ) => {
 }, 'vec3' ).once() )().toVar( 'normalLocal' );
 
 /**
- * TSL object that represents the flat vertex normal of the current rendered object in view space.
+ * DSL object that represents the flat vertex normal of the current rendered object in view space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const normalFlat = /*@__PURE__*/ positionView.dFdx().cross( positionView.dFdy() ).normalize().toVar( 'normalFlat' );
 
 /**
- * TSL object that represents the vertex normal of the current rendered object in view space.
+ * DSL object that represents the vertex normal of the current rendered object in view space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const normalViewGeometry = /*@__PURE__*/ ( Fn( ( builder ) => {
@@ -67,9 +67,9 @@ export const normalViewGeometry = /*@__PURE__*/ ( Fn( ( builder ) => {
 }, 'vec3' ).once() )().toVar( 'normalViewGeometry' );
 
 /**
- * TSL object that represents the vertex normal of the current rendered object in world space.
+ * DSL object that represents the vertex normal of the current rendered object in world space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const normalWorldGeometry = /*@__PURE__*/ ( Fn( ( builder ) => {
@@ -87,9 +87,9 @@ export const normalWorldGeometry = /*@__PURE__*/ ( Fn( ( builder ) => {
 }, 'vec3' ).once() )();
 
 /**
- * TSL object that represents the vertex normal of the current rendered object in view space.
+ * DSL object that represents the vertex normal of the current rendered object in view space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const normalView = /*@__PURE__*/ ( Fn( ( builder ) => {
@@ -119,17 +119,17 @@ export const normalView = /*@__PURE__*/ ( Fn( ( builder ) => {
 }, 'vec3' ).once( [ 'NORMAL', 'VERTEX' ] ) )().toVar( 'normalView' );
 
 /**
- * TSL object that represents the vertex normal of the current rendered object in world space.
+ * DSL object that represents the vertex normal of the current rendered object in world space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const normalWorld = /*@__PURE__*/ normalView.transformNormalByInverseViewMatrix( cameraViewMatrix ).toVar( 'normalWorld' );
 
 /**
- * TSL object that represents the clearcoat vertex normal of the current rendered object in view space.
+ * DSL object that represents the clearcoat vertex normal of the current rendered object in view space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const clearcoatNormalView = /*@__PURE__*/ ( Fn( ( { subBuildFn, context } ) => {
@@ -155,7 +155,7 @@ export const clearcoatNormalView = /*@__PURE__*/ ( Fn( ( { subBuildFn, context }
 /**
  * Transforms the normal by the normal matrix of the given matrix and then normalizes the result.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} normal - The normal.
  * @param {Node<mat3|mat4>} [matrix=modelWorldMatrix] - The matrix.
@@ -174,7 +174,7 @@ addMethodChaining( 'transformNormal', transformNormal );
 /**
  * Transforms the given normal from local to view space.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} normal - The normal.
  * @param {NodeBuilder} builder - The current node builder.

@@ -1,4 +1,4 @@
-import { Fn, vec4 } from '../tsl/TSLCore.js';
+import { Fn, vec4 } from '../dsl/DSLCore.js';
 
 /**
  * Premultiplies the RGB channels of a color by its alpha channel.
@@ -8,7 +8,7 @@ import { Fn, vec4 } from '../tsl/TSLCore.js';
  * by the alpha value. Premultiplied alpha is often used in graphics
  * rendering for certain operations, such as compositing and image processing.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec4>} color - The input color with non-premultiplied alpha.
  * @return {Node<vec4>} The color with premultiplied alpha.
@@ -27,7 +27,7 @@ export const premultiplyAlpha = /*@__PURE__*/ Fn( ( [ color ] ) => {
  * divided by the alpha value. Unpremultiplied alpha is often used in graphics
  * rendering for certain operations, such as compositing and image processing.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec4>} color - The input color with premultiplied alpha.
  * @return {Node<vec4>} The color with non-premultiplied alpha.

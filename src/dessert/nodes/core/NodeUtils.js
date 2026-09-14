@@ -170,7 +170,7 @@ export function getLengthFromType( type ) {
 	if ( /mat3/.test( type ) ) return 9;
 	if ( /mat4/.test( type ) ) return 16;
 
-	error( `TSL: Unsupported type: ${ type }`, new StackTrace() );
+	error( `DSL: Unsupported type: ${ type }`, new StackTrace() );
 
 }
 
@@ -192,7 +192,7 @@ export function getMemoryLengthFromType( type ) {
 	if ( /mat3/.test( type ) ) return 12;
 	if ( /mat4/.test( type ) ) return 16;
 
-	error( `TSL: Unsupported type: ${ type }`, new StackTrace() );
+	error( `DSL: Unsupported type: ${ type }`, new StackTrace() );
 
 }
 
@@ -214,7 +214,7 @@ export function getAlignmentFromType( type ) {
 	if ( /mat3/.test( type ) ) return 4;
 	if ( /mat4/.test( type ) ) return 4;
 
-	error( `TSL: Unsupported type: ${ type }`, new StackTrace() );
+	error( `DSL: Unsupported type: ${ type }`, new StackTrace() );
 
 }
 

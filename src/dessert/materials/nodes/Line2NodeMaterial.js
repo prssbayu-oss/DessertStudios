@@ -6,7 +6,7 @@ import { materialLineScale, materialLineDashSize, materialLineGapSize, materialL
 import { modelViewMatrix, modelWorldMatrixInverse } from '../../nodes/accessors/ModelNode.js';
 import { positionGeometry, positionLocal, positionPrevious } from '../../nodes/accessors/Position.js';
 import { mix, smoothstep } from '../../nodes/math/MathNode.js';
-import { Fn, float, vec2, vec3, vec4, If } from '../../nodes/tsl/TSLBase.js';
+import { Fn, float, vec2, vec3, vec4, If } from '../../nodes/dsl/DSLBase.js';
 import { uv } from '../../nodes/accessors/UV.js';
 import { screenDPR, viewport } from '../../nodes/display/ScreenNode.js';
 import { viewportOpaqueMipTexture } from '../../nodes/display/ViewportTextureNode.js';
@@ -103,10 +103,10 @@ const closestLineToLine = Fn( ( { p1, p2, p3, p4 } ) => {
 }, { p1: 'vec3', p2: 'vec3', p3: 'vec3', p4: 'vec3', return: 'vec2' } );
 
 /**
- * TSL node acting as a custom Model-View-Projection (MVP) for fat lines,
+ * DSL node acting as a custom Model-View-Projection (MVP) for fat lines,
  * expanding 3D segments into screen/world-facing ribbons of a specified width.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec4>}
  */
 const mvpLine = Fn( ( { material } ) => {
@@ -291,10 +291,10 @@ const mvpLine = Fn( ( { material } ) => {
 } )();
 
 /**
- * TSL fragment node that computes the shape/coverage (alpha) of the fat line segment.
+ * DSL fragment node that computes the shape/coverage (alpha) of the fat line segment.
  * Handles dash/gap generation, alpha-to-coverage rendering, and round endcaps.
  *
- * @tsl
+ * @dsl
  * @type {Node<float>}
  */
 const alphaLine = Fn( ( { material, renderer } ) => {

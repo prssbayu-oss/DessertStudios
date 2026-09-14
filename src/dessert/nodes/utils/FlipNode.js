@@ -2,7 +2,7 @@ import TempNode from '../core/TempNode.js';
 import { vectorComponents } from '../core/constants.js';
 
 /**
- * This module is part of the TSL core and usually not used in app level code.
+ * This module is part of the DSL core and usually not used in app level code.
  * It represents a flip operation during the shader generation process
  * meaning it flips normalized values with the following formula:
  * ```

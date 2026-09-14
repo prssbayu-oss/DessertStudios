@@ -221,7 +221,7 @@ function log( ...params ) {
 }
 
 /**
- * Enhances log/warn/error messages related to TSL.
+ * Enhances log/warn/error messages related to DSL.
  *
  * @param {Array<any>} params - The original message parameters.
  * @returns {Array<any>} The filtered and enhanced message parameters.
@@ -230,7 +230,7 @@ function enhanceLogMessage( params ) {
 
 	const message = params[ 0 ];
 
-	if ( typeof message === 'string' && message.startsWith( 'TSL:' ) ) {
+	if ( typeof message === 'string' && message.startsWith( 'DSL:' ) ) {
 
 		const stackTrace = params[ 1 ];
 

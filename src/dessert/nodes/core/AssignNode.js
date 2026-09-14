@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeProxy } from '../dsl/DSLCore.js';
 import { vectorComponents } from '../core/constants.js';
 
 /**
@@ -189,9 +189,9 @@ class AssignNode extends TempNode {
 export default AssignNode;
 
 /**
- * TSL function for creating an assign node.
+ * DSL function for creating an assign node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} targetNode - The target node.
  * @param {Node} sourceNode - The source type.

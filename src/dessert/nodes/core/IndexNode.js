@@ -1,5 +1,5 @@
 import Node from './Node.js';
-import { nodeImmutable } from '../tsl/TSLCore.js';
+import { nodeImmutable } from '../dsl/DSLCore.js';
 import { varying } from './VaryingNode.js';
 
 /**
@@ -117,15 +117,15 @@ IndexNode.DRAW = 'draw';
 export default IndexNode;
 
 /**
- * TSL object that represents the index of a vertex within a mesh.
+ * DSL object that represents the index of a vertex within a mesh.
  *
- * @tsl
+ * @dsl
  * @type {IndexNode}
  */
 export const vertexIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.VERTEX );
 
 /**
- * TSL object that contextually represents specific index data depending on the shader stage.
+ * DSL object that contextually represents specific index data depending on the shader stage.
  *
  * Within the vertex and fragment stages, `instanceIndex` will represent the index of the current mesh instance being evaluated by the shader.
  * In these stages, use `instanceIndex` to modify a mesh based on its instance or to select per-instance data.
@@ -149,13 +149,13 @@ export const vertexIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.VER
  * } )().compute( 255 )
  * ```
  *
- * @tsl
+ * @dsl
  * @type {IndexNode}
  */
 export const instanceIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.INSTANCE );
 
 /**
- * TSL object that represents the index of the subgroup the current compute invocation belongs to.
+ * DSL object that represents the index of the subgroup the current compute invocation belongs to.
  * Subgroup indices are local to the workgroups to which they belong.
  *
  * ```js
@@ -172,13 +172,13 @@ export const instanceIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.I
  * // Buffer Two ( Workgroup ID )   =  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1 ];
  * ```
  *
- * @tsl
+ * @dsl
  * @type {IndexNode}
  */
 export const subgroupIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.SUBGROUP );
 
 /**
- * TSL object that represents the index of a compute invocation within the scope of a subgroup.
+ * DSL object that represents the index of a compute invocation within the scope of a subgroup.
  *
  * ```js
  * // Execute 12 compute threads with a workgroup size of 12. Example assumes a subgroup size of 3.
@@ -194,13 +194,13 @@ export const subgroupIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.S
  * // Buffer Two ( Subgroup Index )            =  [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3 ];
  * ```
  *
- * @tsl
+ * @dsl
  * @type {IndexNode}
  */
 export const invocationSubgroupIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.INVOCATION_SUBGROUP );
 
 /**
- * TSL object that represents the index of a compute invocation within the scope of a workgroup.
+ * DSL object that represents the index of a compute invocation within the scope of a workgroup.
  *
  * ```js
  * // Execute 12 compute threads with a workgroup size of 4.
@@ -216,15 +216,15 @@ export const invocationSubgroupIndex = /*@__PURE__*/ nodeImmutable( IndexNode, I
  * // Buffer Two ( Workgroup ID )           =     [ 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ];
  * ```
  *
- * @tsl
+ * @dsl
  * @type {IndexNode}
  */
 export const invocationLocalIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.INVOCATION_LOCAL );
 
 /**
- * TSL object that represents the index of a draw call.
+ * DSL object that represents the index of a draw call.
  *
- * @tsl
+ * @dsl
  * @type {IndexNode}
  */
 export const drawIndex = /*@__PURE__*/ nodeImmutable( IndexNode, IndexNode.DRAW );

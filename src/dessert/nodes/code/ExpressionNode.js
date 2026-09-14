@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { nodeProxy } from '../tsl/TSLCore.js';
+import { nodeProxy } from '../dsl/DSLCore.js';
 
 /**
  * This class can be used to implement basic expressions in shader code.
@@ -57,9 +57,9 @@ class ExpressionNode extends Node {
 export default ExpressionNode;
 
 /**
- * TSL function for creating an expression node.
+ * DSL function for creating an expression node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} [snippet] - The native code snippet.
  * @param {?string} [nodeType='void'] - The node type.

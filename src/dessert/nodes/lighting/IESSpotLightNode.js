@@ -1,6 +1,6 @@
 import SpotLightNode from './SpotLightNode.js';
 import { texture } from '../accessors/TextureNode.js';
-import { vec2 } from '../tsl/TSLBase.js';
+import { vec2 } from '../dsl/DSLBase.js';
 
 /**
  * An IES version of the default spot light node.

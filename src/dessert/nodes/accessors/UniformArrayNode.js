@@ -1,4 +1,4 @@
-import { nodeObject } from '../tsl/TSLBase.js';
+import { nodeObject } from '../dsl/DSLBase.js';
 import { NodeUpdateType } from '../core/constants.js';
 import { getValueType } from '../core/NodeUtils.js';
 import ArrayElementNode from '../utils/ArrayElementNode.js';
@@ -364,9 +364,9 @@ class UniformArrayNode extends BufferNode {
 export default UniformArrayNode;
 
 /**
- * TSL function for creating an uniform array node.
+ * DSL function for creating an uniform array node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Array<any>} values - Array-like data.
  * @param {?string} [nodeType] - The data type of the array elements.

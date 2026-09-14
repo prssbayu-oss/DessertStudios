@@ -1,5 +1,5 @@
 import InputNode from '../core/InputNode.js';
-import { addMethodChaining, mat3, mat4 } from '../tsl/TSLCore.js';
+import { addMethodChaining, mat3, mat4 } from '../dsl/DSLCore.js';
 import { varying } from '../core/VaryingNode.js';
 
 import { InterleavedBufferAttribute } from '../../core/InterleavedBufferAttribute.js';
@@ -388,9 +388,9 @@ function createBufferAttribute( array, type = null, stride = 0, offset = 0, usag
 }
 
 /**
- * TSL function for creating a buffer attribute node.
+ * DSL function for creating a buffer attribute node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {BufferAttribute|InterleavedBuffer|TypedArray} array - The attribute data.
  * @param {?string} [type=null] - The buffer type (e.g. `'vec3'`).
@@ -401,10 +401,10 @@ function createBufferAttribute( array, type = null, stride = 0, offset = 0, usag
 export const bufferAttribute = ( array, type = null, stride = 0, offset = 0 ) => createBufferAttribute( array, type, stride, offset );
 
 /**
- * TSL function for creating a buffer attribute node but with dynamic draw usage.
+ * DSL function for creating a buffer attribute node but with dynamic draw usage.
  * Use this function if attribute data are updated per frame.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {BufferAttribute|InterleavedBuffer|TypedArray} array - The attribute data.
  * @param {?string} [type=null] - The buffer type (e.g. `'vec3'`).
@@ -415,9 +415,9 @@ export const bufferAttribute = ( array, type = null, stride = 0, offset = 0 ) =>
 export const dynamicBufferAttribute = ( array, type = null, stride = 0, offset = 0 ) => createBufferAttribute( array, type, stride, offset, DynamicDrawUsage );
 
 /**
- * TSL function for creating a buffer attribute node but with enabled instancing
+ * DSL function for creating a buffer attribute node but with enabled instancing
  *
- * @tsl
+ * @dsl
  * @function
  * @param {BufferAttribute|InterleavedBuffer|TypedArray} array - The attribute data.
  * @param {?string} [type=null] - The buffer type (e.g. `'vec3'`).
@@ -428,9 +428,9 @@ export const dynamicBufferAttribute = ( array, type = null, stride = 0, offset =
 export const instancedBufferAttribute = ( array, type = null, stride = 0, offset = 0 ) => createBufferAttribute( array, type, stride, offset, StaticDrawUsage, true );
 
 /**
- * TSL function for creating a buffer attribute node but with dynamic draw usage and enabled instancing
+ * DSL function for creating a buffer attribute node but with dynamic draw usage and enabled instancing
  *
- * @tsl
+ * @dsl
  * @function
  * @param {BufferAttribute|InterleavedBuffer|TypedArray} array - The attribute data.
  * @param {?string} [type=null] - The buffer type (e.g. `'vec3'`).

@@ -1,5 +1,5 @@
 import TextureNode from './TextureNode.js';
-import { nodeProxy, vec3, Fn, If } from '../tsl/TSLBase.js';
+import { nodeProxy, vec3, Fn, If } from '../dsl/DSLBase.js';
 
 const normal = /*@__PURE__*/ Fn( ( { texture, uv } ) => {
 
@@ -159,9 +159,9 @@ class Texture3DNode extends TextureNode {
 export default Texture3DNode;
 
 /**
- * TSL function for creating a 3D texture node.
+ * DSL function for creating a 3D texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Data3DTexture} value - The 3D texture.
  * @param {?Node<vec3>} [uvNode=null] - The uv node.
@@ -171,9 +171,9 @@ export default Texture3DNode;
 export const texture3D = /*@__PURE__*/ nodeProxy( Texture3DNode ).setParameterLength( 1, 3 );
 
 /**
- * TSL function for creating a texture node that fetches/loads texels without interpolation.
+ * DSL function for creating a texture node that fetches/loads texels without interpolation.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?(Texture|TextureNode)} [value=EmptyTexture] - The texture.
  * @param {?Node<vec3>} [uvNode=null] - The uv node.
@@ -184,9 +184,9 @@ export const texture3D = /*@__PURE__*/ nodeProxy( Texture3DNode ).setParameterLe
 export const texture3DLoad = ( ...params ) => texture3D( ...params ).setSampler( false );
 
 /**
- * TSL function for creating a texture node that fetches/loads texels without interpolation.
+ * DSL function for creating a texture node that fetches/loads texels without interpolation.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?(Texture|TextureNode)} [value=EmptyTexture] - The texture.
  * @param {?Node<vec3>} [uvNode=null] - The uv node.

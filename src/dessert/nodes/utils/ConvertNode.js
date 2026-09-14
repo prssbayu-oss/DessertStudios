@@ -1,7 +1,7 @@
 import Node from '../core/Node.js';
 
 /**
- * This module is part of the TSL core and usually not used in app level code.
+ * This module is part of the DSL core and usually not used in app level code.
  * It represents a convert operation during the shader generation process
  * meaning it converts the data type of a node to a target data type.
  *

@@ -1,6 +1,6 @@
 import { positionView, positionWorld } from '../accessors/Position.js';
 import { smoothstep } from '../math/MathNode.js';
-import { Fn, output, vec4 } from '../tsl/TSLBase.js';
+import { Fn, output, vec4 } from '../dsl/DSLBase.js';
 
 /**
  * Returns a node that represents the `z` coordinate in view space
@@ -32,7 +32,7 @@ function getViewZNode( builder ) {
 /**
  * Constructs a new range factor node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} near - Defines the near value.
  * @param {Node} far - Defines the far value.
@@ -50,7 +50,7 @@ export const rangeFogFactor = /*@__PURE__*/ Fn( ( [ near, far ], builder ) => {
  * a clear view near the camera and a faster than exponentially
  * densening fog farther from the camera.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} density - Defines the fog density.
  */
@@ -65,7 +65,7 @@ export const densityFogFactor = /*@__PURE__*/ Fn( ( [ density ], builder ) => {
 /**
  * Constructs a new height fog factor node. This fog factor requires a Y-up coordinate system.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} density - Defines the fog density.
  * @param {Node} height - The height threshold in world space. Everything below this y-coordinate is affected by fog.
@@ -85,7 +85,7 @@ export const exponentialHeightFogFactor = /*@__PURE__*/ Fn( ( [ density, height 
  * This class can be used to configure a fog for the scene.
  * Nodes of this type are assigned to `Scene.fogNode`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} color - Defines the color of the fog.
  * @param {Node} factor - Defines how the fog is factored in the scene.

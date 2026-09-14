@@ -1,4 +1,4 @@
-import { float } from '../../nodes/tsl/TSLBase.js';
+import { float } from '../../nodes/dsl/DSLBase.js';
 
 import { Loader } from '../Loader.js';
 import { FileLoader } from '../../loaders/FileLoader.js';

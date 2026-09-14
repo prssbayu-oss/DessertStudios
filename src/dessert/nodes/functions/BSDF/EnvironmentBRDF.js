@@ -1,5 +1,5 @@
 import DFGLUT from './DFGLUT.js';
-import { Fn } from '../../tsl/TSLBase.js';
+import { Fn } from '../../dsl/DSLBase.js';
 
 const EnvironmentBRDF = /*@__PURE__*/ Fn( ( inputs ) => {
 

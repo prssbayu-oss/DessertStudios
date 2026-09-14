@@ -4,7 +4,7 @@ import { uniform } from '../core/UniformNode.js';
 /**
  * Represents the elapsed time in seconds.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<float>}
  */
 export const time = /*@__PURE__*/ uniform( 0 ).setGroup( renderGroup ).onRenderUpdate( ( frame ) => frame.time );
@@ -12,7 +12,7 @@ export const time = /*@__PURE__*/ uniform( 0 ).setGroup( renderGroup ).onRenderU
 /**
  * Represents the delta time in seconds.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<float>}
  */
 export const deltaTime = /*@__PURE__*/ uniform( 0 ).setGroup( renderGroup ).onRenderUpdate( ( frame ) => frame.deltaTime );
@@ -20,7 +20,7 @@ export const deltaTime = /*@__PURE__*/ uniform( 0 ).setGroup( renderGroup ).onRe
 /**
  * Represents the current frame ID.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<uint>}
  */
 export const frameId = /*@__PURE__*/ uniform( 0, 'uint' ).setGroup( renderGroup ).onRenderUpdate( ( frame ) => frame.frameId );

@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { nodeProxy } from '../tsl/TSLCore.js';
+import { nodeProxy } from '../dsl/DSLCore.js';
 
 /**
  * This class allows to define multiple overloaded versions
@@ -160,9 +160,9 @@ export default FunctionOverloadingNode;
 const overloadingBaseFn = /*@__PURE__*/ nodeProxy( FunctionOverloadingNode );
 
 /**
- * TSL function for creating a function overloading node.
+ * DSL function for creating a function overloading node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Array<Function>} functionNodes - Array of `Fn` function definitions.
  * @returns {FunctionOverloadingNode}

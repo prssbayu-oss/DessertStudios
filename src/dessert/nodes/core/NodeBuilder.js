@@ -17,7 +17,7 @@ import {
 } from '../../renderers/common/nodes/NodeUniform.js';
 
 import { stack } from './StackNode.js';
-import { getCurrentStack, setCurrentStack } from '../tsl/TSLBase.js';
+import { getCurrentStack, setCurrentStack } from '../dsl/DSLBase.js';
 
 import CubeRenderTarget from '../../renderers/common/CubeRenderTarget.js';
 
@@ -489,7 +489,7 @@ class NodeBuilder {
 		this.activeStacks = [];
 
 		/**
-		 * The current sub-build TSL function(Fn).
+		 * The current sub-build DSL function(Fn).
 		 *
 		 * @type {?string}
 		 * @default null
@@ -497,7 +497,7 @@ class NodeBuilder {
 		this.subBuildFn = null;
 
 		/**
-		 * The current TSL function(Fn) call node.
+		 * The current DSL function(Fn) call node.
 		 *
 		 * @type {?Node}
 		 * @default null
@@ -2370,7 +2370,7 @@ class NodeBuilder {
 
 		if ( name !== baseName ) {
 
-			warn( `TSL: Declaration name '${ baseName }' of '${ node.type }' is a reserved keyword or already in use. Renamed to '${ name }'.` );
+			warn( `DSL: Declaration name '${ baseName }' of '${ node.type }' is a reserved keyword or already in use. Renamed to '${ name }'.` );
 
 		}
 
@@ -2630,7 +2630,7 @@ class NodeBuilder {
 	}
 
 	/**
-	 * Generates a code flow based on a TSL function: Fn().
+	 * Generates a code flow based on a DSL function: Fn().
 	 *
 	 * @param {ShaderNodeInternal} shaderNode - A function code will be generated based on the input.
 	 * @return {Object}

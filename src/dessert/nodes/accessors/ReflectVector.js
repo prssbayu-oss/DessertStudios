@@ -6,7 +6,7 @@ import { materialRefractionRatio } from './MaterialProperties.js';
 /**
  * The reflect vector in view space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const reflectView = /*@__PURE__*/ positionViewDirection.negate().reflect( normalView );
@@ -14,7 +14,7 @@ export const reflectView = /*@__PURE__*/ positionViewDirection.negate().reflect(
 /**
  * The refract vector in view space.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const refractView = /*@__PURE__*/ positionViewDirection.negate().refract( normalView, materialRefractionRatio );
@@ -22,7 +22,7 @@ export const refractView = /*@__PURE__*/ positionViewDirection.negate().refract(
 /**
  * Used for sampling cube maps when using cube reflection mapping.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const reflectVector = /*@__PURE__*/ reflectView.transformDirection( cameraWorldMatrix ).toVar( 'reflectVector' );
@@ -30,7 +30,7 @@ export const reflectVector = /*@__PURE__*/ reflectView.transformDirection( camer
 /**
  * Used for sampling cube maps when using cube refraction mapping.
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const refractVector = /*@__PURE__*/ refractView.transformDirection( cameraWorldMatrix ).toVar( 'refractVector' );

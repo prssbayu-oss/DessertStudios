@@ -2,7 +2,7 @@ import NodeMaterial from './NodeMaterial.js';
 import { attribute } from '../../nodes/core/AttributeNode.js';
 import { materialLineDashOffset, materialLineDashSize, materialLineGapSize, materialLineScale } from '../../nodes/accessors/MaterialNode.js';
 import { dashSize, gapSize } from '../../nodes/core/PropertyNode.js';
-import { varying, float } from '../../nodes/tsl/TSLBase.js';
+import { varying, float } from '../../nodes/dsl/DSLBase.js';
 
 import { LineDashedMaterial } from '../LineDashedMaterial.js';
 

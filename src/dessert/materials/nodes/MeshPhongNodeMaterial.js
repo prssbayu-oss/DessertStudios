@@ -1,7 +1,7 @@
 import NodeMaterial from './NodeMaterial.js';
 import { shininess, specularColor } from '../../nodes/core/PropertyNode.js';
 import { materialShininess, materialSpecular } from '../../nodes/accessors/MaterialNode.js';
-import { float } from '../../nodes/tsl/TSLBase.js';
+import { float } from '../../nodes/dsl/DSLBase.js';
 import BasicEnvironmentNode from '../../nodes/lighting/BasicEnvironmentNode.js';
 import PhongLightingModel from '../../nodes/functions/PhongLightingModel.js';
 

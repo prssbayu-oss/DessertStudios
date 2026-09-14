@@ -1,4 +1,4 @@
-import { int, uint, float, vec3, bool, uvec3, vec2, vec4, If, Fn } from '../tsl/TSLBase.js';
+import { int, uint, float, vec3, bool, uvec3, vec2, vec4, If, Fn } from '../dsl/DSLBase.js';
 import { select } from '../math/ConditionalNode.js';
 import { add, sub, mul } from '../math/OperatorNode.js';
 import { floor, abs, max, dot, sqrt, clamp, fract } from '../math/MathNode.js';

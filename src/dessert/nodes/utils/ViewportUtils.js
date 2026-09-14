@@ -1,4 +1,4 @@
-import { Fn } from '../tsl/TSLBase.js';
+import { Fn } from '../dsl/DSLBase.js';
 import { screenUV } from '../display/ScreenNode.js';
 import { viewportDepthTexture } from '../display/ViewportDepthTextureNode.js';
 import { linearDepth } from '../display/ViewportDepthNode.js';
@@ -10,7 +10,7 @@ import { linearDepth } from '../display/ViewportDepthNode.js';
  * objects in front of a refractive surface might appear on the refractive surface
  * which is incorrect.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Node<vec2>} uv - Optional uv coordinates. By default `screenUV` is used.
  * @return {Node<vec2>} The update uv coordinates.

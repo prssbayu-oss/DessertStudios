@@ -1,4 +1,4 @@
-import { nodeObject } from '../tsl/TSLCore.js';
+import { nodeObject } from '../dsl/DSLCore.js';
 import TextureNode from '../accessors/TextureNode.js';
 import { NodeUpdateType } from '../core/constants.js';
 import { uv } from '../accessors/UV.js';
@@ -227,7 +227,7 @@ class RTTNode extends TextureNode {
 
 		if ( this.renderTarget && value !== this.renderTarget.texture ) {
 
-			error( 'TSL: "rtt()" does not allow overwriting the value.' );
+			error( 'DSL: "rtt()" does not allow overwriting the value.' );
 
 		}
 
@@ -331,9 +331,9 @@ class RTTNode extends TextureNode {
 export default RTTNode;
 
 /**
- * TSL function for creating a RTT node.
+ * DSL function for creating a RTT node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node to render a texture with.
  * @param {?number} [width=null] - The width of the internal render target. If no width is applied, the render target is automatically resized.
@@ -347,9 +347,9 @@ export default RTTNode;
 export const rtt = ( node, ...params ) => new RTTNode( nodeObject( node ), ...params );
 
 /**
- * TSL function for converting nodes to textures nodes.
+ * DSL function for converting nodes to textures nodes.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node to render a texture with.
  * @param {?number} [width=null] - The width of the internal render target. If no width is applied, the render target is automatically resized.

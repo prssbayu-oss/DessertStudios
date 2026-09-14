@@ -1,5 +1,5 @@
 import ContextNode from '../core/ContextNode.js';
-import { nodeProxy, float, vec3 } from '../tsl/TSLBase.js';
+import { nodeProxy, float, vec3 } from '../dsl/DSLBase.js';
 
 /**
  * `LightingContextNode` represents an extension of the {@link ContextNode} module

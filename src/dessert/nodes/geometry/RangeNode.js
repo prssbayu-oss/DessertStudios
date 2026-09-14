@@ -4,7 +4,7 @@ import { getValueType } from '../core/NodeUtils.js';
 import { buffer } from '../accessors/BufferNode.js';
 import { instancedBufferAttribute } from '../accessors/BufferAttributeNode.js';
 import { instanceIndex } from '../core/IndexNode.js';
-import { nodeProxy, float } from '../tsl/TSLBase.js';
+import { nodeProxy, float } from '../dsl/DSLBase.js';
 
 import { Vector4 } from '../../math/Vector4.js';
 import { MathUtils } from '../../math/MathUtils.js';
@@ -112,7 +112,7 @@ class RangeNode extends Node {
 
 		if ( output === null ) {
 
-			throw new NodeError( 'DESSERT.TSL: No "ConstNode" found in node graph.', this.stackTrace );
+			throw new NodeError( 'DESSERT.DSL: No "ConstNode" found in node graph.', this.stackTrace );
 
 		}
 
@@ -199,9 +199,9 @@ class RangeNode extends Node {
 export default RangeNode;
 
 /**
- * TSL function for creating a range node.
+ * DSL function for creating a range node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<any>} [minNode=float()] - A node defining the lower bound of the range.
  * @param {Node<any>} [maxNode=float()] - A node defining the upper bound of the range.

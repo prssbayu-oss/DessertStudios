@@ -1,4 +1,4 @@
-import { bvec3, vec3, Fn } from '../tsl/TSLBase.js';
+import { bvec3, vec3, Fn } from '../dsl/DSLBase.js';
 import { greaterThan } from '../math/OperatorNode.js';
 import { max, pow, mix } from '../math/MathNode.js';
 

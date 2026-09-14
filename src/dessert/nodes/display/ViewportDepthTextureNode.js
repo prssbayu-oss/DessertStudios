@@ -1,5 +1,5 @@
 import ViewportTextureNode from './ViewportTextureNode.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 import { screenUV } from './ScreenNode.js';
 
 import { DepthTexture } from '../../textures/DepthTexture.js';
@@ -51,9 +51,9 @@ class ViewportDepthTextureNode extends ViewportTextureNode {
 export default ViewportDepthTextureNode;
 
 /**
- * TSL function for a viewport depth texture node.
+ * DSL function for a viewport depth texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Node} [uvNode=screenUV] - The uv node.
  * @param {?Node} [levelNode=null] - The level node.

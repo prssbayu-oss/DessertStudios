@@ -29,7 +29,7 @@ const scale = det.equal( 0.0 ).select( 0.0, det.inverseSqrt() );
  *
  * Reference: http://www.thetenthplanet.de/archives/1180
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const tangentViewFrame = /*@__PURE__*/ T.mul( scale ).toVar( 'tangentViewFrame' );
@@ -40,7 +40,7 @@ export const tangentViewFrame = /*@__PURE__*/ T.mul( scale ).toVar( 'tangentView
  *
  * Reference: http://www.thetenthplanet.de/archives/1180
  *
- * @tsl
+ * @dsl
  * @type {Node<vec3>}
  */
 export const bitangentViewFrame = /*@__PURE__*/ B.mul( scale ).toVar( 'bitangentViewFrame' );

@@ -1,5 +1,5 @@
 
-import { vec3, mat4, Fn } from '../tsl/TSLBase.js';
+import { vec3, mat4, Fn } from '../dsl/DSLBase.js';
 import { OnAfterObjectUpdate, OnBeforeFrameUpdate } from '../utils/EventNode.js';
 import { normalLocal, transformNormal } from './Normal.js';
 import { positionLocal, positionPrevious } from './Position.js';
@@ -76,7 +76,7 @@ function createInstanceMatrixNode( builder, instanceMatrix ) {
 
 /**
  * Retrieves or initializes the previous frame instance matrix node for motion vectors.
- * Uses a WeakMap to cache previous frame instance matrices and their TSL nodes.
+ * Uses a WeakMap to cache previous frame instance matrices and their DSL nodes.
  *
  * @param {InstancedMesh} instancedMesh - The instanced mesh object.
  * @param {InstancedBufferAttribute|StorageInstancedBufferAttribute} instanceMatrix - The current matrix buffer attribute.
@@ -105,17 +105,17 @@ function getPreviousInstance( instancedMesh, instanceMatrix, builder ) {
 }
 
 /**
- * TSL object representing a varying property for the instanced color vector.
+ * DSL object representing a varying property for the instanced color vector.
  *
  * @type {VaryingNode<vec3>}
  */
 export const instanceColor = /*@__PURE__*/ varyingProperty( 'vec3', 'vInstanceColor' );
 
 /**
- * TSL function representing the standard instancing vertex shader setup.
+ * DSL function representing the standard instancing vertex shader setup.
  * Transforms positionLocal and normalLocal, and assigns varying color in-place.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {InstancedBufferAttribute|StorageInstancedBufferAttribute} matrices - The instanced transformation matrices.
  * @param {?InstancedBufferAttribute|StorageInstancedBufferAttribute} [colors=null] - The optional instanced colors.
@@ -250,9 +250,9 @@ export const instance = /*@__PURE__*/ Fn( ( [ matrices, colors = null ], builder
 }, 'void' );
 
 /**
- * TSL wrapper for applying instanced mesh rendering setup.
+ * DSL wrapper for applying instanced mesh rendering setup.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {InstancedMesh} instancedMesh - The instanced mesh.
  */

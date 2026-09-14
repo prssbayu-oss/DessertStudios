@@ -1,7 +1,7 @@
 import { normalView } from '../../accessors/Normal.js';
 import { positionViewDirection } from '../../accessors/Position.js';
 import { sheen, sheenRoughness } from '../../core/PropertyNode.js';
-import { Fn, float } from '../../tsl/TSLBase.js';
+import { Fn, float } from '../../dsl/DSLBase.js';
 
 // https://github.com/google/filament/blob/master/shaders/src/brdf.fs
 const D_Charlie = /*@__PURE__*/ Fn( ( { roughness, dotNH } ) => {

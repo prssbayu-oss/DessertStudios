@@ -1,4 +1,4 @@
-import { Fn } from '../../tsl/TSLBase.js';
+import { Fn } from '../../dsl/DSLBase.js';
 
 const BRDF_Lambert = /*@__PURE__*/ Fn( ( inputs ) => {
 

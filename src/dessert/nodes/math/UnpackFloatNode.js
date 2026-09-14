@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { nodeProxyIntent } from '../tsl/TSLCore.js';
+import { nodeProxyIntent } from '../dsl/DSLCore.js';
 
 /**
  * This node represents an operation that unpacks values from a 32-bit unsigned integer, reinterpreting the results as a floating-point vector
@@ -76,7 +76,7 @@ export default UnpackFloatNode;
 /**
  * Unpacks a 32-bit unsigned integer into two 16-bit values, interpreted as normalized signed integers. Returns a vec2 with both values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The unsigned integer to be unpacked
  * @returns {Node}
@@ -86,7 +86,7 @@ export const unpackSnorm2x16 = /*@__PURE__*/ nodeProxyIntent( UnpackFloatNode, '
 /**
  * Unpacks a 32-bit unsigned integer into two 16-bit values, interpreted as normalized unsigned integers. Returns a vec2 with both values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The unsigned integer to be unpacked
  * @returns {Node}
@@ -96,7 +96,7 @@ export const unpackUnorm2x16 = /*@__PURE__*/ nodeProxyIntent( UnpackFloatNode, '
 /**
  * Unpacks a 32-bit unsigned integer into two 16-bit values, interpreted as 16-bit floating-point numbers. Returns a vec2 with both values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The unsigned integer to be unpacked
  * @returns {Node}
@@ -106,7 +106,7 @@ export const unpackHalf2x16 = /*@__PURE__*/ nodeProxyIntent( UnpackFloatNode, 'f
 /**
  * Unpacks a 32-bit unsigned integer into four 8-bit values, interpreted as normalized signed integers. Returns a vec4 with all values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The unsigned integer to be unpacked
  * @returns {Node}
@@ -116,7 +116,7 @@ export const unpackSnorm4x8 = /*@__PURE__*/ nodeProxyIntent( UnpackFloatNode, 's
 /**
  * Unpacks a 32-bit unsigned integer into four 8-bit values, interpreted as normalized unsigned integers. Returns a vec4 with all values.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The unsigned integer to be unpacked
  * @returns {Node}

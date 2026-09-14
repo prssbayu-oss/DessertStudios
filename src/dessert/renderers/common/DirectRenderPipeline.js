@@ -1,4 +1,4 @@
-import { output, renderOutput, uniform } from '../../nodes/TSL.js';
+import { output, renderOutput, uniform } from '../../nodes/DSL.js';
 import { ColorManagement } from '../../math/ColorManagement.js';
 import { NoToneMapping } from '../../constants.js';
 import RenderPipeline from './RenderPipeline.js';

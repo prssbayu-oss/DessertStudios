@@ -15,7 +15,7 @@ import { mx_srgb_texture_to_lin_rec709 } from './MaterialXColorTransform.js';
 import {
 	float, vec2, vec3, vec4, int, add, sub, mul, div, atan, mix, pow, smoothstep,
 	floor, abs, max, clamp, step, cross, dot, normalize
-} from '../tsl/TSLBase.js';
+} from '../dsl/DSLBase.js';
 import { uv } from '../accessors/UV.js';
 import { frameId, time } from '../utils/Timer.js';
 

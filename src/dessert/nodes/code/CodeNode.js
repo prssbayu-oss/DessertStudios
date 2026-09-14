@@ -1,5 +1,5 @@
 import Node from '../core/Node.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 
 /**
  * This class represents native code sections. It is the base
@@ -136,9 +136,9 @@ class CodeNode extends Node {
 export default CodeNode;
 
 /**
- * TSL function for creating a code node.
+ * DSL function for creating a code node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} [code] - The native code.
  * @param {?Array<Node>} [includes=[]] - An array of includes.
@@ -148,9 +148,9 @@ export default CodeNode;
 export const code = /*@__PURE__*/ nodeProxy( CodeNode ).setParameterLength( 1, 3 );
 
 /**
- * TSL function for creating a JS code node.
+ * DSL function for creating a JS code node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} src - The native code.
  * @param {Array<Node>} includes - An array of includes.
@@ -159,9 +159,9 @@ export const code = /*@__PURE__*/ nodeProxy( CodeNode ).setParameterLength( 1, 3
 export const js = ( src, includes ) => code( src, includes, 'js' );
 
 /**
- * TSL function for creating a WGSL code node.
+ * DSL function for creating a WGSL code node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} src - The native code.
  * @param {Array<Node>} includes - An array of includes.
@@ -170,9 +170,9 @@ export const js = ( src, includes ) => code( src, includes, 'js' );
 export const wgsl = ( src, includes ) => code( src, includes, 'wgsl' );
 
 /**
- * TSL function for creating a GLSL code node.
+ * DSL function for creating a GLSL code node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} src - The native code.
  * @param {Array<Node>} includes - An array of includes.

@@ -1,5 +1,5 @@
 import Node from './Node.js';
-import { nodeObject } from '../tsl/TSLCore.js';
+import { nodeObject } from '../dsl/DSLCore.js';
 
 /**
  * This node is used to build a sub-build in the node system.
@@ -79,7 +79,7 @@ export default SubBuildNode;
 /**
  * Creates a new sub-build node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node to be built in the sub-build.
  * @param {string} name - The name of the sub-build.

@@ -2,7 +2,7 @@ import Node from '../core/Node.js';
 import { NodeUpdateType } from '../core/constants.js';
 import { renderGroup } from '../core/UniformGroupNode.js';
 import { uniform } from '../core/UniformNode.js';
-import { nodeImmutable, vec2 } from '../tsl/TSLBase.js';
+import { nodeImmutable, vec2 } from '../dsl/DSLBase.js';
 import { Vector2 } from '../../math/Vector2.js';
 import { Vector4 } from '../../math/Vector4.js';
 
@@ -182,33 +182,33 @@ export default ScreenNode;
 // Screen
 
 /**
- * TSL object that represents the current DPR.
+ * DSL object that represents the current DPR.
  *
- * @tsl
+ * @dsl
  * @type {UniformNode<float>}
  */
 export const screenDPR = /*@__PURE__*/ uniform( 1 ).setGroup( renderGroup ).onRenderUpdate( ( { renderer } ) => renderer.getPixelRatio() );
 
 /**
- * TSL object that represents normalized screen coordinates, unitless in `[0, 1]`.
+ * DSL object that represents normalized screen coordinates, unitless in `[0, 1]`.
  *
- * @tsl
+ * @dsl
  * @type {ScreenNode<vec2>}
  */
 export const screenUV = /*@__PURE__*/ nodeImmutable( ScreenNode, ScreenNode.UV );
 
 /**
- * TSL object that represents the screen resolution in physical pixel units.
+ * DSL object that represents the screen resolution in physical pixel units.
  *
- * @tsl
+ * @dsl
  * @type {ScreenNode<vec2>}
  */
 export const screenSize = /*@__PURE__*/ nodeImmutable( ScreenNode, ScreenNode.SIZE );
 
 /**
- * TSL object that represents the current `x`/`y` pixel position on the screen in physical pixel units.
+ * DSL object that represents the current `x`/`y` pixel position on the screen in physical pixel units.
  *
- * @tsl
+ * @dsl
  * @type {ScreenNode<vec2>}
  */
 export const screenCoordinate = /*@__PURE__*/ nodeImmutable( ScreenNode, ScreenNode.COORDINATE );
@@ -216,33 +216,33 @@ export const screenCoordinate = /*@__PURE__*/ nodeImmutable( ScreenNode, ScreenN
 // Viewport
 
 /**
- * TSL object that represents the viewport rectangle as `x`, `y`, `width` and `height` in physical pixel units.
+ * DSL object that represents the viewport rectangle as `x`, `y`, `width` and `height` in physical pixel units.
  *
- * @tsl
+ * @dsl
  * @type {ScreenNode<vec4>}
  */
 export const viewport = /*@__PURE__*/ nodeImmutable( ScreenNode, ScreenNode.VIEWPORT );
 
 /**
- * TSL object that represents the viewport resolution in physical pixel units.
+ * DSL object that represents the viewport resolution in physical pixel units.
  *
- * @tsl
+ * @dsl
  * @type {ScreenNode<vec2>}
  */
 export const viewportSize = viewport.zw;
 
 /**
- * TSL object that represents the current `x`/`y` pixel position on the viewport in physical pixel units.
+ * DSL object that represents the current `x`/`y` pixel position on the viewport in physical pixel units.
  *
- * @tsl
+ * @dsl
  * @type {ScreenNode<vec2>}
  */
 export const viewportCoordinate = /*@__PURE__*/ screenCoordinate.sub( viewport.xy );
 
 /**
- * TSL object that represents normalized viewport coordinates, unitless in `[0, 1]`.
+ * DSL object that represents normalized viewport coordinates, unitless in `[0, 1]`.
  *
- * @tsl
+ * @dsl
  * @type {ScreenNode<vec2>}
  */
 export const viewportUV = /*@__PURE__*/ viewportCoordinate.div( viewportSize );

@@ -3,7 +3,7 @@ import { texture } from '../accessors/TextureNode.js';
 import { textureCubeUV } from './PMREMUtils.js';
 import { uniform } from '../core/UniformNode.js';
 import { NodeUpdateType } from '../core/constants.js';
-import { nodeProxy, vec3 } from '../tsl/TSLBase.js';
+import { nodeProxy, vec3 } from '../dsl/DSLBase.js';
 
 import { CubeUVReflectionMapping } from '../../constants.js';
 import { Texture } from '../../textures/Texture.js';
@@ -416,9 +416,9 @@ function isEquirectangularMapReady( image ) {
 }
 
 /**
- * TSL function for creating a PMREM node.
+ * DSL function for creating a PMREM node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Texture} value - The input texture.
  * @param {?Node<vec2>} [uvNode=null] - The uv node.

@@ -1,5 +1,5 @@
 import ViewportTextureNode from './ViewportTextureNode.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 import { screenUV } from './ScreenNode.js';
 
 import { FramebufferTexture } from '../../textures/FramebufferTexture.js';
@@ -62,9 +62,9 @@ class ViewportSharedTextureNode extends ViewportTextureNode {
 export default ViewportSharedTextureNode;
 
 /**
- * TSL function for creating a shared viewport texture node.
+ * DSL function for creating a shared viewport texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Node} [uvNode=screenUV] - The uv node.
  * @param {?Node} [levelNode=null] - The level node.

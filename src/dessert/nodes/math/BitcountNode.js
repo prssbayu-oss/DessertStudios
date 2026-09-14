@@ -1,4 +1,4 @@
-import { float, Fn, If, nodeProxyIntent, uint, int, uvec2, uvec3, uvec4, ivec2, ivec3, ivec4 } from '../tsl/TSLCore.js';
+import { float, Fn, If, nodeProxyIntent, uint, int, uvec2, uvec3, uvec4, ivec2, ivec3, ivec4 } from '../dsl/DSLCore.js';
 import { bitcast, floatBitsToUint } from './BitcastNode.js';
 import MathNode, { negate } from './MathNode.js';
 
@@ -422,7 +422,7 @@ export default BitcountNode;
  *
  * Can only be used with {@link WebGPURenderer} and a WebGPU backend.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The input value.
  * @returns {Node}
@@ -434,7 +434,7 @@ export const countTrailingZeros = /*@__PURE__*/ nodeProxyIntent( BitcountNode, B
  *
  * Can only be used with {@link WebGPURenderer} and a WebGPU backend.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The input value.
  * @returns {Node}
@@ -446,7 +446,7 @@ export const countLeadingZeros = /*@__PURE__*/ nodeProxyIntent( BitcountNode, Bi
  *
  * Can only be used with {@link WebGPURenderer} and a WebGPU backend.
  *
- * @tsl
+ * @dsl
  * @function
  * @returns {Node}
  */

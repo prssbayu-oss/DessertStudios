@@ -1,4 +1,4 @@
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 import ArrayElementNode from './ArrayElementNode.js';
 
 /**
@@ -132,9 +132,9 @@ class StorageArrayElementNode extends ArrayElementNode {
 export default StorageArrayElementNode;
 
 /**
- * TSL function for creating a storage element node.
+ * DSL function for creating a storage element node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {StorageBufferNode} storageBufferNode - The storage buffer node.
  * @param {Node} indexNode - The index node that defines the element access.

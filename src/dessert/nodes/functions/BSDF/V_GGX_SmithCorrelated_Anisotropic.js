@@ -1,6 +1,6 @@
 import { div } from '../../math/OperatorNode.js';
 import { EPSILON } from '../../math/MathNode.js';
-import { Fn, vec3 } from '../../tsl/TSLBase.js';
+import { Fn, vec3 } from '../../dsl/DSLBase.js';
 
 // https://google.github.io/filament/Filament.md.html#materialsystem/anisotropicmodel/anisotropicspecularbrdf
 

@@ -1,6 +1,6 @@
 
 import Node from '../core/Node.js';
-import { Fn, bool, float } from '../tsl/TSLBase.js';
+import { Fn, bool, float } from '../dsl/DSLBase.js';
 import { positionView } from './Position.js';
 import { diffuseColor } from '../core/PropertyNode.js';
 import { Loop } from '../utils/LoopNode.js';
@@ -228,27 +228,27 @@ ClippingNode.HARDWARE = 'hardware';
 export default ClippingNode;
 
 /**
- * TSL function for setting up the default clipping logic.
+ * DSL function for setting up the default clipping logic.
  *
- * @tsl
+ * @dsl
  * @function
  * @returns {ClippingNode}
  */
 export const clipping = () => new ClippingNode();
 
 /**
- * TSL function for setting up alpha to coverage.
+ * DSL function for setting up alpha to coverage.
  *
- * @tsl
+ * @dsl
  * @function
  * @returns {ClippingNode}
  */
 export const clippingAlpha = () => new ClippingNode( ClippingNode.ALPHA_TO_COVERAGE );
 
 /**
- * TSL function for setting up hardware-based clipping.
+ * DSL function for setting up hardware-based clipping.
  *
- * @tsl
+ * @dsl
  * @function
  * @returns {ClippingNode}
  */

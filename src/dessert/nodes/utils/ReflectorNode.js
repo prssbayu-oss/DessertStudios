@@ -614,9 +614,9 @@ class ReflectorBaseNode extends Node {
 }
 
 /**
- * TSL function for creating a reflector node.
+ * DSL function for creating a reflector node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Object} [parameters={}] - An object holding configuration parameters.
  * @param {Object3D} [parameters.target=new Object3D()] - The 3D object the reflector is linked to.

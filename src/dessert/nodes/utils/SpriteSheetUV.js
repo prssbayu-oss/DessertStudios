@@ -1,8 +1,8 @@
 import { uv } from '../accessors/UV.js';
-import { Fn, float, vec2 } from '../tsl/TSLBase.js';
+import { Fn, float, vec2 } from '../dsl/DSLBase.js';
 
 /**
- * TSL function for computing texture coordinates for animated sprite sheets.
+ * DSL function for computing texture coordinates for animated sprite sheets.
  *
  * ```js
  * const uvNode = spritesheetUV( vec2( 6, 6 ), uv(), time.mul( animationSpeed ) );
@@ -10,7 +10,7 @@ import { Fn, float, vec2 } from '../tsl/TSLBase.js';
  * material.colorNode = texture( spriteSheet, uvNode );
  * ```
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} countNode - The node that defines the number of sprites in the x and y direction (e.g 6x6).
  * @param {?Node<vec2>} [uvNode=uv()] - The uv node.

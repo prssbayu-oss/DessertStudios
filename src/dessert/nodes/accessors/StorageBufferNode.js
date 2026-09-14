@@ -1,6 +1,6 @@
 import BufferNode from './BufferNode.js';
 import { bufferAttribute } from './BufferAttributeNode.js';
-import { varying } from '../tsl/TSLBase.js';
+import { varying } from '../dsl/DSLBase.js';
 import { storageElement } from '../utils/StorageArrayElementNode.js';
 import { NodeAccess } from '../core/constants.js';
 import { getTypeFromLength } from '../core/NodeUtils.js';
@@ -393,9 +393,9 @@ class StorageBufferNode extends BufferNode {
 export default StorageBufferNode;
 
 /**
- * TSL function for creating a storage buffer node.
+ * DSL function for creating a storage buffer node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {StorageBufferAttribute|StorageInstancedBufferAttribute|BufferAttribute} value - The buffer data.
  * @param {?(string|Struct)} [type=null] - The buffer type (e.g. `'vec3'`).

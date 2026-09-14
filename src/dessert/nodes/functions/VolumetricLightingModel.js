@@ -1,6 +1,6 @@
 import LightingModel from '../core/LightingModel.js';
 import { property } from '../core/PropertyNode.js';
-import { float, If, uniform, vec3, vec4 } from '../tsl/TSLBase.js';
+import { float, If, uniform, vec3, vec4 } from '../dsl/DSLBase.js';
 import { positionWorld } from '../accessors/Position.js';
 import { cameraFar, cameraNear, cameraPosition, cameraViewMatrix } from '../accessors/Camera.js';
 import { Loop } from '../utils/LoopNode.js';

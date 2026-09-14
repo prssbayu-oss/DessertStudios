@@ -1,5 +1,5 @@
 import Node from './Node.js';
-import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeProxy } from '../dsl/DSLCore.js';
 
 /**
  * The class generates the code of a given node but returns another node in the output.
@@ -80,9 +80,9 @@ class BypassNode extends Node {
 export default BypassNode;
 
 /**
- * TSL function for creating a bypass node.
+ * DSL function for creating a bypass node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} outputNode - The output node.
  * @param {Node} callNode - The call node.

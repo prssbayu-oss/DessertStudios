@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { nodeProxyIntent } from '../tsl/TSLCore.js';
+import { nodeProxyIntent } from '../dsl/DSLCore.js';
 /**
  * This node represents an operation that reinterprets the bit representation of a value
  * in one type as a value in another type.
@@ -107,7 +107,7 @@ export default BitcastNode;
 /**
  * Reinterpret the bit representation of a value in one type as a value in another type.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node | number} x - The parameter.
  * @param {string} y - The new type.
@@ -118,7 +118,7 @@ export const bitcast = /*@__PURE__*/ nodeProxyIntent( BitcastNode ).setParameter
 /**
  * Bitcasts a float or a vector of floats to a corresponding integer type with the same element size.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} value - The float or vector of floats to bitcast.
  * @returns {BitcastNode}
@@ -128,7 +128,7 @@ export const floatBitsToInt = ( value ) => new BitcastNode( value, 'int', 'float
 /**
  * Bitcasts a float or a vector of floats to a corresponding unsigned integer type with the same element size.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<float>} value - The float or vector of floats to bitcast.
  * @returns {BitcastNode}
@@ -138,7 +138,7 @@ export const floatBitsToUint = ( value ) => new BitcastNode( value, 'uint', 'flo
 /**
  * Bitcasts an integer or a vector of integers to a corresponding float type with the same element size.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<int>} value - The integer or vector of integers to bitcast.
  * @returns {BitcastNode}
@@ -148,7 +148,7 @@ export const intBitsToFloat = ( value ) => new BitcastNode( value, 'float', 'int
 /**
  * Bitcast an unsigned integer or a vector of unsigned integers to a corresponding float type with the same element size.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<uint>} value - The unsigned integer or vector of unsigned integers to bitcast.
  * @returns {BitcastNode}

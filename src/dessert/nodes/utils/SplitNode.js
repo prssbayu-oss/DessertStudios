@@ -4,7 +4,7 @@ import { vectorComponents } from '../core/constants.js';
 const _stringVectorComponents = vectorComponents.join( '' );
 
 /**
- * This module is part of the TSL core and usually not used in app level code.
+ * This module is part of the DSL core and usually not used in app level code.
  * `SplitNode` represents a property access operation which means it is
  * used to implement any `.xyzw`, `.rgba` and `stpq` usage on node objects.
  * For example:

@@ -1,4 +1,4 @@
-import { Fn } from '../../tsl/TSLBase.js';
+import { Fn } from '../../dsl/DSLBase.js';
 
 const F_Schlick = /*@__PURE__*/ Fn( ( { f0, f90, dotVH } ) => {
 

@@ -1,6 +1,6 @@
 import Node from './Node.js';
 import InspectorBase from '../../renderers/common/InspectorBase.js';
-import { addMethodChaining, nodeObject } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject } from '../dsl/DSLCore.js';
 import { NodeUpdateType } from './constants.js';
 import { warnOnce } from '../../utils.js';
 
@@ -96,7 +96,7 @@ class InspectorNode extends Node {
 
 		if ( builder.renderer.backend.isWebGPUBackend !== true && builder.renderer.inspector.constructor !== InspectorBase ) {
 
-			warnOnce( 'TSL: ".toInspector()" is only available with WebGPU.' );
+			warnOnce( 'DSL: ".toInspector()" is only available with WebGPU.' );
 
 		}
 
@@ -111,7 +111,7 @@ export default InspectorNode;
 /**
  * Creates an inspector node to wrap around a given node for inspection purposes.
  *
- * @tsl
+ * @dsl
  * @param {Node} node - The node to inspect.
  * @param {string} [name=''] - Optional name for the inspector node.
  * @param {Function|null} [callback=null] - Optional callback to modify the node during setup.

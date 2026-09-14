@@ -1,5 +1,5 @@
 import { positionWorld } from '../../accessors/Position.js';
-import { float, Fn, min, normalize, vec3 } from '../../tsl/TSLBase.js';
+import { float, Fn, min, normalize, vec3 } from '../../dsl/DSLBase.js';
 
 /**
  * This computes a parallax corrected normal which is used for box-projected cube mapping (BPCEM).
@@ -11,7 +11,7 @@ import { float, Fn, min, normalize, vec3 } from '../../tsl/TSLBase.js';
  * material.envNode = pmremTexture( renderTarget.texture, uvNode );
  * ```
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} normal - The normal to correct.
  * @param {Node<vec3>} cubeSize - The cube size should reflect the size of the environment (BPCEM is usually applied in closed environments like rooms).

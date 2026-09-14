@@ -1,7 +1,7 @@
 import { warn } from '../../utils.js';
 
 // Non-PURE exports list, side-effects are required here.
-// TSL Base Syntax
+// DSL Base Syntax
 
 export * from './TSLCore.js'; // float(), vec2(), vec3(), vec4(), mat3(), mat4(), Fn(), If(), element(), nodeObject(), nodeProxy(), ...
 export * from '../core/ArrayNode.js'; // array(), .toArray()
@@ -31,6 +31,6 @@ export * from '../core/InspectorNode.js'; // inspector(), .toInspector()
 
 export function addNodeElement( name/*, nodeElement*/ ) {
 
-	warn( 'TSL: AddNodeElement has been removed in favor of tree-shaking. Trying add', name );
+	warn( 'DSL: AddNodeElement has been removed in favor of tree-shaking. Trying add', name );
 
 }

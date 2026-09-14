@@ -65,9 +65,9 @@ class RendererReferenceNode extends ReferenceBaseNode {
 export default RendererReferenceNode;
 
 /**
- * TSL function for creating a renderer reference node.
+ * DSL function for creating a renderer reference node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the property the node refers to.
  * @param {string} type - The uniform type that should be used to represent the property value.

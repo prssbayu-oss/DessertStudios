@@ -1,7 +1,7 @@
 import NodeMaterial from '../../materials/nodes/NodeMaterial.js';
 import QuadMesh from '../../renderers/common/QuadMesh.js';
 import ShadowBaseNode, { shadowPositionWorld } from './ShadowBaseNode.js';
-import { float, vec2, vec3, vec4, int, Fn } from '../tsl/TSLCore.js';
+import { float, vec2, vec3, vec4, int, Fn } from '../dsl/DSLCore.js';
 import { reference } from '../accessors/ReferenceNode.js';
 import { texture } from '../accessors/TextureNode.js';
 import { cubeTexture } from '../accessors/CubeTextureNode.js';
@@ -830,9 +830,9 @@ class ShadowNode extends ShadowBaseNode {
 export default ShadowNode;
 
 /**
- * TSL function for creating an instance of `ShadowNode`.
+ * DSL function for creating an instance of `ShadowNode`.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Light} light - The shadow casting light.
  * @param {?LightShadow} [shadow] - The light shadow.

@@ -1,4 +1,4 @@
-import { Fn, float, vec3 } from '../../tsl/TSLBase.js';
+import { Fn, float, vec3 } from '../../dsl/DSLBase.js';
 
 const RECIPROCAL_PI = /*@__PURE__*/ float( 1 / Math.PI );
 

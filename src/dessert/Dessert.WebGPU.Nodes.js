@@ -28,5 +28,5 @@ export { default as CanvasTarget } from './renderers/common/CanvasTarget.js';
 export { default as BlendMode } from './renderers/common/BlendMode.js';
 export { ClippingGroup } from './objects/ClippingGroup.js';
 export * from './nodes/Nodes.js';
-import * as TSL from './nodes/TSL.js';
-export { TSL };
+import * as DSL from './nodes/DSL.js';
+export { DSL };

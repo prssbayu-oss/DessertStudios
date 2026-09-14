@@ -1,4 +1,4 @@
-import { Fn, float, mat3, vec3, If } from '../tsl/TSLBase.js';
+import { Fn, float, mat3, vec3, If } from '../dsl/DSLBase.js';
 import { select } from '../math/ConditionalNode.js';
 import { clamp, log2, max, min, pow, mix } from '../math/MathNode.js';
 import { mul, sub, div } from '../math/OperatorNode.js';
@@ -6,7 +6,7 @@ import { mul, sub, div } from '../math/OperatorNode.js';
 /**
  * Linear tone mapping, exposure only.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} color - The color that should be tone mapped.
  * @param {Node<float>} exposure - The exposure.
@@ -30,7 +30,7 @@ export const linearToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => {
  *
  * Reference: {@link https://www.cs.utah.edu/docs/techreports/2002/pdf/UUCS-02-001.pdf}
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} color - The color that should be tone mapped.
  * @param {Node<float>} exposure - The exposure.
@@ -56,7 +56,7 @@ export const reinhardToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => 
  *
  * Reference: {@link http://filmicworlds.com/blog/filmic-tonemapping-operators/}
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} color - The color that should be tone mapped.
  * @param {Node<float>} exposure - The exposure.
@@ -98,7 +98,7 @@ const RRTAndODTFit = /*@__PURE__*/ Fn( ( [ color ] ) => {
  *
  * Reference: {@link https://github.com/selfshadow/ltc_code/blob/master/webgl/shaders/ltc/ltc_blit.fs}
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} color - The color that should be tone mapped.
  * @param {Node<float>} exposure - The exposure.
@@ -157,7 +157,7 @@ const agxDefaultContrastApprox = /*@__PURE__*/ Fn( ( [ x_immutable ] ) => {
 /**
  * AgX tone mapping.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} color - The color that should be tone mapped.
  * @param {Node<float>} exposure - The exposure.
@@ -199,7 +199,7 @@ export const agxToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => {
  *
  * Reference: {@link https://modelviewer.dev/examples/tone-mapping}
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec3>} color - The color that should be tone mapped.
  * @param {Node<float>} exposure - The exposure.

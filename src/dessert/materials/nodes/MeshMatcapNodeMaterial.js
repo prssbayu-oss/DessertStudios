@@ -1,7 +1,7 @@
 import NodeMaterial from './NodeMaterial.js';
 import { materialReference } from '../../nodes/accessors/MaterialReferenceNode.js';
 import { diffuseColor } from '../../nodes/core/PropertyNode.js';
-import { vec3 } from '../../nodes/tsl/TSLBase.js';
+import { vec3 } from '../../nodes/dsl/DSLBase.js';
 import { mix } from '../../nodes/math/MathNode.js';
 import { matcapUV } from '../../nodes/utils/MatcapUV.js';
 

@@ -1,6 +1,6 @@
 import Node from '../core/Node.js';
 import { property } from '../core/PropertyNode.js';
-import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeProxy } from '../dsl/DSLCore.js';
 import { warn } from '../../utils.js';
 
 /**
@@ -174,7 +174,7 @@ class ConditionalNode extends Node {
 
 				if ( functionNode === null ) {
 
-					warn( 'TSL: Return statement used in an inline \'Fn()\'. Define a layout struct to allow return values.', this.stackTrace );
+					warn( 'DSL: Return statement used in an inline \'Fn()\'. Define a layout struct to allow return values.', this.stackTrace );
 
 					ifSnippet = '// ' + ifSnippet;
 
@@ -204,7 +204,7 @@ class ConditionalNode extends Node {
 
 					if ( functionNode === null ) {
 
-						warn( 'TSL: Return statement used in an inline \'Fn()\'. Define a layout struct to allow return values.', this.stackTrace );
+						warn( 'DSL: Return statement used in an inline \'Fn()\'. Define a layout struct to allow return values.', this.stackTrace );
 
 						elseSnippet = '// ' + elseSnippet;
 
@@ -231,9 +231,9 @@ class ConditionalNode extends Node {
 export default ConditionalNode;
 
 /**
- * TSL function for creating a conditional node.
+ * DSL function for creating a conditional node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} condNode - The node that defines the condition.
  * @param {Node} ifNode - The node that is evaluate when the condition ends up `true`.

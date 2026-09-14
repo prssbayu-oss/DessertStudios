@@ -1,4 +1,4 @@
-import { float, vec2, vec3, add, sub, mul, sin, cos, normalize } from '../tsl/TSLBase.js';
+import { float, vec2, vec3, add, sub, mul, sin, cos, normalize } from '../dsl/DSLBase.js';
 
 export const mx_rotate2d = ( input, amount = 0 ) => {
 

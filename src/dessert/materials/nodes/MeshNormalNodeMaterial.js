@@ -4,7 +4,7 @@ import { packNormalToRGB } from '../../nodes/utils/Packing.js';
 import { materialOpacity } from '../../nodes/accessors/MaterialNode.js';
 import { normalView } from '../../nodes/accessors/Normal.js';
 import { colorSpaceToWorking } from '../../nodes/display/ColorSpaceNode.js';
-import { float, vec4 } from '../../nodes/tsl/TSLBase.js';
+import { float, vec4 } from '../../nodes/dsl/DSLBase.js';
 import { SRGBColorSpace } from '../../constants.js';
 
 import { MeshNormalMaterial } from '../MeshNormalMaterial.js';

@@ -1,5 +1,5 @@
 import Node from './Node.js';
-import { addMethodChaining, nodeObject } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject } from '../dsl/DSLCore.js';
 import { warn } from '../../utils.js';
 
 /**
@@ -102,9 +102,9 @@ class IsolateNode extends Node {
 export default IsolateNode;
 
 /**
- * TSL function for creating a cache node.
+ * DSL function for creating a cache node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node that should be cached.
  * @returns {IsolateNode}
@@ -112,9 +112,9 @@ export default IsolateNode;
 export const isolate = ( node ) => new IsolateNode( nodeObject( node ) );
 
 /**
- * TSL function for creating a cache node.
+ * DSL function for creating a cache node.
  *
- * @tsl
+ * @dsl
  * @function
  * @deprecated
  * @param {Node} node - The node that should be cached.
@@ -123,7 +123,7 @@ export const isolate = ( node ) => new IsolateNode( nodeObject( node ) );
  */
 export function cache( node, parent = true ) {
 
-	warn( 'TSL: "cache()" has been deprecated. Use "isolate()" instead.' ); // @deprecated r181
+	warn( 'DSL: "cache()" has been deprecated. Use "isolate()" instead.' ); // @deprecated r181
 
 	return isolate( node ).setParent( parent );
 

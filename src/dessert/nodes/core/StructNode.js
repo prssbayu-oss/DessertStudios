@@ -1,6 +1,6 @@
 import Node from './Node.js';
 import StructTypeNode from './StructTypeNode.js';
-import { nodeObject, nodeProxyConstructor } from '../tsl/TSLCore.js';
+import { nodeObject, nodeProxyConstructor } from '../dsl/DSLCore.js';
 import { isArrayAsParameter } from './NodeUtils.js';
 
 /**
@@ -86,9 +86,9 @@ class StructNode extends Node {
 export default StructNode;
 
 /**
- * TSL function for creating a struct node.
+ * DSL function for creating a struct node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Object} membersLayout - The layout of the struct members.
  * @param {?string} [name=null] - The name of the struct.

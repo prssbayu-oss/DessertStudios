@@ -1,6 +1,6 @@
 import TextureNode from '../accessors/TextureNode.js';
 import { NodeUpdateType } from '../core/constants.js';
-import { nodeProxy } from '../tsl/TSLBase.js';
+import { nodeProxy } from '../dsl/DSLBase.js';
 import { screenUV } from './ScreenNode.js';
 
 import { Vector2 } from '../../math/Vector2.js';
@@ -215,9 +215,9 @@ class ViewportTextureNode extends TextureNode {
 export default ViewportTextureNode;
 
 /**
- * TSL function for creating a viewport texture node.
+ * DSL function for creating a viewport texture node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Node} [uvNode=screenUV] - The uv node.
  * @param {?Node} [levelNode=null] - The level node.
@@ -227,9 +227,9 @@ export default ViewportTextureNode;
 export const viewportTexture = /*@__PURE__*/ nodeProxy( ViewportTextureNode ).setParameterLength( 0, 3 );
 
 /**
- * TSL function for creating a viewport texture node with enabled mipmap generation.
+ * DSL function for creating a viewport texture node with enabled mipmap generation.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Node} [uvNode=screenUV] - The uv node.
  * @param {?Node} [levelNode=null] - The level node.
@@ -242,12 +242,12 @@ export const viewportMipTexture = /*@__PURE__*/ nodeProxy( ViewportTextureNode, 
 const _singletonOpaqueViewportTextureNode = /*@__PURE__*/ viewportMipTexture();
 
 /**
- * TSL function for creating a viewport texture node with enabled mipmap generation.
+ * DSL function for creating a viewport texture node with enabled mipmap generation.
  * The texture should only contain the opaque rendering objects.
  *
  * This should be used just in transparent or transmissive materials.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {?Node} [uv=screenUV] - The uv node.
  * @param {?Node} [level=null] - The level node.

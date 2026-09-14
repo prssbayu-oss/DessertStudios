@@ -1,6 +1,6 @@
 import Node from '../core/Node.js';
 import { uv } from '../accessors/UV.js';
-import { nodeObject } from '../tsl/TSLCore.js';
+import { nodeObject } from '../dsl/DSLCore.js';
 
 /**
  * Class representing a node that samples a value using a provided callback function.

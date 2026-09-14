@@ -71,9 +71,9 @@ class MaterialReferenceNode extends ReferenceNode {
 export default MaterialReferenceNode;
 
 /**
- * TSL function for creating a material reference node.
+ * DSL function for creating a material reference node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the property the node refers to.
  * @param {string} type - The uniform type that should be used to represent the property value.

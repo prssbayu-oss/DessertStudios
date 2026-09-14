@@ -2,10 +2,10 @@ import { add } from '../math/OperatorNode.js';
 import { normalLocal } from '../accessors/Normal.js';
 import { positionLocal } from '../accessors/Position.js';
 import { texture } from '../accessors/TextureNode.js';
-import { float, vec3, Fn } from '../tsl/TSLBase.js';
+import { float, vec3, Fn } from '../dsl/DSLBase.js';
 
 /**
- * TSL function for creating a triplanar textures node.
+ * DSL function for creating a triplanar textures node.
  *
  * Can be used for triplanar texture mapping.
  *
@@ -13,7 +13,7 @@ import { float, vec3, Fn } from '../tsl/TSLBase.js';
  * material.colorNode = triplanarTexture( texture( diffuseMap ) );
  * ```
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} textureXNode - First texture node.
  * @param {?Node} [textureYNode=null] - Second texture node. When not set, the shader will sample from `textureXNode` instead.
@@ -50,9 +50,9 @@ export const triplanarTextures = /*@__PURE__*/ Fn( ( [ textureXNode, textureYNod
 } );
 
 /**
- * TSL function for creating a triplanar textures node.
+ * DSL function for creating a triplanar textures node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} textureXNode - First texture node.
  * @param {?Node} [textureYNode=null] - Second texture node. When not set, the shader will sample from `textureXNode` instead.

@@ -1,6 +1,6 @@
 import Node from './Node.js';
 import { NodeShaderStage } from './constants.js';
-import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeProxy } from '../dsl/DSLCore.js';
 import { subBuild } from './SubBuildNode.js';
 
 /**
@@ -196,9 +196,9 @@ class VaryingNode extends Node {
 export default VaryingNode;
 
 /**
- * TSL function for creating a varying node.
+ * DSL function for creating a varying node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node for which a varying should be created.
  * @param {?string} name - The name of the varying in the shader.
@@ -209,7 +209,7 @@ export const varying = /*@__PURE__*/ nodeProxy( VaryingNode ).setParameterLength
 /**
  * Computes a node in the vertex stage.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node which should be executed in the vertex stage.
  * @returns {VaryingNode}

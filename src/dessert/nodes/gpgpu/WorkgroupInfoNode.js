@@ -158,7 +158,7 @@ class WorkgroupInfoNode extends Node {
 	 */
 	label( name ) {
 
-		warn( 'TSL: "label()" has been deprecated. Use "setName()" instead.', new StackTrace() ); // @deprecated r179
+		warn( 'DSL: "label()" has been deprecated. Use "setName()" instead.', new StackTrace() ); // @deprecated r179
 
 		return this.setName( name );
 
@@ -244,7 +244,7 @@ class WorkgroupInfoNode extends Node {
 
 		if ( builder.shaderStage !== 'compute' ) {
 
-			error( 'TSL: "workgroupArray()" can only be executed within the compute shader stage' );
+			error( 'DSL: "workgroupArray()" can only be executed within the compute shader stage' );
 
 		}
 
@@ -259,10 +259,10 @@ class WorkgroupInfoNode extends Node {
 export default WorkgroupInfoNode;
 
 /**
- * TSL function for creating a workgroup info node.
+ * DSL function for creating a workgroup info node.
  * Creates a new 'workgroup' scoped array buffer.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} type - The data type of a 'workgroup' scoped buffer element.
  * @param {number} [count=0] - The number of elements in the buffer.

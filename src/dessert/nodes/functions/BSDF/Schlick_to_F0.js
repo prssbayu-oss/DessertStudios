@@ -1,4 +1,4 @@
-import { Fn, vec3 } from '../../tsl/TSLBase.js';
+import { Fn, vec3 } from '../../dsl/DSLBase.js';
 
 const Schlick_to_F0 = /*@__PURE__*/ Fn( ( { f, f90, dotVH } ) => {
 

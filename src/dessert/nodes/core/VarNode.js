@@ -1,5 +1,5 @@
 import Node from './Node.js';
-import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeProxy } from '../dsl/DSLCore.js';
 import { error } from '../../utils.js';
 
 /**
@@ -262,7 +262,7 @@ class VarNode extends Node {
 
 			if ( this.isIntent( builder ) !== true ) {
 
-				error( 'TSL: ".toVar()" can not be used with void type.', this.stackTrace );
+				error( 'DSL: ".toVar()" can not be used with void type.', this.stackTrace );
 
 			}
 
@@ -318,9 +318,9 @@ class VarNode extends Node {
 export default VarNode;
 
 /**
- * TSL function for creating a var node.
+ * DSL function for creating a var node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node for which a variable should be created.
  * @param {?string} name - The name of the variable in the shader.
@@ -329,9 +329,9 @@ export default VarNode;
 const createVar = /*@__PURE__*/ nodeProxy( VarNode );
 
 /**
- * TSL function for creating a var node.
+ * DSL function for creating a var node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node for which a variable should be created.
  * @param {?string} name - The name of the variable in the shader.
@@ -340,9 +340,9 @@ const createVar = /*@__PURE__*/ nodeProxy( VarNode );
 export const Var = ( node, name = null ) => createVar( node, name ).toStack();
 
 /**
- * TSL function for creating a const node.
+ * DSL function for creating a const node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node for which a constant should be created.
  * @param {?string} name - The name of the constant in the shader.
@@ -354,9 +354,9 @@ export const Const = ( node, name = null ) => createVar( node, name, true ).toSt
 //
 
 /**
- * TSL function for creating a var intent node.
+ * DSL function for creating a var intent node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} node - The node for which a variable should be created.
  * @returns {VarNode}

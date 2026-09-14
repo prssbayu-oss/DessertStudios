@@ -12,7 +12,7 @@ import { positionLocal, positionView } from '../../nodes/accessors/Position.js';
 import { skinning } from '../../nodes/accessors/Skinning.js';
 import { morphReference } from '../../nodes/accessors/Morph.js';
 import { fwidth, mix, smoothstep } from '../../nodes/math/MathNode.js';
-import { float, vec3, vec4, bool } from '../../nodes/tsl/TSLBase.js';
+import { float, vec3, vec4, bool } from '../../nodes/dsl/DSLBase.js';
 import AONode from '../../nodes/lighting/AONode.js';
 import { lightingContext } from '../../nodes/lighting/LightingContextNode.js';
 import IrradianceNode from '../../nodes/lighting/IrradianceNode.js';

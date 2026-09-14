@@ -1,4 +1,4 @@
-import { Fn, vec2 } from '../../tsl/TSLBase.js';
+import { Fn, vec2 } from '../../dsl/DSLBase.js';
 import { texture } from '../../accessors/TextureNode.js';
 
 import { DataTexture } from '../../../textures/DataTexture.js';

@@ -53,7 +53,7 @@ export * from './utils/EventNode.js';
 export * from './utils/StorageArrayElementNode.js';
 
 // dessert.js shading language
-export * from './tsl/TSLBase.js';
+export * from './dsl/DSLBase.js';
 
 // accessors
 export * from './accessors/AccessorsUtils.js';

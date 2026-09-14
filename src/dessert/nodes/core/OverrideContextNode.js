@@ -1,5 +1,5 @@
 import ContextNode from './ContextNode.js';
-import { addMethodChaining } from '../tsl/TSLCore.js';
+import { addMethodChaining } from '../dsl/DSLCore.js';
 
 /**
  * A specialized context node designed to override specific target nodes within a
@@ -89,13 +89,13 @@ class OverrideContextNode extends ContextNode {
 export default OverrideContextNode;
 
 /**
- * TSL function for creating an `OverrideContextNode` to override a single target node.
+ * DSL function for creating an `OverrideContextNode` to override a single target node.
  *
  * ```js
  * material.contextNode = overrideNode( positionLocal, ( builder ) => positionLocal.add( vec3( 1, 0, 0 ) ) );
  * ```
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} targetNode - The target node that should be overridden.
  * @param {Function|Node|null} [callback=null] - A callback function returning the overriding node (which receives the builder as its argument), or the overriding node itself.
@@ -119,7 +119,7 @@ export function overrideNode( targetNode, callback = null, flowNode = null ) {
 addMethodChaining( 'overrideNode', ( flowNode, node, callback ) => overrideNode( node, callback, flowNode ) );
 
 /**
- * TSL function for creating an `OverrideContextNode` to override multiple target nodes.
+ * DSL function for creating an `OverrideContextNode` to override multiple target nodes.
  *
  * ```js
  * material.contextNode = overrideNodes( [
@@ -128,7 +128,7 @@ addMethodChaining( 'overrideNode', ( flowNode, node, callback ) => overrideNode(
  * ] );
  * ```
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Map<Node, (Function|Node)>|Array<Array<Node|Function|Node>>} overrides - The overrides mapping target nodes to callback functions or overriding nodes.
  * @param {Node|null} [flowNode=null] - The node whose context should be modified.

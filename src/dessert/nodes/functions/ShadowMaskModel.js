@@ -1,6 +1,6 @@
 import LightingModel from '../core/LightingModel.js';
 import { diffuseColor } from '../core/PropertyNode.js';
-import { float } from '../tsl/TSLBase.js';
+import { float } from '../dsl/DSLBase.js';
 
 /**
  * Represents lighting model for a shadow material. Used in {@link ShadowNodeMaterial}.

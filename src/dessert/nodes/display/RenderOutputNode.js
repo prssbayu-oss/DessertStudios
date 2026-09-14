@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { addMethodChaining, nodeObject, vec4 } from '../tsl/TSLCore.js';
+import { addMethodChaining, nodeObject, vec4 } from '../dsl/DSLCore.js';
 import { premultiplyAlpha, unpremultiplyAlpha } from './PremultiplyAlphaFunctions.js';
 
 import { NoColorSpace, NoToneMapping } from '../../constants.js';
@@ -145,9 +145,9 @@ class RenderOutputNode extends TempNode {
 export default RenderOutputNode;
 
 /**
- * TSL function for creating a render output node.
+ * DSL function for creating a render output node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node} color - The color node to process.
  * @param {?number} [toneMapping=null] - The tone mapping type.

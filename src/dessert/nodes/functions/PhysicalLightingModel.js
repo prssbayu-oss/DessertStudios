@@ -11,7 +11,7 @@ import LightingModel from '../core/LightingModel.js';
 import { diffuseColor, diffuseContribution, diffuseRoughness, specularColor, specularColorBlended, specularF90, roughness, metalness, clearcoat, clearcoatRoughness, sheen, sheenRoughness, iridescence, iridescenceIOR, iridescenceThickness, ior, thickness, transmission, attenuationDistance, attenuationColor, dispersion, retroreflectivity } from '../core/PropertyNode.js';
 import { normalView, clearcoatNormalView, normalWorld } from '../accessors/Normal.js';
 import { positionViewDirection, positionView, positionWorld } from '../accessors/Position.js';
-import { Fn, float, vec2, vec3, vec4, mat3, If } from '../tsl/TSLBase.js';
+import { Fn, float, vec2, vec3, vec4, mat3, If } from '../dsl/DSLBase.js';
 import { mix, normalize, refract, length, clamp, log2, log, exp, smoothstep } from '../math/MathNode.js';
 import { div } from '../math/OperatorNode.js';
 import { cameraPosition, cameraProjectionMatrix, cameraViewMatrix, cameraViewport } from '../accessors/Camera.js';

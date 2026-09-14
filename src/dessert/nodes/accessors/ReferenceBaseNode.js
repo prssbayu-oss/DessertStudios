@@ -1,7 +1,7 @@
 import Node from '../core/Node.js';
 import { NodeUpdateType } from '../core/constants.js';
 import { uniform } from '../core/UniformNode.js';
-import { nodeObject } from '../tsl/TSLCore.js';
+import { nodeObject } from '../dsl/DSLCore.js';
 import ReferenceElementNode from './ReferenceElementNode.js';
 
 // TODO: Avoid duplicated code and use only ReferenceBaseNode or ReferenceNode
@@ -262,9 +262,9 @@ class ReferenceBaseNode extends Node {
 export default ReferenceBaseNode;
 
 /**
- * TSL function for creating a reference base node.
+ * DSL function for creating a reference base node.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the property the node refers to.
  * @param {string} type - The uniform type that should be used to represent the property value.
@@ -274,10 +274,10 @@ export default ReferenceBaseNode;
 export const reference = ( name, type, object ) => new ReferenceBaseNode( name, type, object );
 
 /**
- * TSL function for creating a reference base node. Use this function if you want need a reference
+ * DSL function for creating a reference base node. Use this function if you want need a reference
  * to an array-like property that should be represented as a uniform buffer.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {string} name - The name of the property the node refers to.
  * @param {string} type - The uniform type that should be used to represent the property value.

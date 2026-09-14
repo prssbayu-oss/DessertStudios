@@ -1,4 +1,4 @@
-import { Fn, vec2 } from '../tsl/TSLBase.js';
+import { Fn, vec2 } from '../dsl/DSLBase.js';
 import { rotate } from './RotateNode.js';
 import { context } from '../core/ContextNode.js';
 
@@ -14,7 +14,7 @@ import { context } from '../core/ContextNode.js';
  *} );
  *```
  *
- * @tsl
+ * @dsl
  * @function
  * @param {function(Node):Node<vec2>|Node<vec2>} callback - A callback that receives the texture node
  * and must return the new uv coordinates.
@@ -32,7 +32,7 @@ export function replaceDefaultUV( callback, node = null ) {
 /**
  * Rotates the given uv coordinates around a center point
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} uv - The uv coordinates.
  * @param {Node<float>} rotation - The rotation defined in radians.
@@ -48,7 +48,7 @@ export const rotateUV = /*@__PURE__*/ Fn( ( [ uv, rotation, center = vec2( 0.5 )
 /**
  * Applies a spherical warping effect to the given uv coordinates.
  *
- * @tsl
+ * @dsl
  * @function
  * @param {Node<vec2>} uv - The uv coordinates.
  * @param {Node<float>} strength - The strength of the effect.

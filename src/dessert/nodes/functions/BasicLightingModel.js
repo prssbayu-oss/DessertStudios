@@ -3,7 +3,7 @@ import { diffuseColor } from '../core/PropertyNode.js';
 import { MultiplyOperation, MixOperation, AddOperation } from '../../constants.js';
 import { materialSpecularStrength, materialReflectivity } from '../accessors/MaterialNode.js';
 import { mix } from '../math/MathNode.js';
-import { vec4 } from '../tsl/TSLBase.js';
+import { vec4 } from '../dsl/DSLBase.js';
 import { warn } from '../../utils.js';
 
 /**
