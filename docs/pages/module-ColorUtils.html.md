@@ -2,10 +2,10 @@
 
 ## Import
 
-ColorUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ColorUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as ColorUtils from 'three/addons/utils/ColorUtils.js';
+import * as ColorUtils from 'dessert/addons/utils/ColorUtils.js';
 ```
 
 ## Methods

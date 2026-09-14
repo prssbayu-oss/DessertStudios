@@ -6,10 +6,10 @@ A custom version of `LightsNode` implementing Forward+ clustered shading: the vi
 
 ## Import
 
-ClusteredLightsNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ClusteredLightsNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { clusteredLights } from 'three/addons/tsl/lighting/ClusteredLightsNode.js';
+import { clusteredLights } from 'dessert/addons/tsl/lighting/ClusteredLightsNode.js';
 ```
 
 ## Constructor

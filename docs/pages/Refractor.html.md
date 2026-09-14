@@ -20,10 +20,10 @@ scene.add( refractor );
 
 ## Import
 
-Refractor is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Refractor is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Refractor } from 'three/addons/objects/Refractor.js';
+import { Refractor } from 'dessert/addons/objects/Refractor.js';
 ```
 
 ## Constructor

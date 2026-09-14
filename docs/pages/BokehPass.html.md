@@ -17,10 +17,10 @@ composer.addPass( bokehPass );
 
 ## Import
 
-BokehPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BokehPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BokehPass } from 'three/addons/postprocessing/BokehPass.js';
+import { BokehPass } from 'dessert/addons/postprocessing/BokehPass.js';
 ```
 
 ## Constructor

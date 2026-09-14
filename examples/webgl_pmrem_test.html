@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js PMREM directional light test</title>
+		<title>dessert.js PMREM directional light test</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js PMREM directional light test">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_pmrem_test.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_pmrem_test.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_pmrem_test.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_pmrem_test.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="container">
 			<div id="info">
-				<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> -
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> -
 				PMREM test by <a href="https://github.com/elalish" target="_blank" rel="noopener">Emmett Lalish</a>
 				<br>
 				<br>1: white metal. 2: white dielectric. 3: black dielectric.
@@ -36,12 +36,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			let scene, camera, controls, renderer;
 

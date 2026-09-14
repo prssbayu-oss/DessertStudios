@@ -4,10 +4,10 @@ Represents the frustum of a CSM instance.
 
 ## Import
 
-CSMFrustum is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CSMFrustum is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CSMFrustum } from 'three/addons/csm/CSMFrustum.js';
+import { CSMFrustum } from 'dessert/addons/csm/CSMFrustum.js';
 ```
 
 ## Constructor

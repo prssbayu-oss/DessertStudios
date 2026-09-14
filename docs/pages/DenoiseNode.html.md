@@ -8,10 +8,10 @@ Reference: [https://openaccess.thecvf.com/content/WACV2021/papers/Khademi\_Self-
 
 ## Import
 
-DenoiseNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DenoiseNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { denoise } from 'three/addons/tsl/display/DenoiseNode.js';
+import { denoise } from 'dessert/addons/tsl/display/DenoiseNode.js';
 ```
 
 ## Constructor

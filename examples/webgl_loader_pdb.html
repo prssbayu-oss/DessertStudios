@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - molecules</title>
+		<title>dessert.js webgl - molecules</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - molecules">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_loader_pdb.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_loader_pdb.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_loader_pdb.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_loader_pdb.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			.label {
@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<div id="container"></div>
-		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js webgl</a> - molecules</div>
+		<div id="info"><a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">three.js webgl</a> - molecules</div>
 
 		<script type="importmap">
 			{
@@ -34,12 +34,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
-			import { PDBLoader } from 'three/addons/loaders/PDBLoader.js';
-			import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { TrackballControls } from 'dessert/addons/controls/TrackballControls.js';
+			import { PDBLoader } from 'dessert/addons/loaders/PDBLoader.js';
+			import { CSS2DRenderer, CSS2DObject } from 'dessert/addons/renderers/CSS2DRenderer.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			let camera, scene, renderer, labelRenderer;
 			let controls;

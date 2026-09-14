@@ -16,10 +16,10 @@ scene.environment = cubeTexture;
 
 ## Import
 
-HDRCubeTextureLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+HDRCubeTextureLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { HDRCubeTextureLoader } from 'three/addons/loaders/HDRCubeTextureLoader.js';
+import { HDRCubeTextureLoader } from 'dessert/addons/loaders/HDRCubeTextureLoader.js';
 ```
 
 ## Constructor

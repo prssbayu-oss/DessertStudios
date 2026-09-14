@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - light probe volume (multi-room)</title>
+		<title>dessert.js webgl - light probe volume (multi-room)</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - light probe volume (multi-room)">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_lightprobes_complex.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_lightprobes_complex.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_lightprobes_complex.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_lightprobes_complex.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - light probe volume (multi-room)<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - light probe volume (multi-room)<br/>
 			Two rooms with independent probe volumes showcasing multi-volume scene.add() API
 		</div>
 
@@ -30,12 +30,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-			import { LightProbeGridWebGL } from 'three/addons/lighting/LightProbeGridWebGL.js';
-			import { LightProbeGridHelperWebGL } from 'three/addons/helpers/LightProbeGridHelperWebGL.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
+			import { LightProbeGridWebGL } from 'dessert/addons/lighting/LightProbeGridWebGL.js';
+			import { LightProbeGridHelperWebGL } from 'dessert/addons/helpers/LightProbeGridHelperWebGL.js';
 
 			let camera, scene, renderer, controls;
 			let probesLeft, probesRight;

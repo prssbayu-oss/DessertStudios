@@ -1,15 +1,15 @@
 if ( ! window.frameElement && window.location.protocol !== 'file:' ) {
 
 	// navigates to docs home if direct access, e.g.
-	//   https://threejs.org/docs/pages/BoxGeometry.html
-	// ->https://threejs.org/docs/#BoxGeometry
+	//   https://github.com/prssbayu-oss/DessertStudios/docs/pages/BoxGeometry.html
+	// ->https://github.com/prssbayu-oss/DessertStudios/docs/#BoxGeometry
 
 	const url = new URL( window.location.href );
 
 	// hash route, e.g. #BoxGeometry
 	url.hash = url.pathname.replace( /\/docs\/pages\/(.*?)(?:\.html)?$/, '$1' );
 
-	// docs home, e.g. https://threejs.org/docs/
+	// docs home, e.g. https://github.com/prssbayu-oss/DessertStudios/docs/
 	url.pathname = url.pathname.replace( /(\/docs\/).*$/, '$1' );
 
 	window.location.replace( url );

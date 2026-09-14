@@ -2,7 +2,7 @@ import {
 	HalfFloatType,
 	ShaderMaterial,
 	WebGLRenderTarget
-} from 'three';
+} from 'dessert';
 import { FullScreenQuad, Pass } from './Pass.js';
 
 /**
@@ -16,7 +16,7 @@ import { FullScreenQuad, Pass } from './Pass.js';
  * ```
  *
  * @augments Pass
- * @three_import import { RenderTransitionPass } from 'three/addons/postprocessing/RenderTransitionPass.js';
+ * @three_import import { RenderTransitionPass } from 'dessert/addons/postprocessing/RenderTransitionPass.js';
  */
 class RenderTransitionPass extends Pass {
 

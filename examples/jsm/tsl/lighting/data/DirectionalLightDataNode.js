@@ -1,5 +1,5 @@
-import { Color, Node, Vector3 } from 'three/webgpu';
-import { Loop, NodeUpdateType, renderGroup, uniform, uniformArray, vec3 } from 'three/tsl';
+import { Color, Node, Vector3 } from 'dessert/webgpu';
+import { Loop, NodeUpdateType, renderGroup, uniform, uniformArray, vec3 } from 'dessert/dsl';
 
 const _lightPosition = /*@__PURE__*/ new Vector3();
 const _targetPosition = /*@__PURE__*/ new Vector3();

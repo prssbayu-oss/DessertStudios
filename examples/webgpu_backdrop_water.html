@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - backdrop water</title>
+		<title>dessert.js webgpu - backdrop water</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - backdrop water">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_backdrop_water.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_backdrop_water.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_backdrop_water.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_backdrop_water.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Backdrop Water</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Backdrop Water</span>
 			</div>
 
 			<small>Water refraction with depth effect.</small>
@@ -37,16 +37,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { color, vec2, pass, linearDepth, normalWorld, triplanarTexture, texture, objectPosition, screenUV, viewportLinearDepth, viewportDepthTexture, viewportSharedTexture, positionWorld, time } from 'three/tsl';
-			import { gaussianBlur } from 'three/addons/tsl/display/GaussianBlurNode.js';
-			import { voronoi2d, voronoi3d } from 'three/addons/tsl/math/voronoiNoise.js';
+			import * as THREE from 'dessert/webgpu';
+			import { color, vec2, pass, linearDepth, normalWorld, triplanarTexture, texture, objectPosition, screenUV, viewportLinearDepth, viewportDepthTexture, viewportSharedTexture, positionWorld, time } from 'dessert/dsl';
+			import { gaussianBlur } from 'dessert/addons/tsl/display/GaussianBlurNode.js';
+			import { voronoi2d, voronoi3d } from 'dessert/addons/tsl/math/voronoiNoise.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
 			let camera, scene, renderer;
 			let mixer, objects, timer;

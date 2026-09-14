@@ -34,7 +34,7 @@ import {
 	pow,
 	sqrt,
 	sign,
-} from 'three/tsl';
+} from 'dessert/dsl';
 import {
 	getComponentCountForType,
 	normalizeSpaceName,

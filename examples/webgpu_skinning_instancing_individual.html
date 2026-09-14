@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - skinning individual instancing</title>
+		<title>dessert.js webgpu - skinning individual instancing</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - skinning instancing individual">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_skinning_instancing_individual.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_skinning_instancing_individual.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_skinning_instancing_individual.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_skinning_instancing_individual.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Skinning Individual Instancing</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Skinning Individual Instancing</span>
 			</div>
 
 			<small>
@@ -39,17 +39,17 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { Fn, add, attributeArray, color, instanceIndex, screenUV, storage, transformNormal, transformNormalToView, uint, uniform, vec4, vertexIndex, mat3 } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { Fn, add, attributeArray, color, instanceIndex, screenUV, storage, transformNormal, transformNormalToView, uint, uniform, vec4, vertexIndex, mat3 } from 'dessert/dsl';
 
-			import { SunLight } from 'three/addons/lights/SunLight.js';
-			import { SunLightNode } from 'three/addons/lights/SunLightNode.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { SunLight } from 'dessert/addons/lights/SunLight.js';
+			import { SunLightNode } from 'dessert/addons/lights/SunLightNode.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
 			let camera, scene, renderer, controls;
 			let mixer, timer, animatedObject, proportionBones, referenceMesh, footBones, groundFoot, dummy;

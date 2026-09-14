@@ -10,10 +10,10 @@ Unlike [OrbitControls](OrbitControls.html) and [TrackballControls](TrackballCont
 
 ## Import
 
-ArcballControls is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ArcballControls is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ArcballControls } from 'three/addons/controls/ArcballControls.js';
+import { ArcballControls } from 'dessert/addons/controls/ArcballControls.js';
 ```
 
 ## Constructor

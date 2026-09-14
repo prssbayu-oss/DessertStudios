@@ -1,21 +1,21 @@
 <html lang="en">
 	<head>
-		<title>three.js - wgsl/tsl interoperability</title>
+		<title>dessert.js - wgsl/tsl interoperability</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js - wgsl/tsl interoperability">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_tsl_interoperability.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_tsl_interoperability.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_tsl_interoperability.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_tsl_interoperability.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>WGSL/TSL Interoperability</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>WGSL/TSL Interoperability</span>
 			</div>
 
 			<small>
@@ -42,12 +42,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { Fn, attribute, varyingProperty, time, uniform, wgslFn, texture, sampler, uv, clamp, float, vec2, vec3, fract, floor, positionGeometry, sin } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { Fn, attribute, varyingProperty, time, uniform, wgslFn, texture, sampler, uv, clamp, float, vec2, vec3, fract, floor, positionGeometry, sin } from 'dessert/dsl';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			let renderer, camera, scene;
 			const dpr = window.devicePixelRatio;

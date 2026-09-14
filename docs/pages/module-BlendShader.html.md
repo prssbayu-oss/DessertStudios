@@ -2,10 +2,10 @@
 
 ## Import
 
-BlendShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BlendShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BlendShader } from 'three/addons/shaders/BlendShader.js';
+import { BlendShader } from 'dessert/addons/shaders/BlendShader.js';
 ```
 
 ## Properties

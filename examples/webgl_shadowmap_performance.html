@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - shadow map</title>
+		<title>dessert.js webgl - shadow map</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - shadow map">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_shadowmap_performance.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_shadowmap_performance.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_shadowmap_performance.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_shadowmap_performance.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 
 	<body>
 
 		<div id="info">
-		<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - shadowmap - models by <a href="https://mirada.com/" target="_blank" rel="noopener">mirada</a> from <a href="https://rome.mrdoob.com" target="_blank" rel="noopener">rome</a><br />
+		<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - shadowmap - models by <a href="https://mirada.com/" target="_blank" rel="noopener">mirada</a> from <a href="https://rome.mrdoob.com" target="_blank" rel="noopener">rome</a><br />
 		move camera with WASD / RF + mouse
 		</div>
 
@@ -31,15 +31,15 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { SunLight } from 'three/addons/lights/SunLight.js';
-			import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { FontLoader } from 'three/addons/loaders/FontLoader.js';
-			import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+			import { SunLight } from 'dessert/addons/lights/SunLight.js';
+			import { FirstPersonControls } from 'dessert/addons/controls/FirstPersonControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { FontLoader } from 'dessert/addons/loaders/FontLoader.js';
+			import { TextGeometry } from 'dessert/addons/geometries/TextGeometry.js';
 
 			let SCREEN_WIDTH = window.innerWidth;
 			let SCREEN_HEIGHT = window.innerHeight;

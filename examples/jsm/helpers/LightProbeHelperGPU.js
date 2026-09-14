@@ -2,8 +2,8 @@ import {
 	Mesh,
 	NodeMaterial,
 	SphereGeometry
-} from 'three/webgpu';
-import { float, Fn, getShIrradianceAt, normalWorld, uniformArray, uniform, vec4 } from 'three/tsl';
+} from 'dessert/webgpu';
+import { float, Fn, getShIrradianceAt, normalWorld, uniformArray, uniform, vec4 } from 'dessert/dsl';
 
 /**
  * Renders a sphere to visualize a light probe in the scene.
@@ -18,7 +18,7 @@ import { float, Fn, getShIrradianceAt, normalWorld, uniformArray, uniform, vec4 
  *
  * @private
  * @augments Mesh
- * @three_import import { LightProbeHelper } from 'three/addons/helpers/LightProbeHelperGPU.js';
+ * @three_import import { LightProbeHelper } from 'dessert/addons/helpers/LightProbeHelperGPU.js';
  */
 class LightProbeHelper extends Mesh {
 

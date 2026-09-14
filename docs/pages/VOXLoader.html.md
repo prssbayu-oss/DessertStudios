@@ -14,10 +14,10 @@ scene.add( result.scene.children[ 0 ] );
 
 ## Import
 
-VOXLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VOXLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VOXLoader } from 'three/addons/loaders/VOXLoader.js';
+import { VOXLoader } from 'dessert/addons/loaders/VOXLoader.js';
 ```
 
 ## Constructor

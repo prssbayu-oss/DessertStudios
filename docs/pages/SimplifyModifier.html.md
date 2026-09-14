@@ -13,10 +13,10 @@ geometry = await modifier.modify( geometry, count );
 
 ## Import
 
-SimplifyModifier is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SimplifyModifier is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SimplifyModifier } from 'three/addons/modifiers/SimplifyModifier.js';
+import { SimplifyModifier } from 'dessert/addons/modifiers/SimplifyModifier.js';
 ```
 
 ## Constructor

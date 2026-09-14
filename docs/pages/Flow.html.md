@@ -6,10 +6,10 @@ This module can only be used with [WebGLRenderer](WebGLRenderer.html). When usin
 
 ## Import
 
-Flow is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Flow is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Flow } from 'three/addons/modifiers/CurveModifier.js';
+import { Flow } from 'dessert/addons/modifiers/CurveModifier.js';
 ```
 
 ## Constructor

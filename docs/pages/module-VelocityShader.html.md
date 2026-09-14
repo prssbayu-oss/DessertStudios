@@ -2,10 +2,10 @@
 
 ## Import
 
-VelocityShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VelocityShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VelocityShader } from 'three/addons/shaders/VelocityShader.js';
+import { VelocityShader } from 'dessert/addons/shaders/VelocityShader.js';
 ```
 
 ## Properties

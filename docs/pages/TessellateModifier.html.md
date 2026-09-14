@@ -11,10 +11,10 @@ geometry = modifier.modify( geometry );
 
 ## Import
 
-TessellateModifier is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TessellateModifier is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TessellateModifier } from 'three/addons/modifiers/TessellateModifier.js';
+import { TessellateModifier } from 'dessert/addons/modifiers/TessellateModifier.js';
 ```
 
 ## Constructor

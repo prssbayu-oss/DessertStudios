@@ -16,10 +16,10 @@ const animations = geometry.animations;
 
 ## Import
 
-MD2Loader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MD2Loader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MD2Loader } from 'three/addons/loaders/MD2Loader.js';
+import { MD2Loader } from 'dessert/addons/loaders/MD2Loader.js';
 ```
 
 ## Constructor

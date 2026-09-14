@@ -17,10 +17,10 @@ objLoader.setMaterials( materials );
 
 ## Import
 
-MTLLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MTLLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+import { MTLLoader } from 'dessert/addons/loaders/MTLLoader.js';
 ```
 
 ## Constructor

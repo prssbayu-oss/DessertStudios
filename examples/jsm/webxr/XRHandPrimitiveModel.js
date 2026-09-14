@@ -6,7 +6,7 @@ import {
 	InstancedMesh,
 	Matrix4,
 	Vector3
-} from 'three';
+} from 'dessert';
 
 const _matrix = new Matrix4();
 const _vector = new Vector3();
@@ -16,7 +16,7 @@ const _vector = new Vector3();
  * depending on the selected profile. `XRHandPrimitiveModel` represents a hand
  * with sphere or box primitives according to the selected `primitive` option.
  *
- * @three_import import { XRHandPrimitiveModel } from 'three/addons/webxr/XRHandPrimitiveModel.js';
+ * @three_import import { XRHandPrimitiveModel } from 'dessert/addons/webxr/XRHandPrimitiveModel.js';
  */
 class XRHandPrimitiveModel {
 

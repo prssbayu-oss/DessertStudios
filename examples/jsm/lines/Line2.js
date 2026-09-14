@@ -24,7 +24,7 @@ import { LineMaterial } from './LineMaterial.js';
  * ```
  *
  * @augments LineSegments2
- * @three_import import { Line2 } from 'three/addons/lines/Line2.js';
+ * @three_import import { Line2 } from 'dessert/addons/lines/Line2.js';
  */
 class Line2 extends LineSegments2 {
 

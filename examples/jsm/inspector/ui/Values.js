@@ -1,4 +1,4 @@
-import { EventDispatcher } from 'three';
+import { EventDispatcher } from 'dessert';
 
 class Value extends EventDispatcher {
 

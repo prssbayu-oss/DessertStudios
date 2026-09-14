@@ -2,10 +2,10 @@
 
 ## Import
 
-FXAAShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FXAAShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FXAAShader } from 'three/addons/shaders/FXAAShader.js';
+import { FXAAShader } from 'dessert/addons/shaders/FXAAShader.js';
 ```
 
 ## Properties

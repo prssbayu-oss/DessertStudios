@@ -1,9 +1,9 @@
-import { ImageBitmapLoader, Texture } from 'three';
-import { Fn, int, ivec2, textureLoad, screenUV, screenSize, mod, floor, float, vec3 } from 'three/tsl';
+import { ImageBitmapLoader, Texture } from 'dessert';
+import { Fn, int, ivec2, textureLoad, screenUV, screenSize, mod, floor, float, vec3 } from 'dessert/dsl';
 
 /**
  * @module Bayer
- * @three_import import { bayer16 } from 'three/addons/tsl/math/Bayer.js';
+ * @three_import import { bayer16 } from 'dessert/addons/tsl/math/Bayer.js';
  */
 
 let bayer16Texture = null;

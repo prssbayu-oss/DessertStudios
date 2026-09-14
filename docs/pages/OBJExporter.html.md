@@ -13,10 +13,10 @@ const data = exporter.parse( scene );
 
 ## Import
 
-OBJExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OBJExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OBJExporter } from 'three/addons/exporters/OBJExporter.js';
+import { OBJExporter } from 'dessert/addons/exporters/OBJExporter.js';
 ```
 
 ## Constructor

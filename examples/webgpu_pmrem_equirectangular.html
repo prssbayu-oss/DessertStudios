@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - pmrem equirectangular</title>
+		<title>dessert.js webgpu - pmrem equirectangular</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - pmrem equirectangular">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_pmrem_equirectangular.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_pmrem_equirectangular.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_pmrem_equirectangular.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_pmrem_equirectangular.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
@@ -27,12 +27,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { normalWorldGeometry, uniform, pmremTexture } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { normalWorldGeometry, uniform, pmremTexture } from 'dessert/dsl';
 
-			import { UltraHDRLoader } from 'three/addons/loaders/UltraHDRLoader.js';
+			import { UltraHDRLoader } from 'dessert/addons/loaders/UltraHDRLoader.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
 			let camera, scene, renderer;
 

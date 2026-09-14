@@ -1,5 +1,5 @@
-import { RenderTarget, Vector2, TempNode, QuadMesh, NodeMaterial, RendererUtils, RedFormat } from 'three/webgpu';
-import { reference, logarithmicDepthToViewZ, viewZToPerspectiveDepth, getViewPosition, getScreenPositionFromClip, vogelDiskSample, interleavedGradientNoise, nodeObject, Fn, float, NodeUpdateType, uv, uniform, Loop, vec4, int, dot, max, clamp, length, screenCoordinate, PI2, texture, passTexture, context } from 'three/tsl';
+import { RenderTarget, Vector2, TempNode, QuadMesh, NodeMaterial, RendererUtils, RedFormat } from 'dessert/webgpu';
+import { reference, logarithmicDepthToViewZ, viewZToPerspectiveDepth, getViewPosition, getScreenPositionFromClip, vogelDiskSample, interleavedGradientNoise, nodeObject, Fn, float, NodeUpdateType, uv, uniform, Loop, vec4, int, dot, max, clamp, length, screenCoordinate, PI2, texture, passTexture, context } from 'dessert/dsl';
 import { depthAwareBlur } from './depthAwareBlur.js';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();
@@ -27,7 +27,7 @@ let _rendererState;
  * ```
  *
  * @augments TempNode
- * @three_import import { ssao } from 'three/addons/tsl/display/SSAONode.js';
+ * @three_import import { ssao } from 'dessert/addons/tsl/display/SSAONode.js';
  */
 class SSAONode extends TempNode {
 

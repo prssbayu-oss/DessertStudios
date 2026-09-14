@@ -1,8 +1,8 @@
-import { Fn, Loop, dot, float, fract, int, min, sin, vec2, vec3, TWO_PI } from 'three/tsl';
+import { Fn, Loop, dot, float, fract, int, min, sin, vec2, vec3, TWO_PI } from 'dessert/dsl';
 
 /**
  * @module VoronoiNoise
- * @three_import import { voronoi2d, voronoi3d } from 'three/addons/tsl/math/voronoiNoise.js';
+ * @three_import import { voronoi2d, voronoi3d } from 'dessert/addons/tsl/math/voronoiNoise.js';
  */
 
 /**

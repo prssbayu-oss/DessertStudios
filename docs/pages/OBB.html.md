@@ -4,10 +4,10 @@ Represents an oriented bounding box (OBB) in 3D space.
 
 ## Import
 
-OBB is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OBB is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OBB } from 'three/addons/math/OBB.js';
+import { OBB } from 'dessert/addons/math/OBB.js';
 ```
 
 ## Constructor

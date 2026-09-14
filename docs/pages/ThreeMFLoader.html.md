@@ -29,10 +29,10 @@ scene.add( object );
 
 ## Import
 
-ThreeMFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ThreeMFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ThreeMFLoader } from 'three/addons/loaders/3MFLoader.js';
+import { ThreeMFLoader } from 'dessert/addons/loaders/3MFLoader.js';
 ```
 
 ## Constructor

@@ -6,10 +6,10 @@ Helper for visualizing IK bones.
 
 ## Import
 
-CCDIKHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CCDIKHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CCDIKHelper } from 'three/addons/animation/CCDIKSolver.js';
+import { CCDIKHelper } from 'dessert/addons/animation/CCDIKSolver.js';
 ```
 
 ## Constructor

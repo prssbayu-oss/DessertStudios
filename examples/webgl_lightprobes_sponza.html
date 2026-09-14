@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - light probe volume (Sponza)</title>
+		<title>dessert.js webgl - light probe volume (Sponza)</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - light probe volume (Sponza)">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_lightprobes_sponza.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_lightprobes_sponza.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_lightprobes_sponza.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_lightprobes_sponza.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - light probe volume (Sponza)<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - light probe volume (Sponza)<br/>
 			WASD to move, mouse to look
 		</div>
 
@@ -32,15 +32,15 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { SunLight } from 'three/addons/lights/SunLight.js';
-			import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { Sky } from 'three/addons/objects/Sky.js';
-			import { LightProbeGridWebGL } from 'three/addons/lighting/LightProbeGridWebGL.js';
-			import { LightProbeGridHelperWebGL } from 'three/addons/helpers/LightProbeGridHelperWebGL.js';
+			import { SunLight } from 'dessert/addons/lights/SunLight.js';
+			import { FirstPersonControls } from 'dessert/addons/controls/FirstPersonControls.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { Sky } from 'dessert/addons/objects/Sky.js';
+			import { LightProbeGridWebGL } from 'dessert/addons/lighting/LightProbeGridWebGL.js';
+			import { LightProbeGridHelperWebGL } from 'dessert/addons/helpers/LightProbeGridHelperWebGL.js';
 
 			const MODEL_INDEX_URL = 'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/model-index.json';
 			const SAMPLE_ASSETS_BASE_URL = 'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/';

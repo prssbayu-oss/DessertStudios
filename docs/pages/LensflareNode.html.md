@@ -11,10 +11,10 @@ References:
 
 ## Import
 
-LensflareNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LensflareNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { lensflare } from 'three/addons/tsl/display/LensflareNode.js';
+import { lensflare } from 'dessert/addons/tsl/display/LensflareNode.js';
 ```
 
 ## Constructor

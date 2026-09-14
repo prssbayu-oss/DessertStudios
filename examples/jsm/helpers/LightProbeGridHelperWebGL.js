@@ -5,7 +5,7 @@ import {
 	ShaderMaterial,
 	SphereGeometry,
 	Vector3
-} from 'three';
+} from 'dessert';
 
 /**
  * Visualizes an {@link LightProbeGridWebGL} by rendering a sphere at each
@@ -19,7 +19,7 @@ import {
  * ```
  *
  * @augments InstancedMesh
- * @three_import import { LightProbeGridHelperWebGL } from 'three/addons/helpers/LightProbeGridHelperWebGL.js';
+ * @three_import import { LightProbeGridHelperWebGL } from 'dessert/addons/helpers/LightProbeGridHelperWebGL.js';
  */
 class LightProbeGridHelperWebGL extends InstancedMesh {
 

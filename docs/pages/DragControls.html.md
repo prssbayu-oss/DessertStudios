@@ -19,10 +19,10 @@ controls.addEventListener( 'dragend', function ( event ) {
 
 ## Import
 
-DragControls is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DragControls is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DragControls } from 'three/addons/controls/DragControls.js';
+import { DragControls } from 'dessert/addons/controls/DragControls.js';
 ```
 
 ## Constructor

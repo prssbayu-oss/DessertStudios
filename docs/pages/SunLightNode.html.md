@@ -12,10 +12,10 @@ renderer.library.addLight( SunLightNode, SunLight );
 
 ## Import
 
-SunLightNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SunLightNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SunLightNode } from 'three/addons/lights/SunLightNode.js';
+import { SunLightNode } from 'dessert/addons/lights/SunLightNode.js';
 ```
 
 ## Constructor

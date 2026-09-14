@@ -13,10 +13,10 @@ composer.addPass( fxaaPass );
 
 ## Import
 
-ShaderPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ShaderPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { ShaderPass } from 'dessert/addons/postprocessing/ShaderPass.js';
 ```
 
 ## Constructor

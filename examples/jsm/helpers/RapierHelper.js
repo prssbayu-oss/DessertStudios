@@ -1,9 +1,9 @@
-import { LineSegments, LineBasicMaterial, BufferAttribute } from 'three';
+import { LineSegments, LineBasicMaterial, BufferAttribute } from 'dessert';
 /**
  * This class displays all Rapier Colliders in outline.
  *
  * @augments LineSegments
- * @three_import import { RapierHelper } from 'three/addons/helpers/RapierHelper.js';
+ * @three_import import { RapierHelper } from 'dessert/addons/helpers/RapierHelper.js';
  */
 class RapierHelper extends LineSegments {
 

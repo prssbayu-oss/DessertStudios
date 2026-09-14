@@ -1,6 +1,6 @@
 /**
  * @module UnpackDepthRGBAShader
- * @three_import import { UnpackDepthRGBAShader } from 'three/addons/shaders/UnpackDepthRGBAShader.js';
+ * @three_import import { UnpackDepthRGBAShader } from 'dessert/addons/shaders/UnpackDepthRGBAShader.js';
  */
 
 /**

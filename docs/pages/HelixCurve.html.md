@@ -6,10 +6,10 @@ A helix curve.
 
 ## Import
 
-HelixCurve is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+HelixCurve is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { HelixCurve } from 'three/addons/curves/CurveExtras.js';
+import { HelixCurve } from 'dessert/addons/curves/CurveExtras.js';
 ```
 
 ## Constructor

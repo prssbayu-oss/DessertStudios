@@ -9,7 +9,7 @@ import {
 	LinearFilter,
 	HalfFloatType,
 	DataUtils
-} from 'three';
+} from 'dessert';
 
 /**
  * A loader for the IES format.
@@ -25,7 +25,7 @@ import {
  * ```
  *
  * @augments Loader
- * @three_import import { IESLoader } from 'three/addons/loaders/IESLoader.js';
+ * @three_import import { IESLoader } from 'dessert/addons/loaders/IESLoader.js';
  */
 class IESLoader extends Loader {
 

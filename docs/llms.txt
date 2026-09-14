@@ -24,8 +24,8 @@ CORRECT - modern pattern (always use latest version):
 }
 </script>
 <script type="module">
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import * as THREE from 'dessert';
+import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 </script>
 ```
 
@@ -39,7 +39,7 @@ Three.js maintains both renderers:
 - Most examples and tutorials use this
 
 ```js
-import * as THREE from 'three';
+import * as THREE from 'dessert';
 const renderer = new THREE.WebGLRenderer();
 ```
 
@@ -49,7 +49,7 @@ const renderer = new THREE.WebGLRenderer();
 - Advanced node-based materials
 
 ```js
-import * as THREE from 'three/webgpu';
+import * as THREE from 'dessert/webgpu';
 const renderer = new THREE.WebGPURenderer();
 await renderer.init();
 ```
@@ -59,7 +59,7 @@ await renderer.init();
 When using WebGPURenderer, use TSL instead of raw GLSL for custom materials:
 
 ```js
-import { texture, uv, color } from 'three/tsl';
+import { texture, uv, color } from 'dessert/dsl';
 
 const material = new THREE.MeshStandardNodeMaterial();
 material.colorNode = texture( myTexture ).mul( color( 0xff0000 ) );
@@ -82,78 +82,78 @@ When using TSL, use node-based materials:
 
 ## Getting Started
 
-- [Installation](https://threejs.org/manual/#installation)
-- [Creating a Scene](https://threejs.org/manual/#creating-a-scene)
-- [Fundamentals](https://threejs.org/manual/#fundamentals)
-- [Responsive Design](https://threejs.org/manual/#responsive)
+- [Installation](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation)
+- [Creating a Scene](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#creating-a-scene)
+- [Fundamentals](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#fundamentals)
+- [Responsive Design](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#responsive)
 
 ## Renderer Guides
 
-- [WebGPURenderer](https://threejs.org/manual/#webgpurenderer)
+- [WebGPURenderer](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#webgpurenderer)
 
 ## Core Concepts
 
-- [TSL Guide](https://threejs.org/tsl/): Three.js Shading Language guide with playground
-- [TSL Reference](https://threejs.org/docs/#TSL): All TSL functions
-- [Animation System](https://threejs.org/manual/#animation-system)
-- [Loading 3D Models](https://threejs.org/manual/#loading-3d-models)
-- [Scene Graph](https://threejs.org/manual/#scenegraph)
-- [Materials](https://threejs.org/manual/#materials)
-- [Textures](https://threejs.org/manual/#textures)
-- [Lights](https://threejs.org/manual/#lights)
-- [Cameras](https://threejs.org/manual/#cameras)
-- [Shadows](https://threejs.org/manual/#shadows)
+- [TSL Guide](https://github.com/prssbayu-oss/DessertStudios/tsl/): Three.js Shading Language guide with playground
+- [TSL Reference](https://github.com/prssbayu-oss/DessertStudios/docs/#TSL): All TSL functions
+- [Animation System](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#animation-system)
+- [Loading 3D Models](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#loading-3d-models)
+- [Scene Graph](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#scenegraph)
+- [Materials](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#materials)
+- [Textures](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#textures)
+- [Lights](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#lights)
+- [Cameras](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#cameras)
+- [Shadows](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#shadows)
 
 ## Essential API
 
 ### Core
-- [Object3D](https://threejs.org/docs/#api/en/core/Object3D)
-- [BufferGeometry](https://threejs.org/docs/#api/en/core/BufferGeometry)
-- [BufferAttribute](https://threejs.org/docs/#api/en/core/BufferAttribute)
+- [Object3D](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/core/Object3D)
+- [BufferGeometry](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/core/BufferGeometry)
+- [BufferAttribute](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/core/BufferAttribute)
 
 ### Scenes
-- [Scene](https://threejs.org/docs/#api/en/scenes/Scene)
+- [Scene](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/scenes/Scene)
 
 ### Cameras
-- [PerspectiveCamera](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)
-- [OrthographicCamera](https://threejs.org/docs/#api/en/cameras/OrthographicCamera)
+- [PerspectiveCamera](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/cameras/PerspectiveCamera)
+- [OrthographicCamera](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/cameras/OrthographicCamera)
 
 ### Renderers
-- [WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer)
-- [WebGPURenderer](https://threejs.org/docs/#api/en/renderers/webgpu/WebGPURenderer)
+- [WebGLRenderer](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/renderers/WebGLRenderer)
+- [WebGPURenderer](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/renderers/webgpu/WebGPURenderer)
 
 ### Objects
-- [Mesh](https://threejs.org/docs/#api/en/objects/Mesh)
-- [InstancedMesh](https://threejs.org/docs/#api/en/objects/InstancedMesh)
-- [Group](https://threejs.org/docs/#api/en/objects/Group)
+- [Mesh](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/objects/Mesh)
+- [InstancedMesh](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/objects/InstancedMesh)
+- [Group](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/objects/Group)
 
 ### Materials
-- [MeshBasicMaterial](https://threejs.org/docs/#api/en/materials/MeshBasicMaterial)
-- [MeshStandardMaterial](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial)
-- [MeshPhysicalMaterial](https://threejs.org/docs/#api/en/materials/MeshPhysicalMaterial)
+- [MeshBasicMaterial](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/materials/MeshBasicMaterial)
+- [MeshStandardMaterial](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/materials/MeshStandardMaterial)
+- [MeshPhysicalMaterial](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/materials/MeshPhysicalMaterial)
 
 ### Geometries
-- [BoxGeometry](https://threejs.org/docs/#api/en/geometries/BoxGeometry)
-- [SphereGeometry](https://threejs.org/docs/#api/en/geometries/SphereGeometry)
-- [PlaneGeometry](https://threejs.org/docs/#api/en/geometries/PlaneGeometry)
+- [BoxGeometry](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/geometries/BoxGeometry)
+- [SphereGeometry](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/geometries/SphereGeometry)
+- [PlaneGeometry](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/geometries/PlaneGeometry)
 
 ### Lights
-- [AmbientLight](https://threejs.org/docs/#api/en/lights/AmbientLight)
-- [DirectionalLight](https://threejs.org/docs/#api/en/lights/DirectionalLight)
-- [PointLight](https://threejs.org/docs/#api/en/lights/PointLight)
-- [SpotLight](https://threejs.org/docs/#api/en/lights/SpotLight)
+- [AmbientLight](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/lights/AmbientLight)
+- [DirectionalLight](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/lights/DirectionalLight)
+- [PointLight](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/lights/PointLight)
+- [SpotLight](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/lights/SpotLight)
 
 ### Loaders
-- [TextureLoader](https://threejs.org/docs/#api/en/loaders/TextureLoader)
-- [GLTFLoader](https://threejs.org/docs/#examples/en/loaders/GLTFLoader)
+- [TextureLoader](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/loaders/TextureLoader)
+- [GLTFLoader](https://github.com/prssbayu-oss/DessertStudios/docs/#examples/en/loaders/GLTFLoader)
 
 ### Controls
-- [OrbitControls](https://threejs.org/docs/#examples/en/controls/OrbitControls)
-- [TransformControls](https://threejs.org/docs/#examples/en/controls/TransformControls)
+- [OrbitControls](https://github.com/prssbayu-oss/DessertStudios/docs/#examples/en/controls/OrbitControls)
+- [TransformControls](https://github.com/prssbayu-oss/DessertStudios/docs/#examples/en/controls/TransformControls)
 
 ### Math
-- [Vector2](https://threejs.org/docs/#api/en/math/Vector2)
-- [Vector3](https://threejs.org/docs/#api/en/math/Vector3)
-- [Matrix4](https://threejs.org/docs/#api/en/math/Matrix4)
-- [Quaternion](https://threejs.org/docs/#api/en/math/Quaternion)
-- [Color](https://threejs.org/docs/#api/en/math/Color)
+- [Vector2](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/math/Vector2)
+- [Vector3](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/math/Vector3)
+- [Matrix4](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/math/Matrix4)
+- [Quaternion](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/math/Quaternion)
+- [Color](https://github.com/prssbayu-oss/DessertStudios/docs/#api/en/math/Color)

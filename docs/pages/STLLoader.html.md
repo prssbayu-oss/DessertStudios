@@ -42,10 +42,10 @@ const mesh = new THREE.Mesh(geometry, materials);
 
 ## Import
 
-STLLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+STLLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { STLLoader } from 'three/addons/loaders/STLLoader.js';
+import { STLLoader } from 'dessert/addons/loaders/STLLoader.js';
 ```
 
 ## Constructor

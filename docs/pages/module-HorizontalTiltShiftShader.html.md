@@ -2,10 +2,10 @@
 
 ## Import
 
-HorizontalTiltShiftShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+HorizontalTiltShiftShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { HorizontalTiltShiftShader } from 'three/addons/shaders/HorizontalTiltShiftShader.js';
+import { HorizontalTiltShiftShader } from 'dessert/addons/shaders/HorizontalTiltShiftShader.js';
 ```
 
 ## Properties

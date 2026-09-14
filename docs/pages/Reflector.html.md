@@ -21,10 +21,10 @@ scene.add( reflector );
 
 ## Import
 
-Reflector is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Reflector is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Reflector } from 'three/addons/objects/Reflector.js';
+import { Reflector } from 'dessert/addons/objects/Reflector.js';
 ```
 
 ## Constructor

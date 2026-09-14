@@ -20,10 +20,10 @@ geometry.setFromPoints( points );
 
 ## Import
 
-LineGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LineGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LineLineGeometry2 } from 'three/addons/lines/LineGeometry.js';
+import { LineLineGeometry2 } from 'dessert/addons/lines/LineGeometry.js';
 ```
 
 ## Constructor

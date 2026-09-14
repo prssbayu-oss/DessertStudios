@@ -2,10 +2,10 @@
 
 ## Import
 
-GTAOShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GTAOShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GTAOShader } from 'three/addons/shaders/GTAOShader.js';
+import { GTAOShader } from 'dessert/addons/shaders/GTAOShader.js';
 ```
 
 ## Properties

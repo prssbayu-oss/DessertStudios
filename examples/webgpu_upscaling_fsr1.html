@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - fsr1</title>
+		<title>dessert.js webgpu - fsr1</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - fsr1">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_upscaling_fsr1.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_upscaling_fsr1.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_upscaling_fsr1.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_upscaling_fsr1.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info" class="invert">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>FSR 1</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>FSR 1</span>
 			</div>
 
 			<small>
@@ -40,15 +40,15 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { pass } from 'three/tsl';
-			import { fsr1 } from 'three/addons/tsl/display/FSR1Node.js';
+			import * as THREE from 'dessert/webgpu';
+			import { pass } from 'dessert/dsl';
+			import { fsr1 } from 'dessert/addons/tsl/display/FSR1Node.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
-			import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-			import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
+			import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
+			import { DRACOLoader } from 'dessert/addons/loaders/DRACOLoader.js';
 
 			const params = {
 				upscaleMethod: 'FSR1',

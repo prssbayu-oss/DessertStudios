@@ -23,10 +23,10 @@ const geometry = new TextGeometry( 'Hello three.js!', {
 
 ## Import
 
-TextGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TextGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import { TextGeometry } from 'dessert/addons/geometries/TextGeometry.js';
 ```
 
 ## Constructor

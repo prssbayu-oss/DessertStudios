@@ -16,10 +16,10 @@ const font = new Font( json );
 
 ## Import
 
-TTFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TTFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TTFLoader } from 'three/addons/loaders/TTFLoader.js';
+import { TTFLoader } from 'dessert/addons/loaders/TTFLoader.js';
 ```
 
 ## Constructor

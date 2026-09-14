@@ -22,10 +22,10 @@ mixer.clipAction( result.clip ).play();
 
 ## Import
 
-BVHLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BVHLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BVHLoader } from 'three/addons/loaders/BVHLoader.js';
+import { BVHLoader } from 'dessert/addons/loaders/BVHLoader.js';
 ```
 
 ## Constructor

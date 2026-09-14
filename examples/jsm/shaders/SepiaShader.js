@@ -1,6 +1,6 @@
 /**
  * @module SepiaShader
- * @three_import import { SepiaShader } from 'three/addons/shaders/SepiaShader.js';
+ * @three_import import { SepiaShader } from 'dessert/addons/shaders/SepiaShader.js';
  */
 
 /**

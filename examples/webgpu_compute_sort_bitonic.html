@@ -1,12 +1,12 @@
 <html lang="en">
 	<head>
-		<title>three.js webgpu - storage pbo external element</title>
+		<title>dessert.js webgpu - storage pbo external element</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - storage pbo external element">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_compute_sort_bitonic.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_compute_sort_bitonic.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_compute_sort_bitonic.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_compute_sort_bitonic.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
@@ -28,7 +28,7 @@
 		</style>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a>
 			<br /> This example demonstrates a bitonic sort running step by step in a compute shader.
 			<br /> The left canvas swaps values within workgroup local arrays. The right swaps values within storage buffers.
 			<br /> Reference implementation by <a href="https://poniesandlight.co.uk/reflect/bitonic_merge_sort/">Tim Gfrerer</a>
@@ -52,14 +52,14 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { storage, If, vec3, not, uniform, uv, uint, Fn, vec2, abs, int, uvec2, floor, instanceIndex } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { storage, If, vec3, not, uniform, uv, uint, Fn, vec2, abs, int, uvec2, floor, instanceIndex } from 'dessert/dsl';
 
-			import { BitonicSort, getBitonicDisperseIndices, getBitonicFlipIndices } from 'three/addons/gpgpu/BitonicSort.js';
+			import { BitonicSort, getBitonicDisperseIndices, getBitonicFlipIndices } from 'dessert/addons/gpgpu/BitonicSort.js';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			const StepType = {
 

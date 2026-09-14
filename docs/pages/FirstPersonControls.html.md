@@ -6,10 +6,10 @@ This class is an alternative implementation of [FlyControls](FlyControls.html).
 
 ## Import
 
-FirstPersonControls is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FirstPersonControls is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
+import { FirstPersonControls } from 'dessert/addons/controls/FirstPersonControls.js';
 ```
 
 ## Constructor

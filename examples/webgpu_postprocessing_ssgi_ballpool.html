@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - SSGI Ball Pool</title>
+		<title>dessert.js webgpu - SSGI Ball Pool</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - SSGI Ball Pool">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_ssgi_ballpool.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_ssgi_ballpool.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_ssgi_ballpool.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_ssgi_ballpool.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 		<style>
 			canvas {
@@ -18,10 +18,10 @@
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>SSGI Ball Pool</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>SSGI Ball Pool</span>
 			</div>
 
 			<small>Real-time indirect illumination with interactive physics ball pool.</small>
@@ -44,13 +44,13 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { pass, mrt, output, normalView, diffuseColor, velocity, add, vec4, packNormalToRGB, unpackRGBToNormal, sample } from 'three/tsl';
-			import { ssgi } from 'three/addons/tsl/display/SSGINode.js';
-			import { traa } from 'three/addons/tsl/display/TRAANode.js';
+			import * as THREE from 'dessert/webgpu';
+			import { pass, mrt, output, normalView, diffuseColor, velocity, add, vec4, packNormalToRGB, unpackRGBToNormal, sample } from 'dessert/dsl';
+			import { ssgi } from 'dessert/addons/tsl/display/SSGINode.js';
+			import { traa } from 'dessert/addons/tsl/display/TRAANode.js';
 			import { World } from '@perplexdotgg/bounce';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			const BALL_RADIUS = 0.4;
 			const FILL_RATIO = 0.4;

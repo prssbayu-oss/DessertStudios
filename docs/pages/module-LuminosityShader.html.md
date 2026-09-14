@@ -2,10 +2,10 @@
 
 ## Import
 
-LuminosityShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LuminosityShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LuminosityShader } from 'three/addons/shaders/LuminosityShader.js';
+import { LuminosityShader } from 'dessert/addons/shaders/LuminosityShader.js';
 ```
 
 ## Properties

@@ -15,10 +15,10 @@ const font = await loader.loadAsync( 'fonts/helvetiker_regular.typeface.json' );
 
 ## Import
 
-FontLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FontLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { FontLoader } from 'dessert/addons/loaders/FontLoader.js';
 ```
 
 ## Constructor

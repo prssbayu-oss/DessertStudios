@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - cameras - logarithmic depth buffer</title>
+		<title>dessert.js webgl - cameras - logarithmic depth buffer</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - cameras - logarithmic depth buffer">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_camera_logarithmicdepthbuffer.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_camera_logarithmicdepthbuffer.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_camera_logarithmicdepthbuffer.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_camera_logarithmicdepthbuffer.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body{
@@ -62,7 +62,7 @@
 		</div>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - cameras - logarithmic depth buffer<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - cameras - logarithmic depth buffer<br/>
 			mousewheel to dolly out
 		</div>
 
@@ -79,12 +79,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { FontLoader } from 'three/addons/loaders/FontLoader.js';
-			import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+			import { FontLoader } from 'dessert/addons/loaders/FontLoader.js';
+			import { TextGeometry } from 'dessert/addons/geometries/TextGeometry.js';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
 			// 1 micrometer to 100 billion light years in one scene, with 1 unit = 1 meter?  preposterous!  and yet...
 			const NEAR = 1e-6, FAR = 1e27;

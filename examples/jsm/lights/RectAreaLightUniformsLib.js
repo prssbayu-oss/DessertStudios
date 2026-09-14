@@ -1,4 +1,4 @@
-import { UniformsLib } from 'three';
+import { UniformsLib } from 'dessert';
 import { RectAreaLightTexturesLib } from './RectAreaLightTexturesLib.js';
 
 /**
@@ -12,7 +12,7 @@ import { RectAreaLightTexturesLib } from './RectAreaLightTexturesLib.js';
  * ```
  *
  * @hideconstructor
- * @three_import import { RectAreaLightUniformsLib } from 'three/addons/lights/RectAreaLightUniformsLib.js';
+ * @three_import import { RectAreaLightUniformsLib } from 'dessert/addons/lights/RectAreaLightUniformsLib.js';
  */
 class RectAreaLightUniformsLib {
 

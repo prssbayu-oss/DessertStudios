@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from 'dessert';
 import { GLTFLoader } from '../../examples/jsm/loaders/GLTFLoader.js';
 import { threejsLessonUtils } from './threejs-lesson-utils.js';
 

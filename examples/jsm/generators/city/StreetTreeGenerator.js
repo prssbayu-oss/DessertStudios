@@ -5,10 +5,10 @@ import {
 	InterpolationSamplingType,
 	RingGeometry,
 	Vector3
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { attribute, color, float, fract, instanceIndex, mix, mx_fractal_noise_float, mx_noise_float, normalView, normalWorldGeometry, positionGeometry, positionLocal, positionViewDirection, positionWorld, select, sin, smoothstep, time, varying, vec3 } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { attribute, color, float, fract, instanceIndex, mix, mx_fractal_noise_float, mx_noise_float, normalView, normalWorldGeometry, positionGeometry, positionLocal, positionViewDirection, positionWorld, select, sin, smoothstep, time, varying, vec3 } from 'dessert/dsl';
 
 import { mergeGeometries, mergeVertices } from '../../utils/BufferGeometryUtils.js';
 

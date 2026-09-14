@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – Making a Game">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -231,10 +231,10 @@ we instead want to clone the scene and in particular we want to clone
 it for skinned animated characters. Fortunately there's a utility function,
 <code class="notranslate" translate="no">SkeletonUtils.clone</code> we can use to do this. So, first we need to include
 the utils.</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-+import * as SkeletonUtils from 'three/addons/utils/SkeletonUtils.js';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'dessert';
+import {OrbitControls} from 'dessert/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'dessert/addons/loaders/GLTFLoader.js';
++import * as SkeletonUtils from 'dessert/addons/utils/SkeletonUtils.js';
 </pre>
 <p>Then we can clone the models we just loaded</p>
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">function init() {
@@ -1510,11 +1510,11 @@ class StateDisplayHelper extends Component {
 </pre>
 <p>While we're at it lets make it so we can turn them on/off using lil-gui like
 we've used else where</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import * as SkeletonUtils from 'three/addons/utils/SkeletonUtils.js';
-+import {GUI} from 'three/addons/libs/lil-gui.module.min.js';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'dessert';
+import {OrbitControls} from 'dessert/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'dessert/addons/loaders/GLTFLoader.js';
+import * as SkeletonUtils from 'dessert/addons/utils/SkeletonUtils.js';
++import {GUI} from 'dessert/addons/libs/lil-gui.module.min.js';
 </pre>
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">+const gui = new GUI();
 +gui.add(globals, 'debug').onChange(showHideDebugInfo);

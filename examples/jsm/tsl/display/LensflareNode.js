@@ -1,5 +1,5 @@
-import { RenderTarget, Vector2, TempNode, NodeUpdateType, QuadMesh, RendererUtils, NodeMaterial } from 'three/webgpu';
-import { convertToTexture, nodeObject, Fn, passTexture, uv, vec2, vec3, vec4, max, float, sub, int, Loop, fract, pow, distance, context } from 'three/tsl';
+import { RenderTarget, Vector2, TempNode, NodeUpdateType, QuadMesh, RendererUtils, NodeMaterial } from 'dessert/webgpu';
+import { convertToTexture, nodeObject, Fn, passTexture, uv, vec2, vec3, vec4, max, float, sub, int, Loop, fract, pow, distance, context } from 'dessert/dsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();
 const _size = /*@__PURE__*/ new Vector2();
@@ -14,7 +14,7 @@ let _rendererState;
  * - {@link https://john-chapman.github.io/2017/11/05/pseudo-lens-flare.html}.
  *
  * @augments TempNode
- * @three_import import { lensflare } from 'three/addons/tsl/display/LensflareNode.js';
+ * @three_import import { lensflare } from 'dessert/addons/tsl/display/LensflareNode.js';
  */
 class LensflareNode extends TempNode {
 

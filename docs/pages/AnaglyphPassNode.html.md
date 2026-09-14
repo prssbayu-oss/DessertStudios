@@ -8,10 +8,10 @@ This implementation uses CameraUtils.frameCorners() to align stereo camera frust
 
 ## Import
 
-AnaglyphPassNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+AnaglyphPassNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { anaglyphPass, AnaglyphAlgorithm, AnaglyphColorMode } from 'three/addons/tsl/display/AnaglyphPassNode.js';
+import { anaglyphPass, AnaglyphAlgorithm, AnaglyphColorMode } from 'dessert/addons/tsl/display/AnaglyphPassNode.js';
 ```
 
 ## Constructor

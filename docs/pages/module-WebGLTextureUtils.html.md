@@ -2,10 +2,10 @@
 
 ## Import
 
-WebGLTextureUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+WebGLTextureUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as WebGLTextureUtils from 'three/addons/utils/WebGLTextureUtils.js';
+import * as WebGLTextureUtils from 'dessert/addons/utils/WebGLTextureUtils.js';
 ```
 
 ## Static Methods

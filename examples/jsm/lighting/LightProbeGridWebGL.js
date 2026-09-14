@@ -18,7 +18,7 @@ import {
 	WebGL3DRenderTarget,
 	WebGLCubeRenderTarget,
 	WebGLRenderTarget
-} from 'three';
+} from 'dessert';
 
 import { replaceSunLights, restoreSunLights } from './LightProbeGridUtils.js';
 
@@ -83,7 +83,7 @@ const ATLAS_PADDING = 1;
  * Baking is fully GPU-resident: cubemap rendering, SH projection, and
  * texture packing all happen on the GPU with zero CPU readback.
  *
- * @three_import import { LightProbeGridWebGL } from 'three/addons/lighting/LightProbeGridWebGL.js';
+ * @three_import import { LightProbeGridWebGL } from 'dessert/addons/lighting/LightProbeGridWebGL.js';
  */
 class LightProbeGridWebGL extends Object3D {
 

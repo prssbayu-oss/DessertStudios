@@ -2,10 +2,10 @@
 
 ## Import
 
-NURBSUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+NURBSUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as NURBSUtils from 'three/addons/curves/NURBSUtils.js';
+import * as NURBSUtils from 'dessert/addons/curves/NURBSUtils.js';
 ```
 
 ## Methods

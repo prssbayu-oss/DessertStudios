@@ -1,5 +1,5 @@
-import { DepthTexture, FloatType, RenderTarget, Vector2, TempNode, QuadMesh, NodeMaterial, SpriteNodeMaterial, RendererUtils, NodeUpdateType } from 'three/webgpu';
-import { Loop, int, exp, min, float, mul, uv, vec2, vec3, Fn, textureSize, orthographicDepthToViewZ, screenUV, nodeObject, uniform, vec4, passTexture, texture, perspectiveDepthToViewZ, positionView, reference, color } from 'three/tsl';
+import { DepthTexture, FloatType, RenderTarget, Vector2, TempNode, QuadMesh, NodeMaterial, SpriteNodeMaterial, RendererUtils, NodeUpdateType } from 'dessert/webgpu';
+import { Loop, int, exp, min, float, mul, uv, vec2, vec3, Fn, textureSize, orthographicDepthToViewZ, screenUV, nodeObject, uniform, vec4, passTexture, texture, perspectiveDepthToViewZ, positionView, reference, color } from 'dessert/dsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();
 const _size = /*@__PURE__*/ new Vector2();
@@ -40,7 +40,7 @@ let _rendererState;
  * ```
  *
  * @augments TempNode
- * @three_import import { outline } from 'three/addons/tsl/display/OutlineNode.js';
+ * @three_import import { outline } from 'dessert/addons/tsl/display/OutlineNode.js';
  */
 class OutlineNode extends TempNode {
 

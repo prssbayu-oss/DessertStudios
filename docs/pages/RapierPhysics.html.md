@@ -12,10 +12,10 @@ const physics = await RapierPhysics();
 
 ## Import
 
-RapierPhysics is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RapierPhysics is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RapierPhysics } from 'three/addons/physics/RapierPhysics.js';
+import { RapierPhysics } from 'dessert/addons/physics/RapierPhysics.js';
 ```
 
 ## Methods

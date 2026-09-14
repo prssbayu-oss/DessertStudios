@@ -2,10 +2,10 @@
 
 ## Import
 
-DOFMipMapShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DOFMipMapShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DOFMipMapShader } from 'three/addons/shaders/DOFMipMapShader.js';
+import { DOFMipMapShader } from 'dessert/addons/shaders/DOFMipMapShader.js';
 ```
 
 ## Properties

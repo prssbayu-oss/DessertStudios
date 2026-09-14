@@ -5,13 +5,13 @@ import {
 	NumberKeyframeTrack,
 	Vector3,
 	VectorKeyframeTrack
-} from 'three';
+} from 'dessert';
 
 /**
  * A utility class with factory methods for creating basic animation clips.
  *
  * @hideconstructor
- * @three_import import { AnimationClipCreator } from 'three/addons/animation/AnimationClipCreator.js';
+ * @three_import import { AnimationClipCreator } from 'dessert/addons/animation/AnimationClipCreator.js';
  */
 class AnimationClipCreator {
 

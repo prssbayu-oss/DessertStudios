@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from 'dessert';
 import { OrbitControls } from '../../examples/jsm/controls/OrbitControls.js';
 
 export const threejsLessonUtils = {

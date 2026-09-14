@@ -11,10 +11,10 @@ geometry = modifier.modify( geometry, Math.PI * 0.4 );
 
 ## Import
 
-EdgeSplitModifier is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+EdgeSplitModifier is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { EdgeSplitModifier } from 'three/addons/modifiers/EdgeSplitModifier.js';
+import { EdgeSplitModifier } from 'dessert/addons/modifiers/EdgeSplitModifier.js';
 ```
 
 ## Constructor

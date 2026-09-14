@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - materials - car</title>
+		<title>dessert.js webgl - materials - car</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - materials - car">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_materials_car.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_materials_car.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_materials_car.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_materials_car.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
@@ -26,7 +26,7 @@
 
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> car materials<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> car materials<br/>
 			Ferrari 458 Italia model by <a href="https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6" target="_blank" rel="noopener">vicent091036</a>
 			<br><br>
 			<span class="colorPicker"><input id="body-color" type="color" value="#ff0000"></input><br/>Body</span>
@@ -49,15 +49,15 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'three/addons/loaders/DRACOLoader.js';
-			import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'dessert/addons/loaders/DRACOLoader.js';
+			import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
 
 			let camera, scene, renderer;
 			let stats;

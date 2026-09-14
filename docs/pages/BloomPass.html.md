@@ -15,10 +15,10 @@ composer.addPass( effectBloom );
 
 ## Import
 
-BloomPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BloomPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BloomPass } from 'three/addons/postprocessing/BloomPass.js';
+import { BloomPass } from 'dessert/addons/postprocessing/BloomPass.js';
 ```
 
 ## Constructor

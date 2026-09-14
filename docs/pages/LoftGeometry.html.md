@@ -29,10 +29,10 @@ scene.add( mesh );
 
 ## Import
 
-LoftGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LoftGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LoftGeometry } from 'three/addons/geometries/LoftGeometry.js';
+import { LoftGeometry } from 'dessert/addons/geometries/LoftGeometry.js';
 ```
 
 ## Constructor

@@ -2,10 +2,10 @@
 
 ## Import
 
-VoronoiNoise is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VoronoiNoise is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { voronoi2d, voronoi3d } from 'three/addons/tsl/math/voronoiNoise.js';
+import { voronoi2d, voronoi3d } from 'dessert/addons/tsl/math/voronoiNoise.js';
 ```
 
 ## Static Methods

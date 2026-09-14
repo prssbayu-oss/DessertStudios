@@ -1,7 +1,7 @@
-import * as THREE from 'three';
-import { PMREMGenerator } from 'three/webgpu';
+import * as THREE from 'dessert';
+import { PMREMGenerator } from 'dessert/webgpu';
 
-import { TransformControls } from 'three/addons/controls/TransformControls.js';
+import { TransformControls } from 'dessert/addons/controls/TransformControls.js';
 
 import { UIPanel } from './libs/ui.js';
 
@@ -18,8 +18,8 @@ import { SetRotationCommand } from './commands/SetRotationCommand.js';
 import { SetScaleCommand } from './commands/SetScaleCommand.js';
 import { MultiCmdsCommand } from './commands/MultiCmdsCommand.js';
 
-import { ColorEnvironment } from 'three/addons/environments/ColorEnvironment.js';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { ColorEnvironment } from 'dessert/addons/environments/ColorEnvironment.js';
+import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
 import { ViewportPathtracer } from './Viewport.Pathtracer.js';
 
 function Viewport( editor ) {

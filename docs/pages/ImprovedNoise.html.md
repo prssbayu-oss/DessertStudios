@@ -6,10 +6,10 @@ The code is based on [IMPROVED NOISE](https://cs.nyu.edu/~perlin/noise/) by Ken 
 
 ## Import
 
-ImprovedNoise is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ImprovedNoise is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ImprovedNoise } from 'three/addons/math/ImprovedNoise.js';
+import { ImprovedNoise } from 'dessert/addons/math/ImprovedNoise.js';
 ```
 
 ## Constructor

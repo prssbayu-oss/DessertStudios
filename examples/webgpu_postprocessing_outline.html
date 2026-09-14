@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - post processing - Outline Pass</title>
+		<title>dessert.js webgpu - post processing - Outline Pass</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - post processing - Outline Pass">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_outline.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_outline.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_outline.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_outline.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Outline</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Outline</span>
 			</div>
 
 			<small>Outline Pass by <a href="https://github.com/spidersharma03" target="_blank" rel="noopener">Prashant Sharma</a> and <a href="https://ben3d.ca/" target="_blank" rel="noopener">Ben Houston</a>.</small>
@@ -37,16 +37,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { pass, uniform, time, oscSine } from 'three/tsl';
-			import { SunLight } from 'three/addons/lights/SunLight.js';
-			import { SunLightNode } from 'three/addons/lights/SunLightNode.js';
-			import { outline } from 'three/addons/tsl/display/OutlineNode.js';
+			import * as THREE from 'dessert/webgpu';
+			import { pass, uniform, time, oscSine } from 'dessert/dsl';
+			import { SunLight } from 'dessert/addons/lights/SunLight.js';
+			import { SunLightNode } from 'dessert/addons/lights/SunLightNode.js';
+			import { outline } from 'dessert/addons/tsl/display/OutlineNode.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { OBJLoader } from 'dessert/addons/loaders/OBJLoader.js';
 
 			let camera, scene, renderer, controls;
 			let renderPipeline, outlinePass;

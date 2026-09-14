@@ -28,10 +28,10 @@ scene.add( object );
 
 ## Import
 
-LDrawLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LDrawLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LDrawLoader } from 'three/addons/loaders/LDrawLoader.js';
+import { LDrawLoader } from 'dessert/addons/loaders/LDrawLoader.js';
 ```
 
 ## Constructor

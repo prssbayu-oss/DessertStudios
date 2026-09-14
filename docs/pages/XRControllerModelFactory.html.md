@@ -15,10 +15,10 @@ scene.add( controllerGrip );
 
 ## Import
 
-XRControllerModelFactory is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+XRControllerModelFactory is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
+import { XRControllerModelFactory } from 'dessert/addons/webxr/XRControllerModelFactory.js';
 ```
 
 ## Constructor

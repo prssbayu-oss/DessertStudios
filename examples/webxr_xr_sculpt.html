@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js xr - sculpt</title>
+		<title>dessert.js xr - sculpt</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link type="text/css" rel="stylesheet" href="main.css">
@@ -9,7 +9,7 @@
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> xr - sculpt<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> xr - sculpt<br/>
 			Trigger to sculpt. Squeeze to toggle negative. Thumbstick to cycle tools.
 		</div>
 
@@ -26,11 +26,11 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { XRButton } from 'three/addons/webxr/XRButton.js';
-			import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
-			import { Sculptor } from 'three/addons/misc/Sculptor.js';
+			import * as THREE from 'dessert';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { XRButton } from 'dessert/addons/webxr/XRButton.js';
+			import { XRControllerModelFactory } from 'dessert/addons/webxr/XRControllerModelFactory.js';
+			import { Sculptor } from 'dessert/addons/misc/Sculptor.js';
 
 			let renderer, scene, camera, controls;
 			let controller1, controller2, controllerGrip1, controllerGrip2;

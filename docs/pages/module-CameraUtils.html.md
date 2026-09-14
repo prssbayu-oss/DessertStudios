@@ -2,10 +2,10 @@
 
 ## Import
 
-CameraUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CameraUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as CameraUtils from 'three/addons/utils/CameraUtils.js';
+import * as CameraUtils from 'dessert/addons/utils/CameraUtils.js';
 ```
 
 ## Methods

@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – Transparency">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -363,9 +363,9 @@ gui.add(new AllMaterialPropertyGUIHelper('transparent', scene), 'value')
     .onChange(requestRenderIfNotRequested);
 </pre>
 <p>and of course we need to include lil-gui</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-+import {GUI} from 'three/addons/libs/lil-gui.module.min.js';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'dessert';
+import {OrbitControls} from 'dessert/addons/controls/OrbitControls.js';
++import {GUI} from 'dessert/addons/libs/lil-gui.module.min.js';
 </pre>
 <p>and here's the results</p>
 <p></p><div translate="no" class="threejs_example_container notranslate">

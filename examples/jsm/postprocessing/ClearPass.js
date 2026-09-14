@@ -1,6 +1,6 @@
 import {
 	Color
-} from 'three';
+} from 'dessert';
 import { Pass } from './Pass.js';
 
 /**
@@ -13,7 +13,7 @@ import { Pass } from './Pass.js';
  * ```
  *
  * @augments Pass
- * @three_import import { ClearPass } from 'three/addons/postprocessing/ClearPass.js';
+ * @three_import import { ClearPass } from 'dessert/addons/postprocessing/ClearPass.js';
  */
 class ClearPass extends Pass {
 

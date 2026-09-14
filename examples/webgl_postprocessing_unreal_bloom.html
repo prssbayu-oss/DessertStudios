@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - postprocessing - unreal bloom</title>
+		<title>dessert.js webgl - postprocessing - unreal bloom</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - postprocessing - unreal bloom">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_postprocessing_unreal_bloom.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_postprocessing_unreal_bloom.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_postprocessing_unreal_bloom.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_postprocessing_unreal_bloom.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 		#info > * {
@@ -22,7 +22,7 @@
 		<div id="container"></div>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - Bloom pass by <a href="https://github.com/spidersharma03" target="_blank" rel="noopener">Prashant Sharma</a> and <a href="https://ben3d.ca/" target="_blank" rel="noopener">Ben Houston</a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - Bloom pass by <a href="https://github.com/spidersharma03" target="_blank" rel="noopener">Prashant Sharma</a> and <a href="https://ben3d.ca/" target="_blank" rel="noopener">Ben Houston</a>
 			<br/>
 			Model: <a href="https://blog.sketchfab.com/art-spotlight-primary-ion-drive/" target="_blank" rel="noopener">Primary Ion Drive</a> by
 			<a href="https://mjmurdock.com/" target="_blank" rel="noopener">Mike Murdock</a>, CC Attribution.
@@ -41,17 +41,17 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-			import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-			import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
-			import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { EffectComposer } from 'dessert/addons/postprocessing/EffectComposer.js';
+			import { RenderPass } from 'dessert/addons/postprocessing/RenderPass.js';
+			import { UnrealBloomPass } from 'dessert/addons/postprocessing/UnrealBloomPass.js';
+			import { OutputPass } from 'dessert/addons/postprocessing/OutputPass.js';
 
 			let camera, stats;
 			let composer, renderer, mixer, timer;

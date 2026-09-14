@@ -29,10 +29,10 @@ renderPipeline.outputNode = scenePassColor.add( bloomPass );
 
 ## Import
 
-BloomNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BloomNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { bloom } from 'three/addons/tsl/display/BloomNode.js';
+import { bloom } from 'dessert/addons/tsl/display/BloomNode.js';
 ```
 
 ## Constructor

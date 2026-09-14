@@ -1,5 +1,5 @@
-import { RenderTarget, Vector2, NodeMaterial, RendererUtils, QuadMesh, TempNode, NodeUpdateType, warnOnce } from 'three/webgpu';
-import { Fn, float, uv, uniform, convertToTexture, vec2, vec4, passTexture, premultiplyAlpha, unpremultiplyAlpha, context, texture } from 'three/tsl';
+import { RenderTarget, Vector2, NodeMaterial, RendererUtils, QuadMesh, TempNode, NodeUpdateType, warnOnce } from 'dessert/webgpu';
+import { Fn, float, uv, uniform, convertToTexture, vec2, vec4, passTexture, premultiplyAlpha, unpremultiplyAlpha, context, texture } from 'dessert/dsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();
 
@@ -9,7 +9,7 @@ let _rendererState;
  * Post processing node for creating a gaussian blur effect.
  *
  * @augments TempNode
- * @three_import import { gaussianBlur, premultipliedGaussianBlur } from 'three/addons/tsl/display/GaussianBlurNode.js';
+ * @three_import import { gaussianBlur, premultipliedGaussianBlur } from 'dessert/addons/tsl/display/GaussianBlurNode.js';
  */
 class GaussianBlurNode extends TempNode {
 

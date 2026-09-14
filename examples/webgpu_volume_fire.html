@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - volumetric fire simulation</title>
+		<title>dessert.js webgpu - volumetric fire simulation</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - volumetric fire simulation">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_volume_fire.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_volume_fire.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_volume_fire.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_volume_fire.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Volumetric Fire Simulation</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Volumetric Fire Simulation</span>
 			</div>
 
 			<small>3D fluid simulation (semi-Lagrangian advection + curlNoise, buoyancy, Jacobi projection) on the GPU.</br>Drag the teapot to add turbulence.</small>
@@ -37,7 +37,7 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
+			import * as THREE from 'dessert/webgpu';
 			import {
 				vec3, vec4, uvec3, float, Fn, uniform,
 				texture3D, textureStore, instanceIndex,
@@ -47,21 +47,21 @@
 				Loop, positionWorld, positionLocal,
 				interleavedGradientNoise, frameId, fract,
 				saturation, cos, sin, atan
-			} from 'three/tsl';
+			} from 'dessert/dsl';
 
-			import { snoise, snoiseVec3 } from 'three/addons/tsl/math/curlNoise.js';
-			import { ImprovedNoise } from 'three/addons/math/ImprovedNoise.js';
+			import { snoise, snoiseVec3 } from 'dessert/addons/tsl/math/curlNoise.js';
+			import { ImprovedNoise } from 'dessert/addons/math/ImprovedNoise.js';
 
-			import { gaussianBlur } from 'three/addons/tsl/display/GaussianBlurNode.js';
-			import { bloom } from 'three/addons/tsl/display/BloomNode.js';
+			import { gaussianBlur } from 'dessert/addons/tsl/display/GaussianBlurNode.js';
+			import { bloom } from 'dessert/addons/tsl/display/BloomNode.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { DragControls } from 'three/addons/controls/DragControls.js';
-			import { TeapotGeometry } from 'three/addons/geometries/TeapotGeometry.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { DragControls } from 'dessert/addons/controls/DragControls.js';
+			import { TeapotGeometry } from 'dessert/addons/geometries/TeapotGeometry.js';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
 			if ( WebGPU.isAvailable() === false ) {
 

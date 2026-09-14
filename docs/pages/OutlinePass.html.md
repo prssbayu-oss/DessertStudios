@@ -14,10 +14,10 @@ composer.addPass( outlinePass );
 
 ## Import
 
-OutlinePass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OutlinePass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
+import { OutlinePass } from 'dessert/addons/postprocessing/OutlinePass.js';
 ```
 
 ## Constructor

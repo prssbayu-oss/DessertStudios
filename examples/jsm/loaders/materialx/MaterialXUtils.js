@@ -2,14 +2,14 @@ import {
 	RepeatWrapping,
 	ClampToEdgeWrapping,
 	MirroredRepeatWrapping,
-} from 'three/webgpu';
+} from 'dessert/webgpu';
 
 import {
 	bool,
 	element,
 	float,
 	vec3,
-} from 'three/tsl';
+} from 'dessert/dsl';
 
 const BOOLEAN_OPERATOR_OPS = new Set( [ '&&', '||', '^^', '!', '==', '!=', '<', '>', '<=', '>=' ] );
 const TEXTURE_ADDRESS_MODE_WRAPPING = {

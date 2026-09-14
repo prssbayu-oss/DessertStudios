@@ -14,10 +14,10 @@ References:
 
 ## Import
 
-WaterMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+WaterMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { WaterMesh } from 'three/addons/objects/WaterMesh.js';
+import { WaterMesh } from 'dessert/addons/objects/WaterMesh.js';
 ```
 
 ## Constructor

@@ -14,10 +14,10 @@ texture.colorSpace = THREE.SRGBColorSpace; // only for color textures
 
 ## Import
 
-TGALoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TGALoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TGALoader } from 'three/addons/loaders/TGALoader.js';
+import { TGALoader } from 'dessert/addons/loaders/TGALoader.js';
 ```
 
 ## Constructor

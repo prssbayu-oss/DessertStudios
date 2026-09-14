@@ -18,7 +18,7 @@ import {
 	SRGBColorSpace,
 	Vector2,
 	Vector3
-} from 'three';
+} from 'dessert';
 
 const COLOR_SPACE_SVG = SRGBColorSpace;
 
@@ -61,7 +61,7 @@ const COLOR_SPACE_SVG = SRGBColorSpace;
  * ```
  *
  * @augments Loader
- * @three_import import { SVGLoader } from 'three/addons/loaders/SVGLoader.js';
+ * @three_import import { SVGLoader } from 'dessert/addons/loaders/SVGLoader.js';
  */
 class SVGLoader extends Loader {
 

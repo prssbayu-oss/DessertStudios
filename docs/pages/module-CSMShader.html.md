@@ -2,10 +2,10 @@
 
 ## Import
 
-CSMShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CSMShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CSMShader } from 'three/addons/csm/CSMShader.js';
+import { CSMShader } from 'dessert/addons/csm/CSMShader.js';
 ```
 
 ## Properties

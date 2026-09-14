@@ -17,10 +17,10 @@ scene.environment = envMap;
 
 ## Import
 
-RoomEnvironment is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RoomEnvironment is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
 ```
 
 ## Constructor

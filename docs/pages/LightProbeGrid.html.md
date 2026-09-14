@@ -10,10 +10,10 @@ The baked data is stored in a single RGBA `RenderTarget3D` atlas that packs the 
 
 ## Import
 
-LightProbeGrid is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LightProbeGrid is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LightProbeGrid } from 'three/addons/lighting/LightProbeGrid.js';
+import { LightProbeGrid } from 'dessert/addons/lighting/LightProbeGrid.js';
 ```
 
 ## Constructor

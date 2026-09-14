@@ -1,21 +1,21 @@
 <html lang="en">
 	<head>
-		<title>three.js webgpu - particles - soft</title>
+		<title>dessert.js webgpu - particles - soft</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - particles - soft">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_particles_soft.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_particles_soft.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_particles_soft.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_particles_soft.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>WebGPU Soft Particles</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>WebGPU Soft Particles</span>
 			</div>
 
 			<small>Soft particles fade smoke sprites out where they intersect solid geometry.</small>
@@ -36,13 +36,13 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { float, range, texture, mix, uv, color, rotateUV, positionLocal, time, uniform } from 'three/tsl';
-			import { softParticles } from 'three/addons/tsl/utils/SoftParticles.js';
+			import * as THREE from 'dessert/webgpu';
+			import { float, range, texture, mix, uv, color, rotateUV, positionLocal, time, uniform } from 'dessert/dsl';
+			import { softParticles } from 'dessert/addons/tsl/utils/SoftParticles.js';
 
-			import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { PLYLoader } from 'dessert/addons/loaders/PLYLoader.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			let camera, scene, renderer;
 			let controls;

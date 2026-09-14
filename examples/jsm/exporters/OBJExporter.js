@@ -5,7 +5,7 @@ import {
 	SRGBColorSpace,
 	Vector2,
 	Vector3
-} from 'three';
+} from 'dessert';
 
 /**
  * An exporter for OBJ.
@@ -17,7 +17,7 @@ import {
  * const data = exporter.parse( scene );
  * ```
  *
- * @three_import import { OBJExporter } from 'three/addons/exporters/OBJExporter.js';
+ * @three_import import { OBJExporter } from 'dessert/addons/exporters/OBJExporter.js';
  */
 class OBJExporter {
 

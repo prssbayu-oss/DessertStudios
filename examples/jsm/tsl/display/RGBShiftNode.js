@@ -1,12 +1,12 @@
-import { TempNode } from 'three/webgpu';
-import { nodeObject, Fn, uv, vec2, sin, cos, vec4, convertToTexture } from 'three/tsl';
+import { TempNode } from 'dessert/webgpu';
+import { nodeObject, Fn, uv, vec2, sin, cos, vec4, convertToTexture } from 'dessert/dsl';
 
 /**
  * Post processing node for shifting/splitting RGB color channels. The effect
  * separates color channels and offsets them from each other.
  *
  * @augments TempNode
- * @three_import import { rgbShift } from 'three/addons/tsl/display/RGBShiftNode.js';
+ * @three_import import { rgbShift } from 'dessert/addons/tsl/display/RGBShiftNode.js';
  */
 class RGBShiftNode extends TempNode {
 

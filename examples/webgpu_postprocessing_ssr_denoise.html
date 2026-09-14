@@ -2,13 +2,13 @@
 <html lang="en">
 
 	<head>
-		<title>three.js webgpu - postprocessing - Screen Space Reflections (SSR) + denoise</title>
+		<title>dessert.js webgpu - postprocessing - Screen Space Reflections (SSR) + denoise</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - postprocessing - Screen Space Reflections (SSR) + denoise">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_ssr_denoise.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_ssr_denoise.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_ssr_denoise.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_ssr_denoise.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 		<style>
 			#compare-hint {
@@ -32,10 +32,10 @@
 	<div id="compare-hint" hidden>Hold Shift and move the mouse to scrub the comparison</div>
 
 	<div id="info">
-		<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+		<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 		<div class="title-wrapper">
-			<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>SSR + Denoising</span>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>SSR + Denoising</span>
 		</div>
 
 		<small>
@@ -60,20 +60,20 @@
 
 	<script type="module">
 
-		import * as THREE from 'three/webgpu';
-		import { pass, mrt, output, normalView, materialMetalness, materialRoughness, screenUV, sample, packNormalToRGB, unpackRGBToNormal, vec2, velocity, diffuseColor, vec3, vec4, uniform, mix, step, abs, float, renderOutput, saturation } from 'three/tsl';
-		import { SunLight } from 'three/addons/lights/SunLight.js';
-		import { SunLightNode } from 'three/addons/lights/SunLightNode.js';
-		import { ssr } from 'three/addons/tsl/display/SSRNode.js';
-		import { temporalReproject } from 'three/addons/tsl/display/TemporalReprojectNode.js';
-		import { recurrentDenoise } from 'three/addons/tsl/display/RecurrentDenoiseNode.js';
-		import { sharpen } from 'three/addons/tsl/display/SharpenNode.js';
-		import { traa } from 'three/addons/tsl/display/TRAANode.js';
+		import * as THREE from 'dessert/webgpu';
+		import { pass, mrt, output, normalView, materialMetalness, materialRoughness, screenUV, sample, packNormalToRGB, unpackRGBToNormal, vec2, velocity, diffuseColor, vec3, vec4, uniform, mix, step, abs, float, renderOutput, saturation } from 'dessert/dsl';
+		import { SunLight } from 'dessert/addons/lights/SunLight.js';
+		import { SunLightNode } from 'dessert/addons/lights/SunLightNode.js';
+		import { ssr } from 'dessert/addons/tsl/display/SSRNode.js';
+		import { temporalReproject } from 'dessert/addons/tsl/display/TemporalReprojectNode.js';
+		import { recurrentDenoise } from 'dessert/addons/tsl/display/RecurrentDenoiseNode.js';
+		import { sharpen } from 'dessert/addons/tsl/display/SharpenNode.js';
+		import { traa } from 'dessert/addons/tsl/display/TRAANode.js';
 
-		import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-		import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-		import { Inspector } from 'three/addons/inspector/Inspector.js';
-		import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+		import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+		import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+		import { Inspector } from 'dessert/addons/inspector/Inspector.js';
+		import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
 
 		// Disable env map specular (radiance and clearcoat radiance) for every PBR material
 		// in this scene, since SSR provides the specular reflections instead. Diffuse env

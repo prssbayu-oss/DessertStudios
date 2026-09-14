@@ -1,12 +1,12 @@
-import { Vector2, TempNode } from 'three/webgpu';
-import { Fn, uniformArray, select, float, NodeUpdateType, uv, dot, clamp, uniform, convertToTexture, smoothstep, bool, vec2, vec3, If, Loop, max, min, Break, abs } from 'three/tsl';
+import { Vector2, TempNode } from 'dessert/webgpu';
+import { Fn, uniformArray, select, float, NodeUpdateType, uv, dot, clamp, uniform, convertToTexture, smoothstep, bool, vec2, vec3, If, Loop, max, min, Break, abs } from 'dessert/dsl';
 
 /**
  * Post processing node for applying FXAA. This node requires sRGB input
  * so tone mapping and color space conversion must happen before the anti-aliasing.
  *
  * @augments TempNode
- * @three_import import { fxaa } from 'three/addons/tsl/display/FXAANode.js';
+ * @three_import import { fxaa } from 'dessert/addons/tsl/display/FXAANode.js';
  */
 class FXAANode extends TempNode {
 

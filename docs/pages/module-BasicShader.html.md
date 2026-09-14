@@ -2,10 +2,10 @@
 
 ## Import
 
-BasicShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BasicShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BasicShader } from 'three/addons/shaders/BasicShader.js';
+import { BasicShader } from 'dessert/addons/shaders/BasicShader.js';
 ```
 
 ## Properties

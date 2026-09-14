@@ -1,6 +1,6 @@
 /**
  * @module KaleidoShader
- * @three_import import { KaleidoShader } from 'three/addons/shaders/KaleidoShader.js';
+ * @three_import import { KaleidoShader } from 'dessert/addons/shaders/KaleidoShader.js';
  */
 
 /**

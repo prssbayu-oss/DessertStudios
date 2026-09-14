@@ -19,10 +19,10 @@ sort.compute( renderer );
 
 ## Import
 
-CountingSort is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CountingSort is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CountingSort } from 'three/addons/gpgpu/CountingSort.js';
+import { CountingSort } from 'dessert/addons/gpgpu/CountingSort.js';
 ```
 
 ## Constructor

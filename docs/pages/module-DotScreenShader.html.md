@@ -2,10 +2,10 @@
 
 ## Import
 
-DotScreenShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DotScreenShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DotScreenShader } from 'three/addons/shaders/DotScreenShader.js';
+import { DotScreenShader } from 'dessert/addons/shaders/DotScreenShader.js';
 ```
 
 ## Properties

@@ -1,10 +1,10 @@
 import {
 	Vector2
-} from 'three';
+} from 'dessert';
 
 /**
  * @module FreiChenShader
- * @three_import import { FreiChenShader } from 'three/addons/shaders/FreiChenShader.js';
+ * @three_import import { FreiChenShader } from 'dessert/addons/shaders/FreiChenShader.js';
  */
 
 /**

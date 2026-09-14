@@ -1,4 +1,4 @@
-import { InstancedMesh, MathUtils } from 'three';
+import { InstancedMesh, MathUtils } from 'dessert';
 
 // Shared lifecycle for street furniture with one geometry and material.
 class InstancedMeshGenerator {

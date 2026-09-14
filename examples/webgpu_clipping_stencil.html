@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - clipping stencil</title>
+		<title>dessert.js webgpu - clipping stencil</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - clipping stencil">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_clipping_stencil.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_clipping_stencil.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_clipping_stencil.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_clipping_stencil.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Clipping Stencil</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Clipping Stencil</span>
 			</div>
 
 			<small>Solid geometry with clip planes and stencil materials.</small>
@@ -36,13 +36,13 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
+			import * as THREE from 'dessert/webgpu';
 
-			import { SunLight } from 'three/addons/lights/SunLight.js';
-			import { SunLightNode } from 'three/addons/lights/SunLightNode.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { SunLight } from 'dessert/addons/lights/SunLight.js';
+			import { SunLightNode } from 'dessert/addons/lights/SunLightNode.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
 			let camera, scene, renderer, object;
 			let planes, planeObjects, planeHelpers;

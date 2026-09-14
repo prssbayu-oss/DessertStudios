@@ -11,10 +11,10 @@ const arraybuffer = await exporter.parseAsync( scene );
 
 ## Import
 
-USDZExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+USDZExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { USDZExporter } from 'three/addons/exporters/USDZExporter.js';
+import { USDZExporter } from 'dessert/addons/exporters/USDZExporter.js';
 ```
 
 ## Constructor

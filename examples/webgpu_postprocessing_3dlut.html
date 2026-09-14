@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - 3d luts</title>
+		<title>dessert.js webgpu - 3d luts</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - 3d luts">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_3dlut.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_3dlut.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_3dlut.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_3dlut.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>3D LUTs</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>3D LUTs</span>
 			</div>
 
 			<small>
@@ -41,16 +41,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { mix, mul, oneMinus, positionLocal, smoothstep, texture, time, rotateUV, Fn, uv, vec2, vec3, vec4, pass, texture3D, uniform, renderOutput } from 'three/tsl';
-			import { lut3D } from 'three/addons/tsl/display/Lut3DNode.js';
+			import * as THREE from 'dessert/webgpu';
+			import { mix, mul, oneMinus, positionLocal, smoothstep, texture, time, rotateUV, Fn, uv, vec2, vec3, vec4, pass, texture3D, uniform, renderOutput } from 'dessert/dsl';
+			import { lut3D } from 'dessert/addons/tsl/display/Lut3DNode.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { LUTCubeLoader } from 'three/addons/loaders/LUTCubeLoader.js';
-			import { LUT3dlLoader } from 'three/addons/loaders/LUT3dlLoader.js';
-			import { LUTImageLoader } from 'three/addons/loaders/LUTImageLoader.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { LUTCubeLoader } from 'dessert/addons/loaders/LUTCubeLoader.js';
+			import { LUT3dlLoader } from 'dessert/addons/loaders/LUT3dlLoader.js';
+			import { LUTImageLoader } from 'dessert/addons/loaders/LUTImageLoader.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			const params = {
 				lut: 'Bourbon 64.CUBE',

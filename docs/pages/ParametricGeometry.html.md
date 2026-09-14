@@ -17,10 +17,10 @@ scene.add( klein );
 
 ## Import
 
-ParametricGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ParametricGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ParametricGeometry } from 'three/addons/geometries/ParametricGeometry.js';
+import { ParametricGeometry } from 'dessert/addons/geometries/ParametricGeometry.js';
 ```
 
 ## Constructor

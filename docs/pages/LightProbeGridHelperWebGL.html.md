@@ -15,10 +15,10 @@ scene.add( helper );
 
 ## Import
 
-LightProbeGridHelperWebGL is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LightProbeGridHelperWebGL is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LightProbeGridHelperWebGL } from 'three/addons/helpers/LightProbeGridHelperWebGL.js';
+import { LightProbeGridHelperWebGL } from 'dessert/addons/helpers/LightProbeGridHelperWebGL.js';
 ```
 
 ## Constructor

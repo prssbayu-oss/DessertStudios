@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - ambient occlusion</title>
+		<title>dessert.js webgpu - ambient occlusion</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - ambient occlusion">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_ao.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_ao.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_ao.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_ao.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>AO</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>AO</span>
 			</div>
 
 			<small>
@@ -40,19 +40,19 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { sample, pass, mrt, screenUV, normalView, velocity, vec3, vec4, packNormalToRGB, unpackRGBToNormal, colorSpaceToWorking, builtinAOContext } from 'three/tsl';
-			import { ao } from 'three/addons/tsl/display/GTAONode.js';
-			import { ssao } from 'three/addons/tsl/display/SSAONode.js';
-			import { traa } from 'three/addons/tsl/display/TRAANode.js';
+			import * as THREE from 'dessert/webgpu';
+			import { sample, pass, mrt, screenUV, normalView, velocity, vec3, vec4, packNormalToRGB, unpackRGBToNormal, colorSpaceToWorking, builtinAOContext } from 'dessert/dsl';
+			import { ao } from 'dessert/addons/tsl/display/GTAONode.js';
+			import { ssao } from 'dessert/addons/tsl/display/SSAONode.js';
+			import { traa } from 'dessert/addons/tsl/display/TRAANode.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
-			import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { DRACOLoader } from 'dessert/addons/loaders/DRACOLoader.js';
+			import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { RoundedBoxGeometry } from 'dessert/addons/geometries/RoundedBoxGeometry.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			let camera, scene, renderer, renderPipeline, controls;
 

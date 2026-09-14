@@ -18,10 +18,10 @@ scene.add( result.scene );
 
 ## Import
 
-ColladaLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ColladaLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ColladaLoader } from 'three/addons/loaders/ColladaLoader.js';
+import { ColladaLoader } from 'dessert/addons/loaders/ColladaLoader.js';
 ```
 
 ## Constructor

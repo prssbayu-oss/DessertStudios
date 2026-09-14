@@ -16,10 +16,10 @@ composer.addPass( ssaaRenderPass );
 
 ## Import
 
-SSAARenderPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SSAARenderPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SSAARenderPass } from 'three/addons/postprocessing/SSAARenderPass.js';
+import { SSAARenderPass } from 'dessert/addons/postprocessing/SSAARenderPass.js';
 ```
 
 ## Constructor

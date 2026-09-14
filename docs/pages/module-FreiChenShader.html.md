@@ -2,10 +2,10 @@
 
 ## Import
 
-FreiChenShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FreiChenShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FreiChenShader } from 'three/addons/shaders/FreiChenShader.js';
+import { FreiChenShader } from 'dessert/addons/shaders/FreiChenShader.js';
 ```
 
 ## Properties

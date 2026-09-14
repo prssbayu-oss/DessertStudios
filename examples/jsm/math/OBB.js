@@ -5,7 +5,7 @@ import {
 	Matrix3,
 	Ray,
 	Vector3
-} from 'three';
+} from 'dessert';
 
 // module scope helper variables
 
@@ -40,7 +40,7 @@ const localRay = new Ray();
 /**
  * Represents an oriented bounding box (OBB) in 3D space.
  *
- * @three_import import { OBB } from 'three/addons/math/OBB.js';
+ * @three_import import { OBB } from 'dessert/addons/math/OBB.js';
  */
 class OBB {
 

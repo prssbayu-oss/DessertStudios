@@ -20,10 +20,10 @@ renderPipeline.outputNode = scenePassColor.mul( aoPass.r );
 
 ## Import
 
-SSAONode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SSAONode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ssao } from 'three/addons/tsl/display/SSAONode.js';
+import { ssao } from 'dessert/addons/tsl/display/SSAONode.js';
 ```
 
 ## Constructor

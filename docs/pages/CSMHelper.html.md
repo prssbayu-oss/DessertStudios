@@ -6,10 +6,10 @@ A helper for visualizing the cascades of a CSM instance.
 
 ## Import
 
-CSMHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CSMHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CSMHelper } from 'three/addons/csm/CSMHelper.js';
+import { CSMHelper } from 'dessert/addons/csm/CSMHelper.js';
 ```
 
 ## Constructor

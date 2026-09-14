@@ -13,10 +13,10 @@ composer.addPass( smaaPass );
 
 ## Import
 
-SMAAPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SMAAPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SMAAPass } from 'three/addons/postprocessing/SMAAPass.js';
+import { SMAAPass } from 'dessert/addons/postprocessing/SMAAPass.js';
 ```
 
 ## Constructor

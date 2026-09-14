@@ -1,4 +1,4 @@
-import { Extension } from 'three/addons/inspector/Extension.js';
+import { Extension } from 'dessert/addons/inspector/Extension.js';
 import {
 	createDefaultParams,
 	LUT_PRESETS,
@@ -13,9 +13,9 @@ import {
 	FloatType,
 	NoToneMapping,
 	RenderPipeline
-} from 'three/webgpu';
-import { pass, texture3D, renderOutput } from 'three/tsl';
-import { lut3D } from 'three/addons/tsl/display/Lut3DNode.js';
+} from 'dessert/webgpu';
+import { pass, texture3D, renderOutput } from 'dessert/dsl';
+import { lut3D } from 'dessert/addons/tsl/display/Lut3DNode.js';
 
 import { LUT3DStyle } from './LUT3DStyle.js';
 

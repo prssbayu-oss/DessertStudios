@@ -1,5 +1,5 @@
-import { Vector2, TempNode, NodeUpdateType } from 'three/webgpu';
-import { Fn, uv, uniform, convertToTexture, vec2, vec3, vec4, mat3, luminance, add } from 'three/tsl';
+import { Vector2, TempNode, NodeUpdateType } from 'dessert/webgpu';
+import { Fn, uv, uniform, convertToTexture, vec2, vec3, vec4, mat3, luminance, add } from 'dessert/dsl';
 
 /**
  * Post processing node for detecting edges with a sobel filter.
@@ -7,7 +7,7 @@ import { Fn, uv, uniform, convertToTexture, vec2, vec3, vec4, mat3, luminance, a
  * space conversion.
  *
  * @augments TempNode
- * @three_import import { sobel } from 'three/addons/tsl/display/SobelOperatorNode.js';
+ * @three_import import { sobel } from 'dessert/addons/tsl/display/SobelOperatorNode.js';
  */
 class SobelOperatorNode extends TempNode {
 

@@ -4,10 +4,10 @@ A utility module with basic WebGPU capability testing.
 
 ## Import
 
-WebGPU is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+WebGPU is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import WebGPU from 'three/addons/capabilities/WebGPU.js';
+import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 ```
 
 ## Static Methods

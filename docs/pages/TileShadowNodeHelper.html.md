@@ -6,10 +6,10 @@ Helper class to manage and display debug visuals for TileShadowNode.
 
 ## Import
 
-TileShadowNodeHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TileShadowNodeHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TileShadowNodeHelper } from 'three/addons/tsl/shadows/TileShadowNodeHelper.js';
+import { TileShadowNodeHelper } from 'dessert/addons/tsl/shadows/TileShadowNodeHelper.js';
 ```
 
 ## Constructor

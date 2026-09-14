@@ -9,8 +9,8 @@ import {
 	ShadowNode,
 	Vector2,
 	VSMShadowMap
-} from 'three/webgpu';
-import { Fn, If, float, mix, normalWorld, positionView, reference, renderGroup, shadowPositionWorld, smoothstep, texture, uniform, vec4 } from 'three/tsl';
+} from 'dessert/webgpu';
+import { Fn, If, float, mix, normalWorld, positionView, reference, renderGroup, shadowPositionWorld, smoothstep, texture, uniform, vec4 } from 'dessert/dsl';
 
 let _vsmWarned = false;
 
@@ -22,7 +22,7 @@ let _vsmWarned = false;
  * cascades back to front, blending across the fade bands between them.
  *
  * @augments ShadowNode
- * @three_import import { sunShadow } from 'three/addons/lights/SunShadowNode.js';
+ * @three_import import { sunShadow } from 'dessert/addons/lights/SunShadowNode.js';
  */
 class SunShadowNode extends ShadowNode {
 

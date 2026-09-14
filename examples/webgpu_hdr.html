@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<meta property="og:title" content="three.js webgpu - HDR Draw">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_hdr.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_hdr.jpg">
-	<title>three.js webgpu - HDR Draw</title>
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_hdr.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_hdr.jpg">
+	<title>dessert.js webgpu - HDR Draw</title>
 	<link type="text/css" rel="stylesheet" href="example.css">
 	<style>
 		body {
@@ -32,10 +32,10 @@
 	<body>
 
 		<div id="info" class="invert">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>HDR</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>HDR</span>
 			</div>
 
 			<small>
@@ -67,13 +67,13 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { pass, uv, uniform } from 'three/tsl';
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
-			import { afterImage } from 'three/addons/tsl/display/AfterImageNode.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import * as THREE from 'dessert/webgpu';
+			import { pass, uv, uniform } from 'dessert/dsl';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
+			import { afterImage } from 'dessert/addons/tsl/display/AfterImageNode.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { ExtendedSRGBColorSpace, ExtendedSRGBColorSpaceImpl } from 'three/addons/math/ColorSpaces.js';
+			import { ExtendedSRGBColorSpace, ExtendedSRGBColorSpaceImpl } from 'dessert/addons/math/ColorSpaces.js';
 
 			const params = {
 				intensity: uniform( 4.0, 'float' ).setName( 'intensity' ),

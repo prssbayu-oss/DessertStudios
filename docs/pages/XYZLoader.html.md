@@ -20,10 +20,10 @@ scene.add( points );
 
 ## Import
 
-XYZLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+XYZLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { XYZLoader } from 'three/addons/loaders/XYZLoader.js';
+import { XYZLoader } from 'dessert/addons/loaders/XYZLoader.js';
 ```
 
 ## Constructor

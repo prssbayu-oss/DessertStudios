@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – Post Processing">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -99,11 +99,11 @@ This pass is usually the last pass of the pass chain.
 composer.addPass(outputPass);
 </pre>
 <p>To use these classes we need to import a bunch of scripts.</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
-import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
-import {BloomPass} from 'three/addons/postprocessing/BloomPass.js';
-import {FilmPass} from 'three/addons/postprocessing/FilmPass.js';
-import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import {EffectComposer} from 'dessert/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'dessert/addons/postprocessing/RenderPass.js';
+import {BloomPass} from 'dessert/addons/postprocessing/BloomPass.js';
+import {FilmPass} from 'dessert/addons/postprocessing/FilmPass.js';
+import {OutputPass} from 'dessert/addons/postprocessing/OutputPass.js';
 </pre>
 <p>For pretty much any post processing <code class="notranslate" translate="no">EffectComposer.js</code>, <code class="notranslate" translate="no">RenderPass.js</code> and <code class="notranslate" translate="no">OutputPass.js</code>
 are required.</p>
@@ -168,7 +168,7 @@ this.uniforms.grayscale.value = grayscale;
 </pre>
 <p>So which makes it pretty clear how to set them.</p>
 <p>Let's make a quick GUI to set those values</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import {GUI} from 'three/addons/libs/lil-gui.module.min.js';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import {GUI} from 'dessert/addons/libs/lil-gui.module.min.js';
 </pre>
 <p>and</p>
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">const gui = new GUI();

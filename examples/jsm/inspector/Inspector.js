@@ -10,7 +10,7 @@ import { Viewer } from './tabs/Viewer.js';
 import { Timeline } from './tabs/Timeline.js';
 import { setText } from './ui/utils.js';
 
-import { setConsoleFunction, getConsoleFunction, REVISION } from 'three/webgpu';
+import { setConsoleFunction, getConsoleFunction, REVISION } from 'dessert/webgpu';
 
 class Inspector extends RendererInspector {
 

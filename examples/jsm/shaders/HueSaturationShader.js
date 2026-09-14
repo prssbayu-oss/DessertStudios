@@ -1,6 +1,6 @@
 /**
  * @module HueSaturationShader
- * @three_import import { HueSaturationShader } from 'three/addons/shaders/HueSaturationShader.js';
+ * @three_import import { HueSaturationShader } from 'dessert/addons/shaders/HueSaturationShader.js';
  */
 
 /**

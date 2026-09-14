@@ -4,23 +4,23 @@
 <head>
 
 	<head>
-		<title>three.js webgpu - postprocessing - Screen Space Reflections (SSR)</title>
+		<title>dessert.js webgpu - postprocessing - Screen Space Reflections (SSR)</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - postprocessing - Screen Space Reflections (SSR)">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_ssr.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_ssr.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_ssr.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_ssr.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 
 <body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>SSR</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>SSR</span>
 			</div>
 
 			<small>
@@ -45,16 +45,16 @@
 
 	<script type="module">
 
-		import * as THREE from 'three/webgpu';
-		import { pass, mrt, output, normalView, metalness, roughness, screenUV, color, sample, packNormalToRGB, unpackRGBToNormal, vec2, colorSpaceToWorking } from 'three/tsl';
-		import { ssr } from 'three/addons/tsl/display/SSRNode.js';
-		import { smaa } from 'three/addons/tsl/display/SMAANode.js';
+		import * as THREE from 'dessert/webgpu';
+		import { pass, mrt, output, normalView, metalness, roughness, screenUV, color, sample, packNormalToRGB, unpackRGBToNormal, vec2, colorSpaceToWorking } from 'dessert/dsl';
+		import { ssr } from 'dessert/addons/tsl/display/SSRNode.js';
+		import { smaa } from 'dessert/addons/tsl/display/SMAANode.js';
 
-		import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
-		import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-		import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-		import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-		import { Inspector } from 'three/addons/inspector/Inspector.js';
+		import { DRACOLoader } from 'dessert/addons/loaders/DRACOLoader.js';
+		import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+		import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+		import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
+		import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 		const params = {
 			quality: 0.5,

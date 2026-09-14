@@ -25,10 +25,10 @@ composer.addPass( halftonePass );
 
 ## Import
 
-HalftonePass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+HalftonePass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { HalftonePass } from 'three/addons/postprocessing/HalftonePass.js';
+import { HalftonePass } from 'dessert/addons/postprocessing/HalftonePass.js';
 ```
 
 ## Constructor

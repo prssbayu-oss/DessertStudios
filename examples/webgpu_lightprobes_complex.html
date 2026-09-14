@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - light probe volume (multi-room)</title>
+		<title>dessert.js webgpu - light probe volume (multi-room)</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - light probe volume (multi-room)">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_lightprobes_complex.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_lightprobes_complex.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_lightprobes_complex.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_lightprobes_complex.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Light Probe Volume (Multi-Room)</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Light Probe Volume (Multi-Room)</span>
 			</div>
 
 			<small>Two rooms with independent probe volumes showcasing the multi-volume scene.add() API.</small>
@@ -37,12 +37,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
+			import * as THREE from 'dessert/webgpu';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
-			import { LightProbeGrid } from 'three/addons/lighting/LightProbeGrid.js';
-			import { LightProbeGridHelper } from 'three/addons/helpers/LightProbeGridHelper.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
+			import { LightProbeGrid } from 'dessert/addons/lighting/LightProbeGrid.js';
+			import { LightProbeGridHelper } from 'dessert/addons/helpers/LightProbeGridHelper.js';
 
 			let camera, scene, renderer, controls;
 			let probesLeft, probesRight;

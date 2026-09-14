@@ -1,6 +1,6 @@
 /**
  * @module BlendShader
- * @three_import import { BlendShader } from 'three/addons/shaders/BlendShader.js';
+ * @three_import import { BlendShader } from 'dessert/addons/shaders/BlendShader.js';
  */
 
 /**

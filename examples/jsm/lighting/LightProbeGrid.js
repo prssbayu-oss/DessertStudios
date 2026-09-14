@@ -14,7 +14,7 @@ import {
 	RenderTarget3D,
 	RGBAFormat,
 	Vector3
-} from 'three/webgpu';
+} from 'dessert/webgpu';
 
 import {
 	array,
@@ -29,7 +29,7 @@ import {
 	uniform,
 	vec3,
 	vec4
-} from 'three/tsl';
+} from 'dessert/dsl';
 
 import { LightProbeGridNode, ATLAS_PADDING } from '../tsl/lighting/LightProbeGridNode.js';
 import { replaceSunLights, restoreSunLights } from './LightProbeGridUtils.js';
@@ -280,7 +280,7 @@ function ensureBakeMaterials( sampleCount, cubeMap, batchMap ) {
  * happen on the GPU with zero CPU readback.
  *
  * @augments Light
- * @three_import import { LightProbeGrid } from 'three/addons/lighting/LightProbeGrid.js';
+ * @three_import import { LightProbeGrid } from 'dessert/addons/lighting/LightProbeGrid.js';
  */
 class LightProbeGrid extends Light {
 

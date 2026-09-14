@@ -8,10 +8,10 @@ This class can be used to transform objects in 3D space by adapting a similar in
 
 ## Import
 
-TransformControls is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TransformControls is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TransformControls } from 'three/addons/controls/TransformControls.js';
+import { TransformControls } from 'dessert/addons/controls/TransformControls.js';
 ```
 
 ## Constructor

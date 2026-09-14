@@ -6,10 +6,10 @@ A Trefoil Polynomial Knot.
 
 ## Import
 
-TrefoilPolynomialKnot is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TrefoilPolynomialKnot is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TrefoilPolynomialKnot } from 'three/addons/curves/CurveExtras.js';
+import { TrefoilPolynomialKnot } from 'dessert/addons/curves/CurveExtras.js';
 ```
 
 ## Constructor

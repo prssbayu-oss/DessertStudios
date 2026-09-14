@@ -4,7 +4,7 @@ import {
 	FileLoader,
 	Loader,
 	NumberKeyframeTrack
-} from 'three';
+} from 'dessert';
 
 /**
  * A loader for the MDD format.
@@ -40,7 +40,7 @@ import {
  * ```
  *
  * @augments Loader
- * @three_import import { MDDLoader } from 'three/addons/loaders/MDDLoader.js';
+ * @three_import import { MDDLoader } from 'dessert/addons/loaders/MDDLoader.js';
  */
 class MDDLoader extends Loader {
 

@@ -1,10 +1,10 @@
 import {
 	Color
-} from 'three';
+} from 'dessert';
 
 /**
  * @module ColorifyShader
- * @three_import import { ColorifyShader } from 'three/addons/shaders/ColorifyShader.js';
+ * @three_import import { ColorifyShader } from 'dessert/addons/shaders/ColorifyShader.js';
  */
 
 /**

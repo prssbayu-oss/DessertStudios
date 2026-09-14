@@ -1,5 +1,5 @@
-import { REVISION } from 'three/webgpu';
-import * as TSL from 'three/tsl';
+import { REVISION } from 'dessert/webgpu';
+import * as TSL from 'dessert/dsl';
 
 import { VariableDeclaration, Accessor } from './AST.js';
 import { isExpression, isPrimitive } from './TranspilerUtils.js';

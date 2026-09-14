@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - materials - displacement map</title>
+		<title>dessert.js webgl - materials - displacement map</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - materials - displacement map">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_materials_displacementmap.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_materials_displacementmap.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_materials_displacementmap.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_materials_displacementmap.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - (normal + ao + displacement + environment) map demo.<br />
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - (normal + ao + displacement + environment) map demo.<br />
 			ninja head from <a href="https://web.archive.org/web/2024/https://gpuopen.com/archive/gamescgi/amd-gpu-meshmapper/" target="_blank" rel="noopener">AMD GPU MeshMapper</a>
 		</div>
 
@@ -31,13 +31,13 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { OBJLoader } from 'dessert/addons/loaders/OBJLoader.js';
 
 			let stats;
 			let camera, scene, renderer, controls;

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - compute birds</title>
+		<title>dessert.js webgpu - compute birds</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - compute birds">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_compute_birds.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_compute_birds.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_compute_birds.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_compute_birds.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a>
 				<span>Compute Birds</span>
 			</div>
 
@@ -40,14 +40,14 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { uniform, varying, vec4, add, sub, max, dot, sin, mat3, uint, negate, instancedArray, cameraProjectionMatrix, cameraViewMatrix, positionLocal, modelWorldMatrix, sqrt, float, Fn, If, cos, Loop, Continue, normalize, instanceIndex, length, vertexIndex } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { uniform, varying, vec4, add, sub, max, dot, sin, mat3, uint, negate, instancedArray, cameraProjectionMatrix, cameraViewMatrix, positionLocal, modelWorldMatrix, sqrt, float, Fn, If, cos, Loop, Continue, normalize, instanceIndex, length, vertexIndex } from 'dessert/dsl';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
 			let container;
 			let camera, scene, renderer;

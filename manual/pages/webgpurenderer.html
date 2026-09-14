@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – WebGPURenderer">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -73,8 +73,8 @@
             </p>
             
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">
--  import * as THREE from 'three';
-+  import * as THREE from 'three/webgpu';
+-  import * as THREE from 'dessert';
++  import * as THREE from 'dessert/webgpu';
 </pre>
 
             <p>
@@ -121,7 +121,7 @@ document.body.appendChild( renderer.domElement );
 </pre>
             <p>
               Most common methods known from `WebGLRenderer` like `clear()`, `setRenderTarget()`or `dispose()` are also present in `WebGPURenderer`. 
-              Please have a look at the <a href="https://threejs.org/docs/#Renderer" target="_blank">API documentation</a> for a full overview of the renderer's public interface.
+              Please have a look at the <a href="https://github.com/prssbayu-oss/DessertStudios/docs/#Renderer" target="_blank">API documentation</a> for a full overview of the renderer's public interface.
             </p>
 
              <p>
@@ -150,7 +150,7 @@ document.body.appendChild( renderer.domElement );
                 post-processing stack. Similar to materials, post-processing effects are now written in TSL and the effect chain is expressed 
                 as a node composition. All common effects have already been ported to `WebGPURenderer` and exist in a more performant version
                 as a node class. We have also added new effects like SSGI, SSS or a better DoF exclusively for the new renderer. Check out the
-                <a href="https://threejs.org/examples/?q=webgpu%20postprocessing" target="_blank">official examples</a> to get an overview of
+                <a href="https://github.com/prssbayu-oss/DessertStudios/examples/?q=webgpu%20postprocessing" target="_blank">official examples</a> to get an overview of
                 the current supported effects.
               </li>
               <li>

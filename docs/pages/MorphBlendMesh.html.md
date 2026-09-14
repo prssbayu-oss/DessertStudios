@@ -6,10 +6,10 @@ A special type of an animated mesh with a more advanced interface for animation 
 
 ## Import
 
-MorphBlendMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MorphBlendMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MorphBlendMesh } from 'three/addons/misc/MorphBlendMesh.js';
+import { MorphBlendMesh } from 'dessert/addons/misc/MorphBlendMesh.js';
 ```
 
 ## Constructor

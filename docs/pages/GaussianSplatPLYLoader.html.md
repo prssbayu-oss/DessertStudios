@@ -16,10 +16,10 @@ scene.add( new GaussianSplat( geometry ) );
 
 ## Import
 
-GaussianSplatPLYLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GaussianSplatPLYLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GaussianSplatPLYLoader } from 'three/addons/loaders/GaussianSplatPLYLoader.js';
+import { GaussianSplatPLYLoader } from 'dessert/addons/loaders/GaussianSplatPLYLoader.js';
 ```
 
 ## Constructor

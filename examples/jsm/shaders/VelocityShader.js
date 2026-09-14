@@ -2,11 +2,11 @@ import {
 	UniformsLib,
 	UniformsUtils,
 	Matrix4
-} from 'three';
+} from 'dessert';
 
 /**
  * @module VelocityShader
- * @three_import import { VelocityShader } from 'three/addons/shaders/VelocityShader.js';
+ * @three_import import { VelocityShader } from 'dessert/addons/shaders/VelocityShader.js';
  */
 
 /**

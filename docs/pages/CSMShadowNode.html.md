@@ -8,10 +8,10 @@ This module can only be used with [WebGPURenderer](WebGPURenderer.html). When us
 
 ## Import
 
-CSMShadowNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CSMShadowNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CSMShadowNode } from 'three/addons/csm/CSMShadowNode.js';
+import { CSMShadowNode } from 'dessert/addons/csm/CSMShadowNode.js';
 ```
 
 ## Constructor

@@ -15,10 +15,10 @@ Reference: [https://gpuopen.com/fidelityfx-superresolution/](https://gpuopen.com
 
 ## Import
 
-FSR1Node is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FSR1Node is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { fsr1 } from 'three/addons/tsl/display/fsr1/FSR1Node.js';
+import { fsr1 } from 'dessert/addons/tsl/display/fsr1/FSR1Node.js';
 ```
 
 ## Constructor

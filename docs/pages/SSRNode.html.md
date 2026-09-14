@@ -8,10 +8,10 @@ Reference: [https://lettier.github.io/3d-game-shaders-for-beginners/screen-space
 
 ## Import
 
-SSRNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SSRNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ssr } from 'three/addons/tsl/display/SSRNode.js';
+import { ssr } from 'dessert/addons/tsl/display/SSRNode.js';
 ```
 
 ## Constructor

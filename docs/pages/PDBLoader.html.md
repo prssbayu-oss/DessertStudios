@@ -18,10 +18,10 @@ const json = pdb.json;
 
 ## Import
 
-PDBLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+PDBLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { PDBLoader } from 'three/addons/loaders/PDBLoader.js';
+import { PDBLoader } from 'dessert/addons/loaders/PDBLoader.js';
 ```
 
 ## Constructor

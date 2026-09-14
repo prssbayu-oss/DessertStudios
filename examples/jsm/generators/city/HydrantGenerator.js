@@ -3,10 +3,10 @@ import {
 	InterpolationSamplingMode,
 	InterpolationSamplingType,
 	SphereGeometry
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { attribute, color, float, mix, mx_fractal_noise_float, positionGeometry, select, smoothstep, varying } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { attribute, color, float, mix, mx_fractal_noise_float, positionGeometry, select, smoothstep, varying } from 'dessert/dsl';
 
 import { mergeGeometries } from '../../utils/BufferGeometryUtils.js';
 

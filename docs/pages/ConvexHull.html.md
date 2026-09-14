@@ -6,10 +6,10 @@ This Quickhull 3D implementation is a port of [quickhull3d](https://github.com/m
 
 ## Import
 
-ConvexHull is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ConvexHull is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ConvexHull } from 'three/addons/math/ConvexHull.js';
+import { ConvexHull } from 'dessert/addons/math/ConvexHull.js';
 ```
 
 ## Constructor

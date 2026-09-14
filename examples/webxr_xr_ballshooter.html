@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js xr - ball shooter</title>
+		<title>dessert.js xr - ball shooter</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta property="og:title" content="three.js xr - ball shooter">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webxr_xr_ballshooter.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webxr_xr_ballshooter.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webxr_xr_ballshooter.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webxr_xr_ballshooter.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> xr - ball shooter
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> xr - ball shooter
 		</div>
 
 		<script type="importmap">
@@ -29,14 +29,14 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
-			import { XRButton } from 'three/addons/webxr/XRButton.js';
-			import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
-			import { RapierPhysics } from 'three/addons/physics/RapierPhysics.js';
+			import { BoxLineGeometry } from 'dessert/addons/geometries/BoxLineGeometry.js';
+			import { XRButton } from 'dessert/addons/webxr/XRButton.js';
+			import { XRControllerModelFactory } from 'dessert/addons/webxr/XRControllerModelFactory.js';
+			import { RapierPhysics } from 'dessert/addons/physics/RapierPhysics.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
 			let camera, scene, renderer;
 			let controller1, controller2;

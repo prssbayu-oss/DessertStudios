@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - scenes transition</title>
+		<title>dessert.js webgpu - scenes transition</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - scenes transition">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_transition.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_transition.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_transition.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_transition.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Scene Transitions</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Scene Transitions</span>
 			</div>
 
 			<small>Original implementation by <a href="https://twitter.com/fernandojsg" target="_blank">fernandojsg</a> - <a href="https://github.com/kile/three.js-demos" target="_blank">github</a>.</small>
@@ -37,14 +37,14 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
+			import * as THREE from 'dessert/webgpu';
 
-			import TWEEN from 'three/addons/libs/tween.module.js';
+			import TWEEN from 'dessert/addons/libs/tween.module.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { uniform, pass } from 'three/tsl';
-			import { transition } from 'three/addons/tsl/display/TransitionNode.js';
+			import { uniform, pass } from 'dessert/dsl';
+			import { transition } from 'dessert/addons/tsl/display/TransitionNode.js';
 
 			let renderer, renderPipeline, transitionController, transitionPass;
 

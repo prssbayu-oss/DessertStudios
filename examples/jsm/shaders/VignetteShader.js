@@ -1,6 +1,6 @@
 /**
  * @module VignetteShader
- * @three_import import { VignetteShader } from 'three/addons/shaders/VignetteShader.js';
+ * @three_import import { VignetteShader } from 'dessert/addons/shaders/VignetteShader.js';
  */
 
 /**

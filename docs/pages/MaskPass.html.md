@@ -13,10 +13,10 @@ composer.addPass( maskPass );
 
 ## Import
 
-MaskPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MaskPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MaskPass } from 'three/addons/postprocessing/MaskPass.js';
+import { MaskPass } from 'dessert/addons/postprocessing/MaskPass.js';
 ```
 
 ## Constructor

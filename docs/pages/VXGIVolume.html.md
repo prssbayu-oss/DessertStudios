@@ -15,10 +15,10 @@ Note: This class can only be used with `WebGPURenderer` and a WebGPU backend.
 
 ## Import
 
-VXGIVolume is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VXGIVolume is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VXGIVolume } from 'three/addons/lighting/vxgi/VXGIVolume.js';
+import { VXGIVolume } from 'dessert/addons/lighting/vxgi/VXGIVolume.js';
 ```
 
 ## Constructor

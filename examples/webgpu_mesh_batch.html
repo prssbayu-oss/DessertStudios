@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>three.js webgpu - batch mesh</title>
+	<title>dessert.js webgpu - batch mesh</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - batch mesh">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_mesh_batch.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_mesh_batch.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_mesh_batch.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_mesh_batch.jpg">
 	<link type="text/css" rel="stylesheet" href="example.css">
 </head>
 <body>
 
 	<div id="info">
-		<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+		<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 		<div class="title-wrapper">
-			<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Batch Mesh</span>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Batch Mesh</span>
 		</div>
 
 		<small>Mirror reflections using procedural effects.</small>
@@ -37,14 +37,14 @@
 
 	<script type="module">
 
-		import * as THREE from 'three/webgpu';
+		import * as THREE from 'dessert/webgpu';
 
-		import { Inspector } from 'three/addons/inspector/Inspector.js';
+		import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-		import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-		import { radixSort } from 'three/addons/utils/SortUtils.js';
+		import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+		import { radixSort } from 'dessert/addons/utils/SortUtils.js';
 
-		import { normalView, packNormalToRGB, diffuseColor, vec4 } from 'three/tsl';
+		import { normalView, packNormalToRGB, diffuseColor, vec4 } from 'dessert/dsl';
 
 		let camera, scene, renderer;
 		let controls;

@@ -28,10 +28,10 @@ const sssBlur = boxBlur( sssPass.r, { size: 2, separation: 1 } ); // optional bl
 
 ## Import
 
-SSSNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SSSNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { sss } from 'three/addons/tsl/display/SSSNode.js';
+import { sss } from 'dessert/addons/tsl/display/SSSNode.js';
 ```
 
 ## Constructor

@@ -6,10 +6,10 @@ import {
 	InstancedMesh,
 	Object3D,
 	Vector3
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { attribute, color, float, Fn, If, mix, mx_noise_float, normalView, positionLocal, positionView, positionWorld, smoothstep, step, uniform } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { attribute, color, float, Fn, If, mix, mx_noise_float, normalView, positionLocal, positionView, positionWorld, smoothstep, step, uniform } from 'dessert/dsl';
 
 import { ImprovedNoise } from '../math/ImprovedNoise.js';
 import { mergeVertices } from '../utils/BufferGeometryUtils.js';

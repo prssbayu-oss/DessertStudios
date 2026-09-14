@@ -1,4 +1,4 @@
-import { Tab } from 'three/addons/inspector/ui/Tab.js';
+import { Tab } from 'dessert/addons/inspector/ui/Tab.js';
 import { getItem, setItem } from './Inspector.js';
 
 export class Extension extends Tab {

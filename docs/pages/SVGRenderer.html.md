@@ -17,10 +17,10 @@ There are, however, some important limitations:
 
 ## Import
 
-SVGRenderer is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SVGRenderer is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SVGRenderer } from 'three/addons/renderers/SVGRenderer.js';
+import { SVGRenderer } from 'dessert/addons/renderers/SVGRenderer.js';
 ```
 
 ## Constructor

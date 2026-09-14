@@ -6,10 +6,10 @@ This class displays all Rapier Colliders in outline.
 
 ## Import
 
-RapierHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RapierHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RapierHelper } from 'three/addons/helpers/RapierHelper.js';
+import { RapierHelper } from 'dessert/addons/helpers/RapierHelper.js';
 ```
 
 ## Constructor

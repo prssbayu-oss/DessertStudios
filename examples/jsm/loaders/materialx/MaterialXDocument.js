@@ -6,7 +6,7 @@ import {
 	Matrix4,
 	MeshBasicNodeMaterial,
 	MeshPhysicalNodeMaterial,
-} from 'three/webgpu';
+} from 'dessert/webgpu';
 
 import {
 	float,
@@ -23,7 +23,7 @@ import {
 	element,
 	mx_transform_uv,
 	mx_srgb_texture_to_lin_rec709,
-} from 'three/tsl';
+} from 'dessert/dsl';
 
 import { MaterialXLogCodes } from './MaterialXLog.js';
 import { createMaterialXCompileRegistry, compileNodeFromRegistry } from './compile/MaterialXCompileRegistry.js';

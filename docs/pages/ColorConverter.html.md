@@ -4,10 +4,10 @@ A utility class with helper functions for color conversion.
 
 ## Import
 
-ColorConverter is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ColorConverter is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ColorConverter } from 'three/addons/math/ColorConverter.js';
+import { ColorConverter } from 'dessert/addons/math/ColorConverter.js';
 ```
 
 ## Static Methods

@@ -15,10 +15,10 @@ scene.environment = envMap;
 
 ## Import
 
-ColorEnvironment is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ColorEnvironment is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ColorEnvironment } from 'three/addons/environments/ColorEnvironment.js';
+import { ColorEnvironment } from 'dessert/addons/environments/ColorEnvironment.js';
 ```
 
 ## Constructor

@@ -21,10 +21,10 @@ Note: This node can only be used with `WebGPURenderer` and a WebGPU backend.
 
 ## Import
 
-VXGINode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VXGINode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { vxgi } from 'three/addons/lighting/vxgi/VXGINode.js';
+import { vxgi } from 'dessert/addons/lighting/vxgi/VXGINode.js';
 ```
 
 ## Constructor

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - trackball controls</title>
+		<title>dessert.js webgl - trackball controls</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - trackball controls">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/misc_controls_trackball.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/misc_controls_trackball.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/misc_controls_trackball.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/misc_controls_trackball.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
@@ -22,7 +22,7 @@
 
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - trackball controls<br />
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - trackball controls<br />
 			MOVE mouse &amp; press LEFT/A: rotate, MIDDLE/S: zoom, RIGHT/D: pan
 		</div>
 
@@ -39,12 +39,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
-			import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
+			import { TrackballControls } from 'dessert/addons/controls/TrackballControls.js';
 
 			let perspectiveCamera, orthographicCamera, controls, scene, renderer, stats;
 

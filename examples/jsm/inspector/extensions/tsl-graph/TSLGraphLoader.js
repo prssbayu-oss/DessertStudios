@@ -1,7 +1,7 @@
-import { FileLoader, error } from 'three';
+import { FileLoader, error } from 'dessert';
 
-import * as THREE from 'three';
-import * as TSL from 'three/tsl';
+import * as THREE from 'dessert';
+import * as TSL from 'dessert/dsl';
 
 const _library = {
 	'three': { ...THREE },

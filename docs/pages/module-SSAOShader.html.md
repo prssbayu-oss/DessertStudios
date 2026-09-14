@@ -2,10 +2,10 @@
 
 ## Import
 
-SSAOShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SSAOShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SSAOShader } from 'three/addons/shaders/SSAOShader.js';
+import { SSAOShader } from 'dessert/addons/shaders/SSAOShader.js';
 ```
 
 ## Properties

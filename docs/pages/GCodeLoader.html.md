@@ -16,10 +16,10 @@ scene.add( object );
 
 ## Import
 
-GCodeLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GCodeLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GCodeLoader } from 'three/addons/loaders/GCodeLoader.js';
+import { GCodeLoader } from 'dessert/addons/loaders/GCodeLoader.js';
 ```
 
 ## Constructor

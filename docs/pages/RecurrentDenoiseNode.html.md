@@ -8,10 +8,10 @@ The denoising kernel is selected at construction time via `mode`: `'diffuse'` (S
 
 ## Import
 
-RecurrentDenoiseNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RecurrentDenoiseNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { recurrentDenoise } from 'three/addons/tsl/display/RecurrentDenoiseNode.js';
+import { recurrentDenoise } from 'dessert/addons/tsl/display/RecurrentDenoiseNode.js';
 ```
 
 ## Constructor

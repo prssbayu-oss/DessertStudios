@@ -13,10 +13,10 @@ scene.add( helper );
 
 ## Import
 
-OctreeHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OctreeHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OctreeHelper } from 'three/addons/helpers/OctreeHelper.js';
+import { OctreeHelper } from 'dessert/addons/helpers/OctreeHelper.js';
 ```
 
 ## Constructor

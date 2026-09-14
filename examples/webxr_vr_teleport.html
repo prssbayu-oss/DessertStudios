@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js vr - teleport</title>
+		<title>dessert.js vr - teleport</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta property="og:title" content="three.js vr - teleport">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webxr_vr_teleport.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webxr_vr_teleport.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webxr_vr_teleport.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webxr_vr_teleport.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> vr - teleport
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> vr - teleport
 		</div>
 
 		<script type="importmap">
@@ -29,11 +29,11 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
-			import { VRButton } from 'three/addons/webxr/VRButton.js';
-			import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
+			import { BoxLineGeometry } from 'dessert/addons/geometries/BoxLineGeometry.js';
+			import { VRButton } from 'dessert/addons/webxr/VRButton.js';
+			import { XRControllerModelFactory } from 'dessert/addons/webxr/XRControllerModelFactory.js';
 
 			let camera, scene, raycaster, renderer;
 			let controller1, controller2;

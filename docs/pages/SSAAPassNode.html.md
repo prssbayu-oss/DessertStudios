@@ -10,10 +10,10 @@ Reference: [https://en.wikipedia.org/wiki/Supersampling](https://en.wikipedia.or
 
 ## Import
 
-SSAAPassNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SSAAPassNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ssaaPass } from 'three/addons/tsl/display/SSAAPassNode.js';
+import { ssaaPass } from 'dessert/addons/tsl/display/SSAAPassNode.js';
 ```
 
 ## Constructor

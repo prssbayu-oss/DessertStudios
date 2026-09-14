@@ -6,10 +6,10 @@ Note that this class can only be used with [WebGLRenderer](WebGLRenderer.html). 
 
 ## Import
 
-ParallaxBarrierEffect is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ParallaxBarrierEffect is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ParallaxBarrierEffect } from 'three/addons/effects/ParallaxBarrierEffect.js';
+import { ParallaxBarrierEffect } from 'dessert/addons/effects/ParallaxBarrierEffect.js';
 ```
 
 ## Constructor

@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – Post-Processing with WebGPURenderer">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -85,7 +85,7 @@ const renderPipeline = new THREE.RenderPipeline( renderer );
              function from the TSL namespace and use it to create the pass.
             </p>
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">
-import { pass } from 'three/tsl';
+import { pass } from 'dessert/dsl';
 
 // in your init routine
 
@@ -97,9 +97,9 @@ const scenePass = pass( scene, camera );
             </p>
 
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">
-import { pass } from 'three/tsl';
-+  import { dotScreen } from 'three/addons/tsl/display/DotScreenNode.js';
-+  import { rgbShift } from 'three/addons/tsl/display/RGBShiftNode.js';
+import { pass } from 'dessert/dsl';
++  import { dotScreen } from 'dessert/addons/tsl/display/DotScreenNode.js';
++  import { rgbShift } from 'dessert/addons/tsl/display/RGBShiftNode.js';
 
 // in your init routine
 
@@ -126,8 +126,8 @@ renderPipeline.outputNode = rgbShiftPass;
             </p>
 
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">
-import { pass, renderOutput } from 'three/tsl';
-import { fxaa } from 'three/addons/tsl/display/FXAANode.js';
+import { pass, renderOutput } from 'dessert/dsl';
+import { fxaa } from 'dessert/addons/tsl/display/FXAANode.js';
 
 // in your init routine
 
@@ -157,7 +157,7 @@ renderPipeline.outputNode = fxaaPass;
           </p>
 
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">
-import { pass, mrt, output, velocity } from 'three/tsl';
+import { pass, mrt, output, velocity } from 'dessert/dsl';
 
 // in your init routine
 
@@ -175,7 +175,7 @@ scenePass.setMRT( mrt( {
           </p>
 
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">
-import { traa } from 'three/addons/tsl/display/TRAANode.js';
+import { traa } from 'dessert/addons/tsl/display/TRAANode.js';
 
 // in your init routine
 
@@ -233,7 +233,7 @@ const sceneNormal = sample( ( uv ) => {
 
           <p>
             We want to further improve the packing/unpacking features in the future to offer more ways to pack/unpack MRT data. In the meanwhile,
-            please have a look at the <a href="https://threejs.org/examples/?q=webgpu%20postprocessing" target="_blank">official examples</a> to
+            please have a look at the <a href="https://github.com/prssbayu-oss/DessertStudios/examples/?q=webgpu%20postprocessing" target="_blank">official examples</a> to
             get an overview about the existing effects and setups.
           </p>
           </div>

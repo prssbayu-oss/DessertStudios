@@ -8,10 +8,10 @@ The renderer is very useful if you want to combine HTML based labels with 3D obj
 
 ## Import
 
-CSS2DRenderer is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CSS2DRenderer is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
+import { CSS2DRenderer } from 'dessert/addons/renderers/CSS2DRenderer.js';
 ```
 
 ## Constructor

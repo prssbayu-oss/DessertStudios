@@ -6,10 +6,10 @@ Implementation is based on `(x, y [, z=0 [, w=1]])` control points with `w=weigh
 
 ## Import
 
-NURBSVolume is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+NURBSVolume is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { NURBSVolume } from 'three/addons/curves/NURBSVolume.js';
+import { NURBSVolume } from 'dessert/addons/curves/NURBSVolume.js';
 ```
 
 ## Constructor

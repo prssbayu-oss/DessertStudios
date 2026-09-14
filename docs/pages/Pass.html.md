@@ -6,10 +6,10 @@ This module is only relevant for post processing with [WebGLRenderer](WebGLRende
 
 ## Import
 
-Pass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Pass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Pass } from 'three/addons/postprocessing/Pass.js';
+import { Pass } from 'dessert/addons/postprocessing/Pass.js';
 ```
 
 ## Constructor

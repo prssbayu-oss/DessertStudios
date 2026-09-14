@@ -16,10 +16,10 @@ scene.add( object );
 
 ## Import
 
-OBJLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OBJLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+import { OBJLoader } from 'dessert/addons/loaders/OBJLoader.js';
 ```
 
 ## Constructor

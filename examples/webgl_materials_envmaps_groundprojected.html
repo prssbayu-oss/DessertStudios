@@ -11,14 +11,14 @@
 		/>
 		<meta property="og:title" content="threejs webgl - materials - ground projected environment mapping" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://threejs.org/examples/webgl_materials_envmaps_groundprojected.html" />
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_materials_envmaps_groundprojected.jpg" />
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_materials_envmaps_groundprojected.html" />
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_materials_envmaps_groundprojected.jpg" />
 		<link type="text/css" rel="stylesheet" href="main.css" />
 	</head>
 	<body>
 		<div id="container"></div>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">threejs</a> - Ground projected environment mapping.<br>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">threejs</a> - Ground projected environment mapping.<br>
 			Ferrari 458 Italia model by <a href="https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6" target="_blank" rel="noopener">vicent091036</a><br>
 			<a href="https://polyhaven.com/a/blouberg_sunrise_2" target="_blank" rel="noopener">Blouberg Sunrise 2</a> by <a href="https://gregzaal.com/" target="_blank" rel="noopener">Greg Zaal</a>
 		</div>
@@ -35,14 +35,14 @@
 		</script>
 
 		<script type="module">
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GroundedSkybox } from 'three/addons/objects/GroundedSkybox.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'three/addons/loaders/DRACOLoader.js';
-			import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GroundedSkybox } from 'dessert/addons/objects/GroundedSkybox.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'dessert/addons/loaders/DRACOLoader.js';
+			import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
 
 			const params = {
 				height: 15,

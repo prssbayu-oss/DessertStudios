@@ -6,10 +6,10 @@ Represents an Oculus hand pointer model.
 
 ## Import
 
-OculusHandPointerModel is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OculusHandPointerModel is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OculusHandPointerModel } from 'three/addons/webxr/OculusHandPointerModel.js';
+import { OculusHandPointerModel } from 'dessert/addons/webxr/OculusHandPointerModel.js';
 ```
 
 ## Constructor

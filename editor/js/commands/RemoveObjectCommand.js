@@ -1,6 +1,6 @@
 import { Command } from '../Command.js';
 
-import { ObjectLoader } from 'three';
+import { ObjectLoader } from 'dessert';
 
 class RemoveObjectCommand extends Command {
 

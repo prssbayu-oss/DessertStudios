@@ -1,8 +1,8 @@
-import { MathUtils, SRGBColorSpace } from 'three';
+import { MathUtils, SRGBColorSpace } from 'dessert';
 
 /**
  * @module ColorUtils
- * @three_import import * as ColorUtils from 'three/addons/utils/ColorUtils.js';
+ * @three_import import * as ColorUtils from 'dessert/addons/utils/ColorUtils.js';
  */
 
 /**

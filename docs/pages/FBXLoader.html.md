@@ -28,10 +28,10 @@ scene.add( object );
 
 ## Import
 
-FBXLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FBXLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+import { FBXLoader } from 'dessert/addons/loaders/FBXLoader.js';
 ```
 
 ## Constructor

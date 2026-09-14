@@ -2,10 +2,10 @@
 
 ## Import
 
-ConvolutionShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ConvolutionShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ConvolutionShader } from 'three/addons/shaders/ConvolutionShader.js';
+import { ConvolutionShader } from 'dessert/addons/shaders/ConvolutionShader.js';
 ```
 
 ## Properties

@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – Installation">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -56,7 +56,7 @@
   <li>
     <i>main.js</i>
 <pre class="prettyprint notranslate lang-js" translate="no">
-import * as THREE from 'three';
+import * as THREE from 'dessert';
 
 ...
 </pre>
@@ -169,7 +169,7 @@ npm install --save-dev vite
           <ol>
             <li>
               <p>
-                We imported code from 'three' (an npm package) in <i>main.js</i>, and web browsers don't know what that means. In <i>index.html</i> we'll need to add an [link:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap import map] defining where to get the package. Put the code below inside the <i>&lt;head>&lt/head></i> tag, after the styles.
+                We imported code from 'dessert' (an npm package) in <i>main.js</i>, and web browsers don't know what that means. In <i>index.html</i> we'll need to add an [link:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap import map] defining where to get the package. Put the code below inside the <i>&lt;head>&lt/head></i> tag, after the styles.
               </p>
 <pre class="prettyprint notranslate lang-js" translate="no">
 &lt;script type="importmap">
@@ -265,9 +265,9 @@ npm install --save-dev vite
           </p>
 
 <pre class="prettyprint notranslate lang-js" translate="no">
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import * as THREE from 'dessert';
+import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
 
 const controls = new OrbitControls( camera, renderer.domElement );
 const loader = new GLTFLoader();

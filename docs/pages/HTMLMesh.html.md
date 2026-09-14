@@ -16,10 +16,10 @@ scene.add( mesh );
 
 ## Import
 
-HTMLMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+HTMLMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { HTMLMesh } from 'three/addons/interactive/HTMLMesh.js';
+import { HTMLMesh } from 'dessert/addons/interactive/HTMLMesh.js';
 ```
 
 ## Constructor

@@ -1,5 +1,5 @@
-import { RenderTarget, Vector2, NodeMaterial, RendererUtils, QuadMesh, TempNode, NodeUpdateType } from 'three/webgpu';
-import { Fn, float, uv, uniform, convertToTexture, vec2, vec4, passTexture, luminance, abs, exp, max, context } from 'three/tsl';
+import { RenderTarget, Vector2, NodeMaterial, RendererUtils, QuadMesh, TempNode, NodeUpdateType } from 'dessert/webgpu';
+import { Fn, float, uv, uniform, convertToTexture, vec2, vec4, passTexture, luminance, abs, exp, max, context } from 'dessert/dsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();
 
@@ -17,7 +17,7 @@ let _rendererState;
  * Reference: {@link https://en.wikipedia.org/wiki/Bilateral_filter}
  *
  * @augments TempNode
- * @three_import import { bilateralBlur } from 'three/addons/tsl/display/BilateralBlurNode.js';
+ * @three_import import { bilateralBlur } from 'dessert/addons/tsl/display/BilateralBlurNode.js';
  */
 class BilateralBlurNode extends TempNode {
 

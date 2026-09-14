@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from 'dessert';
 import * as BufferGeometryUtils from '../../examples/jsm/utils/BufferGeometryUtils.js';
 import { threejsLessonUtils } from './threejs-lesson-utils.js';
 

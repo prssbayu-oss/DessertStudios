@@ -12,10 +12,10 @@ RectAreaLightUniformsLib.init();
 
 ## Import
 
-RectAreaLightUniformsLib is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RectAreaLightUniformsLib is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RectAreaLightUniformsLib } from 'three/addons/lights/RectAreaLightUniformsLib.js';
+import { RectAreaLightUniformsLib } from 'dessert/addons/lights/RectAreaLightUniformsLib.js';
 ```
 
 ## Static Methods

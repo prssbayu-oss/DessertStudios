@@ -1,6 +1,6 @@
 function Config() {
 
-	const name = 'threejs-editor';
+	const name = 'dessert-editor';
 
 	const userLanguage = navigator.language.split( '-' )[ 0 ];
 

@@ -5,14 +5,14 @@ import {
 	LineSegments,
 	Matrix3,
 	Mesh
-} from 'three';
+} from 'dessert';
 
 import { mergeGeometries } from './BufferGeometryUtils.js';
 
 /**
  * Utility class for LDraw models.
  *
- * @three_import import { LDrawUtils } from 'three/addons/utils/LDrawUtils.js';
+ * @three_import import { LDrawUtils } from 'dessert/addons/utils/LDrawUtils.js';
  */
 class LDrawUtils {
 

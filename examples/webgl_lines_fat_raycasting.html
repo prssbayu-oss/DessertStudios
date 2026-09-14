@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - lines - fat</title>
+		<title>dessert.js webgl - lines - fat</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - lines - fat">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_lines_fat_raycasting.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_lines_fat_raycasting.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_lines_fat_raycasting.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_lines_fat_raycasting.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 
@@ -15,7 +15,7 @@
 
 		<div id="container"></div>
 
-		<div id="info"><a href="https://threejs.org" target="_blank">three.js</a> - fat lines raycasting</div>
+		<div id="info"><a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank">three.js</a> - fat lines raycasting</div>
 
 		<script type="importmap">
 			{
@@ -30,16 +30,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
-			import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
-			import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
-			import { Line2 } from 'three/addons/lines/Line2.js';
-			import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { LineMaterial } from 'dessert/addons/lines/LineMaterial.js';
+			import { LineSegments2 } from 'dessert/addons/lines/LineSegments2.js';
+			import { LineSegmentsGeometry } from 'dessert/addons/lines/LineSegmentsGeometry.js';
+			import { Line2 } from 'dessert/addons/lines/Line2.js';
+			import { LineGeometry } from 'dessert/addons/lines/LineGeometry.js';
 
 			let line, thresholdLine, segments, thresholdSegments;
 			let renderer, scene, camera, controls;

@@ -1,10 +1,10 @@
 import {
 	Vector3
-} from 'three';
+} from 'dessert';
 
 /**
  * @module ColorCorrectionShader
- * @three_import import { ColorCorrectionShader } from 'three/addons/shaders/ColorCorrectionShader.js';
+ * @three_import import { ColorCorrectionShader } from 'dessert/addons/shaders/ColorCorrectionShader.js';
  */
 
 /**

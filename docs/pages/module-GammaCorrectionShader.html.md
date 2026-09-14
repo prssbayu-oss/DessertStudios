@@ -2,10 +2,10 @@
 
 ## Import
 
-GammaCorrectionShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GammaCorrectionShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GammaCorrectionShader } from 'three/addons/shaders/GammaCorrectionShader.js';
+import { GammaCorrectionShader } from 'dessert/addons/shaders/GammaCorrectionShader.js';
 ```
 
 ## Properties

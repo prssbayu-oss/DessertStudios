@@ -17,10 +17,10 @@ scene.add( wireframe );
 
 ## Import
 
-Wireframe is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Wireframe is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Wireframe } from 'three/addons/lines/Wireframe.js';
+import { Wireframe } from 'dessert/addons/lines/Wireframe.js';
 ```
 
 ## Constructor

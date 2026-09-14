@@ -29,10 +29,10 @@ scene.add( mesh );
 
 ## Import
 
-MeshSurfaceSampler is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MeshSurfaceSampler is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MeshSurfaceSampler } from 'three/addons/math/MeshSurfaceSampler.js';
+import { MeshSurfaceSampler } from 'dessert/addons/math/MeshSurfaceSampler.js';
 ```
 
 ## Constructor

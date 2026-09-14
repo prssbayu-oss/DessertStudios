@@ -1,6 +1,6 @@
 import {
 	Object3D
-} from 'three';
+} from 'dessert';
 
 import {
 	XRHandPrimitiveModel
@@ -91,7 +91,7 @@ class XRHandModel extends Object3D {
  * scene.add( hand );
  * ```
  *
- * @three_import import { XRHandModelFactory } from 'three/addons/webxr/XRHandModelFactory.js';
+ * @three_import import { XRHandModelFactory } from 'dessert/addons/webxr/XRHandModelFactory.js';
  */
 class XRHandModelFactory {
 

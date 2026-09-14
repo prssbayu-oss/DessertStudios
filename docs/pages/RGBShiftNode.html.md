@@ -6,10 +6,10 @@ Post processing node for shifting/splitting RGB color channels. The effect separ
 
 ## Import
 
-RGBShiftNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RGBShiftNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { rgbShift } from 'three/addons/tsl/display/RGBShiftNode.js';
+import { rgbShift } from 'dessert/addons/tsl/display/RGBShiftNode.js';
 ```
 
 ## Constructor

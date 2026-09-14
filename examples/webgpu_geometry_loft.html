@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - loft geometry</title>
+		<title>dessert.js webgpu - loft geometry</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - loft geometry">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_geometry_loft.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_geometry_loft.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_geometry_loft.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_geometry_loft.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Loft Geometry</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Loft Geometry</span>
 			</div>
 
 			<small>
@@ -39,16 +39,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { bumpMap, color, cos, float, mix, mx_fractal_noise_float, mx_noise_float, mx_worley_noise_float, positionLocal, screenUV, sin, smoothstep, uv, vec3 } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { bumpMap, color, cos, float, mix, mx_fractal_noise_float, mx_noise_float, mx_worley_noise_float, positionLocal, screenUV, sin, smoothstep, uv, vec3 } from 'dessert/dsl';
 
-			import { SunLight } from 'three/addons/lights/SunLight.js';
-			import { SunLightNode } from 'three/addons/lights/SunLightNode.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { SunLight } from 'dessert/addons/lights/SunLight.js';
+			import { SunLightNode } from 'dessert/addons/lights/SunLightNode.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-			import { LoftGeometry } from 'three/addons/geometries/LoftGeometry.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
+			import { LoftGeometry } from 'dessert/addons/geometries/LoftGeometry.js';
 
 			let group, camera, scene, renderer;
 

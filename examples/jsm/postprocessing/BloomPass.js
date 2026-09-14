@@ -5,7 +5,7 @@ import {
 	UniformsUtils,
 	Vector2,
 	WebGLRenderTarget
-} from 'three';
+} from 'dessert';
 import { Pass, FullScreenQuad } from './Pass.js';
 import { ConvolutionShader } from '../shaders/ConvolutionShader.js';
 
@@ -21,7 +21,7 @@ import { ConvolutionShader } from '../shaders/ConvolutionShader.js';
  * ```
  *
  * @augments Pass
- * @three_import import { BloomPass } from 'three/addons/postprocessing/BloomPass.js';
+ * @three_import import { BloomPass } from 'dessert/addons/postprocessing/BloomPass.js';
  */
 class BloomPass extends Pass {
 

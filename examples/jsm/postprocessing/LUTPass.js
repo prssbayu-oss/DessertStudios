@@ -65,7 +65,7 @@ const LUTShader = {
  * ```
  *
  * @augments ShaderPass
- * @three_import import { LUTPass } from 'three/addons/postprocessing/LUTPass.js';
+ * @three_import import { LUTPass } from 'dessert/addons/postprocessing/LUTPass.js';
  */
 class LUTPass extends ShaderPass {
 

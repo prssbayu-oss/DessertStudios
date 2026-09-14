@@ -26,10 +26,10 @@ renderPipeline.outputNode = oitPass( scene, camera );
 
 ## Import
 
-OITPassNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OITPassNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { oitPass } from 'three/addons/tsl/display/OITPassNode.js';
+import { oitPass } from 'dessert/addons/tsl/display/OITPassNode.js';
 ```
 
 ## Constructor

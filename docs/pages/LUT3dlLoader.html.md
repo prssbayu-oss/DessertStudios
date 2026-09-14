@@ -18,10 +18,10 @@ const map = loader.loadAsync( 'luts/Presetpro-Cinematic.3dl' );
 
 ## Import
 
-LUT3dlLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LUT3dlLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LUT3dlLoader } from 'three/addons/loaders/LUT3dlLoader.js';
+import { LUT3dlLoader } from 'dessert/addons/loaders/LUT3dlLoader.js';
 ```
 
 ## Constructor

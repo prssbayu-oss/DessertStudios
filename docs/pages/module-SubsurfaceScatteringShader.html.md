@@ -2,10 +2,10 @@
 
 ## Import
 
-SubsurfaceScatteringShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SubsurfaceScatteringShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SubsurfaceScatteringShader } from 'three/addons/shaders/SubsurfaceScatteringShader.js';
+import { SubsurfaceScatteringShader } from 'dessert/addons/shaders/SubsurfaceScatteringShader.js';
 ```
 
 ## Properties

@@ -2,10 +2,10 @@
 
 ## Import
 
-OutputShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OutputShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OutputShader } from 'three/addons/shaders/OutputShader.js';
+import { OutputShader } from 'dessert/addons/shaders/OutputShader.js';
 ```
 
 ## Properties

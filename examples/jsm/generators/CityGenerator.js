@@ -5,10 +5,10 @@ import {
 	Matrix4,
 	Quaternion,
 	Vector3
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { cameraPosition, color, float, floor, Fn, fract, fwidth, hash, If, mix, mod, mx_fractal_noise_float, mx_noise_float, positionWorld, smoothstep, step, uint, uniform, varying, vec4 } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { cameraPosition, color, float, floor, Fn, fract, fwidth, hash, If, mix, mod, mx_fractal_noise_float, mx_noise_float, positionWorld, smoothstep, step, uint, uniform, varying, vec4 } from 'dessert/dsl';
 
 import { SkyscraperGenerator, createSkyscraperMaterial, buildingPalette } from './city/SkyscraperGenerator.js';
 import { SidewalkGenerator } from './city/SidewalkGenerator.js';

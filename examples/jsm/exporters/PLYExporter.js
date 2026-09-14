@@ -4,7 +4,7 @@ import {
 	Color,
 	ColorManagement,
 	SRGBColorSpace
-} from 'three';
+} from 'dessert';
 
 /**
  * An exporter for PLY.
@@ -19,7 +19,7 @@ import {
  * const data = exporter.parse( scene, options );
  * ```
  *
- * @three_import import { PLYExporter } from 'three/addons/exporters/PLYExporter.js';
+ * @three_import import { PLYExporter } from 'dessert/addons/exporters/PLYExporter.js';
  */
 class PLYExporter {
 

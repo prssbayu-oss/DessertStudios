@@ -10,10 +10,10 @@ The default `mapSize` is `1024x1024` per cascade.
 
 ## Import
 
-SunLightShadow is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SunLightShadow is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SunLightShadow } from 'three/addons/lights/SunLightShadow.js';
+import { SunLightShadow } from 'dessert/addons/lights/SunLightShadow.js';
 ```
 
 ## Constructor

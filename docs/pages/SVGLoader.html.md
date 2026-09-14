@@ -33,10 +33,10 @@ scene.add( group );
 
 ## Import
 
-SVGLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SVGLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SVGLoader } from 'three/addons/loaders/SVGLoader.js';
+import { SVGLoader } from 'dessert/addons/loaders/SVGLoader.js';
 ```
 
 ## Constructor

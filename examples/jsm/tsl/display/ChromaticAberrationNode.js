@@ -1,4 +1,4 @@
-import { TempNode } from 'three/webgpu';
+import { TempNode } from 'dessert/webgpu';
 import {
 	nodeObject,
 	Fn,
@@ -6,7 +6,7 @@ import {
 	float,
 	vec4,
 	uv,
-} from 'three/tsl';
+} from 'dessert/dsl';
 
 /**
  * Post processing node for applying chromatic aberration effect.
@@ -14,7 +14,7 @@ import {
  * by separating and offsetting the red, green, and blue channels.
  *
  * @augments TempNode
- * @three_import import { chromaticAberration } from 'three/addons/tsl/display/ChromaticAberrationNode.js';
+ * @three_import import { chromaticAberration } from 'dessert/addons/tsl/display/ChromaticAberrationNode.js';
  */
 class ChromaticAberrationNode extends TempNode {
 

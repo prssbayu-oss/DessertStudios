@@ -19,10 +19,10 @@ scene.add( helper );
 
 ## Import
 
-VertexNormalsHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VertexNormalsHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VertexNormalsHelper } from 'three/addons/helpers/VertexNormalsHelper.js';
+import { VertexNormalsHelper } from 'dessert/addons/helpers/VertexNormalsHelper.js';
 ```
 
 ## Constructor

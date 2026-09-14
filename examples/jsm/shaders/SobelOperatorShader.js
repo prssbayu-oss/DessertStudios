@@ -1,10 +1,10 @@
 import {
 	Vector2
-} from 'three';
+} from 'dessert';
 
 /**
  * @module SobelOperatorShader
- * @three_import import { SobelOperatorShader } from 'three/addons/shaders/SobelOperatorShader.js';
+ * @three_import import { SobelOperatorShader } from 'dessert/addons/shaders/SobelOperatorShader.js';
  */
 
 /**

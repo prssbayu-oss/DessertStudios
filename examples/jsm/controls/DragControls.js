@@ -7,7 +7,7 @@ import {
 	Vector3,
 	MOUSE,
 	TOUCH
-} from 'three';
+} from 'dessert';
 
 const _plane = new Plane();
 
@@ -52,7 +52,7 @@ const STATE = {
  * ```
  *
  * @augments Controls
- * @three_import import { DragControls } from 'three/addons/controls/DragControls.js';
+ * @three_import import { DragControls } from 'dessert/addons/controls/DragControls.js';
  */
 class DragControls extends Controls {
 

@@ -16,10 +16,10 @@ light.add( helper );
 
 ## Import
 
-RectAreaLightHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RectAreaLightHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RectAreaLightHelper } from 'three/addons/helpers/RectAreaLightHelper.js';
+import { RectAreaLightHelper } from 'dessert/addons/helpers/RectAreaLightHelper.js';
 ```
 
 ## Constructor

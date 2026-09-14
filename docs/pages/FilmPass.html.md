@@ -13,10 +13,10 @@ composer.addPass( filmPass );
 
 ## Import
 
-FilmPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FilmPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FilmPass } from 'three/addons/postprocessing/FilmPass.js';
+import { FilmPass } from 'dessert/addons/postprocessing/FilmPass.js';
 ```
 
 ## Constructor

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - particles - dynamic - postprocessing</title>
+		<title>dessert.js webgl - particles - dynamic - postprocessing</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - particles - dynamic - postprocessing">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_points_dynamic.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_points_dynamic.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_points_dynamic.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_points_dynamic.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="container"></div>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - webgl dynamic particles + postprocessing<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - webgl dynamic particles + postprocessing<br/>
 			models by <a href="https://3dwarehouse.sketchup.com/model/2c6fd128fca34052adc5f5b98d513da1" target="_blank" rel="noopener">Reallusion</a>
 			<a href="https://3dwarehouse.sketchup.com/model/f526cc4abf7cb68d76cab47c765b7255" target="_blank" rel="noopener">iClone</a>
 		</div>
@@ -32,18 +32,18 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-			import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-			import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
-			import { BloomPass } from 'three/addons/postprocessing/BloomPass.js';
-			import { FilmPass } from 'three/addons/postprocessing/FilmPass.js';
-			import { FocusShader } from 'three/addons/shaders/FocusShader.js';
-			import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-			import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+			import { EffectComposer } from 'dessert/addons/postprocessing/EffectComposer.js';
+			import { RenderPass } from 'dessert/addons/postprocessing/RenderPass.js';
+			import { ShaderPass } from 'dessert/addons/postprocessing/ShaderPass.js';
+			import { BloomPass } from 'dessert/addons/postprocessing/BloomPass.js';
+			import { FilmPass } from 'dessert/addons/postprocessing/FilmPass.js';
+			import { FocusShader } from 'dessert/addons/shaders/FocusShader.js';
+			import { OBJLoader } from 'dessert/addons/loaders/OBJLoader.js';
+			import { OutputPass } from 'dessert/addons/postprocessing/OutputPass.js';
 
 			let camera, scene, renderer, mesh;
 

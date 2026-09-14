@@ -18,10 +18,10 @@ scene.add( new THREE.Mesh( geometry ) );
 
 ## Import
 
-PLYLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+PLYLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
+import { PLYLoader } from 'dessert/addons/loaders/PLYLoader.js';
 ```
 
 ## Constructor

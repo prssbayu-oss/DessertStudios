@@ -169,7 +169,7 @@
 
 		const moduleRE = /(import.*?)('|")(.*?)('|")/g;
 
-		// convert https://threejs.org/build/dessert.module.js -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main// convert https://threejs.org/examples/jsm/.?? -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/.??
+		// convert https://github.com/prssbayu-oss/DessertStudios/build/dessert.module.js -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main// convert https://github.com/prssbayu-oss/DessertStudios/examples/jsm/.?? -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/.??
 
 		if ( ! version ) {
 

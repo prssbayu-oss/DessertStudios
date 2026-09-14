@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – OffscreenCanvas">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -255,7 +255,7 @@ the split of our previous <code class="notranslate" translate="no">offscreencanv
 copy all of <code class="notranslate" translate="no">offscreencanvas-cubes.js</code> to <code class="notranslate" translate="no">shared-cube.js</code>. Then
 we rename <code class="notranslate" translate="no">main</code> to <code class="notranslate" translate="no">init</code> since we already have a <code class="notranslate" translate="no">main</code> in our
 HTML file and we need to export <code class="notranslate" translate="no">init</code> and <code class="notranslate" translate="no">state</code></p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'three';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'dessert';
 
 -const state = {
 +export const state = {
@@ -606,7 +606,7 @@ events and pass them on using events that have the same structure
 as the original DOM events so the OrbitControls won't be able to
 tell the difference.</p>
 <p>Here's the code for the worker part.</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import {EventDispatcher} from 'three';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import {EventDispatcher} from 'dessert';
 
 class ElementProxyReceiver extends EventDispatcher {
   constructor() {
@@ -680,8 +680,8 @@ self.onmessage = function(e) {
 };
 </pre>
 <p>In our shared three.js code we need to import the <a href="/docs/#examples/controls/OrbitControls"><code class="notranslate" translate="no">OrbitControls</code></a> and set them up.</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'three';
-+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'dessert';
++import {OrbitControls} from 'dessert/addons/controls/OrbitControls.js';
 
 export function init(data) {
 -  const {canvas} = data;

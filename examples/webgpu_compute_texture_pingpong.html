@@ -1,21 +1,21 @@
 <html lang="en">
 	<head>
-		<title>three.js webgpu - compute ping/pong texture</title>
+		<title>dessert.js webgpu - compute ping/pong texture</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - compute ping/pong texture">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_compute_texture_pingpong.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_compute_texture_pingpong.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_compute_texture_pingpong.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_compute_texture_pingpong.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a>
 				<span>Compute Ping/Pong Texture</span>
 			</div>
 
@@ -39,10 +39,10 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { storageTexture, textureStore, Fn, instanceIndex, uniform, float, vec2, vec4, uvec2, ivec2, int, NodeAccess } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { storageTexture, textureStore, Fn, instanceIndex, uniform, float, vec2, vec4, uvec2, ivec2, int, NodeAccess } from 'dessert/dsl';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
 			let camera, scene, renderer;
 			let computeInitNode, computeToPing, computeToPong;

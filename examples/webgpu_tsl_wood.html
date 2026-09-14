@@ -2,12 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Three.js webgpu - procedural wood materials</title>
+		<title>dessert.js webgpu - procedural wood materials</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="Three.js webgpu - procedural wood materials">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_tsl_wood.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_tsl_wood.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_tsl_wood.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_tsl_wood.jpg">
 		<meta name="author" content="Logan Seeley"/>
 		<link type="text/css" rel="stylesheet" href="example.css">
 		<style>
@@ -21,10 +21,10 @@
 	<body>
 
 		<div id="info" class="invert">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Procedural Woord Material</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Procedural Woord Material</span>
 			</div>
 
 			<small>
@@ -47,20 +47,20 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
-			import * as TSL from 'three/tsl';
+			import * as THREE from 'dessert';
+			import * as TSL from 'dessert/dsl';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
-			import { FontLoader } from 'three/addons/loaders/FontLoader.js';
-			import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
+			import { FontLoader } from 'dessert/addons/loaders/FontLoader.js';
+			import { TextGeometry } from 'dessert/addons/geometries/TextGeometry.js';
 
-			import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
-			import { WoodNodeMaterial, WoodGenuses, Finishes } from 'three/addons/materials/WoodNodeMaterial.js';
+			import { RoundedBoxGeometry } from 'dessert/addons/geometries/RoundedBoxGeometry.js';
+			import { WoodNodeMaterial, WoodGenuses, Finishes } from 'dessert/addons/materials/WoodNodeMaterial.js';
 
 			let scene, base, camera, renderer, controls, font, blockGeometry, gui;
 

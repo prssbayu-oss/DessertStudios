@@ -2,10 +2,10 @@
 
 ## Import
 
-BrightnessContrastShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BrightnessContrastShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BrightnessContrastShader } from 'three/addons/shaders/BrightnessContrastShader.js';
+import { BrightnessContrastShader } from 'dessert/addons/shaders/BrightnessContrastShader.js';
 ```
 
 ## Properties

@@ -1,7 +1,7 @@
 import {
 	DataTextureLoader,
 	LinearMipmapLinearFilter
-} from 'three';
+} from 'dessert';
 
 /**
  * A loader for the TGA texture format.
@@ -13,7 +13,7 @@ import {
  * ```
  *
  * @augments DataTextureLoader
- * @three_import import { TGALoader } from 'three/addons/loaders/TGALoader.js';
+ * @three_import import { TGALoader } from 'dessert/addons/loaders/TGALoader.js';
  */
 class TGALoader extends DataTextureLoader {
 

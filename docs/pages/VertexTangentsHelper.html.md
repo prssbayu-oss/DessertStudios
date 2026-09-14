@@ -15,10 +15,10 @@ scene.add( helper );
 
 ## Import
 
-VertexTangentsHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VertexTangentsHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VertexTangentsHelper } from 'three/addons/helpers/VertexTangentsHelper.js';
+import { VertexTangentsHelper } from 'dessert/addons/helpers/VertexTangentsHelper.js';
 ```
 
 ## Constructor

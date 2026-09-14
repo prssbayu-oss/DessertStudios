@@ -14,10 +14,10 @@ composer.addPass( renderTransitionPass );
 
 ## Import
 
-RenderTransitionPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RenderTransitionPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RenderTransitionPass } from 'three/addons/postprocessing/RenderTransitionPass.js';
+import { RenderTransitionPass } from 'dessert/addons/postprocessing/RenderTransitionPass.js';
 ```
 
 ## Constructor

@@ -17,10 +17,10 @@ scene.environment = envMap;
 
 ## Import
 
-DebugEnvironment is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DebugEnvironment is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DebugEnvironment } from 'three/addons/environments/DebugEnvironment.js';
+import { DebugEnvironment } from 'dessert/addons/environments/DebugEnvironment.js';
 ```
 
 ## Constructor

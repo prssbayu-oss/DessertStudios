@@ -10,13 +10,13 @@ import {
 	DataUtils,
 	WebGLCoordinateSystem,
 	FloatType
-} from 'three';
+} from 'dessert';
 
 /**
  * Utility class for creating instances of {@link LightProbe}.
  *
  * @hideconstructor
- * @three_import import { LightProbeGenerator } from 'three/addons/lights/LightProbeGenerator.js';
+ * @three_import import { LightProbeGenerator } from 'dessert/addons/lights/LightProbeGenerator.js';
  */
 class LightProbeGenerator {
 

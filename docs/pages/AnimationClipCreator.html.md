@@ -4,10 +4,10 @@ A utility class with factory methods for creating basic animation clips.
 
 ## Import
 
-AnimationClipCreator is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+AnimationClipCreator is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { AnimationClipCreator } from 'three/addons/animation/AnimationClipCreator.js';
+import { AnimationClipCreator } from 'dessert/addons/animation/AnimationClipCreator.js';
 ```
 
 ## Static Methods

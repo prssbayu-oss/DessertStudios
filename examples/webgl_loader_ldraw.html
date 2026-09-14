@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - LDrawLoader</title>
+		<title>dessert.js webgl - LDrawLoader</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - LDrawLoader">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_loader_ldraw.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_loader_ldraw.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_loader_ldraw.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_loader_ldraw.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
@@ -21,7 +21,7 @@
 
 	<body>
 		<div id="info">
-		<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - LDrawLoader
+		<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - LDrawLoader
 		</div>
 
 		<script type="importmap">
@@ -37,16 +37,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
 
-			import { LDrawLoader } from 'three/addons/loaders/LDrawLoader.js';
-			import { LDrawUtils } from 'three/addons/utils/LDrawUtils.js';
-			import { LDrawConditionalLineMaterial } from 'three/addons/materials/LDrawConditionalLineMaterial.js';
+			import { LDrawLoader } from 'dessert/addons/loaders/LDrawLoader.js';
+			import { LDrawUtils } from 'dessert/addons/utils/LDrawUtils.js';
+			import { LDrawConditionalLineMaterial } from 'dessert/addons/materials/LDrawConditionalLineMaterial.js';
 
 			let container, progressBarDiv;
 

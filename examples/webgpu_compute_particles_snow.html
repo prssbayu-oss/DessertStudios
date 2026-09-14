@@ -1,22 +1,22 @@
 <html lang="en">
 	<head>
-		<title>three.js webgpu - compute snow</title>
+		<title>dessert.js webgpu - compute snow</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - compute snow">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_compute_particles_snow.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_compute_particles_snow.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_compute_particles_snow.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_compute_particles_snow.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 		<!-- <link type="text/css" rel="stylesheet" href="main.css"> -->
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a>
 				<span>Compute Snow</span>
 			</div>
 
@@ -40,15 +40,15 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { Fn, texture, vec3, pass, color, uint, screenUV, instancedArray, positionWorld, positionLocal, time, vec2, hash, instanceIndex, If } from 'three/tsl';
-			import { gaussianBlur } from 'three/addons/tsl/display/GaussianBlurNode.js';
+			import * as THREE from 'dessert/webgpu';
+			import { Fn, texture, vec3, pass, color, uint, screenUV, instancedArray, positionWorld, positionLocal, time, vec2, hash, instanceIndex, If } from 'dessert/dsl';
+			import { gaussianBlur } from 'dessert/addons/tsl/display/GaussianBlurNode.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { TeapotGeometry } from 'three/addons/geometries/TeapotGeometry.js';
+			import { TeapotGeometry } from 'dessert/addons/geometries/TeapotGeometry.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
 			const maxParticleCount = 100000;
 

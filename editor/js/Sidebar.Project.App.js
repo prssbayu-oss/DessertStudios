@@ -1,6 +1,6 @@
-import * as THREE from 'three';
+import * as THREE from 'dessert';
 
-import { zipSync, strToU8 } from 'three/addons/libs/fflate.module.js';
+import { zipSync, strToU8 } from 'dessert/addons/libs/fflate.module.js';
 
 import { UIButton, UICheckbox, UIPanel, UIInput, UIRow, UIText } from './libs/ui.js';
 
@@ -122,13 +122,16 @@ function SidebarProjectApp( editor ) {
 			const IMPORTMAP = {
 				WebGLRenderer: {
 					imports: {
-						'three': './js/three.module.js'
+						'dessert': './js/dessert.module.js',
+						'three': './js/dessert.module.js'
 					}
 				},
 				WebGPURenderer: {
 					imports: {
-						'three': './js/three.webgpu.js',
-						'three/webgpu': './js/three.webgpu.js'
+						'dessert': './js/dessert.webgpu.js',
+						'three': './js/dessert.webgpu.js',
+						'dessert/webgpu': './js/dessert.webgpu.js',
+						'three/webgpu': './js/dessert.webgpu.js'
 					}
 				}
 			};
@@ -143,7 +146,7 @@ function SidebarProjectApp( editor ) {
 
 				editButton = [
 					'			let button = document.createElement( \'a\' );',
-					'			button.href = \'https://threejs.org/editor/#file=\' + location.href.split( \'/\' ).slice( 0, - 1 ).join( \'/\' ) + \'/app.json\';',
+					'			button.href = \'https://github.com/prssbayu-oss/DessertStudios/tree/main/editor/#file=\' + location.href.split( \'/\' ).slice( 0, - 1 ).join( \'/\' ) + \'/app.json\';',
 					'			button.style.cssText = \'position: absolute; bottom: 20px; right: 20px; padding: 10px 16px; color: #fff; border: 1px solid #fff; border-radius: 20px; text-decoration: none;\';',
 					'			button.target = \'_blank\';',
 					'			button.textContent = \'EDIT\';',
@@ -164,7 +167,7 @@ function SidebarProjectApp( editor ) {
 		} );
 		loader.load( '../build/dessert.core.js', function ( content ) {
 
-			toZip[ 'js/three.core.js' ] = strToU8( content );
+			toZip[ 'js/dessert.core.js' ] = strToU8( content );
 
 		} );
 
@@ -172,7 +175,7 @@ function SidebarProjectApp( editor ) {
 
 			loader.load( '../build/dessert.webgpu.js', function ( content ) {
 
-				toZip[ 'js/three.webgpu.js' ] = strToU8( content );
+				toZip[ 'js/dessert.webgpu.js' ] = strToU8( content );
 
 			} );
 
@@ -180,7 +183,7 @@ function SidebarProjectApp( editor ) {
 
 			loader.load( '../build/dessert.module.js', function ( content ) {
 
-				toZip[ 'js/three.module.js' ] = strToU8( content );
+				toZip[ 'js/dessert.module.js' ] = strToU8( content );
 
 			} );
 

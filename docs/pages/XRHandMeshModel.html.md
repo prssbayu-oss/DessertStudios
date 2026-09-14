@@ -4,10 +4,10 @@ Represents one of the hand model types [XRHandModelFactory](XRHandModelFactory.h
 
 ## Import
 
-XRHandMeshModel is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+XRHandMeshModel is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { XRHandMeshModel } from 'three/addons/webxr/XRHandMeshModel.js';
+import { XRHandMeshModel } from 'dessert/addons/webxr/XRHandMeshModel.js';
 ```
 
 ## Constructor

@@ -18,10 +18,10 @@ positionalAudio.add( helper );
 
 ## Import
 
-PositionalAudioHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+PositionalAudioHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { PositionalAudioHelper } from 'three/addons/helpers/PositionalAudioHelper.js';
+import { PositionalAudioHelper } from 'dessert/addons/helpers/PositionalAudioHelper.js';
 ```
 
 ## Constructor

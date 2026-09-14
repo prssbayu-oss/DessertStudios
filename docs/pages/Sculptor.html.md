@@ -20,10 +20,10 @@ sculptor.connect( renderer.domElement );
 
 ## Import
 
-Sculptor is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Sculptor is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Sculptor } from 'three/addons/misc/Sculptor.js';
+import { Sculptor } from 'dessert/addons/misc/Sculptor.js';
 ```
 
 ## Constructor

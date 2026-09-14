@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from 'dessert';
 
 import { UIDiv, UIRow, UIText, UIInteger, UICheckbox, UINumber } from './libs/ui.js';
 

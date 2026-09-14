@@ -22,10 +22,10 @@ scene.add( mesh );
 
 ## Import
 
-LWOLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LWOLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LWOLoader } from 'three/addons/loaders/LWOLoader.js';
+import { LWOLoader } from 'dessert/addons/loaders/LWOLoader.js';
 ```
 
 ## Constructor

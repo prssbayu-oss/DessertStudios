@@ -15,10 +15,10 @@ function render() {
 
 ## Import
 
-OutlineEffect is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OutlineEffect is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
+import { OutlineEffect } from 'dessert/addons/effects/OutlineEffect.js';
 ```
 
 ## Constructor

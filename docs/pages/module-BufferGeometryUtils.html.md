@@ -2,10 +2,10 @@
 
 ## Import
 
-BufferGeometryUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BufferGeometryUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
+import * as BufferGeometryUtils from 'dessert/addons/utils/BufferGeometryUtils.js';
 ```
 
 ## Methods

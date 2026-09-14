@@ -2,10 +2,10 @@
 
 ## Import
 
-MirrorShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MirrorShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MirrorShader } from 'three/addons/shaders/MirrorShader.js';
+import { MirrorShader } from 'dessert/addons/shaders/MirrorShader.js';
 ```
 
 ## Properties

@@ -28,10 +28,10 @@ renderPipeline.outputNode = outlineColor.add( scenePass );
 
 ## Import
 
-OutlineNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OutlineNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { outline } from 'three/addons/tsl/display/OutlineNode.js';
+import { outline } from 'dessert/addons/tsl/display/OutlineNode.js';
 ```
 
 ## Constructor

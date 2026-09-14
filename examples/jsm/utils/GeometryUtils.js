@@ -1,8 +1,8 @@
-import { Vector3 } from 'three';
+import { Vector3 } from 'dessert';
 
 /**
  * @module GeometryUtils
- * @three_import import * as GeometryUtils from 'three/addons/utils/GeometryUtils.js';
+ * @three_import import * as GeometryUtils from 'dessert/addons/utils/GeometryUtils.js';
  */
 
 /**

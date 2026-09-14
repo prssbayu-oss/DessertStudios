@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js physics - jolt instancing</title>
+		<title>dessert.js physics - jolt instancing</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta property="og:title" content="three.js physics - jolt instancing">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/physics_jolt_instancing.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/physics_jolt_instancing.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/physics_jolt_instancing.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/physics_jolt_instancing.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> physics - <a href="https://github.com/jrouwe/JoltPhysics.js/" target="_blank">jolt</a> instancing
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> physics - <a href="https://github.com/jrouwe/JoltPhysics.js/" target="_blank">jolt</a> instancing
 		</div>
 
 		<script type="importmap">
@@ -31,10 +31,10 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { JoltPhysics } from 'three/addons/physics/JoltPhysics.js';
-			import Stats from 'three/addons/libs/stats.module.js';
+			import * as THREE from 'dessert/webgpu';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { JoltPhysics } from 'dessert/addons/physics/JoltPhysics.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
 			let camera, scene, renderer, stats;
 			let physics, position;

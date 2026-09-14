@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - cascaded shadow maps</title>
+		<title>dessert.js webgpu - cascaded shadow maps</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - cascaded shadow maps">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_shadowmap_csm.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_shadowmap_csm.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_shadowmap_csm.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_shadowmap_csm.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
@@ -15,10 +15,10 @@
 		<div id="container"></div>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Cascaded Shadow Maps</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Cascaded Shadow Maps</span>
 			</div>
 
 			<small>
@@ -41,14 +41,14 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
+			import * as THREE from 'dessert/webgpu';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import { CSMShadowNode } from 'three/addons/csm/CSMShadowNode.js';
-			import { CSMHelper } from 'three/addons/csm/CSMHelper.js';
+			import { CSMShadowNode } from 'dessert/addons/csm/CSMShadowNode.js';
+			import { CSMHelper } from 'dessert/addons/csm/CSMHelper.js';
 
 			let renderer, scene, camera, orthoCamera, controls, csm, csmHelper, csmDirectionalLight;
 

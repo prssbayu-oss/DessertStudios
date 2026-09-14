@@ -11,10 +11,10 @@ import {
 	SphereGeometry,
 	TorusGeometry,
 	Vector3
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { array, attribute, color, cos, float, fract, mix, normalGeometry, positionGeometry, select, sin, smoothstep, uniform, uv, varying, vec3 } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { array, attribute, color, cos, float, fract, mix, normalGeometry, positionGeometry, select, sin, smoothstep, uniform, uv, varying, vec3 } from 'dessert/dsl';
 
 import { mergeGeometries, mergeVertices } from '../../utils/BufferGeometryUtils.js';
 import { LoftGeometry } from '../../geometries/LoftGeometry.js';

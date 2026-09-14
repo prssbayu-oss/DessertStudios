@@ -4,10 +4,10 @@ This class can project a given scene in 3D space into a 2D representation used f
 
 ## Import
 
-Projector is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Projector is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Projector } from 'three/addons/renderers/Projector.js';
+import { Projector } from 'dessert/addons/renderers/Projector.js';
 ```
 
 ## Constructor

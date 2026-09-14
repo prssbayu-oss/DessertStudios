@@ -2,10 +2,10 @@
 
 ## Import
 
-WebGPUTextureUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+WebGPUTextureUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as WebGPUTextureUtils from 'three/addons/utils/WebGPUTextureUtils.js';
+import * as WebGPUTextureUtils from 'dessert/addons/utils/WebGPUTextureUtils.js';
 ```
 
 ## Static Methods

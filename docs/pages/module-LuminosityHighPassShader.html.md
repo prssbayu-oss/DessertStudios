@@ -2,10 +2,10 @@
 
 ## Import
 
-LuminosityHighPassShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LuminosityHighPassShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LuminosityHighPassShader } from 'three/addons/shaders/LuminosityHighPassShader.js';
+import { LuminosityHighPassShader } from 'dessert/addons/shaders/LuminosityHighPassShader.js';
 ```
 
 ## Properties

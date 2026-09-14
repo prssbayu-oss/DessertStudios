@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - postprocessing afterimage</title>
+		<title>dessert.js webgpu - postprocessing afterimage</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - postprocessing afterimage">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing_afterimage.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing_afterimage.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing_afterimage.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing_afterimage.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>After Image</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>After Image</span>
 			</div>
 
 			<small>
@@ -40,11 +40,11 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { instancedBufferAttribute, uniform, mod, pass, texture, float, time, vec2, vec3, vec4, sin, cos } from 'three/tsl';
-			import { afterImage } from 'three/addons/tsl/display/AfterImageNode.js';
+			import * as THREE from 'dessert/webgpu';
+			import { instancedBufferAttribute, uniform, mod, pass, texture, float, time, vec2, vec3, vec4, sin, cos } from 'dessert/dsl';
+			import { afterImage } from 'dessert/addons/tsl/display/AfterImageNode.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			let camera, scene, renderer, particles;
 			let renderPipeline, afterImagePass, scenePass;

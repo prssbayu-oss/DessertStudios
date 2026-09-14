@@ -10,10 +10,10 @@ This class can only be used with [WebGLRenderer](WebGLRenderer.html). When using
 
 ## Import
 
-ProgressiveLightMap is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ProgressiveLightMap is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ProgressiveLightMap } from 'three/addons/misc/ProgressiveLightMap.js';
+import { ProgressiveLightMap } from 'dessert/addons/misc/ProgressiveLightMap.js';
 ```
 
 ## Constructor

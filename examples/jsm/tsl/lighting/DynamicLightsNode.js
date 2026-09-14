@@ -1,5 +1,5 @@
-import { LightsNode, NodeUtils, warn } from 'three/webgpu';
-import { nodeObject } from 'three/tsl';
+import { LightsNode, NodeUtils, warn } from 'dessert/webgpu';
+import { nodeObject } from 'dessert/dsl';
 
 import AmbientLightDataNode from './data/AmbientLightDataNode.js';
 import DirectionalLightDataNode from './data/DirectionalLightDataNode.js';
@@ -71,7 +71,7 @@ const getOrCreateLightNode = ( light, nodeLibrary ) => {
  * lights keep the default per-light path.
  *
  * @augments LightsNode
- * @three_import import { DynamicLightsNode } from 'three/addons/tsl/lighting/DynamicLightsNode.js';
+ * @three_import import { DynamicLightsNode } from 'dessert/addons/tsl/lighting/DynamicLightsNode.js';
  */
 class DynamicLightsNode extends LightsNode {
 

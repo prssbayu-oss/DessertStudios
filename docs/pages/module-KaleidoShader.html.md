@@ -2,10 +2,10 @@
 
 ## Import
 
-KaleidoShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+KaleidoShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { KaleidoShader } from 'three/addons/shaders/KaleidoShader.js';
+import { KaleidoShader } from 'dessert/addons/shaders/KaleidoShader.js';
 ```
 
 ## Properties

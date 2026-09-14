@@ -13,10 +13,10 @@ composer.addPass( lutPass );
 
 ## Import
 
-LUTPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LUTPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LUTPass } from 'three/addons/postprocessing/LUTPass.js';
+import { LUTPass } from 'dessert/addons/postprocessing/LUTPass.js';
 ```
 
 ## Constructor

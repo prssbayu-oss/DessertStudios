@@ -5,7 +5,7 @@ import {
 	Color,
 	UniformsLib,
 	UniformsUtils,
-} from 'three';
+} from 'dessert';
 import {
 	context,
 	cubeTexture,
@@ -15,7 +15,7 @@ import {
 	rangeFogFactor,
 	densityFogFactor,
 	workingToColorSpace,
-} from 'three/tsl';
+} from 'dessert/dsl';
 import {
 	NodeUtils,
 	NodeFrame,
@@ -24,7 +24,7 @@ import {
 	GLSLNodeBuilder,
 	BasicNodeLibrary,
 	WebGLCapabilities,
-} from 'three/webgpu';
+} from 'dessert/webgpu';
 
 // Limitations
 // - VSM shadows not supported

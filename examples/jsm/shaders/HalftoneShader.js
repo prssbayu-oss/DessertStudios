@@ -1,6 +1,6 @@
 /**
  * @module HalftoneShader
- * @three_import import { HalftoneShader } from 'three/addons/shaders/HalftoneShader.js';
+ * @three_import import { HalftoneShader } from 'dessert/addons/shaders/HalftoneShader.js';
  */
 
 /**

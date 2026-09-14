@@ -21,10 +21,10 @@ scene.add( line );
 
 ## Import
 
-Line2 is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Line2 is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Line2 } from 'three/addons/lines/Line2.js';
+import { Line2 } from 'dessert/addons/lines/Line2.js';
 ```
 
 ## Constructor

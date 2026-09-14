@@ -2,10 +2,10 @@
 
 ## Import
 
-FilmShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FilmShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FilmShader } from 'three/addons/shaders/FilmShader.js';
+import { FilmShader } from 'dessert/addons/shaders/FilmShader.js';
 ```
 
 ## Properties

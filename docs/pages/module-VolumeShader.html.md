@@ -2,10 +2,10 @@
 
 ## Import
 
-VolumeShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VolumeShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VolumeRenderShader1 } from 'three/addons/shaders/VolumeShader.js';
+import { VolumeRenderShader1 } from 'dessert/addons/shaders/VolumeShader.js';
 ```
 
 ## Properties

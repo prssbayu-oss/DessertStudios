@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – Loading a .GLTF File">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -109,10 +109,10 @@ mtlLoader.loadMtl('resources/models/windmill/windmill-fixed.mtl', (mtl) =&gt; {
 </pre>
 <p>I kept the auto framing code as before</p>
 <p>We also need to include the <a href="/docs/#examples/loaders/GLTFLoader"><code class="notranslate" translate="no">GLTFLoader</code></a> and we can get rid of the <a href="/docs/#examples/loaders/OBJLoader"><code class="notranslate" translate="no">OBJLoader</code></a>.</p>
-<pre class="prettyprint showlinemods notranslate lang-html" translate="no">-import {LoaderSupport} from 'three/addons/loaders/LoaderSupport.js';
--import {OBJLoader} from 'three/addons/loaders/OBJLoader.js';
--import {MTLLoader} from 'three/addons/loaders/MTLLoader.js';
-+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+<pre class="prettyprint showlinemods notranslate lang-html" translate="no">-import {LoaderSupport} from 'dessert/addons/loaders/LoaderSupport.js';
+-import {OBJLoader} from 'dessert/addons/loaders/OBJLoader.js';
+-import {MTLLoader} from 'dessert/addons/loaders/MTLLoader.js';
++import {GLTFLoader} from 'dessert/addons/loaders/GLTFLoader.js';
 </pre>
 <p>And running that we get</p>
 <p></p><div translate="no" class="threejs_example_container notranslate">

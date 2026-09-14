@@ -1,6 +1,6 @@
 /**
  * @module TriangleBlurShader
- * @three_import import { TriangleBlurShader } from 'three/addons/shaders/TriangleBlurShader.js';
+ * @three_import import { TriangleBlurShader } from 'dessert/addons/shaders/TriangleBlurShader.js';
  */
 
 /**

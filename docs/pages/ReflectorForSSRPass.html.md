@@ -6,10 +6,10 @@ A special version of [Reflector](Reflector.html) for usage with [SSRPass](SSRPas
 
 ## Import
 
-ReflectorForSSRPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ReflectorForSSRPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ReflectorForSSRPass } from 'three/addons/objects/ReflectorForSSRPass.js';
+import { ReflectorForSSRPass } from 'dessert/addons/objects/ReflectorForSSRPass.js';
 ```
 
 ## Constructor

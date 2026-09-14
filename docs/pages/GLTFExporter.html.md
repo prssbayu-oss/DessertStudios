@@ -36,10 +36,10 @@ const data = await exporter.parseAsync( scene, options );
 
 ## Import
 
-GLTFExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GLTFExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
+import { GLTFExporter } from 'dessert/addons/exporters/GLTFExporter.js';
 ```
 
 ## Constructor

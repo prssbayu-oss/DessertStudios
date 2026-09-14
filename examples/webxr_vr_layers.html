@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js vr - layers</title>
+		<title>dessert.js vr - layers</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta property="og:title" content="three.js vr - layers">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webxr_vr_layers.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webxr_vr_layers.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webxr_vr_layers.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webxr_vr_layers.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> media and projection layers<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> media and projection layers<br/>
 
 			<p> This example demonstrates the use of <a href="https://www.w3.org/TR/webxrlayers-1/">WebXR Layers</a> to render high quality text and video.
 				  For static content such as text, using layers increases the usable resolution of the content by avoiding the extra resampling pass that occurs during normal VR rendering.
@@ -36,13 +36,13 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-			import { HTMLMesh } from 'three/addons/interactive/HTMLMesh.js';
-			import { InteractiveGroup } from 'three/addons/interactive/InteractiveGroup.js';
-			import { VRButton } from 'three/addons/webxr/VRButton.js';
-			import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
-			import { XRHandModelFactory } from 'three/addons/webxr/XRHandModelFactory.js';
+			import * as THREE from 'dessert';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
+			import { HTMLMesh } from 'dessert/addons/interactive/HTMLMesh.js';
+			import { InteractiveGroup } from 'dessert/addons/interactive/InteractiveGroup.js';
+			import { VRButton } from 'dessert/addons/webxr/VRButton.js';
+			import { XRControllerModelFactory } from 'dessert/addons/webxr/XRControllerModelFactory.js';
+			import { XRHandModelFactory } from 'dessert/addons/webxr/XRHandModelFactory.js';
 
 			let camera, scene, renderer;
 			let video;

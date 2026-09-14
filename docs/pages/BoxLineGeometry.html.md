@@ -15,10 +15,10 @@ scene.add( lines );
 
 ## Import
 
-BoxLineGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BoxLineGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
+import { BoxLineGeometry } from 'dessert/addons/geometries/BoxLineGeometry.js';
 ```
 
 ## Constructor

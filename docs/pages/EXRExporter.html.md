@@ -13,10 +13,10 @@ const result = await exporter.parse( renderer, options );
 
 ## Import
 
-EXRExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+EXRExporter is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { EXRExporter } from 'three/addons/exporters/EXRExporter.js';
+import { EXRExporter } from 'dessert/addons/exporters/EXRExporter.js';
 ```
 
 ## Constructor

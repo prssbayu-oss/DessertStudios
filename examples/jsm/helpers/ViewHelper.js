@@ -15,18 +15,18 @@ import {
 	Vector2,
 	Vector3,
 	Vector4
-} from 'three';
+} from 'dessert';
 
 /**
  * A special type of helper that visualizes the camera's transformation
  * in a small viewport area as an axes helper. Such a helper is often wanted
- * in 3D modeling tools or scene editors like the [three.js editor](https://threejs.org/editor).
+ * in 3D modeling tools or scene editors like the [three.js editor](https://github.com/prssbayu-oss/DessertStudios/tree/main/editor).
  *
  * The helper allows to click on the X, Y and Z axes which animates the camera
  * so it looks along the selected axis.
  *
  * @augments Object3D
- * @three_import import { ViewHelper } from 'three/addons/helpers/ViewHelper.js';
+ * @three_import import { ViewHelper } from 'dessert/addons/helpers/ViewHelper.js';
  */
 class ViewHelper extends Object3D {
 

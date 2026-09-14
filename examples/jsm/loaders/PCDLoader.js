@@ -8,7 +8,7 @@ import {
 	Points,
 	PointsMaterial,
 	SRGBColorSpace
-} from 'three';
+} from 'dessert';
 
 /**
  * A loader for the Point Cloud Data (PCD) format.
@@ -30,7 +30,7 @@ import {
  * ```
  *
  * @augments Loader
- * @three_import import { PCDLoader } from 'three/addons/loaders/PCDLoader.js';
+ * @three_import import { PCDLoader } from 'dessert/addons/loaders/PCDLoader.js';
  */
 class PCDLoader extends Loader {
 

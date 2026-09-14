@@ -6,10 +6,10 @@ This class solves the Inverse Kinematics Problem with a [CCD Algorithm](https://
 
 ## Import
 
-CCDIKSolver is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CCDIKSolver is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CCDIKSolver } from 'three/addons/animation/CCDIKSolver.js';
+import { CCDIKSolver } from 'dessert/addons/animation/CCDIKSolver.js';
 ```
 
 ## Constructor

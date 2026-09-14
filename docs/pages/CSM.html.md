@@ -6,10 +6,10 @@ This module can only be used with [WebGLRenderer](WebGLRenderer.html). When usin
 
 ## Import
 
-CSM is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CSM is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CSM } from 'three/addons/csm/CSM.js';
+import { CSM } from 'dessert/addons/csm/CSM.js';
 ```
 
 ## Constructor

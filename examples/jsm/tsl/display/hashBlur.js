@@ -1,4 +1,4 @@
-import { float, Fn, vec2, uv, sin, rand, TWO_PI, cos, Loop, vec4, premultiplyAlpha, unpremultiplyAlpha, convertToTexture, nodeObject } from 'three/tsl';
+import { float, Fn, vec2, uv, sin, rand, TWO_PI, cos, Loop, vec4, premultiplyAlpha, unpremultiplyAlpha, convertToTexture, nodeObject } from 'dessert/dsl';
 
 /**
  * Applies a hash blur effect to the given texture node.

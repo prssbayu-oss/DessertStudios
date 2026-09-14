@@ -3,9 +3,9 @@ import {
 	Mesh,
 	Vector3,
 	NodeMaterial
-} from 'three/webgpu';
+} from 'dessert/webgpu';
 
-import { Fn, add, cameraPosition, div, normalize, positionWorld, sub, time, texture, vec2, max, dot, reflect, pow, length, float, uniform, reflector, mul, mix } from 'three/tsl';
+import { Fn, add, cameraPosition, div, normalize, positionWorld, sub, time, texture, vec2, max, dot, reflect, pow, length, float, uniform, reflector, mul, mix } from 'dessert/dsl';
 
 /**
  * A basic flat, reflective water effect.
@@ -20,7 +20,7 @@ import { Fn, add, cameraPosition, div, normalize, positionWorld, sub, time, text
  * - [Water shader explanations in WebGL](http://29a.ch/slides/2012/webglwater/ )
  *
  * @augments Mesh
- * @three_import import { WaterMesh } from 'three/addons/objects/WaterMesh.js';
+ * @three_import import { WaterMesh } from 'dessert/addons/objects/WaterMesh.js';
  */
 class WaterMesh extends Mesh {
 

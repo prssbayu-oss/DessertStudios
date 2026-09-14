@@ -1,4 +1,4 @@
-import { Fn, float, uv, Loop, int } from 'three/tsl';
+import { Fn, float, uv, Loop, int } from 'dessert/dsl';
 
 /**
  * Applies a motion blur effect to the given input node.

@@ -2,10 +2,10 @@
 
 ## Import
 
-SceneUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SceneUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as SceneUtils from 'three/addons/utils/SceneUtils.js';
+import * as SceneUtils from 'dessert/addons/utils/SceneUtils.js';
 ```
 
 ## Methods

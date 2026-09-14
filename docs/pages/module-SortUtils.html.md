@@ -2,10 +2,10 @@
 
 ## Import
 
-SortUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SortUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as SortUtils from 'three/addons/utils/SortUtils.js';
+import * as SortUtils from 'dessert/addons/utils/SortUtils.js';
 ```
 
 ## Static Methods

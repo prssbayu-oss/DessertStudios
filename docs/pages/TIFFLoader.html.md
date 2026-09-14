@@ -14,10 +14,10 @@ texture.colorSpace = THREE.SRGBColorSpace;
 
 ## Import
 
-TIFFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TIFFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TIFFLoader } from 'three/addons/loaders/TIFFLoader.js';
+import { TIFFLoader } from 'dessert/addons/loaders/TIFFLoader.js';
 ```
 
 ## Constructor

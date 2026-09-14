@@ -19,10 +19,10 @@ controls.addEventListener( 'unlock', function () {
 
 ## Import
 
-PointerLockControls is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+PointerLockControls is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
+import { PointerLockControls } from 'dessert/addons/controls/PointerLockControls.js';
 ```
 
 ## Constructor

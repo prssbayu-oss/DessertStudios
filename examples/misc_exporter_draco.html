@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - exporter - draco</title>
+		<title>dessert.js webgl - exporter - draco</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - exporter - draco">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/misc_exporter_draco.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/misc_exporter_draco.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/misc_exporter_draco.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/misc_exporter_draco.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> webgl - exporter - draco
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> webgl - exporter - draco
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/gh/google/draco@1.5.7/javascript/draco_encoder.js"></script>
@@ -30,11 +30,11 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { DRACOExporter } from 'three/addons/exporters/DRACOExporter.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { DRACOExporter } from 'dessert/addons/exporters/DRACOExporter.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			let scene, camera, renderer, exporter, mesh;
 

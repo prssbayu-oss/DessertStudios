@@ -11,10 +11,10 @@ const color = lut.getColor( 0.5 );
 
 ## Import
 
-Lut is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Lut is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Lut } from 'three/addons/math/Lut.js';
+import { Lut } from 'dessert/addons/math/Lut.js';
 ```
 
 ## Constructor

@@ -10,10 +10,10 @@ This module can only be used with [WebGLRenderer](WebGLRenderer.html). When usin
 
 ## Import
 
-LineMaterial is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LineMaterial is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
+import { LineMaterial } from 'dessert/addons/lines/LineMaterial.js';
 ```
 
 ## Constructor

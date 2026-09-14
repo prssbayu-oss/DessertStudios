@@ -2,10 +2,10 @@
 
 ## Import
 
-ColorCorrectionShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ColorCorrectionShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ColorCorrectionShader } from 'three/addons/shaders/ColorCorrectionShader.js';
+import { ColorCorrectionShader } from 'dessert/addons/shaders/ColorCorrectionShader.js';
 ```
 
 ## Properties

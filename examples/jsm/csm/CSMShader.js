@@ -1,8 +1,8 @@
-import { ShaderChunk } from 'three';
+import { ShaderChunk } from 'dessert';
 
 /**
  * @module CSMShader
- * @three_import import { CSMShader } from 'three/addons/csm/CSMShader.js';
+ * @three_import import { CSMShader } from 'dessert/addons/csm/CSMShader.js';
  */
 
 /**

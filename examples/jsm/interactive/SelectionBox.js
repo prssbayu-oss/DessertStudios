@@ -3,7 +3,7 @@ import {
 	Vector3,
 	Matrix4,
 	Quaternion,
-} from 'three';
+} from 'dessert';
 
 const _frustum = new Frustum();
 const _center = new Vector3();
@@ -38,7 +38,7 @@ const _scale = new Vector3();
  * const selectedObjects = selectionBox.select( startPoint, endPoint );
  * ```
  *
- * @three_import import { SelectionBox } from 'three/addons/interactive/SelectionBox.js';
+ * @three_import import { SelectionBox } from 'dessert/addons/interactive/SelectionBox.js';
  */
 class SelectionBox {
 

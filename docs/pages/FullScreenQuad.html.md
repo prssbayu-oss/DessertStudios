@@ -10,10 +10,10 @@ This module can only be used with [WebGLRenderer](WebGLRenderer.html).
 
 ## Import
 
-FullScreenQuad is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FullScreenQuad is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { FullScreenQuad } from 'three/addons/postprocessing/Pass.js';
+import { FullScreenQuad } from 'dessert/addons/postprocessing/Pass.js';
 ```
 
 ## Constructor

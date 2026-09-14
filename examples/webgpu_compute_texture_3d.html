@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - compute texture 3D</title>
+		<title>dessert.js webgpu - compute texture 3D</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - compute texture 3D">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_compute_texture_3d.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_compute_texture_3d.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_compute_texture_3d.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_compute_texture_3d.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a>
 				<span>Compute Texture 3D</span>
 			</div>
 
@@ -41,16 +41,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { time, mx_noise_vec3, instanceIndex, textureStore, float, vec3, vec4, If, Break, Fn, smoothstep, texture3D, uniform } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { time, mx_noise_vec3, instanceIndex, textureStore, float, vec3, vec4, If, Break, Fn, smoothstep, texture3D, uniform } from 'dessert/dsl';
 
-			import { RaymarchingBox } from 'three/addons/tsl/utils/Raymarching.js';
+			import { RaymarchingBox } from 'dessert/addons/tsl/utils/Raymarching.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
 			let renderer, scene, camera;
 			let mesh;

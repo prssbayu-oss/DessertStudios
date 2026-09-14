@@ -15,10 +15,10 @@ loader.register( function ( parser ) {
 
 ## Import
 
-GLTFGaussianSplatLoaderExtension is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GLTFGaussianSplatLoaderExtension is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GLTFGaussianSplatLoaderExtension } from 'three/addons/loaders/GLTFGaussianSplatLoaderExtension.js';
+import { GLTFGaussianSplatLoaderExtension } from 'dessert/addons/loaders/GLTFGaussianSplatLoaderExtension.js';
 ```
 
 ## Constructor

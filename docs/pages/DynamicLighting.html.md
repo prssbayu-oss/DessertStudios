@@ -13,10 +13,10 @@ renderer.lighting = lighting;
 
 ## Import
 
-DynamicLighting is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DynamicLighting is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DynamicLighting } from 'three/addons/lighting/DynamicLighting.js';
+import { DynamicLighting } from 'dessert/addons/lighting/DynamicLighting.js';
 ```
 
 ## Constructor

@@ -19,10 +19,10 @@ light.add( lensflare );
 
 ## Import
 
-Lensflare is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Lensflare is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Lensflare } from 'three/addons/objects/Lensflare.js';
+import { Lensflare } from 'dessert/addons/objects/Lensflare.js';
 ```
 
 ## Constructor

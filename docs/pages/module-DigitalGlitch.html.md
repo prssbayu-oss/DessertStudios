@@ -2,10 +2,10 @@
 
 ## Import
 
-DigitalGlitch is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DigitalGlitch is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DigitalGlitch } from 'three/addons/shaders/DigitalGlitch.js';
+import { DigitalGlitch } from 'dessert/addons/shaders/DigitalGlitch.js';
 ```
 
 ## Properties

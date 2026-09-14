@@ -3,7 +3,7 @@ import {
 	Mesh,
 	Plane,
 	Vector3
-} from 'three';
+} from 'dessert';
 import { ConvexGeometry } from '../geometries/ConvexGeometry.js';
 
 const _v1 = new Vector3();
@@ -25,7 +25,7 @@ const _v1 = new Vector3();
  * Note: This lib adds member variables to object's userData member (see prepareBreakableObject function)
  * Use with caution and read the code when using with other libs.
  *
- * @three_import import { ConvexObjectBreaker } from 'three/addons/misc/ConvexObjectBreaker.js';
+ * @three_import import { ConvexObjectBreaker } from 'dessert/addons/misc/ConvexObjectBreaker.js';
  */
 class ConvexObjectBreaker {
 

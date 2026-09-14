@@ -5,7 +5,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
     <meta name="twitter:title" content="Three.js – Optimize Lots of Objects Animated">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/files/share.png">
     <link rel="shortcut icon" href="../../files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="../../files/favicon.ico" media="(prefers-color-scheme: light)">
 
@@ -351,10 +351,10 @@ have. We could also write some custom animation code which would be easy but
 because the original webgl globe uses
 <a href="https://github.com/tweenjs/tween.js/">an animation library</a> let's use the same one here.</p>
 <p>We need to include the library</p>
-<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'three';
-import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-+import TWEEN from 'three/addons/libs/tween.module.js';
+<pre class="prettyprint showlinemods notranslate lang-js" translate="no">import * as THREE from 'dessert';
+import * as BufferGeometryUtils from 'dessert/addons/utils/BufferGeometryUtils.js';
+import {OrbitControls} from 'dessert/addons/controls/OrbitControls.js';
++import TWEEN from 'dessert/addons/libs/tween.module.js';
 </pre>
 <p>And then create a <code class="notranslate" translate="no">Tween</code> to animate the influences.</p>
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">// show the selected data, hide the rest

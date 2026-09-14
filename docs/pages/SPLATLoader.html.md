@@ -16,10 +16,10 @@ scene.add( new GaussianSplat( data ) );
 
 ## Import
 
-SPLATLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SPLATLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SPLATLoader } from 'three/addons/loaders/SPLATLoader.js';
+import { SPLATLoader } from 'dessert/addons/loaders/SPLATLoader.js';
 ```
 
 ## Constructor

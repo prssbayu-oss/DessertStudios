@@ -12,10 +12,10 @@ const physics = await AmmoPhysics();
 
 ## Import
 
-AmmoPhysics is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+AmmoPhysics is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { AmmoPhysics } from 'three/addons/physics/AmmoPhysics.js';
+import { AmmoPhysics } from 'dessert/addons/physics/AmmoPhysics.js';
 ```
 
 ## Methods

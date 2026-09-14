@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - postprocessing - Screen Space Ambient Occlusion</title>
+		<title>dessert.js webgl - postprocessing - Screen Space Ambient Occlusion</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - postprocessing - Screen Space Ambient Occlusion">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_postprocessing_ssao.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_postprocessing_ssao.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_postprocessing_ssao.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_postprocessing_ssao.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - screen space ambient occlusion<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - screen space ambient occlusion<br/>
 		</div>
 
 		<script type="importmap">
@@ -33,15 +33,15 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
-			import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-			import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-			import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
-			import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+			import { EffectComposer } from 'dessert/addons/postprocessing/EffectComposer.js';
+			import { RenderPass } from 'dessert/addons/postprocessing/RenderPass.js';
+			import { SSAOPass } from 'dessert/addons/postprocessing/SSAOPass.js';
+			import { OutputPass } from 'dessert/addons/postprocessing/OutputPass.js';
 
 			let container, stats;
 			let camera, scene, renderer;

@@ -1,13 +1,13 @@
 import {
 	Color,
 	Vector3
-} from 'three';
+} from 'dessert';
 
 /**
  * Collection of toon shaders.
  *
  * @module TriangleBlurShader
- * @three_import import * as ToonShader from 'three/addons/shaders/ToonShader.js';
+ * @three_import import * as ToonShader from 'dessert/addons/shaders/ToonShader.js';
  */
 
 /**

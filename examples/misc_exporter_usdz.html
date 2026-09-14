@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - USDZ exporter</title>
+		<title>dessert.js webgl - USDZ exporter</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - USDZ exporter">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/misc_exporter_usdz.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/misc_exporter_usdz.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/misc_exporter_usdz.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/misc_exporter_usdz.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
@@ -30,7 +30,7 @@
 
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - USDZ exporter<br />
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - USDZ exporter<br />
 			Carbon Frame Bike by
 			<a href="https://sketchfab.com/prefrontalcortex" target="_blank" rel="noopener">prefrontal cortex</a>
 		</div>
@@ -52,17 +52,17 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { RoomEnvironment } from 'dessert/addons/environments/RoomEnvironment.js';
 
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
-			import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
-			import { USDZExporter } from 'three/addons/exporters/USDZExporter.js';
-			import * as WebGLTextureUtils from 'three/addons/utils/WebGLTextureUtils.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { DRACOLoader } from 'dessert/addons/loaders/DRACOLoader.js';
+			import { KTX2Loader } from 'dessert/addons/loaders/KTX2Loader.js';
+			import { USDZExporter } from 'dessert/addons/exporters/USDZExporter.js';
+			import * as WebGLTextureUtils from 'dessert/addons/utils/WebGLTextureUtils.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			let camera, scene, renderer, mixer, timer, controls;
 

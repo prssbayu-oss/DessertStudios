@@ -29,10 +29,10 @@ sky.showSunDisc.value = true;
 
 ## Import
 
-SkyMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SkyMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SkyMesh } from 'three/addons/objects/SkyMesh.js';
+import { SkyMesh } from 'dessert/addons/objects/SkyMesh.js';
 ```
 
 ## Constructor

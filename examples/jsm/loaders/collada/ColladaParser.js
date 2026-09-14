@@ -5,7 +5,7 @@ import {
 	Matrix4,
 	Vector3,
 	SRGBColorSpace
-} from 'three';
+} from 'dessert';
 
 /**
  * Utility functions for parsing

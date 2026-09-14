@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - GLTFloader + Iridescence</title>
+		<title>dessert.js webgl - GLTFloader + Iridescence</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - GLTFloader + Iridescence">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_loader_gltf_iridescence.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_loader_gltf_iridescence.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_loader_gltf_iridescence.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_loader_gltf_iridescence.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - GLTFLoader + <a href="https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_iridescence" target="_blank" rel="noopener">KHR_materials_iridescence</a><br />
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - GLTFLoader + <a href="https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_iridescence" target="_blank" rel="noopener">KHR_materials_iridescence</a><br />
 			Iridescence Lamp from <a href="https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/IridescenceLamp" target="_blank" rel="noopener">glTF-Sample-Models</a><br />
 			<a href="https://hdrihaven.com/hdri/?h=venice_sunset" target="_blank" rel="noopener">Venice Sunset</a> from <a href="https://hdrihaven.com/" target="_blank" rel="noopener">HDRI Haven</a>
 		</div>
@@ -31,11 +31,11 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
 
 			let renderer, scene, camera, controls;
 

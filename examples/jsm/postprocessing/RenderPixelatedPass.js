@@ -7,7 +7,7 @@ import {
 	DepthTexture,
 	NearestFilter,
 	HalfFloatType
-} from 'three';
+} from 'dessert';
 import { Pass, FullScreenQuad } from './Pass.js';
 
 /**
@@ -19,7 +19,7 @@ import { Pass, FullScreenQuad } from './Pass.js';
  * ```
  *
  * @augments Pass
- * @three_import import { RenderPixelatedPass } from 'three/addons/postprocessing/RenderPixelatedPass.js';
+ * @three_import import { RenderPixelatedPass } from 'dessert/addons/postprocessing/RenderPixelatedPass.js';
  */
 class RenderPixelatedPass extends Pass {
 

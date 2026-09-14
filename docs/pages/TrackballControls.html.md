@@ -6,10 +6,10 @@ This class is similar to [OrbitControls](OrbitControls.html). However, it does n
 
 ## Import
 
-TrackballControls is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TrackballControls is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
+import { TrackballControls } from 'dessert/addons/controls/TrackballControls.js';
 ```
 
 ## Constructor

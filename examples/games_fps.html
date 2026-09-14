@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js - misc - octree collisions</title>
+		<title>dessert.js - misc - octree collisions</title>
 		<meta charset=utf-8 />
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js - misc - octree collisions">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/games_fps.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/games_fps.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/games_fps.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/games_fps.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
@@ -31,18 +31,18 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
 
-			import { Octree } from 'three/addons/math/Octree.js';
-			import { OctreeHelper } from 'three/addons/helpers/OctreeHelper.js';
+			import { Octree } from 'dessert/addons/math/Octree.js';
+			import { OctreeHelper } from 'dessert/addons/helpers/OctreeHelper.js';
 
-			import { Capsule } from 'three/addons/math/Capsule.js';
+			import { Capsule } from 'dessert/addons/math/Capsule.js';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			const timer = new THREE.Timer();
 			timer.connect( document );

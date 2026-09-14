@@ -15,10 +15,10 @@ const { materials } = await loader.loadAsync( 'standard_surface_brass_tiled.mtlx
 
 ## Import
 
-MaterialXLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MaterialXLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MaterialXLoader } from 'three/addons/loaders/MaterialXLoader.js';
+import { MaterialXLoader } from 'dessert/addons/loaders/MaterialXLoader.js';
 ```
 
 ## Constructor

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - compute rasterizer ibl</title>
+		<title>dessert.js webgpu - compute rasterizer ibl</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - compute rasterizer ibl">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_compute_rasterizer_ibl.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_compute_rasterizer_ibl.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_compute_rasterizer_ibl.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_compute_rasterizer_ibl.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>GPU-Driven Compute Rasterizer — IBL</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>GPU-Driven Compute Rasterizer — IBL</span>
 			</div>
 
 			<small>Rendering <span id="triangleCount"></span> triangles.<br/>Battle Damaged Sci-fi Helmet by theblueturtle_</small>
@@ -37,18 +37,18 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { Fn, If, Loop, vec2, vec4, uvec2, uvec4, mat4, uint, float, int, min, max, clamp, ceil, log2, length, dFdx, dFdy, atomicMax, atomicAdd, atomicStore, atomicLoad, floor, cos, sin, dot, bool, storage, uniform, uniformArray, instanceIndex, vertexIndex, distance, screenSize, screenCoordinate, time, texture, varyingProperty, sqrt, normalize, cross, sign, positionGeometry, cameraViewMatrix, Discard, context, positionView, positionViewDirection, overrideNodes } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { Fn, If, Loop, vec2, vec4, uvec2, uvec4, mat4, uint, float, int, min, max, clamp, ceil, log2, length, dFdx, dFdy, atomicMax, atomicAdd, atomicStore, atomicLoad, floor, cos, sin, dot, bool, storage, uniform, uniformArray, instanceIndex, vertexIndex, distance, screenSize, screenCoordinate, time, texture, varyingProperty, sqrt, normalize, cross, sign, positionGeometry, cameraViewMatrix, Discard, context, positionView, positionViewDirection, overrideNodes } from 'dessert/dsl';
 
-			import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { UltraHDRLoader } from 'three/addons/loaders/UltraHDRLoader.js';
-			import { MeshoptClusterizer } from 'three/addons/libs/meshopt_clusterizer.module.js';
-			import { MeshoptSimplifier } from 'three/addons/libs/meshopt_simplifier.module.js';
+			import { FirstPersonControls } from 'dessert/addons/controls/FirstPersonControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { UltraHDRLoader } from 'dessert/addons/loaders/UltraHDRLoader.js';
+			import { MeshoptClusterizer } from 'dessert/addons/libs/meshopt_clusterizer.module.js';
+			import { MeshoptSimplifier } from 'dessert/addons/libs/meshopt_simplifier.module.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
 			if ( WebGPU.isAvailable() === false ) {
 

@@ -5,7 +5,7 @@ import {
 	Loader,
 	Color,
 	SRGBColorSpace
-} from 'three';
+} from 'dessert';
 
 /**
  * A loader for the PDB format.
@@ -23,7 +23,7 @@ import {
  * ```
  *
  * @augments Loader
- * @three_import import { PDBLoader } from 'three/addons/loaders/PDBLoader.js';
+ * @three_import import { PDBLoader } from 'dessert/addons/loaders/PDBLoader.js';
  */
 class PDBLoader extends Loader {
 

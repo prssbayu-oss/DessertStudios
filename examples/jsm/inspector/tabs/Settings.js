@@ -1,5 +1,5 @@
 import { Parameters } from './Parameters.js';
-import { WebGPURenderer, WebGLBackend, Node } from 'three/webgpu';
+import { WebGPURenderer, WebGLBackend, Node } from 'dessert/webgpu';
 import { getItem, setItem } from '../Inspector.js';
 
 const _extensions = [

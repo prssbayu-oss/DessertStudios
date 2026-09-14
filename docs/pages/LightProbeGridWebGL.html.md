@@ -25,10 +25,10 @@ slice   0              : padding  (copy of sub-volume 0, data slice 0)
 
 ## Import
 
-LightProbeGridWebGL is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LightProbeGridWebGL is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LightProbeGridWebGL } from 'three/addons/lighting/LightProbeGridWebGL.js';
+import { LightProbeGridWebGL } from 'dessert/addons/lighting/LightProbeGridWebGL.js';
 ```
 
 ## Constructor

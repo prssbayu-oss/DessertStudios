@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - materialx loader</title>
+		<title>dessert.js webgpu - materialx loader</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - materialx loader">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_loader_materialx.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_loader_materialx.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_loader_materialx.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_loader_materialx.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 		<style>
 			.dg .property-name {
@@ -18,10 +18,10 @@
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>MaterialX Loader</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>MaterialX Loader</span>
 			</div>
 
 			<small>
@@ -44,22 +44,22 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
+			import * as THREE from 'dessert/webgpu';
 
-			import { Fn, abs, fract, fwidth, length, max, saturate, smoothstep, vec4, positionWorld, float } from 'three/tsl';
+			import { Fn, abs, fract, fwidth, length, max, saturate, smoothstep, vec4, positionWorld, float } from 'dessert/dsl';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
-			import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
 
-			import * as MikkTSpace from 'three/addons/libs/mikktspace.module.js';
-			import { computeMikkTSpaceTangents } from 'three/addons/utils/BufferGeometryUtils.js';
+			import * as MikkTSpace from 'dessert/addons/libs/mikktspace.module.js';
+			import { computeMikkTSpaceTangents } from 'dessert/addons/utils/BufferGeometryUtils.js';
 
-			import { MaterialXLoader } from 'three/addons/loaders/MaterialXLoader.js';
-			import { createStrictInterfaceValidator } from 'three/addons/loaders/materialx/MaterialXInterfaceValidation.js';
+			import { MaterialXLoader } from 'dessert/addons/loaders/MaterialXLoader.js';
+			import { createStrictInterfaceValidator } from 'dessert/addons/loaders/materialx/MaterialXInterfaceValidation.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			const SAMPLE_PATH = 'https://raw.githubusercontent.com/materialx/MaterialX/main/resources/Materials/Examples/StandardSurface/';
 			const LOCAL_SAMPLE_PATH = 'materialx/';

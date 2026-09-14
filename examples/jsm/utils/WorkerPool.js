@@ -1,7 +1,7 @@
 /**
  * A simple pool for managing Web Workers.
  *
- * @three_import import { WorkerPool } from 'three/addons/utils/WorkerPool.js';
+ * @three_import import { WorkerPool } from 'dessert/addons/utils/WorkerPool.js';
  */
 export class WorkerPool {
 

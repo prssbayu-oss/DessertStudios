@@ -29,10 +29,10 @@ renderPipeline.outputNode = scenePass;
 
 ## Import
 
-GTAONode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GTAONode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ao } from 'three/addons/tsl/display/GTAONode.js';
+import { ao } from 'dessert/addons/tsl/display/GTAONode.js';
 ```
 
 ## Constructor

@@ -1,11 +1,11 @@
-import { TempNode } from 'three/webgpu';
-import { nodeObject, Fn, uv, vec2, vec3, sin, cos, add, vec4, screenSize } from 'three/tsl';
+import { TempNode } from 'dessert/webgpu';
+import { nodeObject, Fn, uv, vec2, vec3, sin, cos, add, vec4, screenSize } from 'dessert/dsl';
 
 /**
  * Post processing node for creating dot-screen effect.
  *
  * @augments TempNode
- * @three_import import { dotScreen } from 'three/addons/tsl/display/DotScreenNode.js';
+ * @three_import import { dotScreen } from 'dessert/addons/tsl/display/DotScreenNode.js';
  */
 class DotScreenNode extends TempNode {
 

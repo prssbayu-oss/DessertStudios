@@ -26,10 +26,10 @@ function animate() {
 
 ## Import
 
-OrbitControls is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OrbitControls is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 ```
 
 ## Constructor

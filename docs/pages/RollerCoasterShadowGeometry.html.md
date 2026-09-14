@@ -6,10 +6,10 @@ A procedural roller coaster shadow geometry.
 
 ## Import
 
-RollerCoasterShadowGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RollerCoasterShadowGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RollerCoasterShadowGeometry } from 'three/addons/misc/RollerCoaster.js';
+import { RollerCoasterShadowGeometry } from 'dessert/addons/misc/RollerCoaster.js';
 ```
 
 ## Constructor

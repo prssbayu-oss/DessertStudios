@@ -5,7 +5,7 @@ import {
 	HalfFloatType,
 	LinearFilter,
 	LinearSRGBColorSpace
-} from 'three';
+} from 'dessert';
 
 /**
  * A loader for the RGBE HDR texture format.
@@ -19,7 +19,7 @@ import {
  * ```
  *
  * @augments DataTextureLoader
- * @three_import import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+ * @three_import import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
  */
 class HDRLoader extends DataTextureLoader {
 

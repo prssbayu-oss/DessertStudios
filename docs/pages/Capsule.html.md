@@ -6,10 +6,10 @@ Capsules are often used as bounding volumes (next to AABBs and bounding spheres)
 
 ## Import
 
-Capsule is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Capsule is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Capsule } from 'three/addons/math/Capsule.js';
+import { Capsule } from 'dessert/addons/math/Capsule.js';
 ```
 
 ## Constructor

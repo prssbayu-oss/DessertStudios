@@ -6,10 +6,10 @@ A knot curve.
 
 ## Import
 
-KnotCurve is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+KnotCurve is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { KnotCurve } from 'three/addons/curves/CurveExtras.js';
+import { KnotCurve } from 'dessert/addons/curves/CurveExtras.js';
 ```
 
 ## Constructor

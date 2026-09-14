@@ -14,10 +14,10 @@ References:
 
 ## Import
 
-Water is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Water is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Water } from 'three/addons/objects/Water.js';
+import { Water } from 'dessert/addons/objects/Water.js';
 ```
 
 ## Constructor

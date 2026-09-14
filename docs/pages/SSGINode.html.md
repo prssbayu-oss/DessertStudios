@@ -28,10 +28,10 @@ Without temporal filtering:
 
 ## Import
 
-SSGINode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SSGINode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ssgi } from 'three/addons/tsl/display/SSGINode.js';
+import { ssgi } from 'dessert/addons/tsl/display/SSGINode.js';
 ```
 
 ## Constructor

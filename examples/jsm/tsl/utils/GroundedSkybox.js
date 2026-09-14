@@ -1,8 +1,8 @@
-import { Fn, If, vec3, float, min, cameraPosition, positionWorld } from 'three/tsl';
+import { Fn, If, vec3, float, min, cameraPosition, positionWorld } from 'dessert/dsl';
 
 /**
  * @module GroundedSkybox
- * @three_import import { getGroundProjectedNormal } from 'three/addons/tsl/utils/GroundedSkybox.js';
+ * @three_import import { getGroundProjectedNormal } from 'dessert/addons/tsl/utils/GroundedSkybox.js';
  */
 
 /**

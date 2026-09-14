@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js - WebGPU - Backdrop</title>
+		<title>dessert.js - WebGPU - Backdrop</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js - WebGPU - Backdrop">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_backdrop.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_backdrop.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_backdrop.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_backdrop.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Backdrop</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Backdrop</span>
 			</div>
 
 			<small>Backdrop objects can apply blend, overlay or filter effects on occluded 3D objects.</small>
@@ -37,12 +37,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { float, vec3, color, viewportSharedTexture, hue, blendOverlay, posterize, grayscale, saturation, viewportSafeUV, screenUV, checker, uv, time, oscSine, output } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { float, vec3, color, viewportSharedTexture, hue, blendOverlay, posterize, grayscale, saturation, viewportSafeUV, screenUV, checker, uv, time, oscSine, output } from 'dessert/dsl';
 
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
 			let camera, scene, renderer;
 			let portals, rotate = true;

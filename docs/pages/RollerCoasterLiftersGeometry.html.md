@@ -6,10 +6,10 @@ A procedural roller coaster lifters geometry.
 
 ## Import
 
-RollerCoasterLiftersGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+RollerCoasterLiftersGeometry is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { RollerCoasterLiftersGeometry } from 'three/addons/misc/RollerCoaster.js';
+import { RollerCoasterLiftersGeometry } from 'dessert/addons/misc/RollerCoaster.js';
 ```
 
 ## Constructor

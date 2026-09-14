@@ -1,10 +1,10 @@
 import {
 	Vector2
-} from 'three';
+} from 'dessert';
 
 /**
  * @module ConvolutionShader
- * @three_import import { ConvolutionShader } from 'three/addons/shaders/ConvolutionShader.js';
+ * @three_import import { ConvolutionShader } from 'dessert/addons/shaders/ConvolutionShader.js';
  */
 
 /**

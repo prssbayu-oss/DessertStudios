@@ -8,11 +8,11 @@ import {
 	WebGLRenderer,
 	CanvasTexture,
 	SRGBColorSpace
-} from 'three';
+} from 'dessert';
 
 /**
  * @module WebGLTextureUtils
- * @three_import import * as WebGLTextureUtils from 'three/addons/utils/WebGLTextureUtils.js';
+ * @three_import import * as WebGLTextureUtils from 'dessert/addons/utils/WebGLTextureUtils.js';
  */
 
 let _renderer;

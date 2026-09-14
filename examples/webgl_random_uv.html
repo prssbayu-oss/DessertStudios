@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - random - uv</title>
+		<title>dessert.js webgl - random - uv</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - random - uv">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_random_uv.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_random_uv.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_random_uv.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_random_uv.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 
 	<body>
 		<div id="container"></div>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - Random UV and Disolve
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - Random UV and Disolve
 		</div>
 
 		<script type="importmap">
@@ -30,14 +30,14 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-			import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
-			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'three/addons/loaders/DRACOLoader.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
+			import { HDRLoader } from 'dessert/addons/loaders/HDRLoader.js';
+			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'dessert/addons/loaders/DRACOLoader.js';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			let camera, scene, renderer, dirLight, ground, gui, material, materialIn, uniforms, uniformsIn;
 

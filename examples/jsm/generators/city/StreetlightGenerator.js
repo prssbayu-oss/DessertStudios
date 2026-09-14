@@ -5,10 +5,10 @@ import {
 	InterpolationSamplingType,
 	Quaternion,
 	Vector3
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { attribute, color, float, select, varying } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { attribute, color, float, select, varying } from 'dessert/dsl';
 
 import { mergeGeometries } from '../../utils/BufferGeometryUtils.js';
 

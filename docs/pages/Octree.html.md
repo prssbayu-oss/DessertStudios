@@ -15,10 +15,10 @@ const result = octree.capsuleIntersect( playerCollider ); // collision detection
 
 ## Import
 
-Octree is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Octree is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Octree } from 'three/addons/math/Octree.js';
+import { Octree } from 'dessert/addons/math/Octree.js';
 ```
 
 ## Constructor

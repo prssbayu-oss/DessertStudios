@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js loader - 3d tiles + clouds</title>
+		<title>dessert.js loader - 3d tiles + clouds</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js loader - 3d tiles + clouds">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_loader_3dtiles.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_loader_3dtiles.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_loader_3dtiles.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_loader_3dtiles.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
@@ -37,7 +37,7 @@
 
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> -
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> -
 			<a href="https://github.com/NASA-AMMOS/3DTilesRendererJS" target="_blank" rel="noopener">3d-tiles-renderer</a> +
 			<a href="https://github.com/takram-design-engineering/three-geospatial" target="_blank" rel="noopener">three-clouds</a><br/>
 			<a href="https://developers.google.com/maps/documentation/tile/3d-tiles" target="_blank" rel="noopener">Google Photorealistic Tiles</a> token courtesy of <a href="https://ion.cesium.com/" target="_blank" rel="noopener">Cesium Ion</a>.<br/>
@@ -74,9 +74,9 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
-			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'three/addons/loaders/DRACOLoader.js';
-			import { TileCreasedNormalsPlugin } from 'three/addons/misc/TileCreasedNormalsPlugin.js';
+			import * as THREE from 'dessert';
+			import { DRACOLoader, DRACO_GLTF_CONFIG } from 'dessert/addons/loaders/DRACOLoader.js';
+			import { TileCreasedNormalsPlugin } from 'dessert/addons/misc/TileCreasedNormalsPlugin.js';
 			import { TilesRenderer, GlobeControls, CAMERA_FRAME } from '3d-tiles-renderer';
 			import { CesiumIonAuthPlugin } from '3d-tiles-renderer/core/plugins';
 			import { GLTFExtensionsPlugin, TilesFadePlugin, UpdateOnChangePlugin } from '3d-tiles-renderer/three/plugins';

@@ -16,10 +16,10 @@ scene.add( cubeShadow );
 
 ## Import
 
-ShadowMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ShadowMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ShadowMesh } from 'three/addons/objects/ShadowMesh.js';
+import { ShadowMesh } from 'dessert/addons/objects/ShadowMesh.js';
 ```
 
 ## Constructor

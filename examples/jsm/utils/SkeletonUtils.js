@@ -7,11 +7,11 @@ import {
 	SkeletonHelper,
 	Vector3,
 	VectorKeyframeTrack
-} from 'three';
+} from 'dessert';
 
 /**
  * @module SkeletonUtils
- * @three_import import * as SkeletonUtils from 'three/addons/utils/SkeletonUtils.js';
+ * @three_import import * as SkeletonUtils from 'dessert/addons/utils/SkeletonUtils.js';
  */
 
 function getBoneName( bone, options ) {

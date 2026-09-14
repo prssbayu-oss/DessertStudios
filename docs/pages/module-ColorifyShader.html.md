@@ -2,10 +2,10 @@
 
 ## Import
 
-ColorifyShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ColorifyShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ColorifyShader } from 'three/addons/shaders/ColorifyShader.js';
+import { ColorifyShader } from 'dessert/addons/shaders/ColorifyShader.js';
 ```
 
 ## Properties

@@ -2,10 +2,10 @@
 
 ## Import
 
-Bayer is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Bayer is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { bayer16 } from 'three/addons/tsl/math/Bayer.js';
+import { bayer16 } from 'dessert/addons/tsl/math/Bayer.js';
 ```
 
 ## Static Methods

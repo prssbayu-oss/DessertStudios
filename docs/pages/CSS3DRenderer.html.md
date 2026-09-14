@@ -12,10 +12,10 @@ So `CSS3DRenderer` is just focused on ordinary DOM elements. These elements are 
 
 ## Import
 
-CSS3DRenderer is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+CSS3DRenderer is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { CSS3DRenderer } from 'three/addons/renderers/CSS3DRenderer.js';
+import { CSS3DRenderer } from 'dessert/addons/renderers/CSS3DRenderer.js';
 ```
 
 ## Constructor

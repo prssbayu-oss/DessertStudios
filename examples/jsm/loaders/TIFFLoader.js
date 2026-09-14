@@ -2,7 +2,7 @@ import {
 	DataTextureLoader,
 	LinearFilter,
 	LinearMipmapLinearFilter
-} from 'three';
+} from 'dessert';
 
 import UTIF from '../libs/utif.module.js';
 
@@ -16,7 +16,7 @@ import UTIF from '../libs/utif.module.js';
  * ```
  *
  * @augments DataTextureLoader
- * @three_import import { TIFFLoader } from 'three/addons/loaders/TIFFLoader.js';
+ * @three_import import { TIFFLoader } from 'dessert/addons/loaders/TIFFLoader.js';
  */
 class TIFFLoader extends DataTextureLoader {
 

@@ -1,7 +1,7 @@
 import { UIDiv, UIButton, UIRow } from './libs/ui.js';
 
-import { computeMikkTSpaceTangents } from 'three/addons/utils/BufferGeometryUtils.js';
-import * as MikkTSpace from 'three/addons/libs/mikktspace.module.js';
+import { computeMikkTSpaceTangents } from 'dessert/addons/utils/BufferGeometryUtils.js';
+import * as MikkTSpace from 'dessert/addons/libs/mikktspace.module.js';
 
 function SidebarGeometryModifiers( editor, object ) {
 

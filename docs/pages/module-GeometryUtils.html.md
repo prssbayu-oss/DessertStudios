@@ -2,10 +2,10 @@
 
 ## Import
 
-GeometryUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GeometryUtils is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as GeometryUtils from 'three/addons/utils/GeometryUtils.js';
+import * as GeometryUtils from 'dessert/addons/utils/GeometryUtils.js';
 ```
 
 ## Methods

@@ -6,10 +6,10 @@ A class that transpiles shader code from one language into another.
 
 ## Import
 
-Transpiler is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Transpiler is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import Transpiler from 'three/addons/transpiler/Transpiler.js';
+import Transpiler from 'dessert/addons/transpiler/Transpiler.js';
 ```
 
 ## Constructor

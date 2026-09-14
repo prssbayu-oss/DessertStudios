@@ -6,10 +6,10 @@ The code is based on [Simplex noise demystified](https://web.archive.org/web/202
 
 ## Import
 
-SimplexNoise is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SimplexNoise is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SimplexNoise } from 'three/addons/math/SimplexNoise.js';
+import { SimplexNoise } from 'dessert/addons/math/SimplexNoise.js';
 ```
 
 ## Constructor

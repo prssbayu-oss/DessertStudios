@@ -6,10 +6,10 @@ A Viviani curve.
 
 ## Import
 
-VivianiCurve is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VivianiCurve is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VivianiCurve } from 'three/addons/curves/CurveExtras.js';
+import { VivianiCurve } from 'dessert/addons/curves/CurveExtras.js';
 ```
 
 ## Constructor

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - materials - retroreflection</title>
+		<title>dessert.js webgpu - materials - retroreflection</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - materials - retroreflection">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_materials_retroreflection.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_materials_retroreflection.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_materials_retroreflection.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_materials_retroreflection.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Retroreflective Materials</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Retroreflective Materials</span>
 			</div>
 
 			<small>
@@ -39,14 +39,14 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { color, mix, mx_noise_float, pass, positionLocal, positionWorld, materialColor, materialRoughness, reflector, transformNormalToView, vec2, vec3 } from 'three/tsl';
-			import { bloom } from 'three/addons/tsl/display/BloomNode.js';
-			import { hashBlur } from 'three/addons/tsl/display/hashBlur.js';
+			import * as THREE from 'dessert/webgpu';
+			import { color, mix, mx_noise_float, pass, positionLocal, positionWorld, materialColor, materialRoughness, reflector, transformNormalToView, vec2, vec3 } from 'dessert/dsl';
+			import { bloom } from 'dessert/addons/tsl/display/BloomNode.js';
+			import { hashBlur } from 'dessert/addons/tsl/display/hashBlur.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import WebGPU from 'three/addons/capabilities/WebGPU.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import WebGPU from 'dessert/addons/capabilities/WebGPU.js';
 
 			let camera, scene, renderer, renderPipeline, controls;
 			let frontLight, reflectedFlashLight, bandMaterial;

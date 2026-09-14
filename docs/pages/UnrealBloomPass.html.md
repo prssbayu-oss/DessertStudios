@@ -20,10 +20,10 @@ composer.addPass( bloomPass );
 
 ## Import
 
-UnrealBloomPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+UnrealBloomPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { UnrealBloomPass } from 'dessert/addons/postprocessing/UnrealBloomPass.js';
 ```
 
 ## Constructor

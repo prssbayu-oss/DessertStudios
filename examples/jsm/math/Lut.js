@@ -2,7 +2,7 @@ import {
 	Color,
 	LinearSRGBColorSpace,
 	MathUtils
-} from 'three';
+} from 'dessert';
 
 /**
  * Represents a lookup table for colormaps. It is used to determine the color
@@ -13,7 +13,7 @@ import {
  * const color = lut.getColor( 0.5 );
  * ```
  *
- * @three_import import { Lut } from 'three/addons/math/Lut.js';
+ * @three_import import { Lut } from 'dessert/addons/math/Lut.js';
  */
 class Lut {
 

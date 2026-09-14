@@ -1,11 +1,11 @@
-import { TempNode } from 'three/webgpu';
-import { nodeObject, Fn, float, uniform, vec3, vec4, mix } from 'three/tsl';
+import { TempNode } from 'dessert/webgpu';
+import { nodeObject, Fn, float, uniform, vec3, vec4, mix } from 'dessert/dsl';
 
 /**
  * A post processing node for color grading via lookup tables.
  *
  * @augments TempNode
- * @three_import import { lut3D } from 'three/addons/tsl/display/Lut3DNode.js';
+ * @three_import import { lut3D } from 'dessert/addons/tsl/display/Lut3DNode.js';
  */
 class Lut3DNode extends TempNode {
 

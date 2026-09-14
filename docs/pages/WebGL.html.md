@@ -4,10 +4,10 @@ A utility module with basic WebGL 2 capability testing.
 
 ## Import
 
-WebGL is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+WebGL is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import WebGL from 'three/addons/capabilities/WebGL.js';
+import WebGL from 'dessert/addons/capabilities/WebGL.js';
 ```
 
 ## Static Methods

@@ -6,10 +6,10 @@ A post processing node for color grading via lookup tables.
 
 ## Import
 
-Lut3DNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Lut3DNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { lut3D } from 'three/addons/tsl/display/Lut3DNode.js';
+import { lut3D } from 'dessert/addons/tsl/display/Lut3DNode.js';
 ```
 
 ## Constructor

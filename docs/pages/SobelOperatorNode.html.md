@@ -6,10 +6,10 @@ Post processing node for detecting edges with a sobel filter. A sobel filter sho
 
 ## Import
 
-SobelOperatorNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SobelOperatorNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { sobel } from 'three/addons/tsl/display/SobelOperatorNode.js';
+import { sobel } from 'dessert/addons/tsl/display/SobelOperatorNode.js';
 ```
 
 ## Constructor

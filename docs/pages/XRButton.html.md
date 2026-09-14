@@ -12,10 +12,10 @@ document.body.appendChild( XRButton.createButton( renderer ) );
 
 ## Import
 
-XRButton is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+XRButton is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { XRButton } from 'three/addons/webxr/XRButton.js';
+import { XRButton } from 'dessert/addons/webxr/XRButton.js';
 ```
 
 ## Static Methods

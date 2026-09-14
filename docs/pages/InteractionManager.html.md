@@ -19,10 +19,10 @@ interactions.update();
 
 ## Import
 
-InteractionManager is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+InteractionManager is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { InteractionManager } from 'three/addons/interaction/InteractionManager.js';
+import { InteractionManager } from 'dessert/addons/interaction/InteractionManager.js';
 ```
 
 ## Constructor

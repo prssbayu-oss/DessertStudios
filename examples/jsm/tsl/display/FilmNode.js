@@ -1,11 +1,11 @@
-import { TempNode } from 'three/webgpu';
-import { rand, Fn, fract, time, uv, clamp, mix, vec4, nodeProxy } from 'three/tsl';
+import { TempNode } from 'dessert/webgpu';
+import { rand, Fn, fract, time, uv, clamp, mix, vec4, nodeProxy } from 'dessert/dsl';
 
 /**
  * Post processing node for creating a film grain effect.
  *
  * @augments TempNode
- * @three_import import { film } from 'three/addons/tsl/display/FilmNode.js';
+ * @three_import import { film } from 'dessert/addons/tsl/display/FilmNode.js';
  */
 class FilmNode extends TempNode {
 

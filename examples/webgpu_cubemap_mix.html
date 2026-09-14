@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - cubemap mix</title>
+		<title>dessert.js webgpu - cubemap mix</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - cubemap mix">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_cubemap_mix.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_cubemap_mix.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_cubemap_mix.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_cubemap_mix.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Cubemap Mix</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Cubemap Mix</span>
 			</div>
 
 			<small>
@@ -39,15 +39,15 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { mix, oscSine, time, pmremTexture, float } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { mix, oscSine, time, pmremTexture, float } from 'dessert/dsl';
 
-			import { HDRCubeTextureLoader } from 'three/addons/loaders/HDRCubeTextureLoader.js';
+			import { HDRCubeTextureLoader } from 'dessert/addons/loaders/HDRCubeTextureLoader.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			let camera, scene, renderer;
 

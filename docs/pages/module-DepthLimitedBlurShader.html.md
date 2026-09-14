@@ -2,10 +2,10 @@
 
 ## Import
 
-DepthLimitedBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DepthLimitedBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DepthLimitedBlurShader, BlurShaderUtils } from 'three/addons/shaders/DepthLimitedBlurShader.js';
+import { DepthLimitedBlurShader, BlurShaderUtils } from 'dessert/addons/shaders/DepthLimitedBlurShader.js';
 ```
 
 ## Properties

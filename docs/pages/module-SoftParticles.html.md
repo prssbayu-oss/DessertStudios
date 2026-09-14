@@ -2,10 +2,10 @@
 
 ## Import
 
-SoftParticles is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SoftParticles is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { softParticles } from 'three/addons/tsl/utils/SoftParticles.js';
+import { softParticles } from 'dessert/addons/tsl/utils/SoftParticles.js';
 ```
 
 ## Static Methods

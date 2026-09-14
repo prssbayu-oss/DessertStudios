@@ -19,10 +19,10 @@ light.add( lensflare );
 
 ## Import
 
-LensflareMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LensflareMesh is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LensflareMesh } from 'three/addons/objects/LensflareMesh.js';
+import { LensflareMesh } from 'dessert/addons/objects/LensflareMesh.js';
 ```
 
 ## Constructor

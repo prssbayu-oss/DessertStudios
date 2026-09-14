@@ -6,10 +6,10 @@ A Decorated Torus Knot 5c.
 
 ## Import
 
-DecoratedTorusKnot5c is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+DecoratedTorusKnot5c is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { DecoratedTorusKnot5c } from 'three/addons/curves/CurveExtras.js';
+import { DecoratedTorusKnot5c } from 'dessert/addons/curves/CurveExtras.js';
 ```
 
 ## Constructor

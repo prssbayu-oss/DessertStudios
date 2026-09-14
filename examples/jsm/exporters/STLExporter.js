@@ -1,4 +1,4 @@
-import { Vector3 } from 'three';
+import { Vector3 } from 'dessert';
 
 /**
  * An exporter for STL.
@@ -13,7 +13,7 @@ import { Vector3 } from 'three';
  * const data = exporter.parse( mesh, { binary: true } );
  * ```
  *
- * @three_import import { STLExporter } from 'three/addons/exporters/STLExporter.js';
+ * @three_import import { STLExporter } from 'dessert/addons/exporters/STLExporter.js';
  */
 class STLExporter {
 

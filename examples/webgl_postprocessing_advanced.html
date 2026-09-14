@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - postprocessing</title>
+		<title>dessert.js webgl - postprocessing</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - postprocessing">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_postprocessing_advanced.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_postprocessing_advanced.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_postprocessing_advanced.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_postprocessing_advanced.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - webgl postprocessing example<br/>
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - webgl postprocessing example<br/>
 			<a href="https://casual-effects.com/data/" target="_blank" rel="noopener">Lee Perry-Smith</a> head
 		</div>
 
@@ -32,28 +32,28 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-			import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-			import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
-			import { BloomPass } from 'three/addons/postprocessing/BloomPass.js';
-			import { FilmPass } from 'three/addons/postprocessing/FilmPass.js';
-			import { DotScreenPass } from 'three/addons/postprocessing/DotScreenPass.js';
-			import { MaskPass, ClearMaskPass } from 'three/addons/postprocessing/MaskPass.js';
-			import { TexturePass } from 'three/addons/postprocessing/TexturePass.js';
+			import { EffectComposer } from 'dessert/addons/postprocessing/EffectComposer.js';
+			import { RenderPass } from 'dessert/addons/postprocessing/RenderPass.js';
+			import { ShaderPass } from 'dessert/addons/postprocessing/ShaderPass.js';
+			import { BloomPass } from 'dessert/addons/postprocessing/BloomPass.js';
+			import { FilmPass } from 'dessert/addons/postprocessing/FilmPass.js';
+			import { DotScreenPass } from 'dessert/addons/postprocessing/DotScreenPass.js';
+			import { MaskPass, ClearMaskPass } from 'dessert/addons/postprocessing/MaskPass.js';
+			import { TexturePass } from 'dessert/addons/postprocessing/TexturePass.js';
 
-			import { BleachBypassShader } from 'three/addons/shaders/BleachBypassShader.js';
-			import { ColorifyShader } from 'three/addons/shaders/ColorifyShader.js';
-			import { HorizontalBlurShader } from 'three/addons/shaders/HorizontalBlurShader.js';
-			import { VerticalBlurShader } from 'three/addons/shaders/VerticalBlurShader.js';
-			import { SepiaShader } from 'three/addons/shaders/SepiaShader.js';
-			import { VignetteShader } from 'three/addons/shaders/VignetteShader.js';
-			import { GammaCorrectionShader } from 'three/addons/shaders/GammaCorrectionShader.js';
+			import { BleachBypassShader } from 'dessert/addons/shaders/BleachBypassShader.js';
+			import { ColorifyShader } from 'dessert/addons/shaders/ColorifyShader.js';
+			import { HorizontalBlurShader } from 'dessert/addons/shaders/HorizontalBlurShader.js';
+			import { VerticalBlurShader } from 'dessert/addons/shaders/VerticalBlurShader.js';
+			import { SepiaShader } from 'dessert/addons/shaders/SepiaShader.js';
+			import { VignetteShader } from 'dessert/addons/shaders/VignetteShader.js';
+			import { GammaCorrectionShader } from 'dessert/addons/shaders/GammaCorrectionShader.js';
 
-			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			import { GLTFLoader } from 'dessert/addons/loaders/GLTFLoader.js';
 
 			let container, stats;
 

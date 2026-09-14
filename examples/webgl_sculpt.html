@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - sculpt</title>
+		<title>dessert.js webgl - sculpt</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
@@ -12,7 +12,7 @@
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> webgl - sculpt
+			<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> webgl - sculpt
 		</div>
 
 		<script type="importmap">
@@ -28,11 +28,11 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
-			import { Sculptor } from 'three/addons/misc/Sculptor.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import * as THREE from 'dessert';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { GLTFExporter } from 'dessert/addons/exporters/GLTFExporter.js';
+			import { Sculptor } from 'dessert/addons/misc/Sculptor.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
 
 			let renderer, scene, camera, controls, sculptor, mesh;
 			let cursorGroup, cursorRing, cursorDot, cursorMaterial;

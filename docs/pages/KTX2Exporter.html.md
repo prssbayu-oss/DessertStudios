@@ -11,10 +11,10 @@ const result = await exporter.parse( dataTexture );
 
 ## Import
 
-KTX2Exporter is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+KTX2Exporter is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { KTX2Exporter } from 'three/addons/exporters/KTX2Exporter.js';
+import { KTX2Exporter } from 'dessert/addons/exporters/KTX2Exporter.js';
 ```
 
 ## Constructor

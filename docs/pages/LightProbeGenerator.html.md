@@ -4,10 +4,10 @@ Utility class for creating instances of [LightProbe](LightProbe.html).
 
 ## Import
 
-LightProbeGenerator is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LightProbeGenerator is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LightProbeGenerator } from 'three/addons/lights/LightProbeGenerator.js';
+import { LightProbeGenerator } from 'dessert/addons/lights/LightProbeGenerator.js';
 ```
 
 ## Static Methods

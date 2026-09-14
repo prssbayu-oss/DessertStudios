@@ -1,21 +1,21 @@
 <html lang="en">
 	<head>
-		<title>three.js webgpu - shadertoy</title>
+		<title>dessert.js webgpu - shadertoy</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - shadertoy">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_shadertoy.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_shadertoy.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_shadertoy.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_shadertoy.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Shadertoy</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Shadertoy</span>
 			</div>
 
 			<small>
@@ -182,12 +182,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import * as TSL from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import * as TSL from 'dessert/dsl';
 
-			import Transpiler from 'three/addons/transpiler/Transpiler.js';
-			import ShaderToyDecoder from 'three/addons/transpiler/ShaderToyDecoder.js';
-			import TSLEncoder from 'three/addons/transpiler/TSLEncoder.js';
+			import Transpiler from 'dessert/addons/transpiler/Transpiler.js';
+			import ShaderToyDecoder from 'dessert/addons/transpiler/ShaderToyDecoder.js';
+			import TSLEncoder from 'dessert/addons/transpiler/TSLEncoder.js';
 
 			class ShaderToyNode extends THREE.Node {
 

@@ -3,10 +3,10 @@ import {
 	BufferGeometry,
 	Group,
 	Mesh
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { cameraPosition, color, float, Fn, If, mix, mx_noise_float, normalView, normalWorld, positionView, positionWorld, saturation, smoothstep, uniform } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { cameraPosition, color, float, Fn, If, mix, mx_noise_float, normalView, normalWorld, positionView, positionWorld, saturation, smoothstep, uniform } from 'dessert/dsl';
 
 import { ImprovedNoise } from '../math/ImprovedNoise.js';
 

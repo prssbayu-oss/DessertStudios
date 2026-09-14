@@ -15,10 +15,10 @@ composer.addPass( outputPass );
 
 ## Import
 
-OutputPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+OutputPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { OutputPass } from 'dessert/addons/postprocessing/OutputPass.js';
 ```
 
 ## Constructor

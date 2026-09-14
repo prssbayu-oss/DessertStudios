@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - RenderTargetArray and RenderTarget3D</title>
+		<title>dessert.js webgpu - RenderTargetArray and RenderTarget3D</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - RenderTargetArray and RenderTarget3D">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_rendertarget_2d-array_3d.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_rendertarget_2d-array_3d.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_rendertarget_2d-array_3d.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_rendertarget_2d-array_3d.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 		<style>
 			.viewport-label {
@@ -27,10 +27,10 @@
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>RenderTarget Array/3D</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>RenderTarget Array/3D</span>
 			</div>
 
 			<small>
@@ -58,12 +58,12 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { vec2, uniform, screenUV, color, texture, diffuseColor, attribute, vec3, vec4 } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { vec2, uniform, screenUV, color, texture, diffuseColor, attribute, vec3, vec4 } from 'dessert/dsl';
 
-			import { TextureHelper } from 'three/addons/helpers/TextureHelperGPU.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { unzipSync } from 'three/addons/libs/fflate.module.js';
+			import { TextureHelper } from 'dessert/addons/helpers/TextureHelperGPU.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { unzipSync } from 'dessert/addons/libs/fflate.module.js';
 
 			let renderer;
 			let views = [];

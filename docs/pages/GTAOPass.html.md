@@ -16,10 +16,10 @@ composer.addPass( gtaoPass );
 
 ## Import
 
-GTAOPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GTAOPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { GTAOPass } from 'dessert/addons/postprocessing/GTAOPass.js';
 ```
 
 ## Constructor

@@ -2,10 +2,10 @@
 
 ## Import
 
-TriangleBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TriangleBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TriangleBlurShader } from 'three/addons/shaders/TriangleBlurShader.js';
+import { TriangleBlurShader } from 'dessert/addons/shaders/TriangleBlurShader.js';
 ```
 
 ## Properties
@@ -42,10 +42,10 @@ A basic blur filter, which convolves the image with a pyramid filter. The pyrami
 
 ## Import
 
-TriangleBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TriangleBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as ToonShader from 'three/addons/shaders/ToonShader.js';
+import * as ToonShader from 'dessert/addons/shaders/ToonShader.js';
 ```
 
 Collection of toon shaders.
@@ -84,10 +84,10 @@ A basic blur filter, which convolves the image with a pyramid filter. The pyrami
 
 ## Import
 
-TriangleBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TriangleBlurShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TriangleBlurShader } from 'three/addons/shaders/TriangleBlurShader.js';
+import { TriangleBlurShader } from 'dessert/addons/shaders/TriangleBlurShader.js';
 ```
 
 ## Properties

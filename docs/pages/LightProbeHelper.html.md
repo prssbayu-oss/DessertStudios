@@ -15,10 +15,10 @@ scene.add( helper );
 
 ## Import
 
-LightProbeHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+LightProbeHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { LightProbeHelper } from 'three/addons/helpers/LightProbeHelper.js';
+import { LightProbeHelper } from 'dessert/addons/helpers/LightProbeHelper.js';
 ```
 
 ## Constructor

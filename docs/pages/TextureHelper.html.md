@@ -8,10 +8,10 @@ This helper can only be used with [WebGLRenderer](WebGLRenderer.html). When usin
 
 ## Import
 
-TextureHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TextureHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TextureHelper } from 'three/addons/helpers/TextureHelper.js';
+import { TextureHelper } from 'dessert/addons/helpers/TextureHelper.js';
 ```
 
 ## Constructor

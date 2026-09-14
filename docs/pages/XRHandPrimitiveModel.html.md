@@ -4,10 +4,10 @@ Represents one of the hand model types [XRHandModelFactory](XRHandModelFactory.h
 
 ## Import
 
-XRHandPrimitiveModel is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+XRHandPrimitiveModel is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { XRHandPrimitiveModel } from 'three/addons/webxr/XRHandPrimitiveModel.js';
+import { XRHandPrimitiveModel } from 'dessert/addons/webxr/XRHandPrimitiveModel.js';
 ```
 
 ## Constructor

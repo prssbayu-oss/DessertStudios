@@ -17,10 +17,10 @@ scene.add( object );
 
 ## Import
 
-TDSLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TDSLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { TDSLoader } from 'three/addons/loaders/TDSLoader.js';
+import { TDSLoader } from 'dessert/addons/loaders/TDSLoader.js';
 ```
 
 ## Constructor

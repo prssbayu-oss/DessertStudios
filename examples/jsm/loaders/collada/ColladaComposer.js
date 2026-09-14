@@ -38,7 +38,7 @@ import {
 	VectorKeyframeTrack,
 	SRGBColorSpace,
 	ShapeUtils
-} from 'three';
+} from 'dessert';
 
 import { getElementsByTagName, parseFloats } from './ColladaParser.js';
 

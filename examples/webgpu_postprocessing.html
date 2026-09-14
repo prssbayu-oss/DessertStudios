@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - postprocessing</title>
+		<title>dessert.js webgpu - postprocessing</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - postprocessing">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_postprocessing.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_postprocessing.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_postprocessing.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_postprocessing.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Post Processing</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Post Processing</span>
 			</div>
 
 			<small>Mix of simple post processing effects.</small>
@@ -37,11 +37,11 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { pass } from 'three/tsl';
-			import { dotScreen } from 'three/addons/tsl/display/DotScreenNode.js';
-			import { rgbShift } from 'three/addons/tsl/display/RGBShiftNode.js';
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import * as THREE from 'dessert/webgpu';
+			import { pass } from 'dessert/dsl';
+			import { dotScreen } from 'dessert/addons/tsl/display/DotScreenNode.js';
+			import { rgbShift } from 'dessert/addons/tsl/display/RGBShiftNode.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
 			let camera, renderer, renderPipeline;
 			let object;

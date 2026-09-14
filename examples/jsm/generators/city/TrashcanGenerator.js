@@ -3,10 +3,10 @@ import {
 	IcosahedronGeometry,
 	InterpolationSamplingMode,
 	InterpolationSamplingType
-} from 'three';
+} from 'dessert';
 
-import { MeshStandardNodeMaterial } from 'three/webgpu';
-import { attribute, color, float, Fn, fract, mix, mx_fractal_noise_float, positionGeometry, select, smoothstep, step, uv, varying } from 'three/tsl';
+import { MeshStandardNodeMaterial } from 'dessert/webgpu';
+import { attribute, color, float, Fn, fract, mix, mx_fractal_noise_float, positionGeometry, select, smoothstep, step, uv, varying } from 'dessert/dsl';
 
 import { mergeGeometries } from '../../utils/BufferGeometryUtils.js';
 

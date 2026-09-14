@@ -16,10 +16,10 @@ scene.add( object );
 
 ## Import
 
-AMFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+AMFLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { AMFLoader } from 'three/addons/loaders/AMFLoader.js';
+import { AMFLoader } from 'dessert/addons/loaders/AMFLoader.js';
 ```
 
 ## Constructor

@@ -11,7 +11,7 @@ import {
 	StorageBufferAttribute,
 	Vector2,
 	Vector3
-} from 'three/webgpu';
+} from 'dessert/webgpu';
 
 import {
 	Discard,
@@ -40,7 +40,7 @@ import {
 	vec2,
 	vec3,
 	vec4
-} from 'three/tsl';
+} from 'dessert/dsl';
 
 import { CountingSort } from '../gpgpu/CountingSort.js';
 import {
@@ -89,7 +89,7 @@ const _vector = /*@__PURE__*/ new Vector3();
  * ```
  *
  * @augments Mesh
- * @three_import import { GaussianSplat } from 'three/addons/objects/GaussianSplat.js';
+ * @three_import import { GaussianSplat } from 'dessert/addons/objects/GaussianSplat.js';
  */
 class GaussianSplat extends Mesh {
 

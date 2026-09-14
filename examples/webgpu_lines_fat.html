@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - fat lines</title>
+		<title>dessert.js webgpu - fat lines</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - fat lines">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_lines_fat.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_lines_fat.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_lines_fat.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_lines_fat.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 
@@ -15,7 +15,7 @@
 
 		<div id="container"></div>
 
-		<div id="info"><a href="https://threejs.org" target="_blank">three.js</a> - fat lines</div>
+		<div id="info"><a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank">three.js</a> - fat lines</div>
 
 		<script type="importmap">
 			{
@@ -32,16 +32,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
-			import { color } from 'three/tsl';
+			import * as THREE from 'dessert/webgpu';
+			import { color } from 'dessert/dsl';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-			import { Line2 } from 'three/addons/lines/webgpu/Line2.js';
-			import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-			import * as GeometryUtils from 'three/addons/utils/GeometryUtils.js';
+			import { GUI } from 'dessert/addons/libs/lil-gui.module.min.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
+			import { Line2 } from 'dessert/addons/lines/webgpu/Line2.js';
+			import { LineGeometry } from 'dessert/addons/lines/LineGeometry.js';
+			import * as GeometryUtils from 'dessert/addons/utils/GeometryUtils.js';
 
 			let line, renderer, scene, camera, camera2, controls, backgroundNode;
 			let line1;

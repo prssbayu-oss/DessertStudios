@@ -15,10 +15,10 @@ References:
 
 ## Import
 
-TemporalReprojectNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+TemporalReprojectNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { temporalReproject } from 'three/addons/tsl/display/TemporalReprojectNode.js';
+import { temporalReproject } from 'dessert/addons/tsl/display/TemporalReprojectNode.js';
 ```
 
 ## Constructor

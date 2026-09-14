@@ -6,10 +6,10 @@ Port of: [http://webglsamples.org/blob/blob.html](http://webglsamples.org/blob/b
 
 ## Import
 
-MarchingCubes is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MarchingCubes is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MarchingCubes } from 'three/addons/objects/MarchingCubes.js';
+import { MarchingCubes } from 'dessert/addons/objects/MarchingCubes.js';
 ```
 
 ## Constructor

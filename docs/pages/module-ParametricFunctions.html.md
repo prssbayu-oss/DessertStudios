@@ -2,10 +2,10 @@
 
 ## Import
 
-ParametricFunctions is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ParametricFunctions is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import * as ParametricFunctions from 'three/addons/geometries/ParametricFunctions.js';
+import * as ParametricFunctions from 'dessert/addons/geometries/ParametricFunctions.js';
 ```
 
 ## Methods

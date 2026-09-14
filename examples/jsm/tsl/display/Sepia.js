@@ -1,4 +1,4 @@
-import { dot, Fn, vec3, vec4 } from 'three/tsl';
+import { dot, Fn, vec3, vec4 } from 'dessert/dsl';
 
 /**
  * Applies a sepia effect to the given color node.

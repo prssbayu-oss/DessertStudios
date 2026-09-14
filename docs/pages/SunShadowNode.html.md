@@ -8,10 +8,10 @@ The two cascade cameras are fitted by [SunLightShadow](SunLightShadow.html) and 
 
 ## Import
 
-SunShadowNode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SunShadowNode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { sunShadow } from 'three/addons/lights/SunShadowNode.js';
+import { sunShadow } from 'dessert/addons/lights/SunShadowNode.js';
 ```
 
 ## Constructor

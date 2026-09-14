@@ -15,10 +15,10 @@ scene.add( splats );
 
 ## Import
 
-GaussianSplat is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GaussianSplat is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GaussianSplat } from 'three/addons/objects/GaussianSplat.js';
+import { GaussianSplat } from 'dessert/addons/objects/GaussianSplat.js';
 ```
 
 ## Constructor

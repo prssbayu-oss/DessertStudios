@@ -4,10 +4,10 @@ This class represents a management component for animated MD2 character assets. 
 
 ## Import
 
-MD2CharacterComplex is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+MD2CharacterComplex is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { MD2CharacterComplex } from 'three/addons/misc/MD2CharacterComplex.js';
+import { MD2CharacterComplex } from 'dessert/addons/misc/MD2CharacterComplex.js';
 ```
 
 ## Constructor

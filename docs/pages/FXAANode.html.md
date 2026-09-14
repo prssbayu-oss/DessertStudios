@@ -6,10 +6,10 @@ Post processing node for applying FXAA. This node requires sRGB input so tone ma
 
 ## Import
 
-FXAANode is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+FXAANode is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { fxaa } from 'three/addons/tsl/display/FXAANode.js';
+import { fxaa } from 'dessert/addons/tsl/display/FXAANode.js';
 ```
 
 ## Constructor

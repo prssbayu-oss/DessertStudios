@@ -15,10 +15,10 @@ composer.addPass( saoPass );
 
 ## Import
 
-SAOPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+SAOPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { SAOPass } from 'three/addons/postprocessing/SAOPass.js';
+import { SAOPass } from 'dessert/addons/postprocessing/SAOPass.js';
 ```
 
 ## Constructor

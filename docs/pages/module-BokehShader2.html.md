@@ -2,10 +2,10 @@
 
 ## Import
 
-BokehShader2 is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+BokehShader2 is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { BokehShader, BokehDepthShader } from 'three/addons/shaders/BokehShader2.js';
+import { BokehShader, BokehDepthShader } from 'dessert/addons/shaders/BokehShader2.js';
 ```
 
 ## Properties

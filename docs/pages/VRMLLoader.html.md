@@ -14,10 +14,10 @@ scene.add( object );
 
 ## Import
 
-VRMLLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VRMLLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VRMLLoader } from 'three/addons/loaders/VRMLLoader.js';
+import { VRMLLoader } from 'dessert/addons/loaders/VRMLLoader.js';
 ```
 
 ## Constructor

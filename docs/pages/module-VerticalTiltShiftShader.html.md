@@ -2,10 +2,10 @@
 
 ## Import
 
-VerticalTiltShiftShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+VerticalTiltShiftShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { VerticalTiltShiftShader } from 'three/addons/shaders/VerticalTiltShiftShader.js';
+import { VerticalTiltShiftShader } from 'dessert/addons/shaders/VerticalTiltShiftShader.js';
 ```
 
 ## Properties

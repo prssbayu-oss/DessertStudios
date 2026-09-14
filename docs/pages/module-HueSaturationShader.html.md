@@ -2,10 +2,10 @@
 
 ## Import
 
-HueSaturationShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+HueSaturationShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { HueSaturationShader } from 'three/addons/shaders/HueSaturationShader.js';
+import { HueSaturationShader } from 'dessert/addons/shaders/HueSaturationShader.js';
 ```
 
 ## Properties

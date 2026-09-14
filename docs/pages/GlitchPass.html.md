@@ -13,10 +13,10 @@ composer.addPass( glitchPass );
 
 ## Import
 
-GlitchPass is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+GlitchPass is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { GlitchPass } from 'three/addons/postprocessing/GlitchPass.js';
+import { GlitchPass } from 'dessert/addons/postprocessing/GlitchPass.js';
 ```
 
 ## Constructor

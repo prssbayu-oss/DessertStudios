@@ -17,10 +17,10 @@ scene.add( object );
 
 ## Import
 
-Rhino3dmLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+Rhino3dmLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { Rhino3dmLoader } from 'three/addons/loaders/3DMLoader.js';
+import { Rhino3dmLoader } from 'dessert/addons/loaders/3DMLoader.js';
 ```
 
 ## Constructor

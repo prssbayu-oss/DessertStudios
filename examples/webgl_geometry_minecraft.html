@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - geometry - minecraft</title>
+		<title>dessert.js webgl - geometry - minecraft</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgl - geometry - minecraft">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgl_geometry_minecraft.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgl_geometry_minecraft.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgl_geometry_minecraft.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgl_geometry_minecraft.jpg">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
@@ -22,7 +22,7 @@
 	<body>
 
 		<div id="container"></div>
-		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - <a href="https://www.minecraft.net/" target="_blank" rel="noopener">minecraft</a> demo. featuring <a href="https://painterlypack.net/" target="_blank" rel="noopener">painterly pack</a><br />(left click: forward, right click: backward)</div>
+		<div id="info"><a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a> - <a href="https://www.minecraft.net/" target="_blank" rel="noopener">minecraft</a> demo. featuring <a href="https://painterlypack.net/" target="_blank" rel="noopener">painterly pack</a><br />(left click: forward, right click: backward)</div>
 
 		<script type="importmap">
 			{
@@ -37,13 +37,13 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'dessert';
 
-			import Stats from 'three/addons/libs/stats.module.js';
+			import Stats from 'dessert/addons/libs/stats.module.js';
 
-			import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
-			import { ImprovedNoise } from 'three/addons/math/ImprovedNoise.js';
-			import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
+			import { FirstPersonControls } from 'dessert/addons/controls/FirstPersonControls.js';
+			import { ImprovedNoise } from 'dessert/addons/math/ImprovedNoise.js';
+			import * as BufferGeometryUtils from 'dessert/addons/utils/BufferGeometryUtils.js';
 
 			let container, stats;
 

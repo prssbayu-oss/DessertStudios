@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgpu - reflection</title>
+		<title>dessert.js webgpu - reflection</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta property="og:title" content="three.js webgpu - reflection">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://threejs.org/examples/webgpu_reflection.html">
-		<meta property="og:image" content="https://threejs.org/examples/screenshots/webgpu_reflection.jpg">
+		<meta property="og:url" content="https://github.com/prssbayu-oss/DessertStudios/examples/webgpu_reflection.html">
+		<meta property="og:image" content="https://github.com/prssbayu-oss/DessertStudios/examples/screenshots/webgpu_reflection.jpg">
 		<link type="text/css" rel="stylesheet" href="example.css">
 	</head>
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org/" target="_blank" rel="noopener" class="logo-link"></a>
+			<a href="https://github.com/prssbayu-oss/DessertStudios/" target="_blank" rel="noopener" class="logo-link"></a>
 
 			<div class="title-wrapper">
-				<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a><span>Reflection + Recursive Tree Cubes</span>
+				<a href="https://github.com/prssbayu-oss/DessertStudios" target="_blank" rel="noopener">dessert.js</a><span>Reflection + Recursive Tree Cubes</span>
 			</div>
 
 			<small>
@@ -40,16 +40,16 @@
 
 		<script type="module">
 
-			import * as THREE from 'three/webgpu';
+			import * as THREE from 'dessert/webgpu';
 
-			import { abs, blendOverlay, color, float, Fn, instancedBufferAttribute, max, normalWorldGeometry, pass, positionGeometry, positionLocal, pow2, reflector, screenUV, sin, sub, texture, time, uniform, uv, vec2, vec3 } from 'three/tsl';
-			import { gaussianBlur } from 'three/addons/tsl/display/GaussianBlurNode.js';
+			import { abs, blendOverlay, color, float, Fn, instancedBufferAttribute, max, normalWorldGeometry, pass, positionGeometry, positionLocal, pow2, reflector, screenUV, sin, sub, texture, time, uniform, uv, vec2, vec3 } from 'dessert/dsl';
+			import { gaussianBlur } from 'dessert/addons/tsl/display/GaussianBlurNode.js';
 
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { OrbitControls } from 'dessert/addons/controls/OrbitControls.js';
 
-			import { Inspector } from 'three/addons/inspector/Inspector.js';
+			import { Inspector } from 'dessert/addons/inspector/Inspector.js';
 
-			import TWEEN from 'three/addons/libs/tween.module.js';
+			import TWEEN from 'dessert/addons/libs/tween.module.js';
 
 			let camera, scene, renderer;
 			let renderPipeline;

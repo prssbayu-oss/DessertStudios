@@ -24,10 +24,10 @@ scene.add( points );
 
 ## Import
 
-PCDLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+PCDLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { PCDLoader } from 'three/addons/loaders/PCDLoader.js';
+import { PCDLoader } from 'dessert/addons/loaders/PCDLoader.js';
 ```
 
 ## Constructor

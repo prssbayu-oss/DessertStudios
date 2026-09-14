@@ -4,10 +4,10 @@ A simple pool for managing Web Workers.
 
 ## Import
 
-WorkerPool is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+WorkerPool is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { WorkerPool } from 'three/addons/utils/WorkerPool.js';
+import { WorkerPool } from 'dessert/addons/utils/WorkerPool.js';
 ```
 
 ## Constructor

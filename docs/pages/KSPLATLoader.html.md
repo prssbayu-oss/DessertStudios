@@ -16,10 +16,10 @@ scene.add( new GaussianSplat( data ) );
 
 ## Import
 
-KSPLATLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+KSPLATLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { KSPLATLoader } from 'three/addons/loaders/KSPLATLoader.js';
+import { KSPLATLoader } from 'dessert/addons/loaders/KSPLATLoader.js';
 ```
 
 ## Constructor

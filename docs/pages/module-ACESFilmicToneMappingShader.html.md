@@ -2,10 +2,10 @@
 
 ## Import
 
-ACESFilmicToneMappingShader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+ACESFilmicToneMappingShader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { ACESFilmicToneMappingShader } from 'three/addons/shaders/ACESFilmicToneMappingShader.js';
+import { ACESFilmicToneMappingShader } from 'dessert/addons/shaders/ACESFilmicToneMappingShader.js';
 ```
 
 ## Properties

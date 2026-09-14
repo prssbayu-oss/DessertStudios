@@ -14,10 +14,10 @@ scene.add( helper );
 
 ## Import
 
-AnimationPathHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+AnimationPathHelper is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { AnimationPathHelper } from 'three/addons/helpers/AnimationPathHelper.js';
+import { AnimationPathHelper } from 'dessert/addons/helpers/AnimationPathHelper.js';
 ```
 
 ## Constructor

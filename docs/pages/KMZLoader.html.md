@@ -14,10 +14,10 @@ scene.add( kmz.scene );
 
 ## Import
 
-KMZLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://threejs.org/manual/#installation#addons).
+KMZLoader is an addon, and must be imported explicitly, see [Installation#Addons](https://github.com/prssbayu-oss/DessertStudios/tree/main/manual/#installation#addons).
 
 ```js
-import { KMZLoader } from 'three/addons/loaders/KMZLoader.js';
+import { KMZLoader } from 'dessert/addons/loaders/KMZLoader.js';
 ```
 
 ## Constructor
