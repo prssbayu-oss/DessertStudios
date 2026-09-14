@@ -308,7 +308,7 @@ function Script( editor ) {
 
 		try {
 
-			const url = new URL( '../build/three.core.js', document.baseURI ).href;
+			const url = new URL( '../build/dessert.core.js', document.baseURI ).href;
 			const source = await ( await fetch( url ) ).text();
 
 			server.server.defs.push( buildThreeDefs( source ) );

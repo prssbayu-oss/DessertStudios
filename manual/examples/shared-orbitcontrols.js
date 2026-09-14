@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.skypack.dev/three@0.136.0/build/three.module.js';
+import * as THREE from 'https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/build/dessert.module.js';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
 
 export function init( data ) {

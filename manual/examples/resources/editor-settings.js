@@ -169,8 +169,7 @@
 
 		const moduleRE = /(import.*?)('|")(.*?)('|")/g;
 
-		// convert https://threejs.org/build/three.module.js -> https://cdn.jsdelivr.net/npm/three@<version>
-		// convert https://threejs.org/examples/jsm/.?? -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/.??
+		// convert https://threejs.org/build/dessert.module.js -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main// convert https://threejs.org/examples/jsm/.?? -> https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/.??
 
 		if ( ! version ) {
 
@@ -192,48 +191,12 @@
 
 			if ( href.startsWith( window.location.origin ) ) {
 
-				if ( href.includes( '/build/three.module.js' ) ) {
+				if ( href.includes( '/build/dessert.module.js' ) ) {
 
 					return `https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/examples/jsm/' ) ) {
 
 					const url = new URL( href );
-					return `https://cdn.jsdelivr.net/npm/three@${version}${url.pathname}${url.search}${url.hash}`;
-
-				}
-
-			}
-
-			return href;
-
-		}
-
-		function addVersionToURL( match, start, q1, url, q2 ) {
-
-			return start + q1 + addVersion( url ) + q2;
-
-		}
-
-		if ( version !== undefined ) {
-
-			js = js.replace( moduleRE, addVersionToURL );
-
-		}
-
-		return js;
-
-	}
-
-	window.lessonEditorSettings = {
-		extraHTMLParsing,
-		fixSourceLinks,
-		fixJSForCodeSite,
-		runOnResize: false,
-		lessonSettings: {
-			glDebug: false,
-		},
-		tags: [ 'three.js' ],
-		name: 'three.js',
-		icon: '/files/icon.svg',
+					return `https://cdn.jsdelivr.net/gh/prssbayu-oss/DessertStudios@main/files/icon.svg',
 	};
 
 }() );

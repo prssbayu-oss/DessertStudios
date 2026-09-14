@@ -31,7 +31,19 @@ app.use((req, res, next) => {
 
 app.enable('strict routing');
 
-// Aliases for legacy build requests to serve directly from live src/dessert/ engine
+// Aliases for build requests to serve directly from live src/dessert/ engine or build folder
+app.get('/build/dessert.module.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.js'));
+});
+app.get('/build/dessert.webgpu.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.webgpu.js'));
+});
+app.get('/build/dessert.dsl.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.dsl.js'));
+});
+app.get('/build/dessert.core.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.Core.js'));
+});
 app.get('/build/three.module.js', (req, res) => {
   res.sendFile(path.join(rootDir, 'src/dessert/Dessert.js'));
 });
@@ -42,7 +54,7 @@ app.get('/build/three.tsl.js', (req, res) => {
   res.sendFile(path.join(rootDir, 'src/dessert/Dessert.dsl.js'));
 });
 app.get('/build/three.core.js', (req, res) => {
-  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.core.js'));
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.Core.js'));
 });
 
 // Clean redirects for main modules if accessed without trailing slash

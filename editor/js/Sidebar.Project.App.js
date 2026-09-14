@@ -162,7 +162,7 @@ function SidebarProjectApp( editor ) {
 			toZip[ 'js/app.js' ] = strToU8( content );
 
 		} );
-		loader.load( '../build/three.core.js', function ( content ) {
+		loader.load( '../build/dessert.core.js', function ( content ) {
 
 			toZip[ 'js/three.core.js' ] = strToU8( content );
 
@@ -170,7 +170,7 @@ function SidebarProjectApp( editor ) {
 
 		if ( rendererType === 'WebGPURenderer' ) {
 
-			loader.load( '../build/three.webgpu.js', function ( content ) {
+			loader.load( '../build/dessert.webgpu.js', function ( content ) {
 
 				toZip[ 'js/three.webgpu.js' ] = strToU8( content );
 
@@ -178,7 +178,7 @@ function SidebarProjectApp( editor ) {
 
 		} else {
 
-			loader.load( '../build/three.module.js', function ( content ) {
+			loader.load( '../build/dessert.module.js', function ( content ) {
 
 				toZip[ 'js/three.module.js' ] = strToU8( content );
 
