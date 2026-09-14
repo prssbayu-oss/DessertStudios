@@ -31,6 +31,20 @@ app.use((req, res, next) => {
 
 app.enable('strict routing');
 
+// Aliases for legacy build requests to serve directly from live src/dessert/ engine
+app.get('/build/three.module.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.js'));
+});
+app.get('/build/three.webgpu.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.webgpu.js'));
+});
+app.get('/build/three.tsl.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.dsl.js'));
+});
+app.get('/build/three.core.js', (req, res) => {
+  res.sendFile(path.join(rootDir, 'src/dessert/Dessert.core.js'));
+});
+
 // Clean redirects for main modules if accessed without trailing slash
 app.use((req, res, next) => {
   const p = req.path;
